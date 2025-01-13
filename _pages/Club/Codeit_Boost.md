@@ -3,7 +3,8 @@ title: "✨ Club / Codeit_Boost"
 layout: post
 permalink: /Club/Codeit_Boost/
 author_profile: true
-sidebar_main: true
+sidebar:
+  nav: "main"
 types: posts
 taxonomy:
   sidebar:
