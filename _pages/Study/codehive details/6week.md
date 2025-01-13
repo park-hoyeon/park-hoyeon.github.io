@@ -107,13 +107,14 @@ x좌표를 기준으로 오름차순 정렬해야 한다.<br>
 ---  
 
 
-#### `4153 직각삼각형 (브론즈Ⅲ)`<br>
+#### 1978 소수 찾기 (브론즈II)`<br>
 <span style="color:yellow">문제</span><br>
 
 <div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-과거 이집트인들은 각 변들의 길이가 3, 4, 5인 삼각형이 직각 삼각형인것을 알아냈다. 주어진 세변의 길이로 삼각형이 직각인지 아닌지 구분하시오.<br>
-입력: 입력은 여러개의 테스트케이스로 주어지며 마지막줄에는 0 0 0이 입력된다. 각 테스트케이스는 모두 30,000보다 작은 양의 정수로 주어지며, 각 입력은 변의 길이를 의미한다.<br>
-출력: 각 입력에 대해 직각 삼각형이 맞다면 "right", 아니라면 "wrong"을 출력한다.<br>
+주어진 수 N개 중에서 소수가 몇 개인지 찾아서 출력하는 프로그램을 작성하시오.<br>
+입력: 첫 줄에 수의 개수 N이 주어진다. N은 100이하이다.<br> 
+  다음으로 N개의 수가 주어지는데 수는 1,000 이하의 자연수이다.<br>
+출력: 주어진 수들 중 소수의 개수를 출력한다.<br>
 </div>
 
 <span style="color:yellow">📝 풀이 코드</span>
@@ -122,47 +123,59 @@ x좌표를 기준으로 오름차순 정렬해야 한다.<br>
 <script>hljs.highlightAll();</script>
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
-while True:
-    x, y, z = map(int, input().split())
-    if x==0 and y==0 and z==0:
-        break
-    x,y,z = sorted([x,y,z])
-    if z**2 == x**2 + y**2:
-        print("right")
-    else:
-        print("wrong")
+n = int(input())
+num_list = list(map(int, input().split()))
+answer = 0
+
+for i in num_list:
+    count = 0
+    if i == 1:
+        continue
+    for j in range(2,i+1):
+        if i%j == 0:
+            count += 1
+    if count == 1:
+       answer += 1
+print(answer)
   </code></pre>
 </div>  
 
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
 <div style="font-size:60%">
-피타고라스의 정리 성립 조건: 세 변 중에서 가장 긴 변의 제곱이 나머지 두 변의 제곱의 합과 같다.<br/>
+소수는 1과 자기 자신만을 약수로 가지는 숫자이다.<br/>
 </div>  
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
 <div style="font-size:60%">
-- x, y, z = sorted([x, y, z]): 입력받은 세 변을 오름차순으로 정렬하고 가장 큰 값(빗변)은 z, 나머지 두 변은 x와 y로 설정한다.<br/>
+먼저 입력값으로 주어진 숫자 목록을 num_list에 저장한다.<br>
+1은 제외하고, 2부터 그 숫자 자체까지 나누어지지 않는지 체크하여 소수인지 판별한다.<br>
+소수의 개수를 세기 위해 각 숫자에 대해 나누어지는 수가 2개인 경우(자기 자신과 1)만 소수로 판단한다.<br/>  
 </div>  
 
 ---
 
-#### `2839 설탕 배달 (실버Ⅳ)`<br>
+#### 10773 제로 (실버Ⅳ)<br>
 <span style="color:yellow">문제</span><br>
 
 <div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-상근이는 요즘 설탕공장에서 설탕을 배달하고 있다.<br> 
-상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다.<br>
-설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다.<br>  
+나코더 기장 재민이는 동아리 회식을 준비하기 위해서 장부를 관리하는 중이다.<br>
 
-상근이는 귀찮기 때문에, 최대한 적은 봉지를 들고 가려고 한다.<br> 
-예를 들어, 18킬로그램 설탕을 배달해야 할 때, 3킬로그램 봉지 6개를 가져가도 되지만, 5킬로그램 3개와 3킬로그램 1개를 배달하면, 더 적은 개수의 봉지를 배달할 수 있다.<br>  
+재현이는 재민이를 도와서 돈을 관리하는 중인데, 애석하게도 항상 정신없는 재현이는 돈을 실수로 잘못 부르는 사고를 치기 일쑤였다.<br>
 
-상근이가 설탕을 정확하게 N킬로그램 배달해야 할 때, 봉지 몇 개를 가져가면 되는지 그 수를 구하는 프로그램을 작성하시오.<br/>  
+재현이는 잘못된 수를 부를 때마다 0을 외쳐서, 가장 최근에 재민이가 쓴 수를 지우게 시킨다.<br>
 
-<span style="color:yellow">입력</span>: 첫째 줄에 N이 주어진다. (3 ≤ N ≤ 5000)<br/>  
+재민이는 이렇게 모든 수를 받아 적은 후 그 수의 합을 알고 싶어 한다. 재민이를 도와주자!<br/>  
 
-<span style="color:yellow">출력</span>: 상근이가 배달하는 봉지의 최소 개수를 출력한다. 만약, 정확하게 N킬로그램을 만들 수 없다면 -1을 출력한다.<br/>
+
+
+<span style="color:yellow">입력</span>: 첫 번째 줄에 정수 K가 주어진다. (1 ≤ K ≤ 100,000)<br>
+
+이후 K개의 줄에 정수가 1개씩 주어진다. 정수는 0에서 1,000,000 사이의 값을 가지며, 정수가 "0" 일 경우에는 가장 최근에 쓴 수를 지우고, 아닐 경우 해당 수를 쓴다.<br>
+
+정수가 "0"일 경우에 지울 수 있는 수가 있음을 보장할 수 있다.<br/>  
+
+<span style="color:yellow">출력</span>: 재민이가 최종적으로 적어 낸 수의 합을 출력한다. 최종적으로 적어낸 수의 합은 231-1보다 작거나 같은 정수이다.<br/>
 </div>  
 
 
@@ -172,35 +185,31 @@ while True:
 <script>hljs.highlightAll();</script>
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
-n = int(input())
-dp = [float('inf')] * (n+1)
-dp[0]=0
-sugar_bags = [3,5]
-for sugar_bag in sugar_bags:
-    for i in range(sugar_bag, n+1):
-        if dp[i-sugar_bag] == float('inf'): continue
-        dp[i] = min(dp[i], dp[i-sugar_bag]+1)
-answer=dp[n] if dp[n]!=float('inf') else -1
-print(answer)
+k = int(input())
+number_list = []
+for i in range(k):
+    number = int(input())
+    number_list.append(number)
+    if number == 0:
+        number_list.pop()
+        del number_list[-1]
+print(sum(number_list))
   </code></pre>
 </div>  
 
 
 <span style="color:yellow"> 🔍 문제 분석:</span>
 <div style="font-size:60%">
-설탕봉지의 최소 개수를 구해야 하므로, 그리디 방식(가장 큰 단위부터 쓰는 방식)은 적합하지 않다.<br>
-동적 계획법(DP)을 사용한다.<br/>
+0이 아닌 숫자는 number_list에 계속 추가되고, 0이 입력되면 마지막에 추가된 숫자를 제거해야 한다.<br>
+0이 입력될 때마다 가장 최근에 입력된 숫자를 제거해야 한다.<br/>
 </div>  
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
 <div style="font-size:60%">
-- dp[i]: ikg를 정확히 배달하는 데 필요한 최소 봉지 수로 정의한다.<br> 
-  dp[0] = 0: 설탕이 0kg일 경우, 봉지의 수는 0이다.<br>
-  나머지 dp[i]는 초기값으로 float('inf')를 설정하였다.<br> 
-- 3kg 봉지와 5kg 봉지를 사용할 수 있으므로, ikg를 배달할 수 있는 최소 봉지 수는 i-3kg 또는 i-5kg를 배달하는 최소 봉지 수에 1을 더한 값이다.<br>
-- dp[n]이 우리가 구하는 최소 봉지 수이다.<br> 
-  만약 dp[n]이 float('inf')라면, n을 정확히 배달할 수 없다는 의미이므로, -1을 출력한다.<br>
+append로 숫자를 추가하고, 0이 입력되면 pop과 del을 사용해 최근 숫자를 제거한다.<br> 
+모든 숫자를 처리한 후, 리스트에 남아있는 숫자들의 합을 sum()을 사용하여 출력한다.<br>
+
 </div>  
 
 
