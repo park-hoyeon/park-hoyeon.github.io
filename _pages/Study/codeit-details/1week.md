@@ -41,9 +41,13 @@ tags:
 1. 줌 클론코딩 - 노마드 코더 <Nomad Coders> 강의 수강<br>
 2. 인프런 - Node.js를 이용해 웹 애플리케이션 만들기 강의 수강<br>
 3. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br>
-4. 간단한 발표 및 기록</div>
+4. 간단한 발표 및 기록 
 
----
+</div>
+
+---   
+
+
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/BE1.png">
 
