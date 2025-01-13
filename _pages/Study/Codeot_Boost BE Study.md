@@ -1,5 +1,5 @@
 ---
-title: "✨ Study / Codeot_Boost BE Study"
+title: "✨ Study / Codeit_Boost BE Study"
 layout: category
 permalink: /Study/Codeit%20Boost%20BE%20Study/
 author_profile: true
@@ -26,25 +26,25 @@ sidebar:
 
 ### 주차별 내용
 
-**[1 week 활동 보기](/Study/codehive-details/1week)**
+**[1 week 활동 보기](/Study/codeit-details/1week)**
 <span style="font-size:70%">2024.12.26</span><br>
-**[2 week 활동 보기](/Study/codehive-details/2week)**
+**[2 week 활동 보기](/Study/codeit-details/2week)**
 <span style="font-size:70%">2025.01.02</span><br>
-**[3 week 활동 보기](/Study/codehive-details/3week)**
+**[3 week 활동 보기](/Study/codeit-details/3week)**
 <span style="font-size:70%">2025.01.09</span><br>
-**[4 week 활동 보기](/Study/codehive-details/4week)**
+**[4 week 활동 보기](/Study/codeit-details/4week)**
 <span style="font-size:70%">2025.01.16</span><br>
-**[5 week 활동 보기](/Study/codehive-details/5week)**
+**[5 week 활동 보기](/Study/codeit-details/5week)**
 <span style="font-size:70%">2025.01.23</span><br>
-**[6 week 활동 보기](/Study/codehive-details/6week)**
+**[6 week 활동 보기](/Study/codeit-details/6week)**
 <span style="font-size:70%">2025.01.30</span><br>
-**[7 week 활동 보기](/Study/codehive-details/7week)**
+**[7 week 활동 보기](/Study/codeit-details/7week)**
 <span style="font-size:70%">2025.02.06</span><br>
-**[8 week 활동 보기](/Study/codehive-details/8week)**
+**[8 week 활동 보기](/Study/codeit-details/8week)**
 <span style="font-size:70%">2025.02.13</span><br>
-**[9 week 활동 보기](/Study/codehive-details/9week)**
+**[9 week 활동 보기](/Study/codeit-details/9week)**
 <span style="font-size:70%">2025.02.20</span><br>
-**[10 week 활동 보기](/Study/codehive-details/10week)**
+**[10 week 활동 보기](/Study/codeit-details/10week)**
 <span style="font-size:70%">2025.02.27</span><br/>  
 
 
