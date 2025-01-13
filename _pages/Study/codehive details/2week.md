@@ -177,7 +177,7 @@ else:
 
 ---
 
-[돌아가기: 2024 하반기 Python Coding Study](https://park-hoyeon.github.io/Study/CodeHive%20(Python%20Coding)/)  
+[돌아가기: 2024 하반기 Python Coding Study](https://park-hoyeon.github.io/Study/Codehive%20(Python%20Coding)/)  
 
 <div style="text-align: right; margin-top: 30px;">
   <button onclick="scrollToTop()" style="
