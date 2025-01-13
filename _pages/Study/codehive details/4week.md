@@ -149,22 +149,20 @@ while True:
 
 ---
 
-#### `2839 설탕 배달 (실버Ⅳ)`<br>
+#### 10814 나이순 정렬 (실버V)`<br>
 <span style="color:yellow">문제</span><br>
 
 <div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-상근이는 요즘 설탕공장에서 설탕을 배달하고 있다.<br> 
-상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다.<br>
-설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다.<br>  
+온라인 저지에 가입한 사람들의 나이와 이름이 가입한 순서대로 주어진다.<br> 
+이때, 회원들을 나이가 증가하는 순으로, 나이가 같으면 먼저 가입한 사람이 앞에 오는 순서로 정렬하는 프로그램을 작성하시오.<br/>  
 
-상근이는 귀찮기 때문에, 최대한 적은 봉지를 들고 가려고 한다.<br> 
-예를 들어, 18킬로그램 설탕을 배달해야 할 때, 3킬로그램 봉지 6개를 가져가도 되지만, 5킬로그램 3개와 3킬로그램 1개를 배달하면, 더 적은 개수의 봉지를 배달할 수 있다.<br>  
 
-상근이가 설탕을 정확하게 N킬로그램 배달해야 할 때, 봉지 몇 개를 가져가면 되는지 그 수를 구하는 프로그램을 작성하시오.<br/>  
+<span style="color:yellow">입력</span>: 첫째 줄에 온라인 저지 회원의 수 N이 주어진다. (1 ≤ N ≤ 100,000)<br>
+둘째 줄부터 N개의 줄에는 각 회원의 나이와 이름이 공백으로 구분되어 주어진다.<br> 
+나이는 1보다 크거나 같으며, 200보다 작거나 같은 정수이고, 이름은 알파벳 대소문자로 이루어져 있고, 길이가 100보다 작거나 같은 문자열이다.<br> 
+입력은 가입한 순서로 주어진다.<br/>  
 
-<span style="color:yellow">입력</span>: 첫째 줄에 N이 주어진다. (3 ≤ N ≤ 5000)<br/>  
-
-<span style="color:yellow">출력</span>: 상근이가 배달하는 봉지의 최소 개수를 출력한다. 만약, 정확하게 N킬로그램을 만들 수 없다면 -1을 출력한다.<br/>
+<span style="color:yellow">출력</span>: 첫째 줄부터 총 N개의 줄에 걸쳐 온라인 저지 회원을 나이 순, 나이가 같으면 가입한 순으로 한 줄에 한 명씩 나이와 이름을 공백으로 구분해 출력한다.<br/>
 </div>  
 
 
@@ -175,34 +173,26 @@ while True:
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n = int(input())
-dp = [float('inf')] * (n+1)
-dp[0]=0
-sugar_bags = [3,5]
-for sugar_bag in sugar_bags:
-    for i in range(sugar_bag, n+1):
-        if dp[i-sugar_bag] == float('inf'): continue
-        dp[i] = min(dp[i], dp[i-sugar_bag]+1)
-answer=dp[n] if dp[n]!=float('inf') else -1
-print(answer)
+information = []
+for _ in range(n):
+    age,name = input().split()
+    information.append([int(age),name])
+for i in sorted(information, key=lambda a: a[0]): print(i[0],i[1])
   </code></pre>
 </div>  
 
 
 <span style="color:yellow"> 🔍 문제 분석:</span>
 <div style="font-size:60%">
-설탕봉지의 최소 개수를 구해야 하므로, 그리디 방식(가장 큰 단위부터 쓰는 방식)은 적합하지 않다.<br>
-동적 계획법(DP)을 사용한다.<br/>
+사람들의 나이와 이름이 주어지며, 이를 나이순으로 정렬해야 한다.<br>
+입력값은 나이와 이름이 공백으로 구분되어 주어지며, 여러 줄로 입력된다.<br/>
 </div>  
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
 <div style="font-size:60%">
-- dp[i]: ikg를 정확히 배달하는 데 필요한 최소 봉지 수로 정의한다.<br> 
-  dp[0] = 0: 설탕이 0kg일 경우, 봉지의 수는 0이다.<br>
-  나머지 dp[i]는 초기값으로 float('inf')를 설정하였다.<br> 
-- 3kg 봉지와 5kg 봉지를 사용할 수 있으므로, ikg를 배달할 수 있는 최소 봉지 수는 i-3kg 또는 i-5kg를 배달하는 최소 봉지 수에 1을 더한 값이다.<br>
-- dp[n]이 우리가 구하는 최소 봉지 수이다.<br> 
-  만약 dp[n]이 float('inf')라면, n을 정확히 배달할 수 없다는 의미이므로, -1을 출력한다.<br>
+입력값을 받아 나이와 이름을 리스트로 저장한다.<br> 
+sorted 함수의 key 매개변수에 나이를 기준으로 정렬하도록 한다.<br/>
 </div>  
 
 
