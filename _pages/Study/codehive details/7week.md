@@ -57,22 +57,31 @@ tags:
 #### `9012 괄호 (실버 Ⅳ)`
 <div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
-괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다.<br> 
-그 중에서 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다.<br> 
-한 쌍의 괄호 기호로 된 “( )” 문자열은 기본 VPS 이라고 부른다. <br>
-만일 x 가 VPS 라면 이것을 하나의 괄호에 넣은 새로운 문자열 “(x)”도 VPS 가 된다.<br> 
-그리고 두 VPS x 와 y를 접합(concatenation)시킨 새로운 문자열 xy도 VPS 가 된다.<br> 
-예를 들어 “(())()”와 “((()))” 는 VPS 이지만 “(()(”, “(())()))” , 그리고 “(()” 는 모두 VPS 가 아닌 문자열이다. <br>
+수를 처리하는 것은 통계학에서 상당히 중요한 일이다. 통계학에서 N개의 수를 대표하는 기본 통계값에는 다음과 같은 것들이 있다. 단, N은 홀수라고 가정하자.<br/>  
 
-여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.<br/>
+1. 산술평균 : N개의 수들의 합을 N으로 나눈 값<br>
+2. 중앙값 : N개의 수들을 증가하는 순서로 나열했을 경우 그 중앙에 위치하는 값<br>
+3. 최빈값 : N개의 수들 중 가장 많이 나타나는 값<br>
+4. 범위 : N개의 수들 중 최댓값과 최솟값의 차이<br/>
+   
+N개의 수가 주어졌을 때, 네 가지 기본 통계값을 구하는 프로그램을 작성하시오.<br/>
 
 </div>
 
 <div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 <span style="color:yellow">입력:</span>
-입력 데이터는 표준 입력을 사용한다. 입력은 T개의 테스트 데이터로 주어진다. 입력의 첫 번째 줄에는 입력 데이터의 수를 나타내는 정수 T가 주어진다. 각 테스트 데이터의 첫째 줄에는 괄호 문자열이 한 줄에 주어진다. 하나의 괄호 문자열의 길이는 2 이상 50 이하이다. <br>
+첫째 줄에 수의 개수 N(1 ≤ N ≤ 500,000)이 주어진다. 단, N은 홀수이다.<br> 
+그 다음 N개의 줄에는 정수들이 주어진다.<br> 
+입력되는 정수의 절댓값은 4,000을 넘지 않는다. <br>  
+  
 <span style="color:yellow">출력:</span>
-출력은 표준 출력을 사용한다. 만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다. <br>
+첫째 줄에는 산술평균을 출력한다. 소수점 이하 첫째 자리에서 반올림한 값을 출력한다.<br>
+
+둘째 줄에는 중앙값을 출력한다.<br>
+
+셋째 줄에는 최빈값을 출력한다. 여러 개 있을 때에는 최빈값 중 두 번째로 작은 값을 출력한다.<br>
+
+넷째 줄에는 범위를 출력한다.<br/>
 </div>
 
 
@@ -82,39 +91,62 @@ tags:
 <script>hljs.highlightAll();</script>
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
+import sys
+input = sys.stdin.readline
+
 n = int(input())
-l = '('
-r = ')'
-for i in range(n):
-    new = []
-    ps = input()
-    for j in ps:
-        if j == l: new.append(l)
-        elif j == r:
-            if len(new) != 0: new.pop()
-            else:
-                print("NO")
-                break
-    else:
-        if len(new) != 0: print("NO")
-        else: print("YES")
+num_list = [int(input()) for _ in range(n)]
+
+ave = round(sum(num_list)/n)
+sorted_list = sorted(num_list)
+
+mid = sorted_list[(n-1)//2]
+
+freq = {}
+max_count = 0
+most = []
+
+for num in num_list:
+    if num in freq: freq[num] += 1
+    else: freq[num] = 1
+
+    if freq[num] > max_count:
+        max_count = freq[num]
+        most = [num]
+    elif freq[num] == max_count:
+        most.append(num)
+
+most = sorted(set(most))
+if len(most) > 1:
+    most = most[1]
+else:
+    most = most[0]
+
+range = max(num_list) - min(num_list)
+
+print(ave)
+print(mid)
+print(most)
+print(range)
 
   </code></pre>
 </div>
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
 <div style="font-size:60%">
-예를 들어 "(())"는 유효한 괄호 문자열이지만, "(()"나 "())"는 유효하지 않다.<br>
-'('는 반드시 ')'와 짝을 이루어야 한다.<br/>  
+평균은 소수점 첫째 자리에서 반올림하여 출력해야 한다. <br>
+최빈값은 등장 빈도가 가장 높은 숫자를 출력하되, 여러 개일 경우 두 번째로 작은 값을 출력해야 한다.<br/>  
 
 </div>  
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
 <div style="font-size:60%">
-- 문자열에서 여는 괄호 (를 만나면 스택에 추가하고, 닫는 괄호 )를 만나면 스택에서 가장 최근에 추가된 여는 괄호 (를 제거한다.<br>
-- 만약 닫는 괄호 )가 나왔을 때 스택에 여는 괄호가 없으면 (len(new) == 0), NO를 출력하고 검사 종료한다.<br>
-- 닫는 괄호가 나오는데 스택이 비어 있으면 바로 NO를 출력한다.<br/>
+평균은 sum()으로 전체 합을 구한 뒤, 정수 반올림(round())을 통해 구한다.<br>
+중앙값은 숫자를 정렬한 후 중간 위치의 값을 출력하여 구한다.<br>
+최빈값은 딕셔너리를 사용해 빈도수를 계산하고, 최대 빈도수에 해당하는 값을 정렬해 구한다.<br>
+범위는 가장 큰 값과 가장 작은 값의 차를 구해 출력한다.<br/>  
+
 
 </div>  
 
