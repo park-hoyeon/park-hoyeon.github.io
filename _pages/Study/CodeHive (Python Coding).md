@@ -1,7 +1,7 @@
 ---
 title: "✨ Study / CodeHive (Python Coding)"
 layout: category
-permalink: /Study/CodeHive (Python Coding)/
+permalink: /Study/Codehive%20(Python%20Coding)/
 author_profile: true
 sidebar_main: true
 types: posts
