@@ -37,7 +37,7 @@ tags:
 
 ### 🗓️ 학습 주제
 
-<span style="font-size:70%">1. 줌 클론코딩 - 노마드 코더 <Nomad Coders> 강의 수강<br></span>
+<span style="font-size:70%">1. 줌 클론코딩 - 노마드 코더 <Nomad Coders> 강의 수강</span><br>
 <span style="font-size:70%">2. 인프런 - Node.js를 이용해 웹 애플리케이션 만들기 강의 수강<br></span>
 <span style="font-size:70%">3. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br></span>
 <span style="font-size:70%">4. 간단한 발표 및 기록</span>
@@ -45,7 +45,7 @@ tags:
 ---
 
 <div style="display: inline-block; padding: 15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 5px; background-color: rgba(255, 255, 255, 0.1); color: #f1f1f1; margin: 0 auto; text-align: left;">
-    <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/BEkick.png" 
+    <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/BE1.png" 
          style="width: 100%; height: auto; display: block; max-width: 400px;">
 </div>
 
