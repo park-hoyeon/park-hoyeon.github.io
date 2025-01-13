@@ -66,17 +66,28 @@ tags:
 : 지금 쓰고 있는 이 html이 HTML5 표준을 따른다고 명시하기 위해서이다.  <br>
 html은 버전에 따라서 문서 해석법이 다르다.  
 
-<span style="color:yellow"><b> <meta charset="utf-8">:</b></span><br>
+<hr>
+
+<span style="color:yellow"><b> "<meta charset="utf-8">":</b></span><br>
 메타 태그.<br> 
 html 파일 인코딩을 알려주는 태그로 만약 존재하지 않다면 한글이나 특수 문자가 깨져서 출력될 수도 있다<br>  
+
+<hr>
 
 html 코드에서 엔터를 친다고 해서 글자들이 알아서 줄바꿈하지 않는다.<br>
 줄바꿈해주려면 <br>을 활용해야 한다.<br> 
 <p>를 쓰면 단락 처리가 된다.<br/>  
 
-수평선은 <hr>로 그을 수 있다.<br> 
+<hr>
+
+수평선은 "<hr>"로 그을 수 있다.<br> 
 이미지는 <img src=“../pa.png” width=“100” height=“150” alt=“pa 그림”>로 넣을 수 있다. <br>
-글박스는 <input type="text" size="10" value=""> 등.<br/>  
+
+<hr>
+
+글박스는 "<input type="text" size="10" value="">" 등.<br/>  
+
+<hr>
 
 <span style="color:yellow"><b> API </b></span><br>
 API를 뭉뚱그려 비유한다면, '식당 메뉴'라고 볼 수 있다.<br> 
@@ -86,12 +97,7 @@ API를 뭉뚱그려 비유한다면, '식당 메뉴'라고 볼 수 있다.<br>
 
 Application Programming Interface: 한 프로그램에서 다른 프로그램으로 데이터를 주고받기 위한 방법이다.<br> 
 API는 요청 방식(method), 요청할 자료(endpoint), 자료 요청에 필요한 추가 정보로 구성된다.<br> 
-API의 종류는 public, private, partner API가 있다.<br/>
-
-
-
-
-</div>
+API의 종류는 public, private, partner API가 있다.<br/></div>
 
 
  ---
