@@ -3,13 +3,13 @@ title: "✨ Club / Codeit_Boost"
 layout: post
 permalink: /Club/Codeit_Boost/
 author_profile: true
+sidebar_main: true
 sidebar:
-  nav: "main"
+  nav: "sidebar-category"
+  enabled: true
 types: posts
 taxonomy:
-  sidebar:
-    nav: "sidebar-category"
-    enabled: true
+
 ---
 
 {% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
