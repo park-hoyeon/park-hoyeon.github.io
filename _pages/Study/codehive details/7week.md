@@ -154,22 +154,23 @@ print(range)
 ---  
 
 
-#### 1075 나누기 (브론즈 Ⅱ)<br/>
+#### 1764 듣보잡 (실버 IV)<br/>
 <span style="color:yellow">문제</span><br>
 
 <div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-두 정수 N과 F가 주어진다.<br>
-지민이는 정수 N의 가장 뒤 두 자리를 적절히 바꿔서 N을 F로 나누어 떨어지게 만들려고 한다.<br> 
-만약 가능한 것이 여러 가지이면, 뒤 두 자리를 가능하면 작게 만들려고 한다.<br/>  
-
-예를 들어, N=275이고, F=5이면, 답은 00이다. 200이 5로 나누어 떨어지기 때문이다.<br> 
-N=1021이고, F=11이면, 정답은 01인데, 1001이 11로 나누어 떨어지기 때문이다.<br/>  
+김진영이 듣도 못한 사람의 명단과, 보도 못한 사람의 명단이 주어질 때, 듣도 보도 못한 사람의 명단을 구하는 프로그램을 작성하시오.<br/>  
 
 <span style="color:yellow">입력:</span>
-첫째 줄에 N, 둘째 줄에 F가 주어진다. N은 100보다 크거나 같고, 2,000,000,000보다 작거나 같은 자연수이다. F는 100보다 작거나 같은 자연수이다.<br/>  
+첫째 줄에 듣도 못한 사람의 수 N, 보도 못한 사람의 수 M이 주어진다.<br> 
+이어서 둘째 줄부터 N개의 줄에 걸쳐 듣도 못한 사람의 이름과, N+2째 줄부터 보도 못한 사람의 이름이 순서대로 주어진다.<br> 
+이름은 띄어쓰기 없이 알파벳 소문자로만 이루어지며, 그 길이는 20 이하이다.<br> 
+N, M은 500,000 이하의 자연수이다.<br>
+
+듣도 못한 사람의 명단에는 중복되는 이름이 없으며, 보도 못한 사람의 명단도 마찬가지이다.<br/>  
+
   
 <span style="color:yellow">출력:</span>
-첫째 줄에 마지막 두 자리를 모두 출력한다. 한자리이면 앞에 0을 추가해서 두 자리로 만들어야 한다.<br/>
+듣보잡의 수와 그 명단을 사전순으로 출력한다.<br/>
 
 
 </div>
@@ -180,30 +181,32 @@ N=1021이고, F=11이면, 정답은 01인데, 1001이 11로 나누어 떨어지�
 <script>hljs.highlightAll();</script>
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
-n=int(input())
-f=int(input())
-number = (n // 100) * 100
-mid = number%f
-if mid == 0:
-    print('00')
-else:
-    answer = f - mid
-    if answer < 10:
-        print(f'0{answer}')
-    elif answer == f:
-        print("00")
-    else:
-        print(answer)
-
+n,m = map(int, input().split())
+listen=set(input() for _ in range(n))
+see=set(input() for _ in range(m))
+answer=sorted(listen&see)
+print(len(answer))
+for name in answer: print(name)
   </code></pre>
 </div>  
 
+</div>
+
+🔍 <span style="color:yellow"> 문제 분석:</span>
+<div style="font-size:60%">
+듣도 못한 사람과 보도 못한 사람의 명단이 각각 주어지며, 이들의 교집합(듣보잡)을 찾아야 한다.<br>
+교집합의 크기와 교집합에 속한 이름들을 사전 순으로 정렬해 출력하자.<br/>  
+
+</div>  
+
+
+
+
 <span style="color:yellow">🔍 해결 전략:</span><br>
 <div style="font-size:60%">
-- n에서 가장 뒷 두 자리를 제거한 후 100을 곱해 100의 배수로 만든다.<br>
-- number % f를 계산하여 나머지(mid)를 구한다. <br>
-- 만약 mid == 0이면 추가 값이 필요 없으므로 출력값은 00<br>
-- 결과값을 두 자리 형태로 출력한다.<br/>
+- 듣도 못한 사람과 보도 못한 사람을 각각 집합(set)으로 저장하여 중복을 제거하고 교집합 연산을 수행한다. <br>
+- 집합의 교집합(&)을 사용한다. <br>
+- 듣보잡 명단을 정렬(sorted())하여 사전 순으로 정리한다.<br/>
 
 </div>  
 
