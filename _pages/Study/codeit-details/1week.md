@@ -1,4 +1,3 @@
-
 ---
 layout: category
 title: "✨ 1 Week - Codeit Boost BE Study"
@@ -207,7 +206,7 @@ print(answer)
 
 
 
-[돌아가기: 2024 하반기 Python Coding Study](https://park-hoyeon.github.io/Study/Codehive%20(Python%20Coding)/)  
+[돌아가기: 2024 하반기 Python Coding Study](https://park-hoyeon.github.io/Study/Codeit%20Boost%20BE%20Study/)  
 
 
 <div style="text-align: right; margin-top: 30px;">
