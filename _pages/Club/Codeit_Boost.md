@@ -1,6 +1,6 @@
 ---
 title: "✨ Club / Codeit_Boost"
-layout: post
+layout: category
 permalink: /Club/Codeit_Boost/
 author_profile: true
 sidebar_main: true
