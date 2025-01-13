@@ -26,7 +26,7 @@ sidebar:
 
 ### 주차별 내용
 
-**[1 week 활동 보기](/Study/codehive-details/1week)**
+**[⭐ 1 week 활동 보기](/Study/codehive-details/1week)**
 <span style="font-size:70%">2024.09.23</span><br>
 **[2 week 활동 보기](/Study/codehive-details/2week)**
 <span style="font-size:70%">2024.09.30</span><br>
@@ -38,7 +38,7 @@ sidebar:
 <span style="font-size:70%">2024.10.28</span><br>
 **[6 week 활동 보기](/Study/codehive-details/6week)**
 <span style="font-size:70%">2024.11.04</span><br>
-**[7 week 활동 보기](/Study/codehive-details/7week)**
+**[⭐ 7 week 활동 보기](/Study/codehive-details/7week)**
 <span style="font-size:70%">2024.11.11</span><br>
 **[8 week 활동 보기](/Study/codehive-details/8week)**
 <span style="font-size:70%">2024.11.18</span><br>
