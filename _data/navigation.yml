@@ -11,21 +11,21 @@ sidebar-category:
   - title: "✨ Study"
     children:
       - title: "Codehive (Python Coding)"
-        url: "/Codehive (Python Coding)/"
+        url: "/Study/Codehive (Python Coding)/"
       - title: "Codeit Boost BE Study"
-        url: "/Codeit Boost BE Study/"
+        url: "/Study/Codeit Boost BE Study/"
   
   - title: "✨ Club"
     children:
       - title: "Codeit Boost"
-        url: "/Codeit_Boost/"
+        url: "/Club/Codeit_Boost/"
 
   - title: "✨ Project"
     children:
       - title: "IT"
-        url: "/IT/"
+        url: "/Project/IT/"
       - title: "Idea"
-        url: "/Idea/"
+        url: "/Project/Idea/"
 
 
     
