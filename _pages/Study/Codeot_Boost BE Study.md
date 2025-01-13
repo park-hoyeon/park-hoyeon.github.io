@@ -1,7 +1,7 @@
 ---
 title: "✨ Study / Codeot_Boost BE Study"
 layout: category
-permalink: /Study/Codeot_Boost BE Study/
+permalink: /Study/Codeit%20Boost%20BE%20Study/
 author_profile: true
 sidebar_main: true
 types: posts
