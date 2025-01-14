@@ -47,6 +47,6 @@ sidebar:
 **[10 week 활동 보기](/Study/codehive-details/10week)**
 <span style="font-size:70%">2024.12.02</span><br/>  
 
-<span style="color:yellow"> **[⭐⭐⭐최종 활동 정리본](/Study/codehive-details/lastweek)** </span>  
+<span style="color:yellow"> **[⭐⭐⭐최종 활동 정리본](/Study/codehive-details/final)** </span>  
 
 <br/>
