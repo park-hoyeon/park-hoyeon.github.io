@@ -52,9 +52,9 @@ tags:
 
 
 ---
-### 📝 baekjoon 알고리즘 문제 풀이
+### 📝 웹 서버 제작 진행 과정
 
-#### 2750 수 정렬하기 (브론즈 Ⅱ)
+#### 2 (브론즈 Ⅱ)
 <div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
 <b>문제:</b><br>
