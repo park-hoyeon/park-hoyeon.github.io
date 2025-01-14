@@ -155,18 +155,18 @@ NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립
 
 ### Callback/동기•비동기
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-3.png">   <br>
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-3.jpeg">   <br>
 
 <span style="font-size:70%">
 node sample.js 를 입력하면 sample.js 코드에 담겨있는 자바스트립터를 하나씩 실행하는 명령이다.<br>
+즉 다른 함수의 인자로 전달되어 특정 작업이 완료된 후 실행되는 함수를 의미한다.<br>
 
-즉 **다른 함수의 인자로 전달**되어 **특정 작업이 완료된 후 실행되는 함수**를 의미한다.<br>
+일반 함수는 즉시 실행되는 반면, 콜백 함수는 특정 이벤트나 작업이 완료된 후에 실행된다.<br>
 
-일반 함수는 즉시 실행되는 반면, **콜백 함수**는 **특정 이벤트나 작업이 완료된 후**에 실행된다.<br>
+콜백 함수는 비동기 처리 상황에서 순차적인 동작을 보장하기 위해 사용되는 특징이 있다.</span><br>  
 
-콜백 함수는 **비동기 처리 상황**에서 **순차적인 동작을 보장**하기 위해 사용되는 특징이 있다.</span><br>  
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-4.png">   <br>
+ 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-4.jpeg">   <br>
 
 ---
 
@@ -195,13 +195,10 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
 </div>
 
 
-<span style="font-size:70%">
-파일 읽기 작업이 시작되고 바로 다음 코드가 실행된다. 파일 읽기가 완료되면 콜백 함수가 호출된다.<br>
 
-즉 **다른 함수의 인자로 전달**되어 **특정 작업이 완료된 후 실행되는 함수**를 의미한다.<br>
-
-I/O 작업 중 **이벤트 루프를 차단하지 않기 때문에**, 높은 성능과 효율성을 제공한다는 장점이 있고
-
+<span style="font-size:70%">파일 읽기 작업이 시작되고 바로 다음 코드가 실행된다. 파일 읽기가 완료되면 콜백 함수가 호출된다.<br>
+즉 다른 함수의 인자로 전달되어 특정 작업이 완료된 후 실행되는 함수를 의미한다.<br>
+I/O 작업 중 이벤트 루프를 차단하지 않기 때문에, 높은 성능과 효율성을 제공한다는 장점이 있고
 콜백 함수는 파일 읽기 성공 시 data에 내용을 전달해서 실패 했을 때 에러 정보를 전달한다.</span><br>  
 
 
@@ -229,12 +226,10 @@ try {
 </div>
 
 
-<span style="font-size:70%">
-파일 읽기가 완료될 때까지 코드 실행이 멈춘다.<br>
 
+<span style="font-size:70%">파일 읽기가 완료될 때까지 코드 실행이 멈춘다.<br>
 에러 발생 시 try의 catch 함수로 에러를 처리하는 것이다.<br>
-
-이것은 **이벤트 루프를 차단**하기 때문에, I/O 작업 중에 다른 작업을 수행할 수 없다는 특징이 있다.</span><br>  
+이것은 이벤트 루프를 차단하기 때문에, I/O 작업 중에 다른 작업을 수행할 수 없다는 특징이 있다.</span><br>  
 
 
 ---
