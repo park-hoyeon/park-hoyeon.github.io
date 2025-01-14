@@ -64,16 +64,14 @@ K-MOOC 강의를 통해 파이썬을 체계적으로 학습하고, 최종적으�
 </span>
 
 ---
+### 📝 제작 페이지 - 홈페이지 (게시판)
 
-<div style="display: inline-block; padding: 15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 5px; background-color: rgba(255, 255, 255, 0.1); color: #f1f1f1; margin: 0 auto; text-align: left;">
-    <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image03.png" 
-         style="width: 100%; height: auto; display: block; max-width: 400px;">
-</div>
+
+
 
 
 
 ---
-### 📝 baekjoon 알고리즘 문제 풀이
 
 #### 1138 한 줄로 서기 (실버Ⅱ)
 <div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
