@@ -101,17 +101,18 @@ hostname을 전달했는데 127.0.0.1로, 즉 컴퓨터의 ip값이 설정되었
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-1.png"> <br>  
 
-서버를 실행시키면 이렇게 출력된다.<br>   
+<div style="font-size:60%"> 서버를 실행시키면 이렇게 출력된다.</div><br>   
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-2.png">   <br>
 
-이 컴퓨터로 접속하는 접속 중에서 127.0.0.1이라고 브라우저에 브라우저의 주소창을 입력하고, 그 뒤에 1337이라고 입력한 접속에 대해서 응답하겠다는 것이다.<br>   
+<div style="font-size:60%"> 
+이 컴퓨터로 접속하는 접속 중에서 127.0.0.1이라고 브라우저에 브라우저의 주소창을 입력하고, 그 뒤에 1337이라고 입력한 접속에 대해서 응답하겠다는 것이다.</div><br>   
 
 ---  
 
 
-#### NPM  
+## NPM  
 
 
 <span style="color:yellow">Node Package Manager</span><br>
@@ -119,20 +120,21 @@ hostname을 전달했는데 127.0.0.1로, 즉 컴퓨터의 ip값이 설정되었
 <span style="font-size:70%">
 노드js가 제공하는 모듈은 노드js 시스템에서만 사용할 수 있는 모듈이다.<br> 
 NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립트가 동작하는 어떠한 시스템에서든 사용 가능하다.<br>
+이 패키지 관리자는 소프트웨어의 라이브러리와 의존성을 쉽게 설치하고 업데이트하며 관리할 수 있도록 돕는 도구이다. </span><br>   
 
-**이 패키지 관리자는 소프트웨어의 라이브러리와 의존성을 쉽게 설치하고 업데이트하며 관리할 수 있도록 돕는 도구이다.** 
-</span><br>
+
 
 
 
 
 <span style="color:yellow">NPM 사용법</span><br>
 <div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-**1. npm 초기화하기** <br>
+**1. npm 초기화하기** <br>   
 : 새로운 프로젝트를 시작하려면 먼저 터미널에서 다음과 같은 명령어로 package.json 파일을 생성해야 한다.<br>
 
-<span style="color:yellow">npm init</span><br>  
+<span style="color:yellow">npm init</span><br> 
 
+.
 
 **2. 패키지 검색하기** <br>
 
@@ -140,6 +142,7 @@ NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립
 
 <span style="color:yellow">npm search [패키지 이름]</span><br>   
 
+.
 
 **3. 설치된 패키지 확인하기** <br>
 
