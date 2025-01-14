@@ -1,4 +1,3 @@
-
 ---
 layout: category
 title: "✨ Codehive 스터디 최종 활동 결과 페이지 제작"
