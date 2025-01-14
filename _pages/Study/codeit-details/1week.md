@@ -37,13 +37,12 @@ tags:
 
 ### 🗓️ 학습 주제
 
-<div style="font-size:70%">
+<span style="font-size:70%">
 1. 줌 클론코딩 - 노마드 코더 <Nomad Coders> 강의 수강<br>
 2. 인프런 - Node.js를 이용해 웹 애플리케이션 만들기 강의 수강<br>
 3. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br>
 4. 간단한 발표 및 기록 
-
-</div>
+</span>
 
 ---   
 
@@ -54,53 +53,48 @@ tags:
 
 
 ---
-### 📝 baekjoon 알고리즘 문제 풀이
+### 📝 BE 스터디 내용
 
-#### `1181 단어 정렬 (실버Ⅴ)`
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-  
-<b>문제:</b><br>
-알파벳 소문자로 이루어진 N개의 단어를 정렬하시오.<br>
-<b>조건:</b><br>
-1. 길이가 짧은 것부터<br>
-2. 길이가 같으면 사전 순으로<br>
-3. 중복 단어는 제거
-</div>
+#### 서버 측 JS - 간단한 웹앱 만들기
 
-<span style="color:yellow"> 📝 풀이 코드</span>
+
+<span style="color:yellow"> 📝 코드</span>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
+
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="python">
-n = int(input())
-word_list=[]
-for i in range(n):
-    word_list.append(input())
-new_list = set(word_list)
-word_list = list(new_list)
-word_list.sort()
-word_list.sort(key= len)
-for i in word_list:
-    print(i)
+  <pre><code class="java">
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 1337;
+
+http.createServer((req, res) => {
+ res.writeHead(200, { 'Content-Type': 'text/plain' });
+ res.end('Hello World\n');
+}).listen(port, hostname, () => {
+ console.log(`Server running at http://${hostname}:${port}/`);
+});
   </code></pre>
 </div>
 
-🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
-1. 길이가 짧은 것부터 정렬<br>
-2. 길이가 같으면 사전 순으로 정렬<br>
-3. 중복된 단어 제거<br/>
-</div>  
+
+<span style="font-size:60%">
+createServer로 서버를 구축한다.<br> 
+서버를 만들어서 그 서버가 이 컴퓨터에 리스닝 하도록 시킨다. <br>
+그리고 첫번째 인자로 port 변수를 전달했고, 이 port는 1337번을 가리키게 된다.<br>
+hostname을 전달했는데 127.0.0.1로, 즉 컴퓨터의 ip값이 설정되었다.<br/>
+</span>  
 
 
-<span style="color:yellow">🔍 해결 전략:</span><br>
+<span style="color:yellow">🔍 요약 정:</span><br>
 <div style="font-size:60%">
-- set()을 이용해 중복 단어를 제거한다.<br>
-- 다시 리스트로 변환하고, 먼저 사전순으로 정렬한 후 길이순으로 정렬한다.<br>
-- sort()를 이용하여 사전 순으로 정렬한다.<br>
-- word_list.sort(key= len) 길이가 짧은 것부터 정렬한다.<br/>
-</div>  
+노드 js를 이용해서 우리가 웹서버를 만들고 그 웹서버가 1337번을 리스닝하도록 시키는 코드이다.<br> 
+그리고 사용자가 접속했을 때 127.0.0.1로 접속한 사용자에 대해서 응답하라는 명령의 의미이다.<br>
+이 응답의 결과는 Hello World라는 텍스트를 응답하도록 하는 코드이다.<br/>
+</span>  
 
 
 ---  
