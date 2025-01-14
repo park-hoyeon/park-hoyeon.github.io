@@ -160,10 +160,8 @@ NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립
 <span style="font-size:70%">
 node sample.js 를 입력하면 sample.js 코드에 담겨있는 자바스트립터를 하나씩 실행하는 명령이다.<br>
 즉 다른 함수의 인자로 전달되어 특정 작업이 완료된 후 실행되는 함수를 의미한다.<br>
-
 일반 함수는 즉시 실행되는 반면, 콜백 함수는 특정 이벤트나 작업이 완료된 후에 실행된다.<br>
-
-콜백 함수는 비동기 처리 상황에서 순차적인 동작을 보장하기 위해 사용되는 특징이 있다.</span><br>  
+콜백 함수는 비동기 처리 상황에서 순차적인 동작을 보장하기 위해 사용되는 특징이 있다. </span><br>  
 
  
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-4.jpeg">   <br>
