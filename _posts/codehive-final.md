@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "✨ Codehive 스터디 최종 활동 결과 페이지 제작"
 permalink: /Study/codehive-details/final
 author_profile: true
