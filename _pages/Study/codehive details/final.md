@@ -2,7 +2,7 @@
 ---
 layout: category
 title: "✨ Codehive 스터디 최종 활동 결과 페이지 제작"
-permalink: /Study/codehive-details/final/
+permalink: /Study/codehive-details/final
 author_profile: true
 sidebar_main: true
 types: posts
