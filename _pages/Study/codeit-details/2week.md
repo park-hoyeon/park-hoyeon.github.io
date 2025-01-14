@@ -57,10 +57,22 @@ tags:
 ---
 ### 📝 BE 스터디 내용
 
-#### 템플릿 엔
+#### 🔍 템플릿 엔진
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (1).png">   
 
-<span style="color:yellow"> 📝 코드</span>
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (2).png">
+
+<span style="font-size:60%">
+웹 페이지를 구성하는 Markup Language는 HTML이며, 이는 정적 언어이다. 따라서, Javascript의 반복문을 사용해 간단하게 처리할 수 있는 동적 연산을 HTML로 표현하려면 위의 사진처럼 직접 코드를 작성해야 하는 불편함이 있다. <br>
+템플릿 엔진은 이 불편한 상황을 해소하기 위한 도구로, 템플릿 프로세서를 이용하여 웹 페이지를 동적으로 구현할 수 있는 시스템이다.<br/>
+</span>  
+
+---
+
+#### 🔍 템플릿 엔진 사용하기
+
+##### 템플릿 엔진 npm 패키지 설치하기
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -68,109 +80,118 @@ tags:
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-const http = require('http');
+$ npm install jade --save
+$ npm install pug --save
+  </code></pre>
+</div>
 
-const hostname = '127.0.0.1';
-const port = 1337;
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (3).png">
 
-http.createServer((req, res) => {
- res.writeHead(200, { 'Content-Type': 'text/plain' });
- res.end('Hello World\n');
-}).listen(port, hostname, () => {
- console.log(`Server running at http://${hostname}:${port}/`);
-});
+<span style="font-size:60%">
+- `views`, 템플리트가 있는 디렉토리. 예: `app.set('views', './views')`<br>
+- `view engine`, 사용할 템플리트 엔진. 예: `app.set('view engine', 'pug')`<br/>
+</span>   
+
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (4).png">
+
+<span style="font-size:60%">
+send 대신 render 이용한다.<br>
+template 경로를 통해서 들어온 사용자에게 function 기능이 수행되면서 ‘temp’라는 템플릿 파일을  웹페이지로 렌더링 해서 전송한다는 의미이다.<br/>
+</span>  
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (5).png"> <br>
+
+그냥 나열된 형식으로 출력된다. <br>  
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (6).png"> <br>
+
+html 아래에 head와 body는 들여쓰기를 통해서 적용되도록 한다.<br>
+
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (7).png"> <br>
+
+app.locals.pretty = true; 추가로 정리하기<br>
+
+---
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (8).png"> <br>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (9).png"> <br>
+
+
+---
+#### 🔍 Express, URL을 이용한 정보 전달
+
+##### Query String
+
+<span style="font-size:60%">
+사용자가 입력 데이터를 전달하는 방법 중의 하나로, url 주소에 미리 협의된 데이터를 파라미터를 통해 넘기는 것이다.<br/>
+</span>   
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+http://a.com/login   
+
+
+http://a.com/home
+
+http://a.com/topic
+  </code></pre>
+</div>
+
+<span style="font-size:60%">
+각 주소는 패스에 따라 다른 결과를 주지만 예를 들어 <http://a.com/home> 하나만 놓고 본다면 이것은 언제나 똑같은 결과를 가져온다.<br/>
+</span>   
+
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+http://a.com/home?id=1
+  </code></pre>
+</div>
+
+<span style="font-size:60%">
+home에 id가 1인 값을 전달하고 있다.<br>
+그럼 home은 1에 해당되는 결과를 처리하여 그것을 화면에 표현해준다.<br/>
+</span>   
+
+
+---
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (12).png"> <br>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+app.get('/topic', function(req, res){
+    res.send(req.query.id);
+})
   </code></pre>
 </div>
 
 
 <span style="font-size:60%">
-createServer로 서버를 구축한다.<br> 
-서버를 만들어서 그 서버가 이 컴퓨터에 리스닝 하도록 시킨다. <br>
-그리고 첫번째 인자로 port 변수를 전달했고, 이 port는 1337번을 가리키게 된다.<br>
-hostname을 전달했는데 127.0.0.1로, 즉 컴퓨터의 ip값이 설정되었다.<br/>
-</span>  
-
----   
-
-
-<span style="color:yellow">🔍 요약 정리:</span><br>
-<div style="font-size:60%">
-노드 js를 이용해서 우리가 웹서버를 만들고 그 웹서버가 1337번을 리스닝하도록 시키는 코드이다.<br> 
-그리고 사용자가 접속했을 때 127.0.0.1로 접속한 사용자에 대해서 응답하라는 명령의 의미이다.<br>
-이 응답의 결과는 Hello World라는 텍스트를 응답하도록 하는 코드이다.</div> <br/>
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-1.png"> <br>  
-
-<div style="font-size:60%"> 서버를 실행시키면 이렇게 출력된다.</div><br>   
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-2.png">   <br>
-
-<div style="font-size:60%"> 
-이 컴퓨터로 접속하는 접속 중에서 127.0.0.1이라고 브라우저에 브라우저의 주소창을 입력하고, 그 뒤에 1337이라고 입력한 접속에 대해서 응답하겠다는 것이다.</div><br>   
-
----  
-
-
-## NPM  
-
-
-<span style="color:yellow">Node Package Manager</span><br>
-
-<span style="font-size:70%">
-노드js가 제공하는 모듈은 노드js 시스템에서만 사용할 수 있는 모듈이다.<br> 
-NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립트가 동작하는 어떠한 시스템에서든 사용 가능하다.<br>
-이 패키지 관리자는 소프트웨어의 라이브러리와 의존성을 쉽게 설치하고 업데이트하며 관리할 수 있도록 돕는 도구이다. </span><br>   
-
-
-
-
-
-
-<span style="color:yellow">NPM 사용법</span><br>
-<div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-**1. npm 초기화하기** <br>   
-: 새로운 프로젝트를 시작하려면 먼저 터미널에서 다음과 같은 명령어로 package.json 파일을 생성해야 한다.<br>
-
-<span style="color:yellow">npm init</span><br> 
-
-.
-
-**2. 패키지 검색하기** <br>
-
-: 원하는 패키지를 찾기 위해서는 다음과 같은 방법으로 검색한다.<br>
-
-<span style="color:yellow">npm search [패키지 이름]</span><br>   
-
-.
-
-**3. 설치된 패키지 확인하기** <br>
-
-: 이미 설치된 모든 패키지를 확인하려면 아래 명령어를 사용한다.<br>
-
-<span style="color:yellow">npm list --depth=0</span><br> 
-</div>
+쿼리 스트링으로 전달된 값이 아래의 함수의 첫 번째 매개변수의 값에 쿼리 객체의 id 값에 들어온다는 것이다.<br/>
+</span>   
 
 ---
 
-### Callback/동기•비동기
+##### 시멘틱 URL
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-3.jpeg">   <br>
-
-<span style="font-size:70%">
-node sample.js 를 입력하면 sample.js 코드에 담겨있는 자바스트립터를 하나씩 실행하는 명령이다.<br>
-즉 다른 함수의 인자로 전달되어 특정 작업이 완료된 후 실행되는 함수를 의미한다.<br>
-일반 함수는 즉시 실행되는 반면, 콜백 함수는 특정 이벤트나 작업이 완료된 후에 실행된다.<br>
-콜백 함수는 비동기 처리 상황에서 순차적인 동작을 보장하기 위해 사용되는 특징이 있다. </span><br>  
-
- 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-4.jpeg">   <br>
-
----
-
-### 비동기식
-
-fs.readFile( 파일명(파일 경로), 옵션, 콜백함수 )<br>
+<span style="font-size:60%">
+querystring 을 / 뒤로 빼내어 깔끔한 url를 만드는 방식을 의미한다.<br/>
+</span>   
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -178,32 +199,72 @@ fs.readFile( 파일명(파일 경로), 옵션, 콜백함수 )<br>
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-const fs = require('fs');
+app.get('/topic/:id', function(req, res){
+    var topics = [
+        'Javascript is....',
+        'Nodejs is....',
+        'Express is....'
+    ];
+    var output = `
+    <a href= "/topic?id=0">Javascript</a><br>
+    <a href= "/topic?id=1">Nodejs</a><br>
+    <a href= "/topic?id=2">Express</a><br><br>
+    ${topics[req.params.id]}
+    `
+    res.send(output);
+})
+  </code></pre>
+</div>
 
-fs.readFile('input.txt', 'utf8', (err, data) => {
-  if (err) {
-    // 파일을 읽는 중에 오류가 발생하면 `err` 인자로 에러 객체가 전달된다.
-    console.error(err);
-    return;
-  }
-  // 파일 읽기에 성공하면 `data` 로 파일의 내용이 전달된다.
-  console.log(data);
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (13).png"> <br>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (14).png"> <br>
+
+---
+
+#### 🔍 Post 방식을 이용한 정보 전달
+
+##### GET vs POST
+
+<span style="font-size:60%">
+GET: 우리가 어떤 정보를 서버에 요청해서 가져오는 방식<br>
+POST: 사용자의 정보를 서버에 전송할 때 사용하는 방식 (ex.로그인 입력)<br/>
+</span>   
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+app.get('/form', function(req, res){
+    res.render('form');
+});
+app.get('/form_receiver', function(req, res){
+    var title = req.query.title;
+    var description = req.query.description;
+    res.send(title+','+description);
 });
   </code></pre>
 </div>
 
-
-
-<span style="font-size:70%">파일 읽기 작업이 시작되고 바로 다음 코드가 실행된다. 파일 읽기가 완료되면 콜백 함수가 호출된다.<br>
-즉 다른 함수의 인자로 전달되어 특정 작업이 완료된 후 실행되는 함수를 의미한다.<br>
-I/O 작업 중 이벤트 루프를 차단하지 않기 때문에, 높은 성능과 효율성을 제공한다는 장점이 있고
-콜백 함수는 파일 읽기 성공 시 data에 내용을 전달해서 실패 했을 때 에러 정보를 전달한다.</span><br>  
-
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (15).png"> <br>
 
 ---
+##### Node.js를 이용해 웹 애플리케이션 만들기
 
-### 동기식
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (16).png"> <br>
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (17).png"> <br>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (18).png"> <br>
+
+
+<span style="font-size:60%">
+ input(type='text' name='title' placeholder='title') 코드의 placeholder로 타이틀이 적힌 상자가 생겨남.<br/>
+</span>   
+
+- 이어서 폼 태그 만들기
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -211,23 +272,27 @@ I/O 작업 중 이벤트 루프를 차단하지 않기 때문에, 높은 성능�
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-const fs = require('fs');
-
-try {
-  const data = fs.readFileSync('input.txt', 'utf8');
-  console.log(data);
-} catch (err) {
-  // 파일 읽는 중에 오류가 발생했을 때 실행
-  console.error(err);
-}
+doctype html 
+html 
+    head 
+        meta(charset='utf-8')
+    body 
+        form(action='/topic' method='post')
+            p 
+                input(type='text' name='title' placeholder='title')
+            p 
+                textarea(mane='description')
+            p 
+                input(type='submit')
   </code></pre>
 </div>
 
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (19).png"> <br>
 
-<span style="font-size:70%">파일 읽기가 완료될 때까지 코드 실행이 멈춘다.<br>
-에러 발생 시 try의 catch 함수로 에러를 처리하는 것이다.<br>
-이것은 이벤트 루프를 차단하기 때문에, I/O 작업 중에 다른 작업을 수행할 수 없다는 특징이 있다.</span><br>  
+<span style="font-size:60%">
+사용자가 입력한 정보를 ‘/topic’으로 전송되도록, method=’post’ 방식으로 전송한다.<br/>
+</span>   
 
 
 ---
