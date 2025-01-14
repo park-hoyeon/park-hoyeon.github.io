@@ -54,7 +54,7 @@ tags:
 ---
 ### 📝 최종 결과물 제작
 
-[✨최종 활동본 보러 가기✨](https://park-hoyeon.github.io/Study/codehive-details/final/)  
+[✨최종 활동본 보러 가기✨](https://park-hoyeon.github.io/Study/codehive-details/final)  
 
 
 ---
