@@ -1,7 +1,7 @@
 ---
 layout: category
-title: "✨ 1 Week - Python Coding Study"
-permalink: /Study/codehive-details/1week
+title: "✨ 1 Week - JS + AI Study"
+permalink: /Study/JS-details/1week
 author_profile: true
 sidebar_main: true
 types: posts
