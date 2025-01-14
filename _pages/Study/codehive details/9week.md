@@ -55,7 +55,7 @@ tags:
 ### 📝 웹 서버 제작 진행 과정  
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/web1.png" 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/web1.png">
 
 
 
