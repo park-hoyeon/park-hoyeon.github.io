@@ -1,5 +1,5 @@
 ---
-title: "✨ Study / 바닐라 JS로 크롬 앱 만들기 + AI"
+title: "✨ 바닐라 JS로 크롬 앱 만들기 + AI"
 layout: category
 permalink: /Study/JS+AI/
 author_profile: true
@@ -26,7 +26,7 @@ sidebar:
 
 ### 주차별 내용
 
-**[⭐ 1 week 활동 보기](/Study/JS-details/1week)**
+**[1 week 활동 보기](/Study/JS-details/1week)**
 <span style="font-size:70%">2025.01.17</span><br>
 **[2 week 활동 보기](/Study/JS-details/2week)**
 <span style="font-size:70%">2025.01.24</span><br>
