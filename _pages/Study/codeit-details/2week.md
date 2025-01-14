@@ -87,10 +87,12 @@ $ npm install pug --save
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (3).png">
 
-<span style="font-size:60%">
-- `views`, 템플리트가 있는 디렉토리. 예: `app.set('views', './views')`<br>
-- `view engine`, 사용할 템플리트 엔진. 예: `app.set('view engine', 'pug')`<br/>
-</span>   
+
+- `views`, 템플리트가 있는 디렉토리. 예:<br> 
+  `app.set('views', './views')`<br>
+- `view engine`, 사용할 템플리트 엔진. 예:<br>
+  `app.set('view engine', 'pug')`<br/>
+
 
 
 
@@ -103,18 +105,18 @@ template 경로를 통해서 들어온 사용자에게 function 기능이 수행
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (5).png"> <br>
 
-그냥 나열된 형식으로 출력된다. <br>  
+<span style="font-size:60%">그냥 나열된 형식으로 출력된다. </span><br>  
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (6).png"> <br>
 
-html 아래에 head와 body는 들여쓰기를 통해서 적용되도록 한다.<br>
+<span style="font-size:60%">html 아래에 head와 body는 들여쓰기를 통해서 적용되도록 한다.</span><br>
 
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (7).png"> <br>
 
-app.locals.pretty = true; 추가로 정리하기<br>
+<span style="font-size:60%">app.locals.pretty = true; 추가로 정리하기</span><br>
 
 ---
 
