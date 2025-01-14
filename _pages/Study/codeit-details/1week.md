@@ -90,25 +90,30 @@ createServer로 서버를 구축한다.<br>
 hostname을 전달했는데 127.0.0.1로, 즉 컴퓨터의 ip값이 설정되었다.<br/>
 </span>  
 
+---   
 
 
 <span style="color:yellow">🔍 요약 정리:</span><br>
 <div style="font-size:60%">
 노드 js를 이용해서 우리가 웹서버를 만들고 그 웹서버가 1337번을 리스닝하도록 시키는 코드이다.<br> 
 그리고 사용자가 접속했을 때 127.0.0.1로 접속한 사용자에 대해서 응답하라는 명령의 의미이다.<br>
-이 응답의 결과는 Hello World라는 텍스트를 응답하도록 하는 코드이다.</span> <br/>
+이 응답의 결과는 Hello World라는 텍스트를 응답하도록 하는 코드이다.</div> <br/>
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-1.png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-1.png"> <br>  
+
 서버를 실행시키면 이렇게 출력된다.<br>   
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-2.png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-2.png">   <br>
+
 이 컴퓨터로 접속하는 접속 중에서 127.0.0.1이라고 브라우저에 브라우저의 주소창을 입력하고, 그 뒤에 1337이라고 입력한 접속에 대해서 응답하겠다는 것이다.<br>   
 
 ---  
 
 
-#### NPM 
+#### NPM  
+
+
 <span style="color:yellow">Node Package Manager</span><br>
 
 <span style="font-size:70%">
