@@ -153,92 +153,88 @@ NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립
 
 ---
 
-<span style="color:yellow">📝 풀이 코드</span>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="python">
-while True:
-    x, y, z = map(int, input().split())
-    if x==0 and y==0 and z==0:
-        break
-    x,y,z = sorted([x,y,z])
-    if z**2 == x**2 + y**2:
-        print("right")
-    else:
-        print("wrong")
-  </code></pre>
-</div>  
+### Callback/동기•비동기
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-3.png">   <br>
 
-🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
-피타고라스의 정리 성립 조건: 세 변 중에서 가장 긴 변의 제곱이 나머지 두 변의 제곱의 합과 같다.<br/>
-</div>  
+<span style="font-size:70%">
+node sample.js 를 입력하면 sample.js 코드에 담겨있는 자바스트립터를 하나씩 실행하는 명령이다.<br>
 
-<span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
-- x, y, z = sorted([x, y, z]): 입력받은 세 변을 오름차순으로 정렬하고 가장 큰 값(빗변)은 z, 나머지 두 변은 x와 y로 설정한다.<br/>
-</div>  
+즉 **다른 함수의 인자로 전달**되어 **특정 작업이 완료된 후 실행되는 함수**를 의미한다.<br>
+
+일반 함수는 즉시 실행되는 반면, **콜백 함수**는 **특정 이벤트나 작업이 완료된 후**에 실행된다.<br>
+
+콜백 함수는 **비동기 처리 상황**에서 **순차적인 동작을 보장**하기 위해 사용되는 특징이 있다.</span><br>  
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-4.png">   <br>
 
 ---
 
-#### `2839 설탕 배달 (실버Ⅳ)`<br>
-<span style="color:yellow">문제</span><br>
+### 비동기식
 
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-상근이는 요즘 설탕공장에서 설탕을 배달하고 있다.<br> 
-상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다.<br>
-설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다.<br>  
+fs.readFile( 파일명(파일 경로), 옵션, 콜백함수 )<br>
 
-상근이는 귀찮기 때문에, 최대한 적은 봉지를 들고 가려고 한다.<br> 
-예를 들어, 18킬로그램 설탕을 배달해야 할 때, 3킬로그램 봉지 6개를 가져가도 되지만, 5킬로그램 3개와 3킬로그램 1개를 배달하면, 더 적은 개수의 봉지를 배달할 수 있다.<br>  
-
-상근이가 설탕을 정확하게 N킬로그램 배달해야 할 때, 봉지 몇 개를 가져가면 되는지 그 수를 구하는 프로그램을 작성하시오.<br/>  
-
-<span style="color:yellow">입력</span>: 첫째 줄에 N이 주어진다. (3 ≤ N ≤ 5000)<br/>  
-
-<span style="color:yellow">출력</span>: 상근이가 배달하는 봉지의 최소 개수를 출력한다. 만약, 정확하게 N킬로그램을 만들 수 없다면 -1을 출력한다.<br/>
-</div>  
-
-
-<span style="color:yellow">📝 풀이 코드 </span>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
+
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="python">
-n = int(input())
-dp = [float('inf')] * (n+1)
-dp[0]=0
-sugar_bags = [3,5]
-for sugar_bag in sugar_bags:
-    for i in range(sugar_bag, n+1):
-        if dp[i-sugar_bag] == float('inf'): continue
-        dp[i] = min(dp[i], dp[i-sugar_bag]+1)
-answer=dp[n] if dp[n]!=float('inf') else -1
-print(answer)
+  <pre><code class="java">
+const fs = require('fs');
+
+fs.readFile('input.txt', 'utf8', (err, data) => {
+  if (err) {
+    // 파일을 읽는 중에 오류가 발생하면 `err` 인자로 에러 객체가 전달된다.
+    console.error(err);
+    return;
+  }
+  // 파일 읽기에 성공하면 `data` 로 파일의 내용이 전달된다.
+  console.log(data);
+});
   </code></pre>
-</div>  
+</div>
 
 
-<span style="color:yellow"> 🔍 문제 분석:</span>
-<div style="font-size:60%">
-설탕봉지의 최소 개수를 구해야 하므로, 그리디 방식(가장 큰 단위부터 쓰는 방식)은 적합하지 않다.<br>
-동적 계획법(DP)을 사용한다.<br/>
-</div>  
+<span style="font-size:70%">
+파일 읽기 작업이 시작되고 바로 다음 코드가 실행된다. 파일 읽기가 완료되면 콜백 함수가 호출된다.<br>
+
+즉 **다른 함수의 인자로 전달**되어 **특정 작업이 완료된 후 실행되는 함수**를 의미한다.<br>
+
+I/O 작업 중 **이벤트 루프를 차단하지 않기 때문에**, 높은 성능과 효율성을 제공한다는 장점이 있고
+
+콜백 함수는 파일 읽기 성공 시 data에 내용을 전달해서 실패 했을 때 에러 정보를 전달한다.</span><br>  
 
 
-<span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
-- dp[i]: ikg를 정확히 배달하는 데 필요한 최소 봉지 수로 정의한다.<br> 
-  dp[0] = 0: 설탕이 0kg일 경우, 봉지의 수는 0이다.<br>
-  나머지 dp[i]는 초기값으로 float('inf')를 설정하였다.<br> 
-- 3kg 봉지와 5kg 봉지를 사용할 수 있으므로, ikg를 배달할 수 있는 최소 봉지 수는 i-3kg 또는 i-5kg를 배달하는 최소 봉지 수에 1을 더한 값이다.<br>
-- dp[n]이 우리가 구하는 최소 봉지 수이다.<br> 
-  만약 dp[n]이 float('inf')라면, n을 정확히 배달할 수 없다는 의미이므로, -1을 출력한다.<br>
-</div>  
+---
+
+### 동기식
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+const fs = require('fs');
+
+try {
+  const data = fs.readFileSync('input.txt', 'utf8');
+  console.log(data);
+} catch (err) {
+  // 파일 읽는 중에 오류가 발생했을 때 실행
+  console.error(err);
+}
+  </code></pre>
+</div>
+
+
+<span style="font-size:70%">
+파일 읽기가 완료될 때까지 코드 실행이 멈춘다.<br>
+
+에러 발생 시 try의 catch 함수로 에러를 처리하는 것이다.<br>
+
+이것은 **이벤트 루프를 차단**하기 때문에, I/O 작업 중에 다른 작업을 수행할 수 없다는 특징이 있다.</span><br>  
 
 
 ---
