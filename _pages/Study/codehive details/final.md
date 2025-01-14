@@ -66,169 +66,104 @@ K-MOOC 강의를 통해 파이썬을 체계적으로 학습하고, 최종적으�
 ---
 ### 📝 제작 페이지 - 홈페이지 (게시판)
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch1.png">  
 
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch2.png">  
+
+<span style="font-size:70%">
+게시판에서 글 작성, 글 수정, 글 보기, 글 삭제, 글 검색이 가능하다.<br> 
+‘글 작성’ 버튼을 누르면 글을 쓸 수 있는 칸이 나오고, 제출을 누르면 첫 번째 4번째 그림과 같이 카드로 글이 추가가 된다.<br> 
+글 수정을 누르면 글 내역을 수정할 수 있고, 수정 완료를 눌러 수정 사항을 반영할 수 있다.<br> 
+또한 글 삭제를 누르면 글 카드에서 글이 지워진다.<br> 
+키워드를 입력하고 검색을 누르면 해당 키워드가 포함된 글이 목록으로 뜬다.<br>  
+</span>
 
 
 
 ---
 
-#### 1138 한 줄로 서기 (실버Ⅱ)
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+### 📝 제작 페이지 - 성과 가시화와 정리 업로드
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch3.png">    
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch4.png">  
+
+<span style="font-size:70%">
+성과 가시화 글을 누르면 성과 페이지로 이동이 된다.<br> 
+스터디 활동하면서 얻은 팀의 성과를 표로 나타내었다.<br> 
+정리 업로드 글을 누르면 정리 업로드 페이지로 이동이 된다.<br> 
+여기서 + 버튼을 눌러 여태 디스코드에 업로드했던 학습 내용을 업로드할 수 있다.<br> 
+뒤로가기 버튼을 누르면 게시판으로 이동이 된다.<br>  
+</span>
+
+---
+
+### 📝 제작한 페이지 요약
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch5.png">  
+
+
+---
+
+### 📝 깃허브
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch6.png">    
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch7.png">  
+
+<span style="font-size:70%">
+깃허브에 올린 결과물은 클론하여 파일로 따로 첨부하였다. <br>  
+</span>
+
+
+---
+
+#### 🔍 학습 목표 달성 여부
+
+
+CodeHive의 학습 목표는 총 4가지였다. <br>    
+
+<span style="font-size:70%">  
+<span style="color:yellow">첫 번째</span><br> 
+대학 강좌 K-MOOC의 ‘파이썬 프로그래밍’ 강의를 활용해 파이썬의 전반적인 내용을 복습하고 학습하기와 강의마다 기재된 퀴즈를 풀고 50점 이상의 점수를 받는 목표는 팀원 전원이 100% 달성하였다.<br> 
+K-MOOC를 가입하여 파이썬 프로그래밍 강의를 수강 신청하였으며, 계획한 주차에 맞게 모두 강의를 듣고 퀴즈 100점을 획득하였다.<br> 
+해당 점수와 강의 수강 기록은 디스코드에서 인증하였고 그 증거를 주간학습보고서에 기재하였다.   
+
   
-<b>문제:</b><br>
-N명의 사람들은 매일 아침 한 줄로 선다.<br> 
-이 사람들은 자리를 마음대로 서지 못하고 오민식의 지시대로 선다.<br>
-어느 날 사람들은 오민식이 사람들이 줄 서는 위치를 기록해 놓는다는 것을 알았다.<br> 
-그리고 아침에 자기가 기록해 놓은 것과 사람들이 줄을 선 위치가 맞는지 확인한다.<br>  
-사람들은 자기보다 큰 사람이 왼쪽에 몇 명 있었는지만을 기억한다.<br> 
-N명의 사람이 있고, 사람들의 키는 1부터 N까지 모두 다르다.<br>
-각 사람들이 기억하는 정보가 주어질 때, 줄을 어떻게 서야 하는지 출력하는 프로그램을 작성하시오.<br/>  
-
-<span style="color:yellow">입력</span>
-첫째 줄에 사람의 수 N이 주어진다. N은 10보다 작거나 같은 자연수이다. 둘째 줄에는 키가 1인 사람부터 차례대로 자기보다 키가 큰 사람이 왼쪽에 몇 명이 있었는지 주어진다. i번째 수는 0보다 크거나 같고, N-i보다 작거나 같다. i는 0부터 시작한다.<br/>
-
-<span style="color:yellow">출력</span>
-첫째 줄에 줄을 선 순서대로 키를 출력한다.<br/>
+<span style="color:yellow">두 번째</span> <br>
+백준(Baekjoon) 알고리즘 문제 풀이하는 목표 역시 팀원 전원 100% 달성하였다.<br> 
+한 주마다 공통 문제 4개, 개인 문제 4개를 풀기로 계획하였고 총 8문제의 백준 알고리즘 문제를 풀이하였다.<br> 
+또한 1주차부터 7주차까지 해당 주차 만남에서 본인이 푼 문제를 팀원에게 설명하고 다른 팀원의 개인 문제를 풀어보는 시간을 가졌다.<br>
 
 
-</div>  
+<span style="color:yellow">세 번째</span> <br> 
+각자가 이해한 python, API, HTML, Django 내용을 발표하며 2차 복습을 진행하는 목표 또한 팀원 전원 100% 달성하였다.<br> 
+해당 주차 만남에서 강의를 듣고 본인이 직접 그 강의 내용을 팀원에게 설명하며 복습을 철저하게 시행하였다. <br>
 
 
-<span style="color:yellow"> 📝 풀이 코드</span>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="python">
-N = int(input())
-N_list = list(map(int, input().split()))
-people = [0] * N
-result_list = []
-for i, num in enumerate(N_list):
-    tmp = num
-    person = 0
-    for j in range(N):
-        if person == tmp and people[j] == 0:
-            people[j] = i+1
-            break
-        elif people[j] == 0:
-            person += 1
-print(*people)
+<span style="color:yellow">네 번째</span> <br> 
+데이터 자료를 저장하고 이용할 수 있는 간단한 웹 서버(Django) 제작 목표를 상당 부분 달성하였다.<br> 
+피그마를 통해 어떻게 웹서버를 제작할 건지 계획을 세운 뒤 각자 역할을 분배하여 맡은 파트를 제작하였다.<br> 
+깃허브를 통해 각자 제작한 부분을 결합하여 업로드를 하였다.<br>
 
-  </code></pre>
-</div>
-
-🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
-사람이 줄을 설 때 자신의 앞에 키가 더 큰 사람이 몇 명 있는지를 나타낸다.<br>
-각 사람을 줄에 세우고, 최종적으로 줄을 선 사람들의 순서를 출력해야 한다.<br/>
-
-</div>  
-
-
-<span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
-- people 배열을 초기화하여 0으로 세팅.<br>
-- 각 사람(i번 사람)이 자신 앞에 원하는 num만큼의 빈 자리가 있어야만 자신의 자리를 선택할 수 있다.<br>
-- 변수 tmp는 num(자신 앞에 더 큰 사람 수)을 카운트하며, 조건에 맞는 자리에 i+1을 배치한다.<br/>
-</div>  
-
-
----  
-
-
-#### 2525 오븐 시계 (브론즈Ⅲ)
-<span style="color:yellow">문제</span><br>
-
-<div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간편하게 만드는 인공지능 오븐을 개발하려고 한다. 인공지능 오븐을 사용하는 방법은 적당한 양의 오리 훈제 재료를 인공지능 오븐에 넣으면 된다. 그러면 인공지능 오븐은 오븐구이가 끝나는 시간을 분 단위로 자동적으로 계산한다.<br>
-
-또한, KOI 전자의 인공지능 오븐 앞면에는 사용자에게 훈제오리구이 요리가 끝나는 시각을 알려 주는 디지털 시계가 있다.<br/>
-
-훈제오리구이를 시작하는 시각과 오븐구이를 하는 데 필요한 시간이 분단위로 주어졌을 때, 오븐구이가 끝나는 시각을 계산하는 프로그램을 작성하시오.<br/>
-
-</div>
-
-<span style="color:yellow">📝 풀이 코드</span>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="python">
-a,b=map(int, input().split())
-c=int(input())
-total_minutes = b + c
-print((a+total_minutes//60)%24, total_minutes%60)
-
-  </code></pre>
-</div>  
-
-
-🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
-현재 시간과 조리 시간을 입력받아, 24시간 형식으로 조리가 끝나는 시각을 계산한다.<br>
-시간을 계산할 때, 60분 = 1시간, 24시간 = 하루의 관계를 유지해야 하므로, <br>
-현재 분 b와 조리 시간 c를 합산한 결과가 60분 이상일 경우, 초과된 분만큼 시간을 추가해야 한다.<br>
-최종 시각은 24시간 형식이므로 a가 24 이상일 경우 24로 나눈 나머지를 계산한다.<br/>
-
-</div>  
-
-<span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
-- 총 분 계산: 현재 분 b와 조리 시간 c를 합산해 total_minutes를 구한다.<br>
-- 시간과 분 분리: total_minutes를 나눠 추가된 시간(total_minutes // 60)과 남은 분(total_minutes % 60)을 구한다.<br>
-- 24시간 형식 조정: 현재 시간 a에 추가 시간을 더한 뒤, (a + 추가 시간) % 24로 24시간 형식에 맞춘다.<br/>
-
-</div>  
+</span>
 
 ---
 
-#### 1037 약수 (브론즈 Ⅰ)
-<span style="color:yellow">문제</span><br>
+### 🔍 스터디 활동 내용 활용 방안
 
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-양수 A가 N의 진짜 약수가 되려면, N이 A의 배수이고, A가 1과 N이 아니어야 한다. 어떤 수 N의 진짜 약수가 모두 주어질 때, N을 구하는 프로그램을 작성하시오.<br/>  
+주기적으로 코딩 문제를 풀고 풀이법을 공유하면서 알고리즘과 문제 해결 능력을 향상시켰다.<br> 
+이를 통해 코딩 테스트와 취업 준비에 대비할 수 있다.<br> 
+또한, Django와 관련된 강의를 통해 웹 프로그래밍 지식을 쌓아 실제 프로젝트를 구현하는 데 활용할 수 있다.<br> 
+이를 바탕으로 우리가 지금까지 했던 학습 활동을 한눈에 볼 수 있는 웹페이지를 팀원들과 함께 구현하며 협업 경험과 프로젝트 관리 능력을 키웠다.<br>
 
-<span style="color:yellow">입력</span>: 첫째 줄에 N의 진짜 약수의 개수가 주어진다. 이 개수는 50보다 작거나 같은 자연수이다. 둘째 줄에는 N의 진짜 약수가 주어진다. 1,000,000보다 작거나 같고, 2보다 크거나 같은 자연수이고, 중복되지 않는다.<br/>  
-
-<span style="color:yellow">출력</span>: 첫째 줄에 N을 출력한다. N은 항상 32비트 부호있는 정수로 표현할 수 있다.<br/>
-</div>  
-
-
-<span style="color:yellow">📝 풀이 코드 </span>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="python">
-n=int(input())
-answer=list(map(int, input().split()))
-print(min(answer)*max(answer))
-
-  </code></pre>
-</div>  
-
-
-<span style="color:yellow"> 🔍 문제 분석:</span>
-<div style="font-size:60%">
-- 약수의 개수 n과 약수 리스트를 기반으로 **원래 수 N**을 계산해야 한다.<br> 
-- 약수의 특징: 가장 작은 약수와 가장 큰 약수를 곱해 원래 수 N을 구한다.<br/>
-</div>  
-
-
-<span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
-- 약수 중 가장 작은 값과 가장 큰 값을 찾는다.<br> 
-- 원래 수 계산: 최소값과 최대값을 곱하면 원래 수 N이 된다.<br>
-- min()과 max()를 사용해 간결하게 계산하자.<br/>
-
-</div>  
-
+이 웹페이지는 각자의 학습 성과를 체계적으로 정리하고 공유할 수 있는 도구로 활용할 수 있다.<br> 
+이를 기반으로 나중에 취업이나 대외 활동을 준비하기 위해 포트폴리오를 구성하거나, 학습 목표를 설정하는 데 도움을 줄 수 있다고 생각한다.<br> 
+또한, 팀원들과 협업하여 웹사이트를 지속적으로 발전시킴으로써 개발 경험을 쌓을 수 있다.<br>
 
 ---
-
-
 
 
 [돌아가기: 2024 하반기 Python Coding Study](https://park-hoyeon.github.io/Study/Codehive%20(Python%20Coding)/)  
