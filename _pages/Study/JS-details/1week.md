@@ -30,41 +30,36 @@ tags:
 
 
 <span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 1주차 학습 내용을 기록했습니다.</span>
+본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 JS와 AI 스터디 1주차 학습 내용을 기록했습니다.</span>
 
 
-## `CodeHive Study` 1주차 진행 (2024.09.23)
+## 🗓️ 1주차 진행 (2025.01.07)
 
-### 🗓️ 학습 주제
-
-<span style="font-size:70%">1. K-MOOC의 '파이썬 프로그래밍' 강의 수강<br></span>
-<span style="font-size:70%">2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br></span>
-<span style="font-size:70%">3. 기본 연산자 관련 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br></span>
-<span style="font-size:70%">4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습</span>
 
 ---
 
 <div style="display: inline-block; padding: 15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 5px; background-color: rgba(255, 255, 255, 0.1); color: #f1f1f1; margin: 0 auto; text-align: left;">
-    <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image01.png" 
+    <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/여기에쓰기.png" 
          style="width: 100%; height: auto; display: block; max-width: 400px;">
 </div>
 
 
 
 ---
-### 📝 baekjoon 알고리즘 문제 풀이
+### 📝 Your First JS Project
 
-#### `1181 단어 정렬 (실버Ⅴ)`
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
-  
-<b>문제:</b><br>
-알파벳 소문자로 이루어진 N개의 단어를 정렬하시오.<br>
-<b>조건:</b><br>
-1. 길이가 짧은 것부터<br>
-2. 길이가 같으면 사전 순으로<br>
-3. 중복 단어는 제거
-</div>
+🔍 <span style="font-size:60%"> 콘솔에서 자바스크립트 다루는 법:</span>
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/JS1.png"> <br>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/JS2.png"> <br>  
+
+<span style="font-size:60%"> 콘솔은 자바스크립트와 상호작용하기에 좋지만, 긴 문장의 자바스크립트 프로그램을 작성해야 할 경우에는 유용하지 않다.<br> 이때는 자바스크립트 파일을 생성해야 한다.<br>
+예를 들어 Document에 momentum 폴더를 만들어보자! <br>
+</span>
+
+
+---
 <span style="color:yellow"> 📝 풀이 코드</span>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
