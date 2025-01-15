@@ -152,6 +152,57 @@ wss.on("connection", (socket) => {
 </span> 
 
 ---
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (21).png"> <br>
+
+<span style="font-size:60%">
+이 코드에서 open 이벤트 리스너는 WebSocket이 서버와 연결되었을 때 실행되는 코드 블록을 정의한다.
+WebSocket이 서버와 연결되었을 때, open 이벤트가 발생하면"Connected to Server"라는 메시지를 출력하게 된다.<br>  
+</span> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (22).png"> <br>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (23).png"> <br>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (24).png"> <br>
+server.js 수정 <br>
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (25).png"> <br>
+app.js 수정 <br>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+    socket.on("message", message => {
+        console.log(message);
+    })
+  </code></pre>
+</div>
+
+<span style="font-size:60%">
+클라이언트로부터 메시지가 전송되면 이 코드 블록이 실행된다. 
+클라이언트가 **socket.send()**를 통해 보낸 메시지를 서버가 받게되면 그 메시지를 출력한다.<br>  
+</span>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+setTimeout(() => {
+    socket.send("hello from the Browser")
+}, 10000)
+  </code></pre>
+</div>
+
+<span style="font-size:60%">
+10초 후에 클라이언트가 서버로 메시지를 보낼 수 있게 설정해놨다.<br>
+etTimeout() 내에서 실행되는 코드로, 클라이언트에서 서버로 메시지를 전송한다.<br>setTeimout()을 이용해 클라이언트가 서버로 일정한 시간 뒤에 메시지를 보내도록 하는 것이 목적이다.<br>  
+</span>
 
 
 
