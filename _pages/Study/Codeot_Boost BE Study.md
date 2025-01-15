@@ -30,7 +30,7 @@ sidebar:
 <span style="font-size:70%">2024.12.26</span><br>
 **[2 week 활동 보기](/Study/codeit-details/2week)**
 <span style="font-size:70%">2025.01.02</span><br>
-**[3 week 활동 보기](/Study/codeit-details/3week)**
+**[⭐3 week 활동 보기](/Study/codeit-details/3week)**
 <span style="font-size:70%">2025.01.09</span><br>
 **[4 week 활동 보기](/Study/codeit-details/4week)**
 <span style="font-size:70%">2025.01.16</span><br>
