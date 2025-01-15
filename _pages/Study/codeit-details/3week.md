@@ -205,7 +205,7 @@ etTimeout() 내에서 실행되는 코드로, 클라이언트에서 서버로 �
 </span>
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ScreenRecorderProject18 (1).mp4"> <br>
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ScreenRecorderProject18 (1).gif"> <br>
 
 
 ---
@@ -286,10 +286,10 @@ Socket.IO에서 방은 여러 소켓들이 참여(join)하고 떠날 수 있는(
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (30).png"> <br>
 
 <span style="font-size:60%">
-- `main` 태그 안에 `div#welcome` 요소가 있고, 그 안에 방 이름을 입력할 수 있는 텍스트 필드와 'Enter Room' 버튼이 포함된 `form`이 있다.<br>
-- `input` 태그는 사용자가 방 이름을 입력할 수 있도록 하rh, `required` 속성으로 빈 입력을 방지하고, `type="text"`로 텍스트만 입력받는다.<br>
-- `script(src="public/js/app.js")`는 `app.js` JavaScript 파일을 페이지에 연결하여 클라이언트 측 로직을 처리하도록 했다.<br>  
-</span>
+`main` 태그 안에 `div#welcome` 요소가 있고, 그 안에 방 이름을 입력할 수 있는 텍스트 필드와 'Enter Room' 버튼이 포함된 `form`이 있다.<br>
+`input` 태그는 사용자가 방 이름을 입력할 수 있도록 하rh, `required` 속성으로 빈 입력을 방지하고, `type="text"`로 텍스트만 입력받는다.<br>
+`script(src="public/js/app.js")`는 `app.js` JavaScript 파일을 페이지에 연결하여 클라이언트 측 로직을 처리하도록 했다.<br>  </span>
+
 
 <span style="font-size:60%">
 이 코드는 사용자가 방 이름을 입력하고 Enter Room 버튼을 클릭하여 방에 입장하는 기능을 제공한다. required 로 방 이름을 반드시 입력해야 하고, 버튼 클릭 시 JavaScript 코드(app.js)를 통해 방으로 들어갈 수 있도록 하는 기능이다.
