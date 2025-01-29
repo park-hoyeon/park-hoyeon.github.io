@@ -1,7 +1,7 @@
 ---
 layout: category
-title: "✨ Codeit Boost 아티클 세미나 2"
-permalink: /Club/Club-details/article2
+title: "✨ Codeit Boost 아티클 세미나 3"
+permalink: /Club/Club-details/article3
 author_profile: true
 sidebar_main: true
 types: posts
@@ -30,16 +30,52 @@ tags:
 
 ---
 
-<div style="font-size:80%"> (2024.11.20)<br/> </div>
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/-article1.png">  
+<div style="font-size:80%"> (2024.12.18)<br/> </div>
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/-article3.png">  
 
 ---
 
 ## 🚀 세미나 발표 주제
-### : KNN(K-최근접 이웃) - 와인 등급 예측 모델 생성 
+### : 차원 축소 - 주성분 분석(PCA) 데이터 분석
+##### 고객의 소비 데이터 분석하기
 
 ---
-### 📌 와인 데이터 불러오기
+<div style="font-size:70%">
+주성분 분석(PCA)은 고차원 데이터를 저차원으로 축소하는 차원 축소 기법으로, 데이터의 분산(정보)을 최대한 보존한다.<br>
+데이터 차원의 증가로 인해 발생하는 차원의 저주(dimensionality curse) 해결하며, 데이터 시각화, 특히 2D/3D 그래프를 활용하여 클러스터링 등 결과 해석할 수 있다.<br>
+예: 고객의 소비 데이터를 분석하여 그룹화(클러스터링) 후, 각 그룹의 특성을 이해하여 맞춤형 마케팅 전략을 수립.
+</div><br/>
+
+##### 차원 축
+<div style="font-size:70%">
+데이터의 차원(특성의 수)을 줄이며 데이터의 중요한 정보를 최대한 보존하는 것
+</div><br/>
+
+##### 차원의 저주
+
+<div style="font-size:70%">
+머신 러닝에서 데이터의 차원이 증가할수록 해당 공간의 크기가 기하급수적으로 증가하며, 데이터 분석이나 모델 학습에 어려움을 초래하는 현상
+</div><br/>
+
+
+##### PCA
+<div style="font-size:70%">
+데이터의 주요 패턴을 캡처하면서 차원을 줄이는 분석 기법으로, 핵심 원리는 데이터의 분산을 최대화하는 주성분을 찾는 것이다.
+</div><br/>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/image (32).png"> 
+
+##### 최적의 기저
+<div style="font-size:70%">
+PCA를 수행할 때는 데이터의 구조를 가장 잘 반영하는 최적의 기저를 찾는 것이 중요하다.<br>
+pca에서는 자동으로 분산이 최대가 되는 방향, 즉 데이터 간의 중복성이 가장 적은 방향을 최적의 기저로 찾아낸다.
+</div><br/>
+
+
+---
+
+
+### 📌 PCA를 사용하는 이유?!
 
 <span style="color:yellow"> 📝 코드</span>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
