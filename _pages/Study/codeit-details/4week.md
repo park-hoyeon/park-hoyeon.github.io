@@ -133,240 +133,632 @@ httpServer.listen(3000, handleListen);
   </code></pre>
 </div>
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (39).png">
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (40).png">
 
 
+<span style="font-size:60%">backend에서 Set(1)에 해당하는 부분은  [socket.id](http://socket.id/) 이며,  모든 socket 은 처음에 private room 을 한개씩 가지고 있기 때문에 RoomName 이 설정되지 않은 상태의 room을 가지고 있다.
+Set(2)에 해당하는 부분은 사용자가 브라우저에 hoho라고 RoomName을 지정했을 때의 Room을 나타낸다.</span> <br> 
+
+---
+#### 🔍 메시지 전송 기능
+
+방에 참가했을 때 방 안의 모든 사람들에게 참여했음을 알리는 메세지<br/>  
 
 
-<span style="font-size:60%">Node.js의 기본 HTTP 모듈을 설정하고, WebSocket 서버를 만들기 위한 모듈을 입력했다.<br> 그리고 웹 서버를 쉽게 만들 수 있도록 돕는 라이브러리 express를 입력하였다.<br>
-`/` 경로로 들어오는 GET 요청에 대해 `home.pug` 파일을 렌더링하여 클라이언트에게 응답을 보낸다.<br> 그리고 다른 경로로 들어오는 요청에 대해 `/`로 리다이렉트 하여 어떤 경로를 요청하도라도 홈페이지(/)로 보내지게 설정한다.</span> <br> 
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+🔍 home.pug 코드
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-const wss = new WebSocket.Server({ server });
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Noom
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body 
+        header
+            h1 Noom 
+        main 
+            div#welcome
+                form
+                    input(placeholder="room name", required, type = "text")
+                    button Enter Room 
+            div#room
+                ul
+                form
+                    input(placeholder="message", required, type = "text")
+                    button Send 
+        script(src="/socket.io/socket.io.js")    
+        script(src="/public/js/app.js")
   </code></pre>
 </div>
 
-<span style="font-size:60%">
-server 객체를 인수로 넘겨서 WebSocket 서버가 기존의 HTTP 서버와 연동되도록 한다.<br>
-</span> 
+: div#room 추가
 
-##### 🔍 정리
-
-<span style="font-size:60%">
-클라이언트가 브라우저에서 http://localhost:3000으로 접속하면, Express 앱이 home.pug 파일을 렌더링하여 웹 페이지를 클라이언트에 응답한다.<br> 그 외의 URL을 요청하면, /로 리다이렉트된다.<br>
-클라이언트가 WebSocket 서버에 연결하면, handleConnenction 함수가 호출되어 연결된 클라이언트에 대한 정보가 로그로 출력된다.<br>  
-</span> 
-
----
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (20).png"> <br>
-
-<span style="font-size:60%">
-`window.location.host`는 현재 브라우저에서 열려 있는 웹 페이지의 도메인과 포트를 가져온다. 예를 들어 `http://localhost:3000`에 접속 중이라면 `window.location.host`는 `"localhost:3000"`이 된다.<br> `ws://`는 WebSocket 연결을 사용하겠다는 의미로, `http://`와 유사하지만, WebSocket 프로토콜을 사용해야 한다. 따라서 이 코드는 클라이언트와 서버가 동일한 도메인 및 포트를 사용하는 경우에 주로 사용된다.</span> <br>  
+<span style="font-size:60%">추가한 div#room은 처음에는 보이지 않아야 한다. 
+처음에는 div#welcome 만 보이고,
+roomname 을 입력한 뒤에 방에 입장하면 메세지를 입력할 수 있어야 하기 때문이다.
+따라서 아래와 같이 app.js 코드를 수정할 수 있다.</span> <br> 
 
 
 
----
-
-#### 🔍 WebSocket Messages
-
-server.js 코드 변경 <br>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+🔍 app.js 코드
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-wss.on("connection", (socket) => {
-    socket.send("hello!");
+const socket = io();
+ 
+const welcome = document.getElementById("welcome");
+const form = welcome.querySelector("form");
+const room = document.getElementById("room");
+ 
+room.hidden = true;
+ 
+function showRoom(){
+    welcome.hidden = true;
+    room.hidden = false;
+}
+ 
+function handleRoomSubmit(event){
+    event.preventDefault();
+    const input = form.querySelector("input");
+    socket.emit("enter_room", input.value, showRoom);
+    input.value = "";
+}
+form.addEventListener("submit", handleRoomSubmit);
+  </code></pre>
+</div>
+
+: div#room 추가
+
+<span style="font-size:60%">const room = document.getElementById("room"); 를 추가하여 room을 가져오고 showRoom 메소드를 생성하여 front에서 showRoom이 실행되면,
+그 입력된 값을 back에서 front 로 넘겨줄 때 이 메소드를 실행하여 welcome 은 숨기고 room 은 보여지게 되는 것이다.</span> <br> 
+
+---
+#### 🔍 참가한 room에 누가 참가했는지를 알려주는 기능
+
+home.pug에 아래 코드 추가
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (41).png">
+
+
+🔍 app.js 코드 변경
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+const socket = io();
+ 
+const welcome = document.getElementById("welcome");
+const form = welcome.querySelector("form");
+const room = document.getElementById("room");
+ 
+room.hidden = true;
+let roomName;
+ 
+function showRoom(){
+    welcome.hidden = true;
+    room.hidden = false;
+    const h3 = room.querySelector("h3");
+    h3.innerText = `Room ${roomName}`;
+}
+ 
+function handleRoomSubmit(event){
+    event.preventDefault();
+    const input = form.querySelector("input");
+    socket.emit("enter_room", input.value, showRoom);
+    roomName = input.value;
+    input.value = "";
+}
+form.addEventListener("submit", handleRoomSubmit);
+  </code></pre>
+</div>
+
+
+<span style="font-size:60%">roomName 변수를 생성하고 handleRoomSubmit 에 roomName 을 넣는다.
+그리고 showRoom에서 h3 변수를 생성한 뒤에 html 의 h3 내용을 받아와서 roomName으로 바꿔주는 것이다.</span> <br> 
+
+---
+#### 🔍 Room Messages
+
+room에 처음 들어갔을 때 그 방의 모든 사람들에게 메세지를 전송하는 기능 구현 <br>
+
+
+
+🔍 server.js 코드
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+import http from "http";
+import SocketIO from "socket.io"
+import WebSocket from "ws";
+import express from "express";
+ 
+const app = express();
+ 
+//set the view
+app.set("view engine", "pug");
+app.set("views", __dirname + "/views");
+app.use("/public", express.static(__dirname + "/public")); 
+app.get("/", (req, res) => res.render("home"));
+app.get("/*", (req, res) => res.redirect("/"));
+ 
+const handleListen = () => console.log('Listening on http://localhost:3000');
+
+ 
+//http의 서버
+const httpServer = http.createServer(app); 
+ 
+wsServer.on("connection", (socket) => {
+    socket.onAny((event) => {   
+        console.log(`Socket Event: ${event}`);
+    });
+    socket.on("enter_room", (roomName, done) => {
+        socket.join(roomName);
+        done();
+        socket.to(roomName).emit("welcome");    
+    });
+});
+
+httpServer.listen(3000, handleListen);
+  </code></pre>
+</div>
+
+
+<span style="font-size:60%">같은 roomName을 가진 room 에 있는 socket 들 중에서 본인을 제외한 모든 socket 에 "welcome" 이벤트를 emit하는 코드를 추가하였다.<br>
+backend 에서 보낸 "welcome" 이벤트를 front 에서 받기 위해서 app.js를 수정해보자.</span> <br> 
+
+
+🔍 server.js 코드 수정
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+const socket = io();
+ 
+const welcome = document.getElementById("welcome");
+const form = welcome.querySelector("form");
+const room = document.getElementById("room");
+ 
+room.hidden = true;
+let roomName;
+ 
+function addMessage(message){
+    const ul = room.querySelector("ul");
+    const li = document.createElement("li");
+    li.innerText = message;
+    ul.appendChild(li);
+}
+ 
+function showRoom(){
+    welcome.hidden = true;
+    room.hidden = false;
+    const h3 = room.querySelector("h3");
+    h3.innerText = `Room ${roomName}`;
+}
+ 
+function handleRoomSubmit(event){
+    event.preventDefault();
+    const input = form.querySelector("input");
+    socket.emit("enter_room", input.value, showRoom);
+    roomName = input.value;
+    input.value = "";
+}
+form.addEventListener("submit", handleRoomSubmit);
+ 
+socket.on("welcome", () => {
+    addMessage("Someone Joined!");  
 })
   </code></pre>
 </div>
 
+---
+
+#### 🔍 Room Notifications
+: 사용자가 방을 떠날 때 이를 알리는 기능 구현 <br>
+
+먼저,  disconnecting 과 disconnected 를 구별하자!!! <br>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (42).png">
+
+
 <span style="font-size:60%">
-`socket.send("hello!");`는 **클라이언트에게 메시지**를 바로 보낼 수 있도록 변경한 부분이다. 이 코드는 클라이언트가 연결되자마자 `"hello!"`라는 메시지를 클라이언트에게 전송하는 역할을 한다.<br>
-기존의 `handleConnection(socket)` 함수에서 클라이언트 연결에 대한 처리가 추상화되어 있었지만, `wss.on("connection", (socket) => { ... })` 방식은 연결이 발생하는 즉시 클라이언트에 대한 처리를 한 번에 수행할 수 있는 '즉시 실행 방식'을 이용한다. 따라서 외부 함수의 호출 없이 바로 클라이언트와의 상호작용을 처리할 수 있도록 한 것이다.<br> 그렇다면 이를 통한 <메시지 받기>를 구현해야 한다.<br>  
+- disconnect: 연결이 완전히 끊어졌다는 것을 의미한다.<br>
+- disconnecting: 고객이 접속을 중단할 것이지만 아직 방을 완전히 나가지 않은 상태를 의미한다.<br> 
 </span> 
 
 ---
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (21).png"> <br>
-
-<span style="font-size:60%">
-이 코드에서 open 이벤트 리스너는 WebSocket이 서버와 연결되었을 때 실행되는 코드 블록을 정의한다.
-WebSocket이 서버와 연결되었을 때, open 이벤트가 발생하면"Connected to Server"라는 메시지를 출력하게 된다.<br>  
-</span> 
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (22).png"> <br>
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (23).png"> <br>
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (24).png"> <br>
-server.js 수정 <br>
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (25).png"> <br>
-app.js 수정 <br>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+🔍 server.js에 disconnecting 부분 추가
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-    socket.on("message", message => {
-        console.log(message);
-    })
-  </code></pre>
-</div>
+import http from "http";
+import SocketIO from "socket.io"
+import WebSocket from "ws";
+import express from "express";
+ 
+const app = express();
+ 
+//set the view
+app.set("view engine", "pug");
+app.set("views", __dirname + "/views");
+app.use("/public", express.static(__dirname + "/public")); 
+app.get("/", (req, res) => res.render("home"));
+app.get("/*", (req, res) => res.redirect("/"));
+ 
+const handleListen = () => console.log('Listening on http://localhost:3000');
 
-<span style="font-size:60%">
-클라이언트로부터 메시지가 전송되면 이 코드 블록이 실행된다. 
-클라이언트가 **socket.send()**를 통해 보낸 메시지를 서버가 받게되면 그 메시지를 출력한다.<br>  
-</span>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="java">
-setTimeout(() => {
-    socket.send("hello from the Browser")
-}, 10000)
-  </code></pre>
-</div>
-
-<span style="font-size:60%">
-10초 후에 클라이언트가 서버로 메시지를 보낼 수 있게 설정해놨다.<br>
-etTimeout() 내에서 실행되는 코드로, 클라이언트에서 서버로 메시지를 전송한다.<br>setTeimout()을 이용해 클라이언트가 서버로 일정한 시간 뒤에 메시지를 보내도록 하는 것이 목적이다.<br>  
-</span>
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ScreenRecorderProject18 (1).gif"> <br>
-
-
----
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (26).png"> <br>
-home.pug 수정
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (27).png"> <br>
-
-<span style="font-size:60%">
-document.querySelector("ul"): HTML의 `<ul>` 태그를 가져와 메시지를 추가할 때 사용하도록 했다.<br>
-그리고 document.querySelector("form"): `<form>` 태그를 가져와 폼 제출 이벤트를 처리할 수 있도록 하였다.<br>
-따라서 사용자가 메시지를 입력하고 버튼을 누르면 폼 제출 이벤트가 발생하고, JavaScript로 입력값을 가져와서 WebSocket을 통해 서버로 보내게 된다.<br>
-제출하고 난 뒤에는 입력창을 초기화하고 메시지를 화면에 추가할 수 있다.<br>  
-</span>
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (28).png"> <br>
-
-
-
----
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="java">
-const sockets = [];
-
-wss.on("connection", (sockets) => {
-    sockets.push(socket);
-    console.log("Connedcted to Browser")
-    socket.on("colse", () => console.log("Disconnected from the Browser"));
-    socket.on("message", (message) => {
-        sockets.forEach(aSocket => aSocket.send(message));
+ 
+//http의 서버
+const httpServer = http.createServer(app); 
+ 
+wsServer.on("connection", (socket) => {
+    socket.onAny((event) => {   
+        console.log(`Socket Event: ${event}`);
     });
+    socket.on("enter_room", (roomName, done) => {
+        socket.join(roomName);
+        done();
+        socket.to(roomName).emit("welcome");    
+    });
+    socket.on("disconnecting", () => {
+        socket.rooms.forEach(room => socket.to(room).emit("bye"));
+    })
+});
+
+httpServer.listen(3000, handleListen);
+  </code></pre>
+</div>
+
+
+
+🔍 app.js에도 bye 부분 추가하기
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+const socket = io();
+ 
+const welcome = document.getElementById("welcome");
+const form = welcome.querySelector("form");
+const room = document.getElementById("room");
+ 
+room.hidden = true;
+let roomName;
+ 
+function addMessage(message){
+    const ul = room.querySelector("ul");
+    const li = document.createElement("li");
+    li.innerText = message;
+    ul.appendChild(li);
+}
+ 
+function showRoom(){
+    welcome.hidden = true;
+    room.hidden = false;
+    const h3 = room.querySelector("h3");
+    h3.innerText = `Room ${roomName}`;
+}
+ 
+function handleRoomSubmit(event){
+    event.preventDefault();
+    const input = form.querySelector("input");
+    socket.emit("enter_room", input.value, showRoom);
+    roomName = input.value;
+    input.value = "";
+}
+form.addEventListener("submit", handleRoomSubmit);
+ 
+socket.on("welcome", () => {
+    addMessage("Someone Joined!");  
+});
+
+socket.on("bye", () => {
+    addMessage("Someone Left!");  
 });
   </code></pre>
 </div>
 
-<span style="font-size:60%">
-클라이언트가 서버와 연결되면 연결된 클라이언트의 socket 객체를 sockets 배열에 저장한다. 그리고 Connected to Browser를 출력하게 된다.
-클라이언트가 메시지를 보내면 서버는 sockets 배열에 저장된 모든 클라이언트에게 그 메시지를 전송할 수 있다.<br>  
-</span>
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (43).png">
 
 ---
-#### 🔍 SocketIO vs WebSockets
+#### 🔍 Nicknames
 
-##### SocketIO
 
-<span style="font-size:60%">
-실시간, 양방향 기반의 통신을 가능하게 만들어주는 framework로 websocket을 이용한다. 
-서버가 클라이언트에게 자동으로 데이터를 보낼 수 있기 때문에,이를 통해 서버의 상태가 변경될 때마다 즉시 클라이언트를 업데이트할 수 있다.그리고 한 번 연결이 이뤄지면 그 연결은 지속적으로 유지되므로 빠른 데이터 전송이 가능하다는 이점이 있다.<br>  
-</span>
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (29).png"> <br>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+🔍 home.pug
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-const httpServer = http.createServer(app);
-const wsServer = SocketIO(httpServer);
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Noom
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body 
+        header
+            h1 Noom 
+        main 
+            div#welcome
+                form
+                    input(placeholder="room name", required, type = "text")
+                    button Enter Room 
+            div#room
+                h3
+                ul
+                form#name
+                    input(placeholder="nickname", required, type = "text")
+                    button Save 
+                form#msg
+                    input(placeholder="message", required, type = "text")
+                    button Send 
+        script(src="/socket.io/socket.io.js")    
+        script(src="/public/js/app.js")
   </code></pre>
 </div>
 
-SocketIO는 websocket의 부가 기능이 아니다!
 
----
-##### socketIO Room
-
-<span style="font-size:60%">
-Socket.IO에서 방은 여러 소켓들이 참여(join)하고 떠날 수 있는(leave) 채널을 말한다.<br> 방은 모든 클라이언트가 아니라, 일부 클라이언트에게 이벤트를 전송할 때 사용된다.<br> 방은 서버에서만 사용될 수 있는 개념이다.클라이언트는 자신이 참여(join)하고 있는 방 리스트에 접근할 수 없다.<br> 특정 클라이언트 소켓을 주어진 채널(룸)에 참여시키려면 `join()` 함수를 호출하면 된다.<br>  
-</span>
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (30).png"> <br>
-
-<span style="font-size:60%">
-`main` 태그 안에 `div#welcome` 요소가 있고, 그 안에 방 이름을 입력할 수 있는 텍스트 필드와 'Enter Room' 버튼이 포함된 `form`이 있다.<br>
-`input` 태그는 사용자가 방 이름을 입력할 수 있도록 하rh, `required` 속성으로 빈 입력을 방지하고, `type="text"`로 텍스트만 입력받는다.<br>
-`script(src="public/js/app.js")`는 `app.js` JavaScript 파일을 페이지에 연결하여 클라이언트 측 로직을 처리하도록 했다.<br>  </span>
-
-
-<span style="font-size:60%">
-이 코드는 사용자가 방 이름을 입력하고 Enter Room 버튼을 클릭하여 방에 입장하는 기능을 제공한다. required 로 방 이름을 반드시 입력해야 하고, 버튼 클릭 시 JavaScript 코드(app.js)를 통해 방으로 들어갈 수 있도록 하는 기능이다.
-서버에서 Socket.IO를 사용해 클라이언트가 특정 방에 입장할 수 있도록 한다.<br>  
-</span>
-
-##### 서버에서 Socket.IO를 사용해 클라이언트가 특정 방에 입장할 수 있도록 하려면?!
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+🔍 app.js - : msg form에 addEventListener 추가함
 
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-const io = require('socket.io')(server);  // 서버에 Socket.IO 연결
-
-io.on('connection', (socket) => {
-  console.log('A user connected');
-
-  socket.on('joinRoom', (roomName) => {
-    socket.join(roomName);  // 사용자가 지정한 방에 입장
-    io.to(roomName).emit('message', `User has joined the room: ${roomName}`);  // 방에 메시지 전송
-  });
-
-  socket.on('disconnect', () => {
-    console.log('A user disconnected');
-  });
+const socket = io();
+ 
+const welcome = document.getElementById("welcome");
+const msgForm = welcome.querySelector("msgForm");
+const room = document.getElementById("room");
+ 
+room.hidden = true;
+let roomName;
+ 
+function addMessage(message){
+    const ul = room.querySelector("ul");
+    const li = document.createElement("li");
+    li.innerText = message;
+    ul.appendChild(li);
+}
+ 
+function handleMessageSubmit(event){
+    event.preventDefault();
+    const input = room.querySelector("#msg input");
+    const value = input.value;
+    socket.emit("new_message", input.value, roomName, () => {     //백엔드에 입력한 메세지 전송 
+        addMessage(`You: ${value}`);  //대화창에 메세지 출력 
+    });
+    input.value = "";
+}
+ 
+function handleNicknamesSubmit(event){
+    event.preventDefault();
+    const input = room.querySelector("#name input");
+    socket.emit("nickname", input.value);
+}
+ 
+function showRoom(){
+    welcome.hidden = true;
+    room.hidden = false; 
+    const h3 = room.querySelector("h3");
+    h3.innerText = `Room ${roomName}`;
+    const msgForm = room.querySelector("#msg");
+    const nameForm = room.querySelector("#name");
+    msgForm.addEventListener("submit", handleMessageSubmit);
+    nameForm.addEventListener("submit", handleNickNamesSubmit);
+}
+ 
+function handleRoomSubmit(event){
+    event.preventDefault();
+    const input = msgForm.querySelector("input");
+    socket.emit("enter_room", input.value, showRoom);
+    roomName = input.value;
+    input.value = "";
+}
+msgForm.addEventListener("submit", handleRoomSubmit);
+ 
+socket.on("welcome", () => {
+    addMessage("Someone Joined!");  
+}); 
+ 
+socket.on("bye", () => {
+    addMessage("Someone Left!");  
 });
+ 
+socket.on("new_message", (addMessage)); 
+// = socket.on("new_message", (msg) => {addMessage});
   </code></pre>
 </div>
 
+🔍 server.js - 백엔드 부분 수정
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+import http from "http";
+import SocketIO from "socket.io"
+import WebSocket from "ws";
+import express from "express";
+ 
+const app = express();
+ 
+//set the view
+app.set("view engine", "pug");
+app.set("views", __dirname + "/views");
+app.use("/public", express.static(__dirname + "/public"));  
+app.get("/", (req, res) => res.render("home"));
+app.get("/*", (req, res) => res.redirect("/"));
+ 
+const handleListen = () => console.log('Listening on http://localhost:3000');
+
+
+const httpServer = http.createServer(app); 
+const wsServer  = SocketIO(httpServer);
+ 
+wsServer.on("connection", (socket) => {
+    socket["nickname"] = "Anon";
+    socket.onAny((event) => {   
+        console.log(`Socket Event: ${event}`);
+    });
+    socket.on("enter_room", (roomName, done) => {
+        socket.join(roomName);
+        done();
+        socket.to(roomName).emit("welcome", socket.nickname);    
+    });
+    socket.on("disconnecting", () => {
+        socket.rooms.forEach(room => socket.to(room).emit("bye", socket.nickname));
+    })
+    socket.on("new_message" , (msg, room, done) => {
+        socket.to(room).emit("new_message", `${socket.nickname}: ${msg}`);
+        done();
+    })
+    socket.on("nickname", (nickname) => (socket["nickname"] = nickname));
+});
+ 
+httpServer.listen(3000, handleListen);
+  </code></pre>
+</div>
+
+
+
 <span style="font-size:60%">
-사용자가 방에 입장할 때 서버는 해당 방에 메시지를 보내어 다른 사용자에게 입장 사실을 알릴 수 있다. 그리고 클라이언트 측에서 방 목록을 표시하고, 사용자가 특정 방을 선택하여 입장할 수 있게 기능을 설정했다.<br>  
+nickname 이벤트가 발생하면 nickname을 가져와서 socket 에 저장한다.
+nickname 기능을 추가한 후에 해당 기능을 화면에 표시하기 위해서 app.js 를 추가로 수정한다.
+누군가 채팅방에 접속하고 나갔을 때는 nickname 을 표시하기 위해 welcome, bye 부분에 추가한다.</span> <br>  
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (42).png">
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (43).png">
+
+
+---
+
+#### 🔍 Room Count part
+
+###### Adapter
+
+<span style="font-size:60%">
+다른 서버들 사이에 실시간 어플리케이션을 동기화한다.
+지금 우리는 서버의 메모리에서 Adapter를 사용하고 있다. 
+데이터베이스에는 아무것도 저장하고 있지 않는다.
+우리가 서버를 종료하고 다시 시작할 때 모든 room과 message와 socket은 없어진다.
+우리가 서버를 재시작할 때에는 모든 것들이 처음부터 시작되는 것이다.
+그러나 우리가 원하는 것은 처음부터 시작되는 그 상태가 아니다.
+백엔드에 데이터베이스를 가지도록 해야 한다.<br>  
+</span> 
+
+
+---
+
+#### 🔍 User Video
+
+목표1. 유저로부터 비디오를 가져와서 화면에 비디오를 보여주도록 하자.<br>
+
+목표2. 마이크를 음소거하고 음소거를 해제하는 버튼을 구현하자.<br>
+
+목표3. 카메라 on/off 기능 구현하자<br>
+
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Noom
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body 
+        header
+            h1 Noom 
+        main 
+            video#myFace(autoplay, playsinline, width = "400", height = "400")
+        script(src="/socket.io/socket.io.js")    
+        script(src="/public/js/app.js")
+  </code></pre>
+</div>
+
+
+<span style="font-size:60%">
+우선 myFace라고 불리게 될 video를 만들었다. 
+autoplay로 비디오 자동재생을 설정하고, playsinline이라는 property를 설정한다. 모바일 브라우저가 필요로 하는 property 이다. 모바일기기로 비디오를 재생할 때, 그 비디오가 전체화면 모드로 실행되는 것을 방지해준다.<br>  
+</span> 
+
+
+app.js는 아래와 같이 수정하였다.
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+const socket = io();
+ 
+const myFace = document.getElementById("myFace");
+ 
+let myStream;
+ 
+async function getMedia(){ 
+    try{
+        myStream = await navigator.mediaDevices.getUserMedia({
+            audio : true,
+            video : true,
+        });
+        console.log(myStream);
+    } catch(e){
+        console.log(e);
+    }
+}  
+ 
+getMedia();
+  </code></pre>
+</div>
+
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (46).png"> <br>
+테스트 실행해보면, 유저에게 카메라와 마이크 권한을 요청한다.
+
+---
+
+#### 🔍 소리와 화면을 on/off 할 수 있도록 버튼 생성하기
+
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Noom
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body 
+        header
+            h1 Noom 
+        main 
+            video#myFace(autoplay, playsinline, width = "400", height = "400")
+            button#mute Mute
+            button#camera Turn Camera Off
+        script(src="/socket.io/socket.io.js")    
+        script(src="/public/js/app.js")
+  </code></pre>
+</div>
+
+
+---
+
+#### 🔍 WebRTC
+###### : web Real-Time Communication - 웹 기반 통신을 가능하게 해주는 기술
+
+
+
+<span style="font-size:60%">
+기존 web socket 통신은 한 서버에 많은 web socket들이 연결되어 있었고, 메시지를 보낼 때 서버로 보내진 후에 서버가 해당 메시지를 모두에게 전달하는 방식이다.<br>
+WebRTC는 브라우저 간에 peer-to-peer 통신을 통해 영상 및 오디오 등이 서버로 전송되지 않는다. 따라서 서버의 중계 없이 클라이언트 브라우저간 실시간으로 통신이 가능하다는 특징이 있다.<br>  
+</span>
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (47).pug"> <br>
+
+<span style="font-size:60%">
+초기 Signaling 시에만 서버를 통해 클라이언트 브라우저를 확인한다.
+브라우저는 서버에 간단한 configuration 정보만 전달하게 되고 해당 Signaling 이후에는 클라이언트 간 채널이 형성되어서 Peer-to-Peer로 직접 연결된다.<br>  
 </span>
 
 
