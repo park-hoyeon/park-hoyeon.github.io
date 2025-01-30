@@ -77,6 +77,14 @@ pca에서는 자동으로 분산이 최대가 되는 방향, 즉 데이터 간�
 
 ### 📌 PCA를 사용하는 이유?!
 
+<div style="font-size:70%">
+클러스터링 모델의 예측 결과에 사용한 독립변수가 너무 많으면 분류 결과를 그래프로 표현하기 어렵다.<br> 그렇다고 일부 독립 변수만 사용하여 그래프를 표현하면 정보가 왜곡된다.<br> 따라서 PCA로 변수를 압축하여 시각화에 활용한다.
+</div><br/>
+
+### 📌 주성분 분석(PCA) - 고객 소비 데이터 분석
+
+#### ✅ 데이터 불러오기
+
 <span style="color:yellow"> 📝 코드</span>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -84,99 +92,32 @@ pca에서는 자동으로 분산이 최대가 되는 방향, 즉 데이터 간�
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 <aside>
-<img src="/icons/drafts_purple.svg" alt="/icons/drafts_purple.svg" width="40px" /> 
+
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-file_url = 'https://media.githubusercontent.com/media/musthave-ML10/data_source/main/wine.csv'
-data = pd.read_csv(file_url)    # 데이터셋 읽기
-data.head()
+file_url = 'https://raw.githubusercontent.com/musthave-ML10/data_source/main/customer_pca.csv'
+customer = pd.read_csv(file_url)
+
+customer.head()
 
 </aside>
   </code></pre>
 </div>
 
-### 📌 Head() 함수 호출
-##### : 데이터 형태 일부 살펴보기
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winehead.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/image (33).png">  
 
 <div style="font-size:70%">
-변수는 총 13개입니다.<br>
-가장 우측의 class - 목표변수 1개<br> 
-나머지 12개 변수(alchol, malic_acid 등) -  독립변수 12개 </div><br/>
-
----
-### 📌 Data.info() - 변수 특징 출력하기
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winedata.png">  
-
-<div style="font-size:70%">
-✅ alcohol: 전체 데이터가 178개가 있어야 하는데 176개이므로 결측치가 2개<br>
-✅ nonflavanoid_phenols: 전체 데이터가 178개 있어야 하는데 173이므로 결측치가 5개<br> 
- → 파이썬에서는 이러한 결측치를 Null 값으로 표현합니다. </div><br/>
+고객별 총 지불 금액과 카테고리별 지출 금액이 스케일링 된 상태로 출력됨.<br>
+산점도 그래프를 이용하여 클러스터가 잘 되었는지 확인하기!
+</div><br/>
 
 ---
 
-### 📌 위 데이터값이 KNN에서 문제가 되는 이유
+### 📌 그래프 표현을 위한 차원 축소 과정
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/wineproblem.png">  
 
-<div style="font-size:70%">
-✅ 변수마다 값의 범위가 다르기 때문입니다.<br>
-✅ malic_acid의 최솟값은 약 0.74이고 최댓값은 5.8인데, proline은 최솟값이 278이며 최댓값이 1680입니다. 즉 스케일이 다르다는 것을 의미하는 것이죠. <br> 
- → 따라서 스케일링(scaling, 독립변수의 범위를 동일한 수준으로 맞추는 작업) 필요하다는 결론을 내릴 수 있습니다! </div><br/>
-
----
-
-### 📌 종속 변수 분석하기
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winedetail1.png">  
-
-<div style="font-size:70%">
-✅ data에서 class 변수를 인덱싱하여 unique() 함수 사용<br>
-→ 어떤 값들로 구성된 변수인지 확인 가능합니다.<br>
-✅ class에는 0, 1, 2라는 고윳값 3가지가 있습니다.<br> 
-→ 즉 와인을 세 등급으로 나눈다는 것을 의미합니다. </div><br/>
-
----
-
-### 📌 종속 변수 분석하기
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winedetail2.png">  
-
-<div style="font-size:70%">
-✅ class 1: 71개 / class 0: 59개 / class 2: 48개 </div><br/>
-
----
-
-### 📌 데이터 전처리 - 결측치 처리하기
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winemean.png">  
-
-<div style="font-size:70%">
-✅ dalchol과 nonflavanoid_phenols 컬럼은 0이 아닌 값이 나왔습니다.<br>
-→ Data.info()로 결측치를 살폈듯이, 이 값은 해당 컬럼이 몇 퍼센트나 결측치가 존재하는지를 보여줍니다. </div><br/>
-
----
-
-### 📌 dropna( ) : 결측치가 있는 행 전체를 제거하기
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winedro.png">  
-
-<div style="font-size:70%">
-✅ 현재 데이터에서 결측치가 7개 있기 때문에 7줄을 지웁니다.<br>
-→ 해당 7줄을 지우면 178줄에서 total 171 줄 </div><br/>
-
----
-### 📌 스케일링
-
-<div style="font-size:70%">
-앞서 describe()를 호출해 데이터를 살펴봤을 때, 각 컬럼들마다 값들의 범위가 다양했습니다.<br>
-KNN은 거리 기반의 알고리즘이기 때문에, 이러한 스케일 문제가 안 좋은 결과를 초래할 수 있어서 알고리즘이 왜곡된 예측을 할 수 있다는 문제점이 존재합니다.<br>
-이러한 문제를 해결하기 위해 인위적으로 각 컬럼이 비슷한 범위를 가지도록 만드는 작업을 스케일링이라 합니다.</div><br/>
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/image (34).png">  
 
 <span style="color:yellow"> 📝 코드</span>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
@@ -185,77 +126,56 @@ KNN은 거리 기반의 알고리즘이기 때문에, 이러한 스케일 문제
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 <aside>
-from sklearn.model_selection import train_test_split
 
-*# 독립변수와 종속변수*
-X = data.drop('class', axis = 1)
-y = data['class']
+from sklearn.decomposition import PCA
 
-*# 훈련셋과 시험셋*
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 100)
+pca = PCA(n_components = 2) *#* 주성분 개수 : 몇 개의 변수로 줄일 것인가
 
-*# 최소-최대 스케일링 사용*
-from sklearn.preprocessing import MinMaxScaler
-mm_scaler = MinMaxScaler()
+pca.fit(customer_X) # pca의 학습에는 독립변수만을 사용한다 
 
-*# 스케일링 학습*
-mm_scaler.fit(X_train)
+*(독립변수의 수를 줄이는 것이 목적)*
 
-*# 스케일링 변환*
-X_train_scaled = mm_scaler.transform(X_train)
-X_test_scaled = mm_scaler.transform(X_test)
+customer_pca = pca.transform(customer_X) # pca의 변환에는 독립변수만을 사용한다
 
 </aside>
   </code></pre>
 </div>
 
----
-<span style="color:yellow"> 📝 모델링 & 평가 </span>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
-  <pre><code class="python">
-<aside>
-from sklearn.neighbors import KNeighborsClassifier
-knn = KNeighborsClassifier()
-
-*# KNN 분류 모델 생성*
-knn.fit(X_train_scaled, y_train)
-
-*# 학습*
-from sklearn.metrics import accuracy_score
-accuracy_score(y_test, pred)
-
-*# 0.8888888888888888*
-
-</aside>
-  </code></pre>
-</div>  
-
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/image (35).png">
 
 <div style="font-size:70%">
-✅ 데이터를 독립변수와 종속변수로 분리한 후, 80:20 비율로 훈련셋과 테스트셋으로 나누고, 최소-최대 스케일링을 적용했습니다.<br> 
-그런 다음 KNN 모델을 학습시키고, 테스트셋에 대한 정확도를 계산합니다. <br>
-최종적으로 `accuracy_score`를 통해 모델 성능을 평가하여 약 88%의 정확도를 얻었습니다. </div><br/>
+PCA 결과물은 Numpy Array 형태이기 때문에 Pandas DataFrame 형태로 변환해주기!! </div><br/>
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/image (36).png">
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/image (37).png">
 
 
 ---
-### 📌 정리
+### 📌 위 Dataframe에 종속변수(라벨) 붙이고, 산점도 그래프 그리기
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winelast.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/image (38).png"> 
+: 산점도로 클러스터들이 얼마나 잘 나뉘었는지 대략적으로 파악한다.
 
----
-### 📌 Conclusion
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/winedro.png">  
+### 📌 그래프 해석하기
 
 <div style="font-size:70%">
-✅ 와인에 대한 정보를 이용하여 와인의 등급을 예측하는 모델을 만들어봤습니다.<br>  
+✅ 보라색 클러스터: 대부분 왼쪽 아래에 몰려 있음 - 이 그룹의 고객은 다른 그룹과 구매 행동 패턴이 다르다. 보라색 클러스터에 속하는 고객들은 저가 상품에 관심이 많기 때문에 쿠폰을 제공해볼 수 있다.<br>
+✅ 하늘색 클러스터: 오른쪽 위에 위치함 - 특정 제품 카테고리에 집중된 지출을 보여준다. <br> 
+✅ 연두색 클러스터: 중앙 오른쪽에 흩어짐 - 소비 유형이 비교적 고르게 분포된 성향을 나타냄.<br>
+✅ 빨간색 클러스터: 중앙 아래쪽에 위치함</div><br/>
+→ 그래프를 통해 고객 그룹 간의 행동 패턴이 다르며, 일부 클러스터 간 구분이 명확함을 알 수 있었다.
 
-✅ 데이터의 결측치와 통계적인 정보를 살펴본 후, KNN에서는 변수의 스케일이 중요하게 작용하기 때문에, 데이터셋에서의 변수의 스케일들을 살펴봤습니다. <br>  
+---
 
-✅ 이 데이터값들을 전처리하고 결측치를 처리하는 과정을 통하여 KNN 알고리즘을 이용하여 와인을 3개의 등급으로 분류하는 모델을 만들었습니다 </div><br/>
+### 📌 Cunclusion
+
+<div style="font-size:70%">
+고객 데이터를 시각화하고 클러스터링의 결과를 검증하였다.
+주성분 분석(PCA)는 데이터의 주요 정보를 유지하면서도 차원을 축소해주기 때문에 효과적으로 쓰인다.
+데이터의 분산을 최대한 보존하면서 차원을 줄이는 이 기법은 고차원 데이터를 다룰 때 차원 감소 기법을 적용하는 데에 활용된다.
+따라서 고객 맞춤형 마케팅이나 추천 시스템 등의 데이터 기반 의사결정 과정에서 중요하다.</div><br/>
+
 
 
 ---
