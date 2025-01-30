@@ -25,22 +25,22 @@ taxonomy:
 
 ### 주차별 내용
 
-**[What is Codeit Boost ?!](/Club/Club-details/What)**  
+⭐  **[What is Codeit Boost ?!](/Club/Club-details/What)**  
 
 
-**[Codeit Boost 중앙 & 교내 OT](/Club/Club-details/OT)**
+  **[Codeit Boost 중앙 & 교내 OT](/Club/Club-details/OT)**
 <span style="font-size:70%">2024.09.29</span><br>  
 
-**[Codeit Boost 아티클 세미나 1](/Club/Club-details/article1)**
+  **[Codeit Boost 아티클 세미나 1](/Club/Club-details/article1)**
 <span style="font-size:70%">2024.10.30</span><br>  
 
-**[Codeit Boost 아티클 세미나 2](/Club/Club-details/article2)**
+  **[Codeit Boost 아티클 세미나 2](/Club/Club-details/article2)**
 <span style="font-size:70%">2024.11.20</span><br>  
 
-**[Codeit Boost 아티클 세미나 3](/Club/Club-details/article3)**
+  **[Codeit Boost 아티클 세미나 3](/Club/Club-details/article3)**
 <span style="font-size:70%">2024.12.18</span><br>  
 
-**[Codeit Boost 백엔드 스터디](https://park-hoyeon.github.io/Study/Codeit%20Boost%20BE%20Study/)**
+⭐  **[Codeit Boost 백엔드 스터디](https://park-hoyeon.github.io/Study/Codeit%20Boost%20BE%20Study/)**
 <span style="font-size:70%">주차별 스터디 내용 보러가기</span><br>  
 
 
