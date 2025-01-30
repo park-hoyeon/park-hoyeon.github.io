@@ -50,47 +50,91 @@ tags:
 
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/BEweek3.png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/BE4.png">
 
 
 
 ---
 ### 📝 BE 스터디 내용
 
-🔍 server.js 코드
+#### 🔍 Rooms
+
+<span style="font-size:60%">서로 소통이 가능한 socket들의 그룹을 의미한다. 모든 websocket이 서로 대화할 필요는 없으며 room 안에 몇 개의 websocket 들끼리만 대화하면 된다.
+Chat room이 그 대표적인 예시이고, 뿐 아니라 websocket 들은 그룹으로 묶일 수 있다. 예를 들어 배달 어플의 경우, 배달 기사의 위치를 나한테 알려주기 위해서는 배달기사와 나 사이의 socket이 room 안에 따로 있어야 한다.
+socketIO는 join 메소드를 통해 room 기능을 제공하고 있다.</span> <br>   
+
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
+🔍 app.js 코드
 <div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
-http from "http";
-import WebSocket from "ws";
-import express from "express";
-
-const app = express();
-
-app.set("view engine", "pug");
-app.set("views", __dirname + "/views");
-app.use("/public", express.static(__dirname + "/public"));
-app.get("/", (req, res) => res.render("home"));
-app.get("/*", (req, res) => res.redirect("/"));
-
-const handleListen = () => console.log('Listening on http://localhost:3000');
-
-const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
-
-function handleConnenction(socket) {
-    console.log(socket)
-} 
-
-wss.on("connection", handleConnenction)
-
-server.listen(3000, handleListen);
+const socket = io();
+ 
+const welcome = document.getElementById("welcome")
+const form = welcome.querySelector("form");
+ 
+function handleRoomSubmit(event){
+    event.preventDefault();
+    const input = form.querySelector("input");
+    socket.emit("enter_room", {payload: input.value}, () => {
+        console.log("server is done!");
+    });;
+    input.value = "";
+}
+form.addEventListener("submit", handleRoomSubmit);
   </code></pre>
 </div>
+
+🔍 server.js 코드
+<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="java">
+import http from "http";
+import SocketIO from "socket.io"
+import WebSocket from "ws";
+import express from "express";
+ 
+const app = express();
+ 
+//set the view
+app.set("view engine", "pug");
+app.set("views", __dirname + "/views");
+app.use("/public", express.static(__dirname + "/public"));  
+app.get("/", (req, res) => res.render("home"));//render 
+app.get("/*", (req, res) => res.redirect("/"));
+ 
+const handleListen = () => console.log('Listening on http://localhost:3000');
+//app.listen(3000, handleListen);
+ 
+//http의 서버
+const httpServer = http.createServer(app); 
+const wsServer  = SocketIO(httpServer);
+ 
+wsServer.on("connection", (socket) => {
+    socket.onAny((event) => {   
+        console.log(`Socket Event: ${event}`);
+    });
+    socket.on("enter_room", (roomName, done) => {
+        console.log(socket.id);
+        console.log(socket.rooms);  
+        socket.join(roomName);
+        console.log(socket.rooms); 
+        
+        setTimeout(() => {
+            done();
+        }, 15000);
+    });
+});
+
+httpServer.listen(3000, handleListen);
+  </code></pre>
+</div>
+
+
+
 
 
 <span style="font-size:60%">Node.js의 기본 HTTP 모듈을 설정하고, WebSocket 서버를 만들기 위한 모듈을 입력했다.<br> 그리고 웹 서버를 쉽게 만들 수 있도록 돕는 라이브러리 express를 입력하였다.<br>
