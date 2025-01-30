@@ -624,9 +624,9 @@ nickname 이벤트가 발생하면 nickname을 가져와서 socket 에 저장한
 nickname 기능을 추가한 후에 해당 기능을 화면에 표시하기 위해서 app.js 를 추가로 수정한다.
 누군가 채팅방에 접속하고 나갔을 때는 nickname 을 표시하기 위해 welcome, bye 부분에 추가한다.</span> <br>  
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (42).png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (44).png">
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (43).png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (45).png">
 
 
 ---
