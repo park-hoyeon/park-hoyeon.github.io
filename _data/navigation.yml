@@ -2,7 +2,6 @@
 main:
   - title: "Home"
     url: https://park-hoyeon.github.io/
-    avatar: _data/소시지.png
 
 
 sidebar-category:
