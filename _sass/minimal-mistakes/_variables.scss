@@ -6,7 +6,11 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 14px !default;
+html {
+  font-size: 14px;
+}
+
+$doc-font-size: 1rem !default;
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
