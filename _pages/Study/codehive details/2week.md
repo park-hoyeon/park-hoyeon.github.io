@@ -37,7 +37,7 @@ tags:
 
 ### 🗓️ 학습 주제
 
-<span style="font-size:70%">1. K-MOOC의 '파이썬 프로그래밍' 강의 수강<br></span>
+1. K-MOOC의 '파이썬 프로그래밍' 강의 수강<br>
 <span style="font-size:70%">2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br></span>
 <span style="font-size:70%">3. 리스트 & 딕셔너리 관련 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br></span>
 <span style="font-size:70%">4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습</span>
