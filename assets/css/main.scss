@@ -7,3 +7,15 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+html, body {
+  overflow-y: hidden; /* 세로 스크롤바 제거 */
+}
+
+body {
+  font-size: 14px; /* 전체 글씨 크기 */
+}
+
+.sidebar {
+  font-size: 12px; /* 네비게이션 글씨 크기 */
+}
