@@ -8,13 +8,6 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-html, body {
-  overflow-y: auto; /* 전체 페이지는 스크롤 가능 */
-}
-
-.sidebar {
-  overflow-y: hidden; /* 특정 사이드바에서만 스크롤 제거 */
-}
 
 
 body {
