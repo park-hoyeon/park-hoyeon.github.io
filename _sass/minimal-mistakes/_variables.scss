@@ -6,14 +6,11 @@
    Typography
    ========================================================================== */
 
-html {
-  font-size: 14px;
-}
+$doc-font-size: 14px !default;
+$doc-font-size-medium: 15px !default;
+$doc-font-size-large: 17px !default;
+$doc-font-size-x-large: 18px !default;
 
-$doc-font-size: 1rem !default;
-$doc-font-size-medium: $doc-font-size * 1.125 !default;
-$doc-font-size-large: $doc-font-size * 1.25 !default;
-$doc-font-size-x-large: $doc-font-size * 1.375 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
