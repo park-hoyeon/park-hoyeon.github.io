@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Vienna sausage"
-  avatar           : _data/소시지.png
+  avatar           : https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_data/%EC%86%8C%EC%8B%9C%EC%A7%80.png
   bio              : "비엔나 소시지 IT 블로그"
   location         : "Somewhere"
   email            :
