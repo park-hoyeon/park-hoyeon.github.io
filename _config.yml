@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Vienna sausage"
-  avatar           : /assets/images/vienna-sausage.png
+  avatar           : assets/images/소시지.png
   bio              : "비엔나 소시지 IT 블로그"
   location         : "Somewhere"
   email            :
