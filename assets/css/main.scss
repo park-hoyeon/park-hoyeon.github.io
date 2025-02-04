@@ -9,8 +9,13 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 html, body {
-  overflow-y: auto; /* 세로 스크롤바 제거 */
+  overflow-y: auto; /* 전체 페이지는 스크롤 가능 */
 }
+
+.sidebar {
+  overflow-y: hidden; /* 특정 사이드바에서만 스크롤 제거 */
+}
+
 
 body {
   font-size: 13px; /* 전체 글씨 크기 */
