@@ -5,3 +5,33 @@ body, * {
   font-size: 14px;
   font-family: Arial, sans-serif; /* 기본 폰트 설정 */
 }
+
+/* 제목(Heading) 스타일 */
+h1 {
+  font-size: 32px; /* h1: 32px */
+}
+
+h2 {
+  font-size: 28px; /* h2: 28px */
+}
+
+h3 {
+  font-size: 24px; /* h3: 24px */
+}
+
+h4 {
+  font-size: 20px; /* h4: 20px */
+}
+
+h5 {
+  font-size: 18px; /* h5: 18px */
+}
+
+h6 {
+  font-size: 16px; /* h6: 16px */
+}
+
+/* 링크 스타일 */
+a {
+  font-size: 18px; /* 링크 크기 기본 텍스트 크기와 동일 */
+}
