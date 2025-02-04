@@ -6,7 +6,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Ho Yeon's IT Study Blog"
+title                    : "비엔나 소시지's IT Study Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hoyeon"
@@ -102,9 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ho Yeon"
+  name             : "Vienna sausage"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hoyeon's Study Blog"
+  bio              : "비엔나 소시지's Study Blog"
   location         : "Somewhere"
   email            :
   links:
