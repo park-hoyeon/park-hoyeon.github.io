@@ -11,3 +11,18 @@ search: false
 
 
 
+.sidebar {
+  .nav__list {
+    .nav__items {
+      font-size: 14px !important;  // !important로 우선순위 부여
+      
+      .nav__sub-title {
+        font-size: 14px !important;
+      }
+      
+      .nav__item {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
