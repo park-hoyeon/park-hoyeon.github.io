@@ -188,7 +188,7 @@ print(answer)
 동적 계획법(DP)을 사용한다.<br/>
 
 
-<span style="color:yellow">🔍 해결 전략:</span><br>
+<span style="color:yellow">🔍 해결 전략:<br></span>
 
 - dp[i]: ikg를 정확히 배달하는 데 필요한 최소 봉지 수로 정의한다.<br> 
   dp[0] = 0: 설탕이 0kg일 경우, 봉지의 수는 0이다.<br>
@@ -196,8 +196,6 @@ print(answer)
 - 3kg 봉지와 5kg 봉지를 사용할 수 있으므로, ikg를 배달할 수 있는 최소 봉지 수는 i-3kg 또는 i-5kg를 배달하는 최소 봉지 수에 1을 더한 값이다.<br>
 - dp[n]이 우리가 구하는 최소 봉지 수이다.<br> 
   만약 dp[n]이 float('inf')라면, n을 정확히 배달할 수 없다는 의미이므로, -1을 출력한다.<br>
-
-
 
 ---
 
