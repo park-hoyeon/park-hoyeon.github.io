@@ -28,19 +28,18 @@ tags:
 {% endfor %}  
 
 
-
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 1주차 학습 내용을 기록했습니다.</span>
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 1주차 학습 내용을 기록했습니다.
 
 
 ## `CodeHive Study` 1주차 진행 (2024.09.23)
 
 ### 🗓️ 학습 주제
 
-<span style="font-size:70%">1. K-MOOC의 '파이썬 프로그래밍' 강의 수강<br></span>
-<span style="font-size:70%">2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br></span>
-<span style="font-size:70%">3. 기본 연산자 관련 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br></span>
-<span style="font-size:70%">4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습</span>
+1. K-MOOC의 '파이썬 프로그래밍' 강의 수강<br>
+2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br>
+3. 기본 연산자 관련 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br>
+4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습
 
 ---
 
@@ -55,7 +54,7 @@ tags:
 ### 📝 baekjoon 알고리즘 문제 풀이
 
 #### `1181 단어 정렬 (실버Ⅴ)`
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
 <b>문제:</b><br>
 알파벳 소문자로 이루어진 N개의 단어를 정렬하시오.<br>
@@ -69,7 +68,7 @@ tags:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n = int(input())
 word_list=[]
@@ -85,20 +84,20 @@ for i in word_list:
 </div>
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
+
 1. 길이가 짧은 것부터 정렬<br>
 2. 길이가 같으면 사전 순으로 정렬<br>
 3. 중복된 단어 제거<br/>
-</div>  
+ 
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 - set()을 이용해 중복 단어를 제거한다.<br>
 - 다시 리스트로 변환하고, 먼저 사전순으로 정렬한 후 길이순으로 정렬한다.<br>
 - sort()를 이용하여 사전 순으로 정렬한다.<br>
 - word_list.sort(key= len) 길이가 짧은 것부터 정렬한다.<br/>
-</div>  
+  
 
 
 ---  
@@ -107,7 +106,7 @@ for i in word_list:
 #### `4153 직각삼각형 (브론즈Ⅲ)`<br>
 <span style="color:yellow">문제</span><br>
 
-<div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 과거 이집트인들은 각 변들의 길이가 3, 4, 5인 삼각형이 직각 삼각형인것을 알아냈다. 주어진 세변의 길이로 삼각형이 직각인지 아닌지 구분하시오.<br>
 입력: 입력은 여러개의 테스트케이스로 주어지며 마지막줄에는 0 0 0이 입력된다. 각 테스트케이스는 모두 30,000보다 작은 양의 정수로 주어지며, 각 입력은 변의 길이를 의미한다.<br>
 출력: 각 입력에 대해 직각 삼각형이 맞다면 "right", 아니라면 "wrong"을 출력한다.<br>
@@ -117,7 +116,7 @@ for i in word_list:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 while True:
     x, y, z = map(int, input().split())
@@ -133,21 +132,21 @@ while True:
 
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
+
 피타고라스의 정리 성립 조건: 세 변 중에서 가장 긴 변의 제곱이 나머지 두 변의 제곱의 합과 같다.<br/>
 </div>  
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
 <div style="font-size:60%">
 - x, y, z = sorted([x, y, z]): 입력받은 세 변을 오름차순으로 정렬하고 가장 큰 값(빗변)은 z, 나머지 두 변은 x와 y로 설정한다.<br/>
-</div>  
+
 
 ---
 
 #### `2839 설탕 배달 (실버Ⅳ)`<br>
 <span style="color:yellow">문제</span><br>
 
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 상근이는 요즘 설탕공장에서 설탕을 배달하고 있다.<br> 
 상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다.<br>
 설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다.<br>  
@@ -167,7 +166,7 @@ while True:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n = int(input())
 dp = [float('inf')] * (n+1)
@@ -184,21 +183,20 @@ print(answer)
 
 
 <span style="color:yellow"> 🔍 문제 분석:</span>
-<div style="font-size:60%">
+
 설탕봉지의 최소 개수를 구해야 하므로, 그리디 방식(가장 큰 단위부터 쓰는 방식)은 적합하지 않다.<br>
 동적 계획법(DP)을 사용한다.<br/>
-</div>  
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 - dp[i]: ikg를 정확히 배달하는 데 필요한 최소 봉지 수로 정의한다.<br> 
   dp[0] = 0: 설탕이 0kg일 경우, 봉지의 수는 0이다.<br>
   나머지 dp[i]는 초기값으로 float('inf')를 설정하였다.<br> 
 - 3kg 봉지와 5kg 봉지를 사용할 수 있으므로, ikg를 배달할 수 있는 최소 봉지 수는 i-3kg 또는 i-5kg를 배달하는 최소 봉지 수에 1을 더한 값이다.<br>
 - dp[n]이 우리가 구하는 최소 봉지 수이다.<br> 
   만약 dp[n]이 float('inf')라면, n을 정확히 배달할 수 없다는 의미이므로, -1을 출력한다.<br>
-</div>  
+
 
 
 ---
