@@ -24,16 +24,14 @@ sidebar:
 
 <br/>
 
+<div style="text-align: center; margin-top: 20px; font-size: 16px; color: gold;">
+  ⭐⭐⭐ <a href="/Study/codehive-details/final" style="color: yellow; text-decoration: none;">최종 활동 정리본 보기</a> ⭐⭐⭐
+</div>
+
 ### 주차별 내용
 
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
-  <thead>
-    <tr>
-      <th style="padding: 8px; background-color: #f4f4f4; border-bottom: 2px solid #ddd;">주차</th>
-      <th style="padding: 8px; background-color: #f4f4f4; border-bottom: 2px solid #ddd;">활동 보기</th>
-      <th style="padding: 8px; background-color: #f4f4f4; border-bottom: 2px solid #ddd;">날짜</th>
-    </tr>
-  </thead>
+
   <tbody>
     <tr>
       <td style="padding: 8px; border-bottom: 1px solid #ddd;">⭐ 1 Week</td>
@@ -90,6 +88,4 @@ sidebar:
 
 <br/>
 
-<div style="text-align: center; margin-top: 20px; font-size: 16px; color: gold;">
-  ⭐⭐⭐ <a href="/Study/codehive-details/final" style="color: yellow; text-decoration: none;">최종 활동 정리본 보기</a>
-</div>
+
