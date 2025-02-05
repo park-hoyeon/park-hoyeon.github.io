@@ -134,7 +134,7 @@ while True:
 🔍 <span style="color:yellow"> 문제 분석:</span>
 
 피타고라스의 정리 성립 조건: 세 변 중에서 가장 긴 변의 제곱이 나머지 두 변의 제곱의 합과 같다.<br/>
-</div>  
+
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
 <div style="font-size:60%">
@@ -182,7 +182,9 @@ print(answer)
 </div>  
 
 
-<span style="color:yellow"> 🔍 문제 분석:</span>
+
+    
+<span style="color:yellow"> 🔍 문제 분석: </span>
 
 설탕봉지의 최소 개수를 구해야 하므로, 그리디 방식(가장 큰 단위부터 쓰는 방식)은 적합하지 않다.<br>
 동적 계획법(DP)을 사용한다.<br/>
@@ -190,12 +192,13 @@ print(answer)
 
 <span style="color:yellow">🔍 해결 전략:<br></span>
 
-- dp[i]: ikg를 정확히 배달하는 데 필요한 최소 봉지 수로 정의한다.<br> 
-  dp[0] = 0: 설탕이 0kg일 경우, 봉지의 수는 0이다.<br>
-  나머지 dp[i]는 초기값으로 float('inf')를 설정하였다.<br> 
-- 3kg 봉지와 5kg 봉지를 사용할 수 있으므로, ikg를 배달할 수 있는 최소 봉지 수는 i-3kg 또는 i-5kg를 배달하는 최소 봉지 수에 1을 더한 값이다.<br>
-- dp[n]이 우리가 구하는 최소 봉지 수이다.<br> 
-  만약 dp[n]이 float('inf')라면, n을 정확히 배달할 수 없다는 의미이므로, -1을 출력한다.<br>
+p[i]: ikg를 정확히 배달하는 데 필요한 최소 봉지 수로 정의한다.<br> 
+dp[0] = 0: 설탕이 0kg일 경우, 봉지의 수는 0이다.<br>
+나머지 dp[i]는 초기값으로 float('inf')를 설정하였다.<br> 
+3kg 봉지와 5kg 봉지를 사용할 수 있으므로, ikg를 배달할 수 있는 최소 봉지 수는 i-3kg 또는 i-5kg를 배달하는 최소 봉지 수에 1을 더한 값이다.<br>
+dp[n]이 우리가 구하는 최소 봉지 수이다.<br> 
+dp[n]이 float('inf')라면, n을 정확히 배달할 수 없다는 의미이므로, -1을 출력한다.<br>  
+
 
 ---
 
