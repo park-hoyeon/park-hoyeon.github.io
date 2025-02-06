@@ -24,9 +24,6 @@ sidebar:
 
 <br/>
 
-<div style="text-align: center; margin-top: 20px; font-size: 16px; color: gold;">
-  ⭐⭐⭐ <a href="/Study/codeit-details/final" style="color: yellow; text-decoration: none;">최종 활동 정리본 보기</a> ⭐⭐⭐
-</div>
 
 ### 주차별 내용
 
