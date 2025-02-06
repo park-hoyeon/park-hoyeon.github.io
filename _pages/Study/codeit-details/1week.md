@@ -29,8 +29,8 @@ tags:
 
 
 
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.12.26 ~ > 기간의 백엔드 스터디 1주차 학습 내용을 기록했습니다.</span>
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 <2024.12.26 ~ 2025.01.23> 기간의 Node.js 백엔드 스터디 1주차 학습 내용을 기록했습니다.
 
 
 ## Codeit Boost 백앤드 스터디 1주차 진행 (2024.12.26)
@@ -66,7 +66,7 @@ tags:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const http = require('http');
 
@@ -83,31 +83,30 @@ http.createServer((req, res) => {
 </div>
 
 
-<span style="font-size:60%">
+
 createServer로 서버를 구축한다.<br> 
 서버를 만들어서 그 서버가 이 컴퓨터에 리스닝 하도록 시킨다. <br>
 그리고 첫번째 인자로 port 변수를 전달했고, 이 port는 1337번을 가리키게 된다.<br>
 hostname을 전달했는데 127.0.0.1로, 즉 컴퓨터의 ip값이 설정되었다.<br/>
-</span>  
+
 
 ---   
 
 
 <span style="color:yellow">🔍 요약 정리:</span><br>
-<div style="font-size:60%">
+
 노드 js를 이용해서 우리가 웹서버를 만들고 그 웹서버가 1337번을 리스닝하도록 시키는 코드이다.<br> 
 그리고 사용자가 접속했을 때 127.0.0.1로 접속한 사용자에 대해서 응답하라는 명령의 의미이다.<br>
-이 응답의 결과는 Hello World라는 텍스트를 응답하도록 하는 코드이다.</div> <br/>
+이 응답의 결과는 Hello World라는 텍스트를 응답하도록 하는 코드이다. <br/>
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-1.png"> <br>  
 
-<div style="font-size:60%"> 서버를 실행시키면 이렇게 출력된다.</div><br>   
+서버를 실행시키면 이렇게 출력된다.<br>   
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-2.png">   <br>
 
-<div style="font-size:60%"> 
-이 컴퓨터로 접속하는 접속 중에서 127.0.0.1이라고 브라우저에 브라우저의 주소창을 입력하고, 그 뒤에 1337이라고 입력한 접속에 대해서 응답하겠다는 것이다.</div><br>   
+이 컴퓨터로 접속하는 접속 중에서 127.0.0.1이라고 브라우저에 브라우저의 주소창을 입력하고, 그 뒤에 1337이라고 입력한 접속에 대해서 응답하겠다는 것이다.<br>   
 
 ---  
 
@@ -117,10 +116,10 @@ hostname을 전달했는데 127.0.0.1로, 즉 컴퓨터의 ip값이 설정되었
 
 <span style="color:yellow">Node Package Manager</span><br>
 
-<span style="font-size:70%">
+
 노드js가 제공하는 모듈은 노드js 시스템에서만 사용할 수 있는 모듈이다.<br> 
 NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립트가 동작하는 어떠한 시스템에서든 사용 가능하다.<br>
-이 패키지 관리자는 소프트웨어의 라이브러리와 의존성을 쉽게 설치하고 업데이트하며 관리할 수 있도록 돕는 도구이다. </span><br>   
+이 패키지 관리자는 소프트웨어의 라이브러리와 의존성을 쉽게 설치하고 업데이트하며 관리할 수 있도록 돕는 도구이다. <br>   
 
 
 
@@ -128,7 +127,7 @@ NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립
 
 
 <span style="color:yellow">NPM 사용법</span><br>
-<div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 **1. npm 초기화하기** <br>   
 : 새로운 프로젝트를 시작하려면 먼저 터미널에서 다음과 같은 명령어로 package.json 파일을 생성해야 한다.<br>
 
@@ -157,11 +156,11 @@ NPM은 자바스크립트가 제공하는 모듈이기 때문에 자바스트립
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-3.jpeg">   <br>
 
-<span style="font-size:70%">
+
 node sample.js 를 입력하면 sample.js 코드에 담겨있는 자바스트립터를 하나씩 실행하는 명령이다.<br>
 즉 다른 함수의 인자로 전달되어 특정 작업이 완료된 후 실행되는 함수를 의미한다.<br>
 일반 함수는 즉시 실행되는 반면, 콜백 함수는 특정 이벤트나 작업이 완료된 후에 실행된다.<br>
-콜백 함수는 비동기 처리 상황에서 순차적인 동작을 보장하기 위해 사용되는 특징이 있다. </span><br>  
+콜백 함수는 비동기 처리 상황에서 순차적인 동작을 보장하기 위해 사용되는 특징이 있다. <br>  
 
  
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/1-4.jpeg">   <br>
@@ -176,7 +175,7 @@ fs.readFile( 파일명(파일 경로), 옵션, 콜백함수 )<br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const fs = require('fs');
 
@@ -194,10 +193,10 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
 
 
 
-<span style="font-size:70%">파일 읽기 작업이 시작되고 바로 다음 코드가 실행된다. 파일 읽기가 완료되면 콜백 함수가 호출된다.<br>
+파일 읽기 작업이 시작되고 바로 다음 코드가 실행된다. 파일 읽기가 완료되면 콜백 함수가 호출된다.<br>
 즉 다른 함수의 인자로 전달되어 특정 작업이 완료된 후 실행되는 함수를 의미한다.<br>
 I/O 작업 중 이벤트 루프를 차단하지 않기 때문에, 높은 성능과 효율성을 제공한다는 장점이 있고
-콜백 함수는 파일 읽기 성공 시 data에 내용을 전달해서 실패 했을 때 에러 정보를 전달한다.</span><br>  
+콜백 함수는 파일 읽기 성공 시 data에 내용을 전달해서 실패 했을 때 에러 정보를 전달한다.<br>  
 
 
 ---
@@ -209,7 +208,7 @@ I/O 작업 중 이벤트 루프를 차단하지 않기 때문에, 높은 성능�
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const fs = require('fs');
 
@@ -224,10 +223,9 @@ try {
 </div>
 
 
-
-<span style="font-size:70%">파일 읽기가 완료될 때까지 코드 실행이 멈춘다.<br>
+파일 읽기가 완료될 때까지 코드 실행이 멈춘다.<br>
 에러 발생 시 try의 catch 함수로 에러를 처리하는 것이다.<br>
-이것은 이벤트 루프를 차단하기 때문에, I/O 작업 중에 다른 작업을 수행할 수 없다는 특징이 있다.</span><br>  
+이것은 이벤트 루프를 차단하기 때문에, I/O 작업 중에 다른 작업을 수행할 수 없다는 특징이 있다.<br>  
 
 
 ---
