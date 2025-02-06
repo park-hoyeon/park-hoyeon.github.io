@@ -72,7 +72,7 @@ tags:
 - 관계형 데이터베이스(mysql)
 - nosql
 
-![image.png](image%2048.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 48.png">
 
 : 웹 서비스는 웹 서버가 있고 그 웹 서버에 접근하는 클라이언트가 있다.<br>
 마찬가지로 데이터베이스에도 서버가 있어서 데이터를 저장하고, 그 저장된 데이터를 수정하거나 삭제하는 등의 관리 기능을 가지고 있다.<br>
@@ -111,13 +111,13 @@ tags:
 `mysql **-u**아이디 **-p**비밀번호` <br>
 `mysql **-h**호스트주소 **-p**포트번호 **-u**아이디 **-p**비밀번호` <br>
 
-![image.png](image%2049.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 49.png">
 
 ### 데이터베이스 생성
 
 **`CREATE`** **`DATABASE`** `music **CHARACTER**` **`SET`** `utf8 **COLLATE**` `utf8_general_ci;`
 
-![image.png](image%2050.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 50.png">
 
 
 ### 데이터베이스 선택과 테이블 생성
