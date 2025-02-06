@@ -29,18 +29,17 @@ tags:
 
 
 
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 7주차 학습 내용을 기록했습니다.</span>
-
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 7주차 학습 내용을 기록했습니다.
 
 ## `CodeHive Study` 7주차 진행 (2024.11.11)
 
 ### 🗓️ 학습 주제
 
-<span style="font-size:70%">1. 생활코딩 Python Django Web Framework  강의수강<br></span>
-<span style="font-size:70%">2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br></span>
-<span style="font-size:70%">3. 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br></span>
-<span style="font-size:70%">4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습</span>
+1. 생활코딩 Python Django Web Framework  강의수강<br>
+2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br>
+3. 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br>
+4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습
 
 ---
 
@@ -55,7 +54,7 @@ tags:
 ### 📝 baekjoon 알고리즘 문제 풀이
 
 #### 2108 통계 (실버 III)`
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
 수를 처리하는 것은 통계학에서 상당히 중요한 일이다. 통계학에서 N개의 수를 대표하는 기본 통계값에는 다음과 같은 것들이 있다. 단, N은 홀수라고 가정하자.<br/>  
 
@@ -68,7 +67,7 @@ N개의 수가 주어졌을 때, 네 가지 기본 통계값을 구하는 프로
 
 </div>
 
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 <span style="color:yellow">입력:</span>
 첫째 줄에 수의 개수 N(1 ≤ N ≤ 500,000)이 주어진다. 단, N은 홀수이다.<br> 
 그 다음 N개의 줄에는 정수들이 주어진다.<br> 
@@ -89,7 +88,7 @@ N개의 수가 주어졌을 때, 네 가지 기본 통계값을 구하는 프로
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 import sys
 input = sys.stdin.readline
@@ -133,22 +132,20 @@ print(range)
 </div>
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
+
 평균은 소수점 첫째 자리에서 반올림하여 출력해야 한다. <br>
 최빈값은 등장 빈도가 가장 높은 숫자를 출력하되, 여러 개일 경우 두 번째로 작은 값을 출력해야 한다.<br/>  
 
-</div>  
+
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 평균은 sum()으로 전체 합을 구한 뒤, 정수 반올림(round())을 통해 구한다.<br>
 중앙값은 숫자를 정렬한 후 중간 위치의 값을 출력하여 구한다.<br>
 최빈값은 딕셔너리를 사용해 빈도수를 계산하고, 최대 빈도수에 해당하는 값을 정렬해 구한다.<br>
 범위는 가장 큰 값과 가장 작은 값의 차를 구해 출력한다.<br/>  
 
-
-</div>  
 
 
 ---  
@@ -157,7 +154,7 @@ print(range)
 #### 1764 듣보잡 (실버 IV)<br/>
 <span style="color:yellow">문제</span><br>
 
-<div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 김진영이 듣도 못한 사람의 명단과, 보도 못한 사람의 명단이 주어질 때, 듣도 보도 못한 사람의 명단을 구하는 프로그램을 작성하시오.<br/>  
 
 <span style="color:yellow">입력:</span>
@@ -179,7 +176,7 @@ N, M은 500,000 이하의 자연수이다.<br>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n,m = map(int, input().split())
 listen=set(input() for _ in range(n))
@@ -193,22 +190,20 @@ for name in answer: print(name)
 </div>
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
+
 듣도 못한 사람과 보도 못한 사람의 명단이 각각 주어지며, 이들의 교집합(듣보잡)을 찾아야 한다.<br>
 교집합의 크기와 교집합에 속한 이름들을 사전 순으로 정렬해 출력하자.<br/>  
 
-</div>  
 
 
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 - 듣도 못한 사람과 보도 못한 사람을 각각 집합(set)으로 저장하여 중복을 제거하고 교집합 연산을 수행한다. <br>
 - 집합의 교집합(&)을 사용한다. <br>
 - 듣보잡 명단을 정렬(sorted())하여 사전 순으로 정리한다.<br/>
 
-</div>  
 
 ---
 
