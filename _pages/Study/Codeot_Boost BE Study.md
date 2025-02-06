@@ -18,34 +18,46 @@ sidebar:
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
 
+<div style="text-align: center; margin-top: 20px; font-size: 80%;">
+  <span>✨ 각 주차별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
+</div>
 
+<br/>
 
-
-<span style="font-size:80%">✨ 각 주차별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span><br>  
-
+<div style="text-align: center; margin-top: 20px; font-size: 16px; color: gold;">
+  ⭐⭐⭐ <a href="/Study/codeit-details/final" style="color: yellow; text-decoration: none;">최종 활동 정리본 보기</a> ⭐⭐⭐
+</div>
 
 ### 주차별 내용
 
-**[1 week 활동 보기](/Study/codeit-details/1week)**
-<span style="font-size:70%">2024.12.26</span><br>
-**[2 week 활동 보기](/Study/codeit-details/2week)**
-<span style="font-size:70%">2025.01.02</span><br>
-**[⭐3 week 활동 보기](/Study/codeit-details/3week)**
-<span style="font-size:70%">2025.01.09</span><br>
-**[4 week 활동 보기](/Study/codeit-details/4week)**
-<span style="font-size:70%">2025.01.16</span><br>
-**[5 week 활동 보기](/Study/codeit-details/5week)**
-<span style="font-size:70%">2025.01.23</span><br>
-**[6 week 활동 보기](/Study/codeit-details/6week)**
-<span style="font-size:70%">2025.01.30</span><br>
-**[7 week 활동 보기](/Study/codeit-details/7week)**
-<span style="font-size:70%">2025.02.06</span><br>
-**[8 week 활동 보기](/Study/codeit-details/8week)**
-<span style="font-size:70%">2025.02.13</span><br>
-**[9 week 활동 보기](/Study/codeit-details/9week)**
-<span style="font-size:70%">2025.02.20</span><br>
-**[10 week 활동 보기](/Study/codeit-details/10week)**
-<span style="font-size:70%">2025.02.27</span><br/>  
-
+<table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+  <tbody>
+    <tr>
+      <td style="padding: 8px;">1 Week</td>
+      <td style="padding: 8px;"><a href="/Study/codeit-details/1week">활동 보기</a></td>
+      <td style="padding: 8px;">2024.12.26</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">2 Week</td>
+      <td style="padding: 8px;"><a href="/Study/codeit-details/2week">활동 보기</a></td>
+      <td style="padding: 8px;">2025.01.02</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">⭐ 3 Week</td>
+      <td style="padding: 8px;"><a href="/Study/codeit-details/3week">활동 보기</a></td>
+      <td style="padding: 8px;">2025.01.09</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">4 Week</td>
+      <td style="padding: 8px;"><a href="/Study/codeit-details/4week">활동 보기</a></td>
+      <td style="padding: 8px;">2025.01.16</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">5 Week</td>
+      <td style="padding: 8px;"><a href="/Study/codeit-details/5week">활동 보기</a></td>
+      <td style="padding: 8px;">2025.01.23</td>
+    </tr>
+  </tbody>
+</table>
 
 <br/>
