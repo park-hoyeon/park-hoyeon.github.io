@@ -53,7 +53,7 @@ tags:
 ---
 ### 📝 baekjoon 알고리즘 문제 풀이
 
-#### 2108 통계 (실버 III)`
+#### 2108 통계 (실버 III)
 <div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
 수를 처리하는 것은 통계학에서 상당히 중요한 일이다. 통계학에서 N개의 수를 대표하는 기본 통계값에는 다음과 같은 것들이 있다. 단, N은 홀수라고 가정하자.<br/>  
@@ -187,7 +187,6 @@ for name in answer: print(name)
   </code></pre>
 </div>  
 
-</div>
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
 
