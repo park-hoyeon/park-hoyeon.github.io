@@ -29,18 +29,18 @@ tags:
 
 
 
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 4주차 학습 내용을 기록했습니다.</span>
+안녕하세요. hoyeon입니다.<br>
+본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 4주차 학습 내용을 기록했습니다.
 
 
 ## `CodeHive Study` 4주차 진행 (2024.10.14)
 
 ### 🗓️ 학습 주제
 
-<span style="font-size:70%">1. K-MOOC의 '파이썬 프로그래밍' 강의 수강<br></span>
-<span style="font-size:70%">2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br></span>
-<span style="font-size:70%">3. 모듈 & 라이브러리 관련 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br></span>
-<span style="font-size:70%">4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습</span>
+1. K-MOOC의 '파이썬 프로그래밍' 강의 수강<br>
+2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br>
+3. 모듈 & 라이브러리 관련 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br>
+4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습
 
 ---
 
@@ -55,7 +55,7 @@ tags:
 ### 📝 baekjoon 알고리즘 문제 풀이
 
 #### 2750 수 정렬하기 (브론즈 Ⅱ)
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
 <b>문제:</b><br>
 N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로그램을 작성하시오. <br>
@@ -70,7 +70,7 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n = int(input())
 number = []
@@ -82,19 +82,18 @@ for j in sorted(number):
 </div>
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
+
 1. 오름차순 정렬<br>
 2. 입력으로는 첫 번째 줄에 수의 개수 𝑛개가 주어진다.<br/>  
-  
-</div>  
+    
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 - 입력받은 정수를 리스트에 저장한다.<br>
 - sorted() 함수를 사용해 리스트를 오름차순으로 정렬한다.<br>
 - 정렬된 결과를 하나씩 출력한다.<br/>  
-</div>  
+
 
 
 ---  
@@ -103,7 +102,7 @@ for j in sorted(number):
 #### 1259 팰린드롬수 (브론즈I)<br>
 <span style="color:yellow">문제</span><br>
 
-<div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 어떤 단어를 뒤에서부터 읽어도 똑같다면 그 단어를 팰린드롬이라고 한다. 'radar', 'sees'는 팰린드롬이다.<br>
 수도 팰린드롬으로 취급할 수 있다. 수의 숫자들을 뒤에서부터 읽어도 같다면 그 수는 팰린드롬수다.<br> 
   121, 12421 등은 팰린드롬수다. 123, 1231은 뒤에서부터 읽으면 다르므로 팰린드롬수가 아니다.<br> 
@@ -119,7 +118,7 @@ for j in sorted(number):
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 while True:
     num = input()
@@ -135,24 +134,22 @@ while True:
 
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
 숫자는 문자열로 입력되며, 입력값이 "0"이면 프로그램을 종료한다.<br>
-입력된 숫자를 뒤집어서 원래 숫자와 비교해 동일하면 "yes", 다르면 "no"를 출력한다.<br/>
-</div>  
+입력된 숫자를 뒤집어서 원래 숫자와 비교해 동일하면 "yes", 다르면 "no"를 출력한다.<br/> 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 문자열과 그 문자열을 뒤집은 값을 비교해 두 값이 같으면 팰린드롬이다.<br>
 뒤집기 비교([::-1])를 통해 팰린드롬 여부를 검사한다.<br/>  
   
-</div>  
+
 
 ---
 
 #### 10814 나이순 정렬 (실버V)`<br>
 <span style="color:yellow">문제</span><br>
 
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 온라인 저지에 가입한 사람들의 나이와 이름이 가입한 순서대로 주어진다.<br> 
 이때, 회원들을 나이가 증가하는 순으로, 나이가 같으면 먼저 가입한 사람이 앞에 오는 순서로 정렬하는 프로그램을 작성하시오.<br/>  
 
@@ -170,7 +167,7 @@ while True:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n = int(input())
 information = []
@@ -183,17 +180,17 @@ for i in sorted(information, key=lambda a: a[0]): print(i[0],i[1])
 
 
 <span style="color:yellow"> 🔍 문제 분석:</span>
-<div style="font-size:60%">
+
 사람들의 나이와 이름이 주어지며, 이를 나이순으로 정렬해야 한다.<br>
 입력값은 나이와 이름이 공백으로 구분되어 주어지며, 여러 줄로 입력된다.<br/>
-</div>  
+
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 입력값을 받아 나이와 이름을 리스트로 저장한다.<br> 
 sorted 함수의 key 매개변수에 나이를 기준으로 정렬하도록 한다.<br/>
-</div>  
+  
 
 
 ---
