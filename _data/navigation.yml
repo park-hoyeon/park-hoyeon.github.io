@@ -6,27 +6,32 @@ main:
 
 sidebar-category:
 
-  - title: "✨ Study"
+  - title: "✨ IT 동아리 & 스터디 모임"
     children:
-      - title: "Codehive (Python Coding)"
+      - title: "파이썬 코딩 스터디 <Codehive>"
         url: "/Study/Codehive (Python Coding)/"
-      - title: "Codeit Boost BE Study"
-        url: "/Study/Codeit Boost BE Study/"
-      - title: "Node.js"
-        url: "/Study/JS+AI/"
-  
-  - title: "✨ Club"
-    children:
-      - title: "Codeit Boost"
+      - title: "코드잇부스트 <Codeit Boost>"
         url: "/Club/Codeit_Boost/"
+      - title: "코드잇부스트 동아리 - BE Study"
+        url: "/Study/Codeit Boost BE Study/"
+      - title: "Node.js 스터디 모임"
+        url: "/Study/JS+AI/"
+
 
   - title: "✨ Project"
     children:
-      - title: "IT"
-        url: "/Project/IT/"
-      - title: "Idea"
-        url: "/Project/Idea/"
-
+      - title: "🪴식집사들"
+        url: "/Project/plant/"
+      - title: "💌 조각집 <추억 저장 웹사이트>"
+        url: "/Project/plant/"
+      - title: "👩‍💻스터디 활동자료 웹사이트 제작"
+        url: "/Project/coding/"
+    
+        
+  - title: "✨ 개인 공부 기록"
+    children:
+      - title: "알고리즘"
+        url: "/ind/python/"
 
     
   # - title: "About"
