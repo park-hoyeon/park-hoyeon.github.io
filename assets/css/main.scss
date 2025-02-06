@@ -6,12 +6,10 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.nav__list .nav__items {
-  .nav__sub-title {
-    font-size: 14px !important;
-  }
-  
-  a { // children 항목들에 대한 스타일
-    font-size: 11px !important;
+.sidebar-category {
+  .nav__items {
+    a {
+      font-size: 11px !important;
+    }
   }
 }
