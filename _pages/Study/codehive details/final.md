@@ -57,7 +57,7 @@ K-MOOC 강의를 통해 파이썬을 체계적으로 학습하고, 최종적으�
 : 명품 웹 프로그래밍 책을 활용하여 웹 페이지를 제작하기 위한 최소한의 기능 익히기<br>
 
 - Python Django Web Framework 공부<br>
-: 생활코딩 opentutorial django를 활용하여 포트, 홈페이지, 생성 및 수정 기능 익히기</span><br>
+: 생활코딩 opentutorial django를 활용하여 포트, 홈페이지, 생성 및 수정 기능 익히기<br>
 
 
 ##### <span style="color:yellow"> Ⅳ. 결과물 정리 </span><br>
