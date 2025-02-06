@@ -29,9 +29,8 @@ tags:
 
 
 
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.12.26 ~ > 기간의 백엔드 스터디 4주차 학습 내용을 기록했습니다.</span>
-
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 <2024.12.26 ~ 2025.01.23> 기간의 Node.js 백엔드 스터디 4주차 학습 내용을 기록했습니다.
 
 ## Codeit Boost 백앤드 스터디 4주차 진행 (2025.01.16)
 
@@ -59,9 +58,9 @@ tags:
 
 #### 🔍 Rooms
 
-<span style="font-size:60%">서로 소통이 가능한 socket들의 그룹을 의미한다. 모든 websocket이 서로 대화할 필요는 없으며 room 안에 몇 개의 websocket 들끼리만 대화하면 된다.
+서로 소통이 가능한 socket들의 그룹을 의미한다. 모든 websocket이 서로 대화할 필요는 없으며 room 안에 몇 개의 websocket 들끼리만 대화하면 된다.
 Chat room이 그 대표적인 예시이고, 뿐 아니라 websocket 들은 그룹으로 묶일 수 있다. 예를 들어 배달 어플의 경우, 배달 기사의 위치를 나한테 알려주기 위해서는 배달기사와 나 사이의 socket이 room 안에 따로 있어야 한다.
-socketIO는 join 메소드를 통해 room 기능을 제공하고 있다.</span> <br>   
+socketIO는 join 메소드를 통해 room 기능을 제공하고 있다.<br>   
 
 
 
@@ -70,7 +69,7 @@ socketIO는 join 메소드를 통해 room 기능을 제공하고 있다.</span> 
 <script>hljs.highlightAll();</script>
 
 🔍 app.js 코드
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const socket = io();
  
@@ -90,7 +89,7 @@ form.addEventListener("submit", handleRoomSubmit);
 </div>
 
 🔍 server.js 코드
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 import http from "http";
 import SocketIO from "socket.io"
@@ -138,8 +137,8 @@ httpServer.listen(3000, handleListen);
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (40).png">
 
 
-<span style="font-size:60%">backend에서 Set(1)에 해당하는 부분은  [socket.id](http://socket.id/) 이며,  모든 socket 은 처음에 private room 을 한개씩 가지고 있기 때문에 RoomName 이 설정되지 않은 상태의 room을 가지고 있다.
-Set(2)에 해당하는 부분은 사용자가 브라우저에 hoho라고 RoomName을 지정했을 때의 Room을 나타낸다.</span> <br> 
+backend에서 Set(1)에 해당하는 부분은  [socket.id](http://socket.id/) 이며,  모든 socket 은 처음에 private room 을 한개씩 가지고 있기 때문에 RoomName 이 설정되지 않은 상태의 room을 가지고 있다.
+Set(2)에 해당하는 부분은 사용자가 브라우저에 hoho라고 RoomName을 지정했을 때의 Room을 나타낸다.<br> 
 
 ---
 #### 🔍 메시지 전송 기능
@@ -149,7 +148,7 @@ Set(2)에 해당하는 부분은 사용자가 브라우저에 hoho라고 RoomNam
 
 🔍 home.pug 코드
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 doctype html
 html(lang="en")
@@ -179,16 +178,16 @@ html(lang="en")
 
 : div#room 추가
 
-<span style="font-size:60%">추가한 div#room은 처음에는 보이지 않아야 한다. 
+추가한 div#room은 처음에는 보이지 않아야 한다. 
 처음에는 div#welcome 만 보이고,
 roomname 을 입력한 뒤에 방에 입장하면 메세지를 입력할 수 있어야 하기 때문이다.
-따라서 아래와 같이 app.js 코드를 수정할 수 있다.</span> <br> 
+따라서 아래와 같이 app.js 코드를 수정할 수 있다. <br> 
 
 
 
 🔍 app.js 코드
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const socket = io();
  
@@ -213,10 +212,9 @@ form.addEventListener("submit", handleRoomSubmit);
   </code></pre>
 </div>
 
-: div#room 추가
 
-<span style="font-size:60%">const room = document.getElementById("room"); 를 추가하여 room을 가져오고 showRoom 메소드를 생성하여 front에서 showRoom이 실행되면,
-그 입력된 값을 back에서 front 로 넘겨줄 때 이 메소드를 실행하여 welcome 은 숨기고 room 은 보여지게 되는 것이다.</span> <br> 
+const room = document.getElementById("room"); 를 추가하여 room을 가져오고 showRoom 메소드를 생성하여 front에서 showRoom이 실행되면,
+그 입력된 값을 back에서 front 로 넘겨줄 때 이 메소드를 실행하여 welcome 은 숨기고 room 은 보여지게 되는 것이다.<br> 
 
 ---
 #### 🔍 참가한 room에 누가 참가했는지를 알려주는 기능
@@ -227,7 +225,7 @@ home.pug에 아래 코드 추가
 
 🔍 app.js 코드 변경
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const socket = io();
  
@@ -257,8 +255,8 @@ form.addEventListener("submit", handleRoomSubmit);
 </div>
 
 
-<span style="font-size:60%">roomName 변수를 생성하고 handleRoomSubmit 에 roomName 을 넣는다.
-그리고 showRoom에서 h3 변수를 생성한 뒤에 html 의 h3 내용을 받아와서 roomName으로 바꿔주는 것이다.</span> <br> 
+roomName 변수를 생성하고 handleRoomSubmit 에 roomName 을 넣는다.
+그리고 showRoom에서 h3 변수를 생성한 뒤에 html 의 h3 내용을 받아와서 roomName으로 바꿔주는 것이다.<br> 
 
 ---
 #### 🔍 Room Messages
@@ -269,7 +267,7 @@ room에 처음 들어갔을 때 그 방의 모든 사람들에게 메세지를 �
 
 🔍 server.js 코드
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 import http from "http";
 import SocketIO from "socket.io"
@@ -307,13 +305,13 @@ httpServer.listen(3000, handleListen);
 </div>
 
 
-<span style="font-size:60%">같은 roomName을 가진 room 에 있는 socket 들 중에서 본인을 제외한 모든 socket 에 "welcome" 이벤트를 emit하는 코드를 추가하였다.<br>
-backend 에서 보낸 "welcome" 이벤트를 front 에서 받기 위해서 app.js를 수정해보자.</span> <br> 
+같은 roomName을 가진 room 에 있는 socket 들 중에서 본인을 제외한 모든 socket 에 "welcome" 이벤트를 emit하는 코드를 추가하였다.<br>
+backend 에서 보낸 "welcome" 이벤트를 front 에서 받기 위해서 app.js를 수정해보자. <br> 
 
 
 🔍 server.js 코드 수정
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const socket = io();
  
@@ -363,15 +361,15 @@ socket.on("welcome", () => {
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (42).png">
 
 
-<span style="font-size:60%">
+
 - disconnect: 연결이 완전히 끊어졌다는 것을 의미한다.<br>
 - disconnecting: 고객이 접속을 중단할 것이지만 아직 방을 완전히 나가지 않은 상태를 의미한다.<br> 
-</span> 
+
 
 ---
 🔍 server.js에 disconnecting 부분 추가
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 import http from "http";
 import SocketIO from "socket.io"
@@ -415,7 +413,7 @@ httpServer.listen(3000, handleListen);
 
 🔍 app.js에도 bye 부분 추가하기
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const socket = io();
  
@@ -467,7 +465,7 @@ socket.on("bye", () => {
 
 🔍 home.pug
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 doctype html
 html(lang="en")
@@ -502,7 +500,7 @@ html(lang="en")
 
 🔍 app.js - : msg form에 addEventListener 추가함
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const socket = io();
  
@@ -571,7 +569,7 @@ socket.on("new_message", (addMessage));
 
 🔍 server.js - 백엔드 부분 수정
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 import http from "http";
 import SocketIO from "socket.io"
@@ -618,11 +616,9 @@ httpServer.listen(3000, handleListen);
 </div>
 
 
-
-<span style="font-size:60%">
 nickname 이벤트가 발생하면 nickname을 가져와서 socket 에 저장한다.
 nickname 기능을 추가한 후에 해당 기능을 화면에 표시하기 위해서 app.js 를 추가로 수정한다.
-누군가 채팅방에 접속하고 나갔을 때는 nickname 을 표시하기 위해 welcome, bye 부분에 추가한다.</span> <br>  
+누군가 채팅방에 접속하고 나갔을 때는 nickname 을 표시하기 위해 welcome, bye 부분에 추가한다. <br>  
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (44).png">
 
@@ -635,7 +631,6 @@ nickname 기능을 추가한 후에 해당 기능을 화면에 표시하기 위�
 
 ###### Adapter
 
-<span style="font-size:60%">
 다른 서버들 사이에 실시간 어플리케이션을 동기화한다.
 지금 우리는 서버의 메모리에서 Adapter를 사용하고 있다. 
 데이터베이스에는 아무것도 저장하고 있지 않는다.
@@ -643,7 +638,7 @@ nickname 기능을 추가한 후에 해당 기능을 화면에 표시하기 위�
 우리가 서버를 재시작할 때에는 모든 것들이 처음부터 시작되는 것이다.
 그러나 우리가 원하는 것은 처음부터 시작되는 그 상태가 아니다.
 백엔드에 데이터베이스를 가지도록 해야 한다.<br>  
-</span> 
+ 
 
 
 ---
@@ -657,7 +652,7 @@ nickname 기능을 추가한 후에 해당 기능을 화면에 표시하기 위�
 목표3. 카메라 on/off 기능 구현하자<br>
 
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 doctype html
 html(lang="en")
@@ -678,14 +673,13 @@ html(lang="en")
 </div>
 
 
-<span style="font-size:60%">
 우선 myFace라고 불리게 될 video를 만들었다. 
 autoplay로 비디오 자동재생을 설정하고, playsinline이라는 property를 설정한다. 모바일 브라우저가 필요로 하는 property 이다. 모바일기기로 비디오를 재생할 때, 그 비디오가 전체화면 모드로 실행되는 것을 방지해준다.<br>  
-</span> 
+
 
 
 app.js는 아래와 같이 수정하였다.
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 const socket = io();
  
@@ -718,7 +712,7 @@ getMedia();
 
 #### 🔍 소리와 화면을 on/off 할 수 있도록 버튼 생성하기
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 doctype html
 html(lang="en")
@@ -748,18 +742,17 @@ html(lang="en")
 
 
 
-<span style="font-size:60%">
+
 기존 web socket 통신은 한 서버에 많은 web socket들이 연결되어 있었고, 메시지를 보낼 때 서버로 보내진 후에 서버가 해당 메시지를 모두에게 전달하는 방식이다.<br>
 WebRTC는 브라우저 간에 peer-to-peer 통신을 통해 영상 및 오디오 등이 서버로 전송되지 않는다. 따라서 서버의 중계 없이 클라이언트 브라우저간 실시간으로 통신이 가능하다는 특징이 있다.<br>  
-</span>
+
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (47).pug"> <br>
 
-<span style="font-size:60%">
+
 초기 Signaling 시에만 서버를 통해 클라이언트 브라우저를 확인한다.
 브라우저는 서버에 간단한 configuration 정보만 전달하게 되고 해당 Signaling 이후에는 클라이언트 간 채널이 형성되어서 Peer-to-Peer로 직접 연결된다.<br>  
-</span>
 
 
 
