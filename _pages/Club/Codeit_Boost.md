@@ -20,7 +20,7 @@ taxonomy:
 {% endfor %}
 
 
-<span style="font-size:80%">✨ 각 주차별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span><br>  
+✨ 각 주차별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.<br>  
 
 
 ### 주차별 내용
@@ -41,7 +41,7 @@ taxonomy:
 <span style="font-size:70%">2024.12.18</span><br>  
 
 ⭐  **[Codeit Boost 백엔드 스터디](https://park-hoyeon.github.io/Study/Codeit%20Boost%20BE%20Study/)**
-<span style="font-size:70%">주차별 스터디 내용 보러가기</span><br>  
+주차별 스터디 내용 보러가기<br>  
 
 
 <br/>
