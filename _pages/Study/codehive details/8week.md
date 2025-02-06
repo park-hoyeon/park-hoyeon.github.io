@@ -29,18 +29,18 @@ tags:
 
 
 
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 8주차 학습 내용을 기록했습니다.</span>
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 8주차 학습 내용을 기록했습니다.
 
 
 ## `CodeHive Study` 8주차 진행 (2024.11.18)
 
 ### 🗓️ 학습 주제
 
-<span style="font-size:70%">1. 생활코딩 Python Django Web Framework  강의<br></span>
-<span style="font-size:70%">2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br></span>
-<span style="font-size:70%">3. 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br></span>
-<span style="font-size:70%">4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습</span>
+1. 생활코딩 Python Django Web Framework  강의<br>
+2. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br>
+3. 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br>
+4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습
 
 ---
 
@@ -54,8 +54,8 @@ tags:
 ---
 ### 📝 baekjoon 알고리즘 문제 풀이
 
-#### 2920 음계 (브론즈 II)`
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+#### 2920 음계 (브론즈 II)
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
 <b>문제:</b><br>
 다장조는 c d e f g a b C, 총 8개 음으로 이루어져있다.<br> 
@@ -83,7 +83,7 @@ tags:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 note = list(map(int, input().split()))
 
@@ -97,28 +97,26 @@ else:
 </div>
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
+
 8개의 음이 입력으로 주어질 때, 해당 음들이 오름차순(ascending), 내림차순(descending), 또는 **혼합(mixed)**인지 판단해야 한다.<br>
 입력 리스트가 정렬된 상태와 동일하면 "ascending", 역순 정렬과 동일하면 "descending"을 출력한다.<br>
 
-</div>  
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 - 입력 리스트를 sorted()를 사용해 오름차순으로 정렬한 결과와 비교하여 오름차순인지 판단한다.<br>
 - sorted(note, reverse=True)로 정렬하여 내림차순 결과와 비교하여 내림차순인지 확인한다.<br>
 - 두 조건에 모두 해당하지 않으면 "mixed"를 출력한다.<br/>
-</div>  
 
 
 ---  
 
 
-#### 1676 팩토리얼 0의 개수 (실버 V)`<br>
+#### 1676 팩토리얼 0의 개수 (실버 V)
 <span style="color:yellow">문제</span><br>
 
-<div style="font-size:60%; padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="padding:15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 N!에서 뒤에서부터 처음 0이 아닌 숫자가 나올 때까지 0의 개수를 구하는 프로그램을 작성하시오.<br>
 입력: 첫째 줄에 N이 주어진다.<br>
 출력: 첫째 줄에 구한 0의 개수를 출력한다.
@@ -128,7 +126,7 @@ N!에서 뒤에서부터 처음 0이 아닌 숫자가 나올 때까지 0의 개�
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n = int(input())
 count = 0
@@ -143,24 +141,23 @@ print(count)
 
 
 🔍 <span style="color:yellow"> 문제 분석:</span>
-<div style="font-size:60%">
+
 팩토리얼의 끝에 있는 0은 10의 배수에서 만들어지며, 10은 2와 5의 곱으로 이루어진다.<br>
 팩토리얼에서는 2의 배수보다 5의 배수가 적으므로, 5의 배수의 개수를 센다.
-</div>  
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 - n을 5로 나눈 몫을 구해 5의 배수가 몇 개 있는지 계산한다.<br>
 - n을 계속 5로 나누며, 각 단계에서 몫을 누적하여 5, 25, 125, ... 같은 더 큰 배수도 포함시킨다.
 - 반복문은 n이 5 이상일 때만 실행되며, n이 작아지면 종료되도록 한다.
-</div>  
+
 
 ---
 
 #### 1920 수 찾기 (실버Ⅳ)<br>
 <span style="color:yellow">문제</span><br>
 
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 N개의 정수 A[1], A[2], …, A[N]이 주어져 있을 때, 이 안에 X라는 정수가 존재하는지 알아내는 프로그램을 작성하시오.<br/>  
 
 <span style="color:yellow">입력</span>: 첫째 줄에 자연수 N(1 ≤ N ≤ 100,000)이 주어진다. <br>
@@ -177,7 +174,7 @@ N개의 정수 A[1], A[2], …, A[N]이 주어져 있을 때, 이 안에 X라는
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="python">
 n = int(input())
 numbers = set(map(int, input().split()))
@@ -191,17 +188,17 @@ for number in number_list:
 
 
 <span style="color:yellow"> 🔍 문제 분석:</span>
-<div style="font-size:60%">
+
 첫 번째 수열은 n개의 정수로 이루어져 있으며, 두 번째 수열은 m개의 정수로 이루어진다.<br/>
-</div>  
+
 
 
 <span style="color:yellow">🔍 해결 전략:</span><br>
-<div style="font-size:60%">
+
 - 첫 번째 수열(numbers)을 집합(set) 자료형으로 변환한다.<br> 
 - 두 번째 수열(number_list)의 각 숫자를 순회하면서, 첫 번째 수열에 존재하는지 확인한다.<br>
 - 각 숫자에 대해 존재하면 1, 아니면 0을 출력한다.<br>
-</div>  
+ 
 
 
 ---
