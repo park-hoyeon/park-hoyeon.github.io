@@ -29,18 +29,18 @@ tags:
 
 
 
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 5주차 학습 내용을 기록했습니다.</span>
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 <2024.09.23 ~ 2024.12.09> 기간의 코딩 스터디 5주차 학습 내용을 기록했습니다.
 
 
 ## `CodeHive Study` 5주차 진행 (2024.10.28)
 
 ### 🗓️ 학습 주제
 
-<span style="font-size:70%">1. API의 개념 공부<br></span>
-<span style="font-size:70%">2. HTML 웹 프로그래밍 학습 <br></span>
-<span style="font-size:70%">3. 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br></span>
-<span style="font-size:70%">4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습</span>
+1. API의 개념 공부<br>
+2. HTML 웹 프로그래밍 학습 <br>
+3. 백준(Baekjoon) 알고리즘 문제 풀이 및 코드 공유<br>
+4. 간단한 발표 보고서 작성 & 팀원의 알고리즘 문제 풀이법 학습
 
 ---
 
@@ -59,7 +59,7 @@ tags:
 
 ---
 ####  📝 학습 강좌 발표 내용
-<div style="font-size:60%; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
 <span style="color:yellow"><b> <!DOCTYPE html>:</b></span><br>
 선언하는 이유<br>
