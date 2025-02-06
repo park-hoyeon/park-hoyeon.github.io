@@ -1,7 +1,7 @@
 ---
 layout: category
 title: "✨ 5 Week - Codeit Boost BE Study"
-permalink: /Study/codeit-details/4week
+permalink: /Study/codeit-details/5week
 author_profile: true
 sidebar_main: true
 types: posts
