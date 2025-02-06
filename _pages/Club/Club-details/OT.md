@@ -27,13 +27,12 @@ tags:
 {% endfor %}  
 
 
-
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 코드잇 부스트 동아리 첫 번째 활동 내용을 기록했습니다.</span>
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 코드잇 부스트 동아리 첫 번째 활동 내용을 기록했습니다.
 
 
 ## Codeit Boost 중앙 OT (2024.09.25)
-<span style="font-size:70%">온라인 진행</span>
+온라인 진행
 
 
 ## Codeit Boost 교내 OT (2024.09.29)
