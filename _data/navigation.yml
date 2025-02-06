@@ -10,7 +10,7 @@ sidebar-category:
     children:
       - title: "💻 파이썬 코딩 스터디 <Codehive>"
         url: "/Study/Codehive (Python Coding)/"
-      - title: "💻 코드잇부스트 동아 <Codeit Boost>"
+      - title: "💻 코드잇부스트 동아리 <Codeit Boost>"
         url: "/Club/Codeit_Boost/"
       - title: "💻 코드잇부스트 동아리 - BE Study"
         url: "/Study/Codeit Boost BE Study/"
