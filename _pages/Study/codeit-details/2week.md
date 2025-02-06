@@ -29,8 +29,8 @@ tags:
 
 
 
-<span style="font-size:65%">안녕하세요. hoyeon입니다.<br>
-본 포스팅은 <2024.12.26 ~ > 기간의 백엔드 스터디 2주차 학습 내용을 기록했습니다.</span>
+안녕하세요. 소시지입니다.<br>
+본 포스팅은 <2024.12.26 ~ 2025.01.23> 기간의 Node.js 백엔드 스터디 2주차 학습 내용을 기록했습니다.
 
 
 ## Codeit Boost 백앤드 스터디 2주차 진행 (2025.01.02)
@@ -63,10 +63,10 @@ tags:
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (2).png">
 
-<span style="font-size:60%">
+
 웹 페이지를 구성하는 Markup Language는 HTML이며, 이는 정적 언어이다. 따라서, Javascript의 반복문을 사용해 간단하게 처리할 수 있는 동적 연산을 HTML로 표현하려면 위의 사진처럼 직접 코드를 작성해야 하는 불편함이 있다. <br>
 템플릿 엔진은 이 불편한 상황을 해소하기 위한 도구로, 템플릿 프로세서를 이용하여 웹 페이지를 동적으로 구현할 수 있는 시스템이다.<br/>
-</span>  
+
 
 ---
 
@@ -78,7 +78,7 @@ tags:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 $ npm install jade --save
 $ npm install pug --save
@@ -98,25 +98,25 @@ $ npm install pug --save
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (4).png">
 
-<span style="font-size:60%">
+
 send 대신 render 이용한다.<br>
 template 경로를 통해서 들어온 사용자에게 function 기능이 수행되면서 ‘temp’라는 템플릿 파일을  웹페이지로 렌더링 해서 전송한다는 의미이다.<br/>
-</span>  
+
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (5).png"> <br>
 
-<span style="font-size:60%">그냥 나열된 형식으로 출력된다. </span><br>  
+그냥 나열된 형식으로 출력된다.<br>  
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (6).png"> <br>
 
-<span style="font-size:60%">html 아래에 head와 body는 들여쓰기를 통해서 적용되도록 한다.</span><br>
+html 아래에 head와 body는 들여쓰기를 통해서 적용되도록 한다.<br>
 
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (7).png"> <br>
 
-<span style="font-size:60%">app.locals.pretty = true; 추가로 정리하기</span><br>
+app.locals.pretty = true; 추가로 정리하기<br>
 
 ---
 
@@ -130,15 +130,15 @@ template 경로를 통해서 들어온 사용자에게 function 기능이 수행
 
 ##### Query String
 
-<span style="font-size:60%">
+
 사용자가 입력 데이터를 전달하는 방법 중의 하나로, url 주소에 미리 협의된 데이터를 파라미터를 통해 넘기는 것이다.<br/>
-</span>   
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 http://a.com/login   
 
@@ -149,21 +149,21 @@ http://a.com/topic
   </code></pre>
 </div>
 
-<span style="font-size:60%">
+
 각 주소는 패스에 따라 다른 결과를 주지만 예를 들어 <http://a.com/home> 하나만 놓고 본다면 이것은 언제나 똑같은 결과를 가져온다.<br/>
-</span>   
+  
 
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 http://a.com/home?id=1
   </code></pre>
 </div>
 
-<span style="font-size:60%">
+
 home에 id가 1인 값을 전달하고 있다.<br>
 그럼 home은 1에 해당되는 결과를 처리하여 그것을 화면에 표현해준다.<br/>
-</span>   
+  
 
 
 ---
@@ -174,7 +174,7 @@ home에 id가 1인 값을 전달하고 있다.<br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 app.get('/topic', function(req, res){
     res.send(req.query.id);
@@ -183,23 +183,22 @@ app.get('/topic', function(req, res){
 </div>
 
 
-<span style="font-size:60%">
+
 쿼리 스트링으로 전달된 값이 아래의 함수의 첫 번째 매개변수의 값에 쿼리 객체의 id 값에 들어온다는 것이다.<br/>
-</span>   
 
 ---
 
 ##### 시멘틱 URL
 
-<span style="font-size:60%">
+
 querystring 을 / 뒤로 빼내어 깔끔한 url를 만드는 방식을 의미한다.<br/>
-</span>   
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 app.get('/topic/:id', function(req, res){
     var topics = [
@@ -228,16 +227,16 @@ app.get('/topic/:id', function(req, res){
 
 ##### GET vs POST
 
-<span style="font-size:60%">
+
 GET: 우리가 어떤 정보를 서버에 요청해서 가져오는 방식<br>
 POST: 사용자의 정보를 서버에 전송할 때 사용하는 방식 (ex.로그인 입력)<br/>
-</span>   
+ 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 app.get('/form', function(req, res){
     res.render('form');
@@ -262,9 +261,9 @@ app.get('/form_receiver', function(req, res){
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (18).png"> <br>
 
 
-<span style="font-size:60%">
+
  input(type='text' name='title' placeholder='title') 코드의 placeholder로 타이틀이 적힌 상자가 생겨남.<br/>
-</span>   
+
 
 - 이어서 폼 태그 만들기
 
@@ -272,7 +271,7 @@ app.get('/form_receiver', function(req, res){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<div style="font-size:60%; padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
   <pre><code class="java">
 doctype html 
 html 
@@ -292,9 +291,9 @@ html
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image (19).png"> <br>
 
-<span style="font-size:60%">
+
 사용자가 입력한 정보를 ‘/topic’으로 전송되도록, method=’post’ 방식으로 전송한다.<br/>
-</span>   
+
 
 
 ---
