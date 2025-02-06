@@ -74,11 +74,9 @@ tags:
 
 ![image.png](image%2048.png)
 
-: 웹 서비스는 웹 서버가 있고 그 웹 서버에 접근하는 클라이언트가 있다.
-
-마찬가지로 데이터베이스에도 서버가 있어서 데이터를 저장하고, 그 저장된 데이터를 수정하거나 삭제하는 등의 관리 기능을 가지고 있다.
-
-그 데이터베이스 서버에 요청해서 여러 가지 명령을 하거나 데이터를 가져오는 것들을 하게 해주는 것이 데이터베이스 클라이언트이다.
+: 웹 서비스는 웹 서버가 있고 그 웹 서버에 접근하는 클라이언트가 있다.<br>
+마찬가지로 데이터베이스에도 서버가 있어서 데이터를 저장하고, 그 저장된 데이터를 수정하거나 삭제하는 등의 관리 기능을 가지고 있다.<br>
+그 데이터베이스 서버에 요청해서 여러 가지 명령을 하거나 데이터를 가져오는 것들을 하게 해주는 것이 데이터베이스 클라이언트이다.<br>
 
 ---
 
@@ -107,11 +105,11 @@ tags:
 - mysql서버의 번들로 제공하는 기본 프로그램
 - 명령어 기반
 
+
 ### 사용법
 
-`mysql **-u**아이디 **-p**비밀번호`
-
-`mysql **-h**호스트주소 **-p**포트번호 **-u**아이디 **-p**비밀번호`
+`mysql **-u**아이디 **-p**비밀번호` <br>
+`mysql **-h**호스트주소 **-p**포트번호 **-u**아이디 **-p**비밀번호` <br>
 
 ![image.png](image%2049.png)
 
@@ -120,6 +118,7 @@ tags:
 **`CREATE`** **`DATABASE`** `music **CHARACTER**` **`SET`** `utf8 **COLLATE**` `utf8_general_ci;`
 
 ![image.png](image%2050.png)
+
 
 ### 데이터베이스 선택과 테이블 생성
 
@@ -131,13 +130,15 @@ tags:
 
 ![image.png](image%2053.png)
 
-title = Chasing Pavements
-
-musician = 아델
-
-duration = 3:30
-
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+  
+title = Chasing Pavements <br>
+musician = 아델 <br>
+duration = 3:30 <br>
 album = 19
+
+</div>
+
 
 ### 입력된 데이터 조회
 
@@ -160,30 +161,28 @@ mysql> exit;
 
 ### **SQL 테이블**
 
-SQL 테이블은 관계형 데이터베이스의 기본 요소이다. 
-
-SQL 데이터베이스 테이블은 행과 열로 구성된다. 
-
-데이터베이스 엔지니어는 여러 데이터베이스 테이블 간의 관계를 생성하여 데이터 스토리지 공간을 최적화한다.
-
-예를 들어, 데이터베이스 엔지니어가 스토어의 제품에 대한 SQL 테이블을 생성한다고 가정하자.
+SQL 테이블은 관계형 데이터베이스의 기본 요소이다. <br>
+SQL 데이터베이스 테이블은 행과 열로 구성된다. <br>
+데이터베이스 엔지니어는 여러 데이터베이스 테이블 간의 관계를 생성하여 데이터 스토리지 공간을 최적화한다.<br>
+예를 들어, 데이터베이스 엔지니어가 스토어의 제품에 대한 SQL 테이블을 생성한다고 가정하자.<br>
 
 | 제품 ID | 제품 이름 | 색상 ID |
 | --- | --- | --- |
 | 01 | 냉장고 | 색상 01 |
 | 02 | 세탁기 | 색상 02 |
 
-그런 다음 *색상 ID*를 사용하여 제품 테이블을 색상표에 연결한다.
+그런 다음 *색상 ID*를 사용하여 제품 테이블을 색상표에 연결한다.<br>
 
 | 색상 ID | 색상 이름 |
 | --- | --- |
 | 색상 01 | 회색 |
 | 색상 02 | 흰색 |
 
+
+
 ### **SQL과 MySQL 비교**
 
-SQL은 데이터베이스 생성 및 조작을 위한 표준 언어이다. (국제 표준에 의해 정의된다.)
-
+SQL은 데이터베이스 생성 및 조작을 위한 표준 언어이다. (국제 표준에 의해 정의된다.)<br>
 MySQL은 SQL 쿼리를 사용하는 관계형 데이터베이스 프로그램이다. 
 
 ---
@@ -243,21 +242,14 @@ CREATE DATABASE `데이터베이스명` CHARACTER SET utf8 COLLATE utf8_general_
 <aside>
 💡
 
-**`CREATE`** **`TABLE`** ``student` (`
-
-``id`  tinyint NOT` `NULL` `,`
-
-``**name**`  **char**(4) NOT` `NULL` `,`
-
-``sex`  enum('남자','여자') NOT` `NULL` `,`
-
-``address`  **varchar**(50) NOT` `NULL` `,`
-
-``birthday`  datetime NOT` `NULL` `,`
-
-`**PRIMARY**` **`KEY`** `(`id`)`
-
-`);`
+**`CREATE`** **`TABLE`** ``student` (` <br>
+``id`  tinyint NOT` `NULL` `,` <br>
+``**name**`  **char**(4) NOT` `NULL` `,` <br>
+``sex`  enum('남자','여자') NOT` `NULL` `,` <br>
+``address`  **varchar**(50) NOT` `NULL` `,` <br>
+``birthday`  datetime NOT` `NULL` `,` <br>
+`**PRIMARY**` **`KEY`** `(`id`)` <br>
+`);` <br>
 
 </aside>
 
@@ -275,9 +267,8 @@ CREATE DATABASE `데이터베이스명` CHARACTER SET utf8 COLLATE utf8_general_
 
 ### 문
 
-1.`INSERT` `INTO` `table_name VALUES` `(value1, value2, value3,...)`
-
-**2.`INSERT`** **`INTO`** `table_name (column1, column2, column3,...) **VALUES**` `(value1, value2, value3,...)`
+1.`INSERT` `INTO` `table_name VALUES` `(value1, value2, value3,...)` <br>
+**2.`INSERT`** **`INTO`** `table_name (column1, column2, column3,...) **VALUES**` `(value1, value2, value3,...)` <br>
 
 ![image.png](image%2060.png)
 
@@ -340,31 +331,35 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 문법
 
-<aside>
+
+
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+    
 💡
 
-**`SELECT`** `칼럼명1, 칼럼명2`
+**`SELECT`** `칼럼명1, 칼럼명2` <br>
+`[**FROM**` `테이블명 ]` <br>
+`[**GROUP**` **`BY`** `칼럼명]` <br>
+`[**ORDER**` **`BY`** `칼럼명 [**ASC**` `| **DESC**]]` <br>
+`[LIMIT offset, 조회 할 행의 수]` <br>
 
-`[**FROM**` `테이블명 ]`
+</div>
 
-`[**GROUP**` **`BY`** `칼럼명]`
 
-`[**ORDER**` **`BY`** `칼럼명 [**ASC**` `| **DESC**]]`
-
-`[LIMIT offset, 조회 할 행의 수]`
-
-</aside>
-
-<aside>
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+  
 💡
 
-**`SELECT`** `* **FROM**` `student;`
+**`SELECT`** `* **FROM**` `student;` 
 
-</aside>
+</div>
+
 
 ![image.png](image%2069.png)
 
-<aside>
+
+
+
 💡
 
 **`SELECT`** **`name**, birthday **FROM**` `student;`
