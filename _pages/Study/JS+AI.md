@@ -31,7 +31,7 @@ sidebar:
   <tbody>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="/Study/JS-details/1week">📝 First - JS</a><br>
+      <td style="padding: 8px;"><a href="/Study/JS-details/1week">📝 JS</a><br>
       <span class="tag-box">Objects</span>
       <span class="tag-box">Functions </span>
       </td>
