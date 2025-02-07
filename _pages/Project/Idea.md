@@ -18,6 +18,12 @@ sidebar:
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식집사들.png">  
+
+
+
+
 ### 🌿 식집사들 프로젝트 주제 선정
 
 
