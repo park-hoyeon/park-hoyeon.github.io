@@ -69,38 +69,45 @@ AI 기술은 식물 특성의 측정 및 분석을 자동화하여 식물 성장
 
 <br>
 
+---
 ##### 로그인
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식4.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식4.png" width="500" height="auto"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식5.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식5.png" width="500" height="auto"> 
 
+
+---
 
 ##### 회원가입
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식6.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식6.png" width="500" height="auto"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식7.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식7.png" width="500" height="auto"> 
 
+
+---
 
 ##### 비밀번호 찾기
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식8.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식8.png" width="500" height="auto"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식9.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식9.png" width="500" height="auto"> 
 
+
+---
 
 ##### 아이디 찾기
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식10.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식10.png" width="500" height="auto"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식11.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식11.png" width="500" height="auto"> 
 
 ---
 
 ##### 커뮤니티
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식12.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식12.png" width="300" height="auto"> 
 
 추천글: 글을 올린 시점부터 일주일 간 추천글 후보에 들어갈 수 있다.<br>
 
@@ -110,19 +117,21 @@ AI 기술은 식물 특성의 측정 및 분석을 자동화하여 식물 성장
 - 동일하다면 더 최신 글로 갱신
 - 추천글에 최장 3일간만 있을 수 있다.
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식13.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식13.png" width="300" height="auto"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식14.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식14.png" width="300" height="auto"> 
+
+---
 
 ##### 글 보기
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식15.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식15.png" width="300" height="auto"> 
 
 글쓴이일 경우 수정과 삭제 버튼이 추가로 보이며, 댓글 작성자일 경우 자신이 쓴 댓글에만 삭제 버튼이 보인다.
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식16.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식16.png" width="300" height="auto"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식17.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식17.png" width="300" height="auto"> 
 
 공감 버튼을 클릭하면 하트가 붉게 칠해지고 공감 수가 1 올라간다.<br>
 다시 한 번 누르면 최소가 가능하다.<br>
@@ -134,119 +143,63 @@ AI 기술은 식물 특성의 측정 및 분석을 자동화하여 식물 성장
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식18.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식19.png"> 
 
 ---
 
 ##### 마이페이지
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식19.png" width="500" height="auto"> 
 
+마이페이지 기본 화면이다. 왼쪽 섹션에는 사용자 정보와 커뮤니티, 출석을 확인할 수 있다.
+
+---
+##### 마이페이지 - 보관함
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식20.png" width="500" height="auto"> 
+
+보관함에는 과거에 키웠던 식물 목록이 뜬다.<br>
+식물 사진 아래에는 글을 등록했던 날짜도 같이 표기된다.
+
+---
+##### 마이페이지 - 내가 쓴 글
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식21.png" width="500" height="auto">
+
+왼쪽 커뮤니티 섹션의 내가 쓴 글 메뉴를 클릭하면 다음과 같이 현재 선택한 메뉴에 음영이 생긴다.<br>
+오른쪽 섹션에는 내가 쓴 글, 내가 쓴 댓글, 스크랩한 글 탭이 위에 뜨며, 마찬가지로 현재 선택한 탭 메뉴 글씨 색이 바뀐다.<br>
+탭 메뉴로 쉽게 이동 가능하다.<br>
+체크 박스를 선택해서 글을 삭제할 수 있고 글쓰기 버튼을 누르면 커뮤니티 글 작성 페이지로 바로 넘어가도록 설정했다.
+
+---
+##### 마이페이지 - 보관함 상세보기
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식22.png" width="500" height="auto">
 
 
 ---
-### 📝 제작 페이지 - 홈페이지 (게시판)
+##### 챗봇 - 채팅 시작
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch1.png">  
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch2.png">  
-
-
-게시판에서 글 작성, 글 수정, 글 보기, 글 삭제, 글 검색이 가능하다.<br> 
-‘글 작성’ 버튼을 누르면 글을 쓸 수 있는 칸이 나오고, 제출을 누르면 첫 번째 4번째 그림과 같이 카드로 글이 추가가 된다.<br> 
-글 수정을 누르면 글 내역을 수정할 수 있고, 수정 완료를 눌러 수정 사항을 반영할 수 있다.<br> 
-또한 글 삭제를 누르면 글 카드에서 글이 지워진다.<br> 
-키워드를 입력하고 검색을 누르면 해당 키워드가 포함된 글이 목록으로 뜬다.<br>  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식23.png" width="500" height="auto">
 
 
 
+##### 챗봇 - 식물 질병 진단
 
----
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식24.png" width="500" height="auto">
 
-### 📝 제작 페이지 - 성과 가시화와 정리 업로드
+##### 챗봇 - 식물과의 대화
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch3.png">    
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch4.png">  
-
-
-성과 가시화 글을 누르면 성과 페이지로 이동이 된다.<br> 
-스터디 활동하면서 얻은 팀의 성과를 표로 나타내었다.<br> 
-정리 업로드 글을 누르면 정리 업로드 페이지로 이동이 된다.<br> 
-여기서 + 버튼을 눌러 여태 디스코드에 업로드했던 학습 내용을 업로드할 수 있다.<br> 
-뒤로가기 버튼을 누르면 게시판으로 이동이 된다.<br>  
-
-
----
-
-### 📝 제작한 페이지 요약
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch5.png">  
-
-
----
-
-### 📝 깃허브
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch6.png">    
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/ch7.png">  
-
-
-깃허브에 올린 결과물은 클론하여 파일로 따로 첨부하였다. <br>  
-
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식25.png" width="500" height="auto">
 
 
 ---
 
-#### 🔍 학습 목표 달성 여부
+📝 [API 명세서 작성 & 페이지 기능 분석 보러가기](https://park-hoyeon.github.io/Project/plant/API) 
 
-
-CodeHive의 학습 목표는 총 4가지였다. <br>    
-
-
-<span style="color:yellow">첫 번째</span><br> 
-대학 강좌 K-MOOC의 ‘파이썬 프로그래밍’ 강의를 활용해 파이썬의 전반적인 내용을 복습하고 학습하기와 강의마다 기재된 퀴즈를 풀고 50점 이상의 점수를 받는 목표는 팀원 전원이 100% 달성하였다. 
-K-MOOC를 가입하여 파이썬 프로그래밍 강의를 수강 신청하였으며, 계획한 주차에 맞게 모두 강의를 듣고 퀴즈 100점을 획득하였다.
-해당 점수와 강의 수강 기록은 디스코드에서 인증하였고 그 증거를 주간학습보고서에 기재하였다. <br>  
+💻 [백엔드 코드 구현 보러가기](https://park-hoyeon.github.io/Project/plant/code) 
 
   
-<span style="color:yellow">두 번째</span> <br>
 
-백준(Baekjoon) 알고리즘 문제 풀이하는 목표 역시 팀원 전원 100% 달성하였다. 
-한 주마다 공통 문제 4개, 개인 문제 4개를 풀기로 계획하였고 총 8문제의 백준 알고리즘 문제를 풀이하였다.
-또한 1주차부터 7주차까지 해당 주차 만남에서 본인이 푼 문제를 팀원에게 설명하고 다른 팀원의 개인 문제를 풀어보는 시간을 가졌다. <br>
-
-
-<span style="color:yellow">세 번째</span> <br> 
-
-각자가 이해한 python, API, HTML, Django 내용을 발표하며 2차 복습을 진행하는 목표 또한 팀원 전원 100% 달성하였다.
-해당 주차 만남에서 강의를 듣고 본인이 직접 그 강의 내용을 팀원에게 설명하며 복습을 철저하게 시행하였다. <br>
-
-
-<span style="color:yellow">네 번째</span> <br> 
-
-데이터 자료를 저장하고 이용할 수 있는 간단한 웹 서버(Django) 제작 목표를 상당 부분 달성하였다.
-피그마를 통해 어떻게 웹서버를 제작할 건지 계획을 세운 뒤 각자 역할을 분배하여 맡은 파트를 제작하였다.
-깃허브를 통해 각자 제작한 부분을 결합하여 업로드를 하였다. <br>
-
-
-
----
-
-### 🔍 스터디 활동 내용 활용 방안
-
-
-주기적으로 코딩 문제를 풀고 풀이법을 공유하면서 알고리즘과 문제 해결 능력을 향상시켰다.<br> 
-이를 통해 코딩 테스트와 취업 준비에 대비할 수 있다.
-또한, Django와 관련된 강의를 통해 웹 프로그래밍 지식을 쌓아 실제 프로젝트를 구현하는 데 활용할 수 있다.
-이를 바탕으로 우리가 지금까지 했던 학습 활동을 한눈에 볼 수 있는 웹페이지를 팀원들과 함께 구현하며 협업 경험과 프로젝트 관리 능력을 키웠다.<br>   
-
-
-이 웹페이지는 각자의 학습 성과를 체계적으로 정리하고 공유할 수 있는 도구로 활용할 수 있다. 
-이를 기반으로 나중에 취업이나 대외 활동을 준비하기 위해 포트폴리오를 구성하거나, 학습 목표를 설정하는 데 도움을 줄 수 있다고 생각한다.
-또한, 팀원들과 협업하여 웹사이트를 지속적으로 발전시킴으로써 개발 경험을 쌓을 수 있다.<br>
 
 
 
