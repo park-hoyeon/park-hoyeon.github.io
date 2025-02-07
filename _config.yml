@@ -107,7 +107,7 @@ author:
   name             : "Vienna sausage"
   avatar           : assets/images/소시지.png
   bio              : "비엔나 소시지 IT 블로그"
-  location         : "Somewhere"
+  location         : 
   email            :
   links:
     - label: "Email"
