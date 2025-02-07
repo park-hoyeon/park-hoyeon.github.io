@@ -30,7 +30,7 @@ tags:
 
 
 안녕하세요. 소시지입니다.<br>
-본 포스팅은 <2024.12.26 ~ 2025.01.23> 기간의 Node.js 백엔드 스터디 5주차 학습 내용을 기록했습니다.
+본 포스팅은 <2024.12.26 ~ 2025.01.23> 기간의 데이터베이스 / 백엔드 스터디 5주차 학습 내용을 기록했습니다.
 
 ## Codeit Boost 백앤드 스터디 5주차 진행 (2025.01.23)
 
@@ -38,7 +38,7 @@ tags:
 
 
 1. 줌 클론코딩 - 노마드 코더 <Nomad Coders> 강의 수강<br>
-2. 인프런 - Node.js를 이용해 웹 애플리케이션 만들기 강의 수강<br>
+2. 인프런 - Node.js / DB를 이용해 웹 애플리케이션 만들기 강의 수강<br>
 3. 학습한 강의의 내용을 팀원과 공유하고, 각자가 이해한 내용을 발표하며 2차 복습 진행<br>
 4. 간단한 발표 및 기록<br>
  
@@ -74,7 +74,7 @@ tags:
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 48.png">
 
-: 웹 서비스는 웹 서버가 있고 그 웹 서버에 접근하는 클라이언트가 있다.<br>
+웹 서비스는 웹 서버가 있고 그 웹 서버에 접근하는 클라이언트가 있다.<br>
 마찬가지로 데이터베이스에도 서버가 있어서 데이터를 저장하고, 그 저장된 데이터를 수정하거나 삭제하는 등의 관리 기능을 가지고 있다.<br>
 그 데이터베이스 서버에 요청해서 여러 가지 명령을 하거나 데이터를 가져오는 것들을 하게 해주는 것이 데이터베이스 클라이언트이다.<br>
 
@@ -122,13 +122,13 @@ tags:
 
 ### 데이터베이스 선택과 테이블 생성
 
-![image.png](image%2051.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 51.png">
 
-![image.png](image%2052.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 52.png">
 
 ### 테이블에 데이터 추가
 
-![image.png](image%2053.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 53.png">
 
 <div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
   
@@ -144,7 +144,7 @@ album = 19
 
 **`select`** `* **from**` `favorite_music;`
 
-![image.png](image%2054.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 54.png">
 
 ### 종료
 
@@ -200,19 +200,18 @@ CREATE DATABASE `데이터베이스명` CHARACTER SET utf8 COLLATE utf8_general_
 
 </aside>
 
-![image.png](image%2055.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 55.png">
 
 ### 열람
 
-![image.png](image%2056.png)
-
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 56.png">
 ### 삭제
 
-![image.png](image%2057.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 57.png">
 
 ### 사용
 
-![image.png](image%2058.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 58.png">
 
 ---
 
@@ -226,9 +225,8 @@ CREATE DATABASE `데이터베이스명` CHARACTER SET utf8 COLLATE utf8_general_
 
 ### 테이블 생성
 
-<aside>
-💡
-
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
+  
 **`CREATE`** **`TABLE`** `table_name (`
 
 `칼럼명1 data_type,`
@@ -237,10 +235,9 @@ CREATE DATABASE `데이터베이스명` CHARACTER SET utf8 COLLATE utf8_general_
 
 `)`
 
-</aside>
+</div>
 
-<aside>
-💡
+<div style="border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left;">
 
 **`CREATE`** **`TABLE`** ``student` (` <br>
 ``id`  tinyint NOT` `NULL` `,` <br>
@@ -251,9 +248,10 @@ CREATE DATABASE `데이터베이스명` CHARACTER SET utf8 COLLATE utf8_general_
 `**PRIMARY**` **`KEY`** `(`id`)` <br>
 `);` <br>
 
-</aside>
+</div>
 
-![image.png](image%2059.png)
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 59.png">
 
 : null이 no이므로 모든 값을 입력해야 하는 상태이다.
 
@@ -270,9 +268,11 @@ CREATE DATABASE `데이터베이스명` CHARACTER SET utf8 COLLATE utf8_general_
 1.`INSERT` `INTO` `table_name VALUES` `(value1, value2, value3,...)` <br>
 **2.`INSERT`** **`INTO`** `table_name (column1, column2, column3,...) **VALUES**` `(value1, value2, value3,...)` <br>
 
-![image.png](image%2060.png)
 
-![image.png](image%2061.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 60.png">
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 61.png">
 
 ---
 
@@ -287,13 +287,13 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </aside>
 
-![image.png](image%2062.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 62.png">
 
-![image.png](image%2063.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 63.png">
 
-![image.png](image%2064.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 64.png">
 
-![image.png](image%2065.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 65.png">
 
 ---
 
@@ -309,21 +309,20 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 **`DELETE`** **`FROM`** `테이블명 [**WHERE**` `삭제하려는 칼럼 명=값]`
 
 </aside>
-
-![image.png](image%2066.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 66.png">
 
 ### **TRUNCATE**
 
 - 테이블의 전체 데이터를 삭제
 - 테이블에 외부키(foreign key)가 없다면 DELETE보다 훨씬 빠르게 삭제됨
 
-![image.png](image%2067.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 67.png">
 
 ### **DROP TABLE**
 
 : 테이블을 삭제한다.
 
-![image.png](image%2068.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 68.png">
 
 ---
 
@@ -354,8 +353,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </div>
 
-
-![image.png](image%2069.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 69.png">
 
 
 
@@ -366,7 +364,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </aside>
 
-![image.png](image%2070.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 70.png">
 
 <aside>
 💡
@@ -377,7 +375,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </aside>
 
-![image.png](image%2071.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 71.png">
 
 <aside>
 💡
@@ -386,7 +384,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </aside>
 
-![image.png](image%2072.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 72.png">
 
 <aside>
 💡
@@ -397,7 +395,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </aside>
 
-![image.png](image%2073.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 73.png">
 
 ---
 
@@ -414,9 +412,9 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </aside>
 
-![image.png](image%2074.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 74.png">
 
-![image.png](image%2075.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 75.png">
 
 ---
 
@@ -431,9 +429,9 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 </aside>
 
-![image.png](image%2076.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 76.png">
 
-![image.png](image%2077.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 77.png">
 
 ---
 
@@ -450,7 +448,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 - full text : 자연어 검색, myisam에서만 지원
 - 
 
-![image.png](image%2078.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 78.png">
 
 ### **primary key**
 
@@ -458,7 +456,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 - where 문을 이용해서 데이터를 조회할 때 가장 고속으로 데이터를 가져올 수 있다.
 - 테이블마다 딱 하나의 primary key를 가질 수 있다.
 
-![여기에서는 id가 primary key](image%2079.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 79.png">
 
 여기에서는 id가 primary key
 
@@ -468,7 +466,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 - primary, unique 보다 속도가 느리다.
 - 여러개의 키를 지정할 수 있다.
 
-![image.png](image%2080.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 80.png">
 
 ### **Full Text**
 
@@ -476,13 +474,13 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 - mysql은 전문 검색 엔진이 아니기 때문에 한글 검색이 잘 안된다.
 - 스토리지 엔진 중 myisam에서만 사용가능하다.
 
-![image.png](image%2081.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 81.png">
 
 ### **중복키**
 
 • 하나의 키에 여러개의 칼럼을 포함
 
-![image.png](image%2082.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 82.png">
 
 ### **인덱스의 정의 방법**
 
@@ -498,23 +496,23 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 : 데이터의 규모가 커지면서 하나의 테이블로 정보를 수용하기가 어려워지면 테이블을 분활하고 테이블 간의 관계성을 부여한다
 
-![image.png](image%2083.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 83.png">
 
 address는 distnace와 관련되어 있기 때문에 location이라는 별도의 테이블로 분할 할 수 있다.
 
 - student 테이블과 location 테이블로 구분
 
-![address와 distance 컬럼이 사라지고 location_id 컬럼이 생겼다.](image%2084.png)
+![address와 distance 컬럼이 사라지고 location_id 컬럼이 생겼다.]<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 84.png">
 
 address와 distance 컬럼이 사라지고 location_id 컬럼이 생겼다.
 
-![image.png](image%2085.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 85.png">
 
 insert 후 결과
 
-![image.png](image%2086.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 86.png">
 
-![image.png](image%2087.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 87.png">
 
 → 이숙경은 location_id 값이 1이기 때문에 서울에 살고 집은 10km 떨어져 있다.
 
@@ -531,7 +529,7 @@ insert 후 결과
 
 가장 많이 사용되는 조인의 형태
 
-![image.png](image%2088.png)
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 88.png">
 
 ---
 
