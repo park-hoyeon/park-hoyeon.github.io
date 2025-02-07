@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "✨ 1 Week - JS + AI Study"
+title: "✨ 1 Week - JS Study"
 permalink: /Study/JS-details/2week
 author_profile: true
 sidebar_main: true
