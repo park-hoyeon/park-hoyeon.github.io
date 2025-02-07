@@ -74,8 +74,8 @@ tags:
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 48.png">
 
-웹 서비스는 웹 서버가 있고 그 웹 서버에 접근하는 클라이언트가 있다.<br>
-마찬가지로 데이터베이스에도 서버가 있어서 데이터를 저장하고, 그 저장된 데이터를 수정하거나 삭제하는 등의 관리 기능을 가지고 있다.<br>
+웹 서비스는 웹 서버가 있고 그 웹 서버에 접근하는 클라이언트가 있다.
+마찬가지로 데이터베이스에도 서버가 있어서 데이터를 저장하고, 그 저장된 데이터를 수정하거나 삭제하는 등의 관리 기능을 가지고 있다.
 그 데이터베이스 서버에 요청해서 여러 가지 명령을 하거나 데이터를 가져오는 것들을 하게 해주는 것이 데이터베이스 클라이언트이다.<br>
 
 ---
@@ -362,7 +362,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 **`SELECT`** **`name**, birthday **FROM**` `student;`
 
-</aside>
+
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 70.png">
 
@@ -371,7 +371,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 `SELECT` `* FROM` `student WHERE` `id=3;`
 
----
+
 
 </aside>
 
@@ -391,7 +391,6 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 
 `SELECT` `* FROM` `student WHERE` `sex='여자'` `OR` `address='서울';`
 
----
 
 </aside>
 
@@ -446,7 +445,7 @@ UPDATE 테이블명 SET 컬럼1=컬럼1의 값, 컬럼2=컬럼2의 값 WHERE 대
 - unique : 중복을 허용하지 않는 유일한 키
 - foreign : 다른 테이블과의 관계성을 부여하는 키
 - full text : 자연어 검색, myisam에서만 지원
-- 
+  
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 78.png">
 
@@ -502,7 +501,7 @@ address는 distnace와 관련되어 있기 때문에 location이라는 별도의
 
 - student 테이블과 location 테이블로 구분
 
-![address와 distance 컬럼이 사라지고 location_id 컬럼이 생겼다.]<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 84.png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/image 84.png">
 
 address와 distance 컬럼이 사라지고 location_id 컬럼이 생겼다.
 
