@@ -52,11 +52,8 @@ sidebar:
       <span class="tag-box">Getting Username</span>
       </td>
       <td style="padding: 8px;">2025.01.31</td>
-    </tr>
+    
     <tr>
-
-  </tbody>
-</table>
 
 <br/>
 
