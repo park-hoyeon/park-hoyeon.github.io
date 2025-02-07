@@ -49,7 +49,7 @@ tags:
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/js/JS2.png"> <br>
 
-: 콘솔은 자바스크립트와 상호작용하기에 좋지만, 긴 문장의 자바스크립트 프로그램을 작성해야 할 경우에는 유용하지 않다. 
+콘솔은 자바스크립트와 상호작용하기에 좋지만, 긴 문장의 자바스크립트 프로그램을 작성해야 할 경우에는 유용하지 않다. 
 이때는 자바스크립트 파일을 생성해야 한다. 
 
 **예를 들어 Document에 momentum 폴더를 만들어보자!**
@@ -84,7 +84,7 @@ body {
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/js/image 1.png"> <br>
 
-: 브라우저에서 app.js 파일을 열어보면 알림창으로 hi 내용이 뜨는 것이 아니라,
+브라우저에서 app.js 파일을 열어보면 알림창으로 hi 내용이 뜨는 것이 아니라,
 사진과 같이 명령어까지 전부 보여지는 텍스트 형태로 내용이 출력되는 것을 확인할 수 있다. <br>
 마찬가지로 css 파일을 열어보면 배경색이 적용된 것이 아닌, 텍스트 내용이 그대로 출력되었다.<br>
 이 문제를 해결하기 위해서는 **HTML 파일**을 브라우저에서 오픈해야 한다.
@@ -122,7 +122,7 @@ body {
 
 - 콘솔에서 간단한 계산이 가능한 이유
 
-: 자바스크립트가 입력한 내용이 숫자라는 것을 알기 때문이다. 
+자바스크립트가 입력한 내용이 숫자라는 것을 알기 때문이다. 
 (데이터 타입, 즉 숫자(정수/소수)를 알아서 구분 가능하다.)
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Study/images/js/image 4.png"> <br>
