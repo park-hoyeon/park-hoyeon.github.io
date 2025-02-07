@@ -25,7 +25,7 @@ sidebar:
 AI 기술은 식물 특성의 측정 및 분석을 자동화하여 식물 성장 및 적응 메커니즘에 대한 더 
 깊은 이해를 제공하고 있다. 식물의 건강과 성장에 대한 실시간 모니터링은 혁신적인 연구와 개선된 작물 관리 관행을 위한 새로운 길을 열어준다<br>  
 
-### <span style="color:#FFBF00">Ⅰ. 프로젝트 배경 및 목표 </span><br>
+### <span style="color:#F2F5A9">Ⅰ. 프로젝트 배경 및 목표 </span><br>
 
 현대 사회에서 반려식물은 실내 공기 질을 개선하고, 심리적 안정감을 주는 등 긍정적인 
 효과로 인기를 얻고 있다. 그러나 식물 관리에 대한 전문 지식이 부족하거나, 일상에서 식
@@ -35,7 +35,7 @@ AI 기술은 식물 특성의 측정 및 분석을 자동화하여 식물 성장
 따라서 본 프로젝트는 반려식물 관리에 적용되는 기술을 체계적으로 분석하는 것을 목표로 한다. 이를 통해 식물 관리 시스템을 이용하여 식물 상태를 파악하고 관리할 수 있는 웹 사이트를 제작하는 것이 이 프로젝트의 목표이다.<br>
 
 
-### <span style="color:#FFBF00">Ⅱ. 식물 시스템 연구자료 정리하기 </span><br>
+### <span style="color:#F2F5A9">Ⅱ. 식물 시스템 연구자료 정리하기 </span><br>
 
 #### 🪴 이동식 인공지능 화분 및 통합 애플리케이션
 
@@ -53,18 +53,94 @@ AI 기술은 식물 특성의 측정 및 분석을 자동화하여 식물 성장
 
 <br>
 
+---
 
 
+#### <span style="color:#F2F5A9"> <식집사들> 웹 페이지 디자인 기획<br>
 
-#### <span style="color:yellow"> <식집사들> 웹 페이지 디자인 기획 </span><br>
+##### 홈페이지
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식1.png">  
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식2.png"> 
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식3.png">  
 
-
-
-
+챗봇 단어를 클릭하면 식물 질병 진단 챗봇으로 이어지며, 현재 기분에 해당하는 단어를 클릭하면 식물과의 대화 페이지로 이동한다.
 
 <br>
+
+##### 로그인
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식4.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식5.png"> 
+
+
+##### 회원가입
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식6.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식7.png"> 
+
+
+##### 비밀번호 찾기
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식8.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식9.png"> 
+
+
+##### 아이디 찾기
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식10.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식11.png"> 
+
+---
+
+##### 커뮤니티
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식12.png"> 
+
+추천글: 글을 올린 시점부터 일주일 간 추천글 후보에 들어갈 수 있다.<br>
+
+공감 5개 이상이면 추천글에 등록<br>
+- 최대 3개 글만 추천 글
+- 더 높은 공감 수가 추천글에 등록되면 갱신
+- 동일하다면 더 최신 글로 갱신
+- 추천글에 최장 3일간만 있을 수 있다.
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식13.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식14.png"> 
+
+##### 글 보기
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식15.png"> 
+
+글쓴이일 경우 수정과 삭제 버튼이 추가로 보이며, 댓글 작성자일 경우 자신이 쓴 댓글에만 삭제 버튼이 보인다.
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식16.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식17.png"> 
+
+공감 버튼을 클릭하면 하트가 붉게 칠해지고 공감 수가 1 올라간다.<br>
+다시 한 번 누르면 최소가 가능하다.<br>
+공유 버튼을 누르면 해당 글의 링크가 복사된다.<br>
+댓글을 쓰고 "댓글 쓰기" 버튼을 누르면 쓴 댓글이 추가된다.<br>
+이전과 다음 버튼을 누르면 해당 글 번호 -1, 번호 +1의 글로 이동한다.<br>
+신고를 누르면 브라우저 내 경고창(alert)이 뜨고, 취소 버튼을 누르면 취소된다.<br>
+-> 직접 운영하게 될 때에는 사유를 받아야 하며, 운영진이 직접 확인할 수 있도록 추가 구현이 더 필요하다!  
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식18.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식19.png"> 
+
+---
+
+##### 마이페이지
+
+
 
 
 ---
