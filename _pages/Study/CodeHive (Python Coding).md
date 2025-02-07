@@ -34,7 +34,7 @@ sidebar:
   <tbody>
     <tr>
       <td style="padding: 8px;">⭐ 1 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/1week">📝 baekjoon 알고리즘 문제 풀이</a>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/1week">📝 baekjoon 알고리즘 문제 풀이</a><br>
 
       <span class="tag-box">1181 단어 정렬</span>
       <span class="tag-box">4153 직각삼각형 (브론즈Ⅲ)</span>
@@ -53,9 +53,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">3 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/3week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      📝 baekjoon 알고리즘 문제 풀이<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/3week">📝 baekjoon 알고리즘 문제 풀이<br></a>      
       <span class="tag-box">1138 한 줄로 서기 (실버Ⅱ)</span>
       <span class="tag-box">2525 오븐 시계 (브론즈Ⅲ)</span>
       <span class="tag-box">1037 약수 (브론즈 Ⅰ)</span>
@@ -64,9 +62,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">4 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/4week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      📝 baekjoon 알고리즘 문제 풀이<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/4week">📝 baekjoon 알고리즘 문제 풀이<br></a>
       <span class="tag-box">2750 수 정렬하기 (브론즈 Ⅱ)</span>
       <span class="tag-box">1259 팰린드롬수 (브론즈I)</span>
       <span class="tag-box">10814 나이순 정렬 (실버V)</span>
@@ -75,9 +71,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">5 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/5week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      ⌨️ HTML 웹 프로그래밍 학습<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/5week">⌨️ HTML 웹 프로그래밍 학습<br></a>
       <span class="tag-box">API</span>
       <span class="tag-box">HTML</span>
       </td>
@@ -85,9 +79,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">6 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/6week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      📝 baekjoon 알고리즘 문제 풀이<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/6week">📝 baekjoon 알고리즘 문제 풀이<br></a>      
       <span class="tag-box">11650 좌표 정렬하기 (실버Ⅴ)</span>
       <span class="tag-box">1978 소수 찾기 (브론즈II)</span>
       <span class="tag-box">10773 제로 (실버Ⅳ)</span>
@@ -96,9 +88,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">⭐ 7 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/7week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      📝 baekjoon 알고리즘 문제 풀이<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/7week">📝 baekjoon 알고리즘 문제 풀이<br></a>
       <span class="tag-box">2108 통계 (실버 III)</span>
       <span class="tag-box">1764 듣보잡 (실버 IV)</span>
       </td>
@@ -106,9 +96,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">8 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/8week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      📝 baekjoon 알고리즘 문제 풀이<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/8week">📝 baekjoon 알고리즘 문제 풀이<br></a>
       <span class="tag-box">2920 음계 (브론즈 II)</span>
       <span class="tag-box">1676 팩토리얼 0의 개수 (실버 V)</span>
       <span class="tag-box">1920 수 찾기 (실버Ⅳ)</span>
@@ -117,9 +105,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">9 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/9week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      ⌨️ HTML 웹 프로그래밍 학습<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/9week">⌨️ HTML 웹 프로그래밍 학습<br></a>
       <span class="tag-box">웹 서버 제작</span>
       <span class="tag-box">Django</span>
       </td>
@@ -127,9 +113,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">10 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/10week">활동 보기</a></td>
-      <td style="padding: 8px;">
-      ⌨️ HTML 웹 프로그래밍 학습<br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/10week">⌨️ HTML 웹 프로그래밍 학습<br></a>
       <span class="tag-box">웹 서버 제작</span>
       <span class="tag-box">Django</span>
       </td>
