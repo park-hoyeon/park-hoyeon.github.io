@@ -34,9 +34,8 @@ sidebar:
   <tbody>
     <tr>
       <td style="padding: 8px;">⭐ 1 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/1week">활동 보기</a></td>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/1week">📝 baekjoon 알고리즘 문제 풀이</a></td>
       <td style="padding: 8px;">
-      📝 baekjoon 알고리즘 문제 풀이<br>
       <span class="tag-box">1181 단어 정렬</span>
       <span class="tag-box">4153 직각삼각형 (브론즈Ⅲ)</span>
       <span class="tag-box">2839 설탕 배달 (실버Ⅳ)</span>
