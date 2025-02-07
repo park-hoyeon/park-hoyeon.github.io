@@ -1,7 +1,7 @@
 ---
 layout: category
 title: "✨ 1 Week - JS + AI Study"
-permalink: /Study/JS-details/2week
+permalink: /Study/JS-details/3week
 author_profile: true
 sidebar_main: true
 types: posts
