@@ -135,12 +135,379 @@ sidebar:
 </body>
 </html>
 
+---
+
+## API 명세서서
+
+<html>
+<head>
+<style>
+.api-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #2d333b;
+  border-radius: 10px;
+  border: 1px solid #444c56;
+  overflow-x: auto;
+}
+
+.api-title {
+  font-size: 1.2em;
+  color: #58a6ff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #444c56;
+}
+
+.api-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #c9d1d9;
+}
+
+.api-table th {
+  background: #22272e;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #58a6ff;
+  border-bottom: 2px solid #444c56;
+}
+
+.api-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #373e47;
+}
+
+.api-table tr:last-child td {
+  border-bottom: none;
+}
+
+.api-table tr:hover {
+  background: #343942;
+}
+
+.method {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.get {
+  background: #1f6feb33;
+  color: #58a6ff;
+}
+
+.post {
+  background: #23863633;
+  color: #7ee787;
+}
+
+.section {
+  color: #d2a8ff;
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<div class="api-container">
+  <div class="api-title">📝 API 명세서</div>
+  <table class="api-table">
+    <thead>
+      <tr>
+        <th>섹션</th>
+        <th>Method</th>
+        <th>URL</th>
+        <th>기능/설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="section">로그인</td>
+        <td><span class="method get">GET</span></td>
+        <td>/</td>
+        <td>기본 로그인 화면</td>
+      </tr>
+      <tr>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/signup</td>
+        <td>회원가입</td>
+      </tr>
+      <tr>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/login</td>
+        <td>아이디,비번 입력</td>
+      </tr>
+      <tr>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/IDfind</td>
+        <td>아이디 찾기</td>
+      </tr>
+      <tr>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/pwfind</td>
+        <td>비밀번호 찾기</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/mypage</td>
+        <td>기본 정보 조회/메인 화면</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/diary</td>
+        <td>내가 쓴 글 목록 조회</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/diary/:id</td>
+        <td>내가 쓴 특정 글 상세 조회</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/scraps</td>
+        <td>스크랩한 글 목록 조회</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/scraps/:id</td>
+        <td>스크랩한 글 상세 조회</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/comment</td>
+        <td>내가 쓴 댓글 목록 조회</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/comment/:id</td>
+        <td>내가 쓴 댓글 상세 조회</td>
+      </tr>
+      <tr>
+        <td class="section">마이페이지</td>
+        <td><span class="method post">POST</span></td>
+        <td>/write</td>
+        <td>글 작성</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+.api-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #2d333b;
+  border-radius: 10px;
+  border: 1px solid #444c56;
+  overflow-x: auto;
+}
+
+.api-title {
+  font-size: 1.2em;
+  color: #58a6ff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #444c56;
+}
+
+.api-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #c9d1d9;
+}
+
+.api-table th {
+  background: #22272e;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #58a6ff;
+  border-bottom: 2px solid #444c56;
+}
+
+.api-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #373e47;
+}
+
+.api-table tr:last-child td {
+  border-bottom: none;
+}
+
+.api-table tr:hover {
+  background: #343942;
+}
+
+.method {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: center;
+}
+
+.get {
+  background: #1f6feb33;
+  color: #58a6ff;
+}
+
+.post {
+  background: #23863633;
+  color: #7ee787;
+}
+
+.put {
+  background: #9e6a03aa;
+  color: #f7c843;
+}
+
+.delete {
+  background: #8b1d1daa;
+  color: #ff7b72;
+}
+
+.section {
+  color: #d2a8ff;
+  font-weight: 500;
+}
+
+.url-path {
+  font-family: monospace;
+  color: #c9d1d9;
+}
+
+.param {
+  color: #ffa657;
+}
+</style>
+</head>
+<body>
+
+<div class="api-container">
+  <div class="api-title">🌐 커뮤니티 API 명세서</div>
+  <table class="api-table">
+    <thead>
+      <tr>
+        <th>섹션</th>
+        <th>Method</th>
+        <th>URL</th>
+        <th>기능/설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="section">홈페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/plantowner</td>
+        <td>메인 페이지</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/plantowner/community/<span class="param">:boardId</span></td>
+        <td>자유게시판으로 이동</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/plantowner/community/<span class="param">:boardId</span>/board?page=<span class="param">:n</span></td>
+        <td>페이지 이동</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/plantowner/community/<span class="param">:boardId</span>/<span class="param">:postId</span></td>
+        <td>게시글 열람</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/plantowner/community/serch?query=<span class="param">:keyword</span></td>
+        <td>게시글 검색</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/plantowner/community/post/draft/<span class="param">:draftId</span></td>
+        <td>임시 저장글 불러오기</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method post">POST</span></td>
+        <td class="url-path">/plantowner/community/<span class="param">:boardId</span>/write</td>
+        <td>새 글 작성</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method post">POST</span></td>
+        <td class="url-path">/plantowner/community/<span class="param">:boardId</span>/<span class="param">:postId</span>/scrap</td>
+        <td>스크랩 저장/삭제</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method put">PUT</span></td>
+        <td class="url-path">/plantowner/community/edit/<span class="param">:postId</span></td>
+        <td>게시글 수정</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method put">PUT</span></td>
+        <td class="url-path">/plantowner/community/post/draft/<span class="param">:draftId</span></td>
+        <td>임시 저장글 저장</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method delete">DELETE</span></td>
+        <td class="url-path">/plantowner/community/post/<span class="param">:postId</span></td>
+        <td>게시글 삭제</td>
+      </tr>
+      <tr>
+        <td class="section">커뮤니티</td>
+        <td><span class="method delete">DELETE</span></td>
+        <td class="url-path">/plantowner/community/<span class="param">:boardId</span>/<span class="param">:postId</span>/comment/<span class="param">:commentId</span></td>
+        <td>댓글 삭제</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
 
 ---
 
 ### 🌿 식집사들 페이지별 기능 분석
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/기능1.png">  
+
+---
+
 
 
 
