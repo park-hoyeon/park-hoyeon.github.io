@@ -168,8 +168,8 @@ app.post('/find-id', async (req, res) => {
   </code></pre>
 </div>
 
-먼저 클라이언트가 email을 서버로 보내면 req.body에서 이메일 값을 추출하여 변수 email에 저장한다.
-그리고 fetchUserByEmail(email)을 이용해 사용자의 이메일을 가져온다.
+먼저 클라이언트가 email을 서버로 보내면 req.body에서 이메일 값을 추출하여 변수 email에 저장한다.<br>
+그리고 fetchUserByEmail(email)을 이용해 사용자의 이메일을 가져온다.<br>
 해당 이메일을 가진 사용자가 존재하면 user.ID를 클라이언트에 반환하도록 했다.<br>
 **위의 코드와 비슷하게 비밀번호 찾기 기능을 구현했다!!!**
 
@@ -213,9 +213,10 @@ app.post('/find-password', async (req, res) => {
 ##### 새 비밀번호 생성 및 암호화
 
 generateRandomPassword()는 새로운 임시 비밀번호를 생성하는 함수이다.<br>
-hashPassword(newPassword)는 새 비밀번호를 암호화하는 비동기 함수이다. 이 암호화된 값인 hashedPassword는 데이터베이스에 저장된다.
+hashPassword(newPassword)는 새 비밀번호를 암호화하는 비동기 함수이다.<br>
+이 암호화된 값인 hashedPassword는 데이터베이스에 저장된다.
 
-``` await updateUserPassword(ID, hashedPassword); ```  <br>
+``` await updateUserPassword(ID, hashedPassword); ``` <br>
 그리고 데이터베이스에서 해당 ID를 가진 사용자의 비밀번호를 새로 만든 암호화된 비밀번호로 업데이트 했다.
 
 ---
