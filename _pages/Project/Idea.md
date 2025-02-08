@@ -95,7 +95,7 @@ sidebar:
     <span class="info-label">담당 역할 - 백엔드</span>
     <span class="info-value">
       • 로그인 및 회원 관리 <span class="highlight">(기여도 100%)</span><br>
-      • 마이페이지 웹서 구현 <span class="highlight">(기여도 100%)</span><br>
+      • 마이페이지 웹서버 구현 <span class="highlight">(기여도 100%)</span><br>
       • 서비스 기획 및 방향성 설정 <span class="highlight">(기여도 80%)</span>
     </span>
   </div>
