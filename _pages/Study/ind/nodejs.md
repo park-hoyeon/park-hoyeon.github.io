@@ -30,13 +30,13 @@ sidebar:
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
   <tbody>
     <tr>
-      <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codeit-details/1week">📝 서버 측 JS - 간단한 웹앱 만들기</a><br>
-      <span class="tag-box">NPM</span>
-      <span class="tag-box">Callback</span>
-      <span class="tag-box">동기식 / 비동기식</span>
+      <td style="padding: 8px;">1 </td>
+      <td style="padding: 8px;"><a href="/Project/plantcode/">📝 백엔드 - 로그인 / 로그아웃 / 회원가입</a><br>
+      <span class="tag-box">session</span>
+      <span class="tag-box">cookie</span>
+      <span class="tag-box">express</span>
       </td>
-      <td style="padding: 8px;">2024.12.26</td>
+      <td style="padding: 8px;">2025 상반기 프로젝트</td>
     </tr>
     <tr>
       <td style="padding: 8px;">2 Week</td>
