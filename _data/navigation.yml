@@ -32,6 +32,8 @@ sidebar-category:
     children:
       - title: "✏️ 알고리즘"
         url: "/ind/python/"
+      - title: "✏️ Node.js"
+        url: "/ind/nodejs/"
 
     
   # - title: "About"
