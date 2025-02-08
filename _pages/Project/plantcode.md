@@ -44,7 +44,10 @@ sidebar:
 세션은 비밀번호와 같은 인증 정보를 쿠키에 저장하지 않고 서버에 저장한다. 대신 쿠키에는 사용자 식별자인 session-id를 저장합니다.  이처럼 세션도 쿠키를 이용하지만 추정 불가능한 session-id를 주고받기 때문에 보안상 안전하다. <br>
 따라서 노출되면 안 되는 중요한 사용자의 정보는 세션을 이용하기로 결정했다.
 
----
+---   
+
+
+
 
 ### express-session 미들웨어 
 
@@ -71,12 +74,16 @@ app.use(session({
 </div>
 
 먼저 세션을 암호화하기 위한 secret_key를 가져왔다. 그리고 사용자의 세션 데이터가 변경되지 않은 경우에 서버는 세션을 다시 저장하지 않도록 설정하였다. 또한 브라우저가 불필요한 빈 세션 쿠키를 생성하는 것을 방지하기 위해 saveUninitialized를 false로 해서, 실제 세션 데이터가 설정되기 전까지는 세션을 생성하지 못하도록 하였다.<br>
-secure값이 true일 경우에는 HTTPS 연결에서만 쿠키가 전송된다. 그러나 나는 개발 환경에서 HTTPS를 사용하지 않을 수 있다고 생각해서 쿠키의 설정값으로 secure를 false로 했다.<br>
+secure값이 true일 경우에는 HTTPS 연결에서만 쿠키가 전송된다. 그러나 나는 개발 환경에서 HTTPS를 사용하지 않을 수 있다고 생각해서 쿠키의 설정값으로 secure를 false로 했다.<br>   
+
+
 **개발이 완료된 후에 배포 환경에서는 secure를 true로 변경할 예정이다!!!!**
 
 
 
----
+---   
+
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
