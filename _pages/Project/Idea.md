@@ -31,6 +31,37 @@ sidebar:
 홈 트렌드와 결합하여 농업 분야로의 ai확산이 빠르게 발전하고 있다.<br>
 따라서 본 프로젝트는 반려식물 관리에 적용되는 기술을 체계적으로 분석하는 것을 목표로 한다. 이를 통해 식물 관리 시스템을 이용하여 식물 상태를 파악하고 관리할 수 있는 웹 사이트를 제작하는 것이 이 프로젝트의 목표이다.<br>
 
+---
+
+
+
+<div class="info-box">
+  <p>개발 기간:     2025.01 ~ 2025.02 (2개월)</p>
+  <p>플랫폼:        Web</p>
+  <p>개발 인원:     3명</p>
+  <p>
+                    담당 역할: 로그인 및 회원 관리 
+    <span class="highlight">(기여도 100%)</span>, 
+    백엔드 
+    <span class="highlight">(기여도 55%)</span><br>
+    서비스 기획 및 방향성 설정 <span class="highlight">(기여도 80%)</span><br>
+  </p>
+</div>
+
+🖱️개발 환경
+<div class="info-box">
+  <p>언어: JavaScript (ES6+)</p>
+  <p>서버:  Node.js (v16+)</p>
+  <p>프레임워크:  Express.js</p>
+  <p>DB: SQLite (각 파일 기반 DB)</p>
+  <p>IDE: Visual Studio Code</p>
+  <p>라이브러리: cors, express-session, sqlite3, pug</p>
+</div>
+
+---
+
+
+
 
 ### 🌿 식집사들 페이지별 기능 분석
 
