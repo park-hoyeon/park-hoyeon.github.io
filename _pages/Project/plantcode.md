@@ -268,7 +268,7 @@ newUser 변수를 만들어 새로운 사용자 데이터를 담았다. <br>
 
 ---
 
-여기부터!
+💻 [백엔드 - 마이페이지 코드 구현 보러가기](https://park-hoyeon.github.io/Project/plantmypage) 
 
 ---
 
