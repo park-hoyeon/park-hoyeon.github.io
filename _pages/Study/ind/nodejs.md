@@ -24,9 +24,6 @@ sidebar:
 
 <br/>
 
-
-### 주차별 내용
-
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
   <tbody>
     <tr>
