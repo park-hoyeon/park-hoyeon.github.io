@@ -33,30 +33,108 @@ sidebar:
 
 ---
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.info-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #2d333b;
+  border-radius: 10px;
+  border: 1px solid #444c56;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.info-title {
+  font-size: 1.1em;
+  color: #58a6ff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #444c56;
+  padding-bottom: 8px;
+}
 
-<div class="info-box">
-  <p>개발 기간:     2025.01 ~ 2025.02 (2개월)</p>
-  <p>플랫폼:        Web</p>
-  <p>개발 인원:     3명</p>
-  <p>
-                    담당 역할: 로그인 및 회원 관리 
-    <span class="highlight">(기여도 100%)</span>, 
-    백엔드 
-    <span class="highlight">(기여도 55%)</span><br>
-    서비스 기획 및 방향성 설정 <span class="highlight">(기여도 80%)</span><br>
-  </p>
+.info-row {
+  display: flex;
+  margin: 8px 0;
+  align-items: flex-start;
+}
+
+.info-label {
+  min-width: 120px;
+  color: #8b949e;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #c9d1d9;
+  flex: 1;
+}
+
+.highlight {
+  color: #7ee787;
+  font-weight: 500;
+}
+
+</style>
+</head>
+<body>
+
+<div class="info-container">
+  <div class="info-title">프로젝트 개요</div>
+  <div class="info-row">
+    <span class="info-label">개발 기간</span>
+    <span class="info-value">2025.01 ~ 2025.02 (2개월)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">플랫폼</span>
+    <span class="info-value">Web</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">개발 인원</span>
+    <span class="info-value">3명</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">담당 역할</span>
+    <span class="info-value">
+      • 로그인 및 회원 관리 <span class="highlight">(기여도 100%)</span><br>
+      • 백엔드 <span class="highlight">(기여도 55%)</span><br>
+      • 서비스 기획 및 방향성 설정 <span class="highlight">(기여도 80%)</span>
+    </span>
+  </div>
 </div>
 
-🖱️개발 환경
-<div class="info-box">
-  <p>언어: JavaScript (ES6+)</p>
-  <p>서버:  Node.js (v16+)</p>
-  <p>프레임워크:  Express.js</p>
-  <p>DB: SQLite (각 파일 기반 DB)</p>
-  <p>IDE: Visual Studio Code</p>
-  <p>라이브러리: cors, express-session, sqlite3, pug</p>
+<div class="info-container">
+  <div class="info-title">🖱️개발 환경</div>
+  <div class="info-row">
+    <span class="info-label">언어</span>
+    <span class="info-value">JavaScript (ES6+)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">서버</span>
+    <span class="info-value">Node.js (v16+)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">프레임워크</span>
+    <span class="info-value">Express.js</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">DB</span>
+    <span class="info-value">SQLite (각 파일 기반 DB)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">IDE</span>
+    <span class="info-value">Visual Studio Code</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">라이브러리</span>
+    <span class="info-value">cors, express-session, sqlite3, pug</span>
+  </div>
 </div>
+
+</body>
+</html>
+
 
 ---
 
