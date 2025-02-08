@@ -16,13 +16,18 @@ sidebar:
 
 {% for post in posts_with_flutter_and_solutions %}
   {% include archive-single.html type=page.entries_layout %}
-{% endfor %}
+{% endfor %}   
 
 
 
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식집사 사진 편집2.png">  
+
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/식집사 사진 편집2.png">   
+
+
 
 먼저 웹사이트의 로그인 기능을 구현해보자!<br> 
 로그인 코드를 작성하기에 앞서 쿠키와 세션 중 어떤 방식으로 로그인을 구현할 것인지 고민했다.
