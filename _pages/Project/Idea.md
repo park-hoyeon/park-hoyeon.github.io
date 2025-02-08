@@ -143,48 +143,27 @@ sidebar:
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-/* 기본 스타일 */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.5;
-  padding: 16px;
-  background: #22272e;
-}
-
 .api-container {
-  margin: 20px auto;
+  margin: 20px 0;
   padding: 20px;
   background: #2d333b;
   border-radius: 10px;
   border: 1px solid #444c56;
   overflow-x: auto;
-  max-width: 1200px;
 }
-
 .api-title {
   font-size: 1.2em;
   color: #58a6ff;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid #444c56;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
-
 .api-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   color: #c9d1d9;
 }
-
 .api-table th {
   background: #22272e;
   padding: 12px 15px;
@@ -192,100 +171,51 @@ body {
   font-weight: 600;
   color: #58a6ff;
   border-bottom: 2px solid #444c56;
-  white-space: nowrap;
 }
-
 .api-table td {
   padding: 12px 15px;
   border-bottom: 1px solid #373e47;
+  white-space: nowrap;  /* 추가: 단어 줄바꿈 방지 */
 }
-
 .api-table tr:last-child td {
   border-bottom: none;
 }
-
 .api-table tr:hover {
   background: #343942;
 }
-
 .method {
   display: inline-block;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 0.9em;
   font-weight: 600;
-  min-width: 65px;
-  text-align: center;
 }
-
 .get {
   background: #1f6feb33;
   color: #58a6ff;
 }
-
 .post {
   background: #23863633;
   color: #7ee787;
 }
-
 .section {
   color: #d2a8ff;
   font-weight: 500;
 }
 
-/* 모바일 반응형 스타일 */
+/* 모바일 환경을 위한 추가 스타일 */
 @media screen and (max-width: 768px) {
-  body {
-    padding: 8px;
+  .api-container {
+    padding: 10px;
   }
   
-  .api-container {
-    margin: 10px 0;
-    padding: 12px;
-  }
-
   .api-table {
-    display: block;
+    font-size: 0.9em;
   }
-
-  .api-table thead {
-    display: none;
-  }
-
-  .api-table tbody {
-    display: block;
-  }
-
-  .api-table tr {
-    display: block;
-    margin-bottom: 16px;
-    background: #22272e;
-    border-radius: 8px;
-    padding: 12px;
-  }
-
-  .api-table td {
-    display: block;
-    padding: 8px 4px;
-    border: none;
-    position: relative;
-  }
-
-  .api-table td::before {
-    content: attr(data-label);
-    font-weight: 600;
-    color: #58a6ff;
-    margin-right: 8px;
-    min-width: 90px;
-    display: inline-block;
-  }
-
-  .api-table td:not(:last-child) {
-    border-bottom: 1px solid #373e47;
-  }
-
-  .method {
-    margin: 4px 0;
+  
+  .api-table td, 
+  .api-table th {
+    padding: 8px 10px;
   }
 }
 </style>
@@ -304,82 +234,82 @@ body {
     </thead>
     <tbody>
       <tr>
-        <td class="section" data-label="섹션">로그인</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/</td>
-        <td data-label="기능/설명">기본 로그인 화면</td>
+        <td class="section">로그인</td>
+        <td><span class="method get">GET</span></td>
+        <td>/</td>
+        <td>기본 로그인 화면</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">로그인</td>
-        <td data-label="Method"><span class="method post">POST</span></td>
-        <td data-label="URL">/signup</td>
-        <td data-label="기능/설명">회원가입</td>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/signup</td>
+        <td>회원가입</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">로그인</td>
-        <td data-label="Method"><span class="method post">POST</span></td>
-        <td data-label="URL">/login</td>
-        <td data-label="기능/설명">아이디,비번 입력</td>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/login</td>
+        <td>아이디,비번 입력</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">로그인</td>
-        <td data-label="Method"><span class="method post">POST</span></td>
-        <td data-label="URL">/IDfind</td>
-        <td data-label="기능/설명">아이디 찾기</td>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/IDfind</td>
+        <td>아이디 찾기</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">로그인</td>
-        <td data-label="Method"><span class="method post">POST</span></td>
-        <td data-label="URL">/pwfind</td>
-        <td data-label="기능/설명">비밀번호 찾기</td>
+        <td class="section">로그인</td>
+        <td><span class="method post">POST</span></td>
+        <td>/pwfind</td>
+        <td>비밀번호 찾기</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/mypage</td>
-        <td data-label="기능/설명">기본 정보 조회/메인 화면</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/mypage</td>
+        <td>기본 정보 조회/메인 화면</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/diary</td>
-        <td data-label="기능/설명">내가 쓴 글 목록 조회</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/diary</td>
+        <td>내가 쓴 글 목록 조회</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/diary/:id</td>
-        <td data-label="기능/설명">내가 쓴 특정 글 상세 조회</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/diary/:id</td>
+        <td>내가 쓴 특정 글 상세 조회</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/scraps</td>
-        <td data-label="기능/설명">스크랩한 글 목록 조회</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/scraps</td>
+        <td>스크랩한 글 목록 조회</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/scraps/:id</td>
-        <td data-label="기능/설명">스크랩한 글 상세 조회</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/scraps/:id</td>
+        <td>스크랩한 글 상세 조회</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/comment</td>
-        <td data-label="기능/설명">내가 쓴 댓글 목록 조회</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/comment</td>
+        <td>내가 쓴 댓글 목록 조회</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method get">GET</span></td>
-        <td data-label="URL">/comment/:id</td>
-        <td data-label="기능/설명">내가 쓴 댓글 상세 조회</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method get">GET</span></td>
+        <td>/comment/:id</td>
+        <td>내가 쓴 댓글 상세 조회</td>
       </tr>
       <tr>
-        <td class="section" data-label="섹션">마이페이지</td>
-        <td data-label="Method"><span class="method post">POST</span></td>
-        <td data-label="URL">/write</td>
-        <td data-label="기능/설명">글 작성</td>
+        <td class="section">마이페이지</td>
+        <td><span class="method post">POST</span></td>
+        <td>/write</td>
+        <td>글 작성</td>
       </tr>
     </tbody>
   </table>
