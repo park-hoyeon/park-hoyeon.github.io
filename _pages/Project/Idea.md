@@ -92,20 +92,20 @@ sidebar:
   </div>
   <div class="info-row">
     <span class="info-label">개발 인원</span>
-    <span class="info-value">3명</span>
+    <span class="info-value">3명 (백엔드2 / 프론트엔드1)</span>
   </div>
   <div class="info-row">
-    <span class="info-label">담당 역할</span>
+    <span class="info-label">담당 역할 - 백엔드</span>
     <span class="info-value">
       • 로그인 및 회원 관리 <span class="highlight">(기여도 100%)</span><br>
-      • 백엔드 <span class="highlight">(기여도 55%)</span><br>
+      • 마이페이지 웹서 구현 <span class="highlight">(기여도 100%)</span><br>
       • 서비스 기획 및 방향성 설정 <span class="highlight">(기여도 80%)</span>
     </span>
   </div>
 </div>
 
 <div class="info-container">
-  <div class="info-title">🖱️개발 환경</div>
+  <div class="info-title">🔒개발 환경</div>
   <div class="info-row">
     <span class="info-label">언어</span>
     <span class="info-value">JavaScript (ES6+)</span>
@@ -137,7 +137,7 @@ sidebar:
 
 ---
 
-## API 명세서서
+## API 명세서
 
 <html>
 <head>
