@@ -1,5 +1,5 @@
 ---
-title: " [2025 상반기] 🪴식집사들 프로젝트"
+title: " [2025 상반기] 🪴식집사들 - 웹앱 반려식물 관리 및 진료 서비스"
 layout: category
 permalink: /Project/plant/
 author_profile: true
