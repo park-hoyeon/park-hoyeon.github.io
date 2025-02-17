@@ -20,18 +20,16 @@ sidebar-category:
 
   - title: "✨ Project"
     children:
-      - title: "🪴식집사들"
-        url: "/Project/plant/"
       - title: "💌 조각집 <추억 저장 웹사이트>"
         url: "/Project/조각집/"
+      - title: "🪴식집사들"
+        url: "/Project/plant/"
       - title: "👩‍💻스터디 활동자료 웹사이트 제작"
         url: "/Project/coding/"
     
         
   - title: "✨ 개인 공부 기록"
     children:
-      - title: "✏️ 알고리즘"
-        url: "/ind/python/"
       - title: "✏️ Node.js"
         url: "/ind/nodejs/"
 
