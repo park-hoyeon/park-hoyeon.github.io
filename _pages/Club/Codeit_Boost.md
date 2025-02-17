@@ -40,6 +40,9 @@ taxonomy:
   **[Codeit Boost 아티클 세미나 3](/Club/Club-details/article3)**
 <span style="font-size:70%">2024.12.18</span><br>  
 
+⭐⭐⭐ **[Codeit Boost 데모데이 프로젝트 - 조각집](/Club/Club-details/article3)**
+<span style="font-size:70%">2025 1분기 프로젝트</span><br>  
+
 ⭐  **[Codeit Boost 백엔드 스터디](https://park-hoyeon.github.io/Study/Codeit%20Boost%20BE%20Study/)**
 주차별 스터디 내용 보러가기<br>  
 
