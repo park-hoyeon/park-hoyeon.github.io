@@ -21,7 +21,7 @@ sidebar-category:
   - title: "✨ Project"
     children:
       - title: "💌 조각집 <추억 저장 웹사이트>"
-        url: "/Project/조각집/"
+        url: "/Project/조각집new/"
       - title: "🪴식집사들"
         url: "/Project/plant/"
       - title: "👩‍💻스터디 활동자료 웹사이트 제작"
