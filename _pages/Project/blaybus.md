@@ -29,13 +29,6 @@ sidebar:
 팀은 랜덤으로 배정 되었고, 그 결과 현재 개발 분야로 근무하고 계신 직장인들과 대학생 등 다양한 직종의 사람들과 협업할 기회를 가지게 되었다.
 10일 간의 짧은 기간동안 mvp를 개발해보며 협업과 개발의 경험을 쌓을 수 있었다.
 그리고 파이널데이 발표와 웹앱 시연을 통해 평가를 받았다. 평가 결과 기술 구현 1등 "테크인사이트상"을 수여하였다.<br>
-
-먼저 프로젝트 
-
-
-사실 10일이면 일반적인 해커톤보다 훨씬 기간이 긴 편이라고 한다. 처음으로 10일 간의 짧은 기간동안 MVP를 개발해보는 경험을 통해 협업과 개발 관련하여 많은 경험을 얻어갈 수 있었다.
-
-추가로, 블레이버스 자체 툴을 사용하여 프로젝트 상황 및 일정관리를 진행하였다. 파이널데이 발표 때 이 툴로 팀별 총 기여시간 및 태스크 완료율 등의 통계를 내 팀워크를 평가하였는데, 우리 팀이 작업 완료율 및 완료율이 가장 높아 팀워크 상을 수여하였다.  <br>
   
   
 먼저 프로젝트 개요는는 다음과 같다.<br>
@@ -106,9 +99,9 @@ sidebar:
   <div class="info-row">
     <span class="info-label">담당 역할 - 백엔드</span>
     <span class="info-value">
-      • 로그인 및 회원 관리 <span class="highlight">(기여도 100%)</span><br>
-      • 마이페이지 웹서버 구현 <span class="highlight">(기여도 100%)</span><br>
-      • 서비스 기획 및 방향성 설정 <span class="highlight">(기여도 80%)</span>
+      • 요양보호사 정보 등록 구현 <span class="highlight">(기여도 100%)</span><br>
+      • 센터 관리자 정보 등록 구현 <span class="highlight">(기여도 100%)</span><br>
+      • 요양보호사 구인-구직 알고리즘 기능 구현 <span class="highlight">(기여도 60%)</span>
     </span>
   </div>
 </div>
@@ -117,7 +110,7 @@ sidebar:
   <div class="info-title">🔒개발 환경</div>
   <div class="info-row">
     <span class="info-label">🚀 Stacks</span>
-    <span class="info-value">HTML, CSS(SCSS), JavaScript, React.js, Node.js</span>
+    <span class="info-value">HTML, CSS(SCSS), JavaScript, React.js, Node.js, MongoDB</span>
   </div>
   <div class="info-row">
     <span class="info-label">🛠 Tools</span>
@@ -125,7 +118,7 @@ sidebar:
   </div>
   <div class="info-row">
     <span class="info-label">👥 Collaboration</span>
-    <span class="info-value">GitHub, Notion, Discord, Slack </span>
+    <span class="info-value">GitHub, Notion, Discord</span>
   </div>
 </div>
 
@@ -133,52 +126,140 @@ sidebar:
 </html>
 
 ---
-본격적인 프로젝트 작업에 들어가기에 앞서 팀원들과 프로젝트 작업 일정과 규칙을 조율하고 아래와 같은 소통 방식을 사용했다.
+### 프로젝트
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 204311.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0002.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 204329.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0003.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 204341.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0004.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 204353.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0005.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 204404.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0006.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 204426.png">    
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0007.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0008.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0009.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드00010.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0011.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0012.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0013.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0014.png"> 
 
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0015.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드00016.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0017.png"> 
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0019.png"> 
+우리팀은 10일동안 매일 출석하여 끊임없는 회의와 밤샘 작업을 했다.
 
 
 ---
-### 웹페이지 디자인 수정
+### API 명세
 
-기존에 코드잇에서 제공했던 디자인과 요구사항 중에 몇 가지 내용을 변경하여 아래와 같은 디자인으로 새롭게 디자인했다.  
+## 잔물결 API 명세서
 
+<div class="api-container">
+  <div class="api-title">잔물결 API 명세서</div>
+  <table class="api-table">
+    <thead>
+      <tr>
+        <th>섹션</th>
+        <th>Method</th>
+        <th>URL</th>
+        <th>기능/설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 요양보호사 -->
+      <tr>
+        <td class="section">요양보호사</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/caregiver?elderId=<span class="param">{elderId}</span></td>
+        <td>요양보호사 정보 조회 API<br>elderId에 해당하는 어르신의 정보와 매칭되는 요양보호사 정보 요청<br>query parameter: elderId (Number)</td>
+      </tr>
+      <tr>
+        <td class="section">요양보호사</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/caregiver?id=<span class="param">{id}</span></td>
+        <td>특정 요양보호사 데이터 조회 API<br>query parameter: id (Number)</td>
+      </tr>
+      <tr>
+        <td class="section">요양보호사</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/caregiver</td>
+        <td>요양보호사 목록 조회 API</td>
+      </tr>
+      <tr>
+        <td class="section">요양보호사</td>
+        <td><span class="method patch">PATCH</span></td>
+        <td class="url-path">/api/caregiver</td>
+        <td>특정 요양보호사의 활동 여부 on/off API<br>
+        body: {<br>
+        &nbsp;&nbsp;id: caregiver_id,<br>
+        &nbsp;&nbsp;isActive: boolean<br>
+        }</td>
+      </tr>
+      <!-- 어르신 -->
+      <tr>
+        <td class="section">어르신</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/elders</td>
+        <td>어르신 목록 조회 API</td>
+      </tr>
+      <!-- 관리자 -->
+      <tr>
+        <td class="section">관리자</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/admin?id=<span class="param">{id}</span></td>
+        <td>특정 관리자 정보 조회 API<br>query parameter: id (Number)</td>
+      </tr>
+      <!-- 제안 -->
+      <tr>
+        <td class="section">제안</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/propose?caregiverId=<span class="param">{caregiverId}</span></td>
+        <td>특정 요양보호사의 제안 목록 조회 API<br>query parameter: caregiverId (Number)</td>
+      </tr>
+      <tr>
+        <td class="section">제안</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/propose/caregiverId=<span class="param">{caregiverId}</span></td>
+        <td>특정 요양보호사의 [진행 중/종료] 된 제안 목록<br>query paramter: caregiverId (Number)</td>
+      </tr>
+      <tr>
+        <td class="section">제안</td>
+        <td><span class="method post">POST</span></td>
+        <td class="url-path">/api/propose</td>
+        <td>새로운 제안 추가 API<br>
+        interface {<br>
+        &nbsp;&nbsp;caregiverId: Number,<br>
+        &nbsp;&nbsp;elderId: Number,<br>
+        &nbsp;&nbsp;type: "pending" | "accepted" | "rejected"<br>
+        }</td>
+      </tr>
+      <!-- 카카오 -->
+      <tr>
+        <td class="section">카카오</td>
+        <td><span class="method get">GET</span></td>
+        <td class="url-path">/api/kakao-search?query=<span class="param">{query}</span></td>
+        <td>카카오 주소 조회 API<br>query parameter: query (String) ← 주소 정보</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 160431.png"> 
-
-구체적인 변경 내용은 다음과 같다. <br>
-
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 160915.png"> 
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 160927.png"> 
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 160944.png"> 
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-05 160957.png"> 
-
-
-
-
----
-
-## API 명세서
-
-<html>
-<head>
 <style>
 .api-container {
   margin: 20px 0;
@@ -256,6 +337,11 @@ sidebar:
   color: #ff7b72;
 }
 
+.patch {
+  background: #6e40c9aa;
+  color: #d2a8ff;
+}
+
 .section {
   color: #d2a8ff;
   font-weight: 500;
@@ -270,238 +356,18 @@ sidebar:
   color: #ffa657;
 }
 </style>
-</head>
-<body>
 
-<div class="api-container">
-  <div class="api-title"> 그룹 및 게시글 API 명세서</div>
-  <table class="api-table">
-    <thead>
-      <tr>
-        <th>섹션</th>
-        <th>Method</th>
-        <th>URL</th>
-        <th>기능/설명</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- 그룹 -->
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method post">POST</span></td>
-        <td class="url-path">/api/groups</td>
-        <td>그룹 등록</td>
-      </tr>
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method get">GET</span></td>
-        <td class="url-path">/api/groups</td>
-        <td>그룹 목록 조회</td>
-      </tr>
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method put">PUT</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span></td>
-        <td>그룹 수정</td>
-      </tr>
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method delete">DELETE</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span></td>
-        <td>그룹 삭제</td>
-      </tr>
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method get">GET</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span></td>
-        <td>그룹 상세 정보 조회</td>
-      </tr>
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method post">POST</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span>/verify-password</td>
-        <td>그룹 조회 권한 확인</td>
-      </tr>
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method post">POST</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span>/like</td>
-        <td>그룹 공감하기</td>
-      </tr>
-      <tr>
-        <td class="section">그룹</td>
-        <td><span class="method get">GET</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span>/is-public</td>
-        <td>그룹 공개 여부 확인</td>
-      </tr>
-      <!-- 게시글 -->
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method post">POST</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span>/posts</td>
-        <td>게시글 등록</td>
-      </tr>
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method get">GET</span></td>
-        <td class="url-path">/api/groups/<span class="param">{groupId}</span>/posts</td>
-        <td>게시글 목록 조회</td>
-      </tr>
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method put">PUT</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span></td>
-        <td>게시글 수정</td>
-      </tr>
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method delete">DELETE</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span></td>
-        <td>게시글 삭제</td>
-      </tr>
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method get">GET</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span></td>
-        <td>게시글 상세 정보 조회</td>
-      </tr>
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method post">POST</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span>/verify-password</td>
-        <td>게시글 조회 권한 확인</td>
-      </tr>
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method post">POST</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span>/like</td>
-        <td>게시글 공감하기</td>
-      </tr>
-      <tr>
-        <td class="section">게시글</td>
-        <td><span class="method get">GET</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span>/is-public</td>
-        <td>게시글 공개 여부 확인</td>
-      </tr>
-      <!-- 댓글 -->
-      <tr>
-        <td class="section">댓글</td>
-        <td><span class="method post">POST</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span>/comments</td>
-        <td>댓글 등록</td>
-      </tr>
-      <tr>
-        <td class="section">댓글</td>
-        <td><span class="method get">GET</span></td>
-        <td class="url-path">/api/posts/<span class="param">{postId}</span>/comments</td>
-        <td>댓글 목록 조회</td>
-      </tr>
-      <tr>
-        <td class="section">댓글</td>
-        <td><span class="method put">PUT</span></td>
-        <td class="url-path">/api/comments/<span class="param">{commentId}</span></td>
-        <td>댓글 수정</td>
-      </tr>
-      <tr>
-        <td class="section">댓글</td>
-        <td><span class="method delete">DELETE</span></td>
-        <td class="url-path">/api/comments/<span class="param">{commentId}</span></td>
-        <td>댓글 삭제</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
-</body>
-</html>
+
+
 
 
 ---
-
-### 🌿 Userflow 
-
-
-<html>
-<head>
-<style>
-.info-container {
-  margin: 20px 0;
-  padding: 20px;
-  background: #2d333b;
-  border-radius: 10px;
-  border: 1px solid #444c56;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.info-title {
-  font-size: 1.1em;
-  color: #58a6ff;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #444c56;
-  padding-bottom: 8px;
-}
-
-.info-row {
-  display: flex;
-  margin: 8px 0;
-  align-items: flex-start;
-}
-
-.info-label {
-  min-width: 120px;
-  color: #8b949e;
-  font-weight: 500;
-}
-
-.info-value {
-  color: #c9d1d9;
-  flex: 1;
-}
-
-.highlight {
-  color: #7ee787;
-  font-weight: 500;
-}
-
-</style>
-</head>
-<body>
-
-<div class="info-container">
-  <div class="info-title">역할분담</div>
-  <div class="info-row">
-    <span class="info-value">
-      • 그룹 목록 페이지 <span class="highlight">(기여도 100%)</span><br>
-      • 그룹 상세 페이지 <span class="highlight">(기여도 100%)</span><br>
-      • 추억 상세 페이지 <span class="highlight">(기여도 100%)</span><br>
-      • 공개 그룹 목록 페이지 <span class="highlight">(기여도 100%)</span><br>
-      • 댓글 작성/수정/삭제 페이지 <span class="highlight">(기여도 100%)</span><br>
-      • 메인페이지 <span class="highlight">(기여도 70%)</span><br>
-      • 마이페이지 <span class="highlight">(기여도 60%)</span>
-    </span>
-  </div>
-</div>
-
-
-
-</body>
-</html>
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/userflow.png">  
 
 
-
-
-
-
----
-
-### ERD 다이어그램
-
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/조각집ERD.png">  
 
 
 
