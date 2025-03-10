@@ -161,7 +161,6 @@ sidebar:
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0009.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드00010.png"> 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0011.png"> 
 
@@ -174,12 +173,12 @@ sidebar:
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0015.png"> 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드00016.png"> 
+
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0017.png"> 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0019.png"> 
-우리팀은 10일동안 매일 출석하여 끊임없는 회의와 밤샘 작업을 했다.
+
 
 
 ---
@@ -373,17 +372,6 @@ sidebar:
   color: #ffa657;
 }
 </style>
-
-
-
-
-
-
----
-
-
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/userflow.png">  
-
 
 
 
