@@ -125,8 +125,24 @@ sidebar:
 </body>
 </html>
 
+
+---
+### 프로젝트 발표 및 시연
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/IMG_7166.JPG"> 
+
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/IMG_7187.JPG"> 
+
+
+
+
 ---
 ### 프로젝트
+
+프로젝트 발표 내용은 다음과 같았다.<br>
+
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/슬라이드0002.png"> 
 
@@ -372,8 +388,23 @@ sidebar:
 
 
 ---
+## 수상
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/IMG_7176.jpg">  
 
 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-10 152442.png"> 
+
+---
+
+## 회고
+
+블레이버스 MVP 해커톤 프로젝트를 진행하면서 프론트엔드와 백엔드 팀 간의 의사소통에서 어려움을 겪었다. 초기 개발 단계에서 프론트엔드 팀원들이 백엔드 팀과의 사전 협의 없이 임의로 API를 작성했다. 이로 인해 백엔드에서 작업 중인 API의 일관성이 무너지고, 서로 다른 방식으로 개발을 진행하면서 오류가 발생했다. 이 문제는 단순히 기술 부분의 오류를 넘어서 팀 전체의 커뮤니케이션 방식 전반에 대해 생각해보게 된 계기가 되었다.<br>  
+
+따라서 이 문제를 해결하기 위해서 BE 측에서 작성한 API 내용을 공유했고, 벡엔드의 실제 구현 방향을 자세하게 설명했다. 여러 번의 회의를 거쳐서 명시적으로 API 명세서를 작성하고 Postman을 사용하여   API를 검증해나갔다. 이처럼 프로젝트 협업에 있어서는 지속적으로 소통하며 문제를 해결해나가려는 적극적인 태도가 중요하다고 생각하게 되었다.
+
+
+---
  
 
 
