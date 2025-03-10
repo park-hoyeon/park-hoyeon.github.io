@@ -261,6 +261,44 @@ sidebar:
 .param {
   color: #ffa657;
 }
+
+@media (max-width: 768px) {
+  .api-container {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .api-title {
+    font-size: 1em;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+  }
+  
+  .api-table th, .api-table td {
+    padding: 6px 8px;
+    font-size: 0.85em;
+  }
+  
+  .method {
+    padding: 2px 4px;
+    font-size: 0.8em;
+    min-width: 40px;
+  }
+  
+  .section {
+    font-size: 0.85em;
+  }
+  
+  .url-path {
+    font-size: 0.8em;
+  }
+  
+  .param {
+    font-size: 0.8em;
+  }
+}
+
+
 </style>
 </head>
 <body>
