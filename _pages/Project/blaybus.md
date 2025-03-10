@@ -22,16 +22,23 @@ sidebar:
 
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/기억저장.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/액티비티 포스터.png">  
 
-2025 블레이버스 해커톤에 MVP 개발 부문으로 참여했다.
-2월 3일부터 8월 14일까지 "디스펜서 하드웨어와 연결하여 사용할 수 있는 소프트웨어"를 주제로 MVP 개발에 백엔드로 참여하였다.
-부트캠프에서 건너건너 알게된 분들과 함께 팀을 이루어 참여하였는데, 사실 10일이면 일반적인 해커톤보다 훨씬 기간이 긴 편이라고 한다. 처음으로 10일 간의 짧은 기간동안 MVP를 개발해보는 경험을 통해 협업과 개발 관련하여 많은 경험을 얻어갈 수 있었다.
+2025 블레이버스 MVP 해커톤에 2월 9일부터 2월 20일까지 약 열흘 간 백엔드로 참여했다.
+"요양보호사와 노인의 최적 매칭"을 통해 재가노인복지센터의 구인난을 해결하고 맞춤형 돌봄 서비스를 제공하는 매칭 플랫폼을 제작하는 것이 목표였다.
+팀은 랜덤으로 배정 되었고, 그 결과 현재 개발 분야로 근무하고 계신 직장인들과 대학생 등 다양한 직종의 사람들과 협업할 기회를 가지게 되었다.
+10일 간의 짧은 기간동안 mvp를 개발해보며 협업과 개발의 경험을 쌓을 수 있었다.
+그리고 파이널데이 발표와 웹앱 시연을 통해 평가를 받았다. 평가 결과 기술 구현 1등 "테크인사이트상"을 수여하였다.<br>
 
-추가로, 블레이버스 자체 툴을 사용하여 프로젝트 상황 및 일정관리를 진행하였다. 파이널데이 발표 때 이 툴로 팀별 총 기여시간 및 태스크 완료율 등의 통계를 내 팀워크를 평가하였는데, 우리 팀이 작업 완료율 및 완료율이 가장 높아 팀워크 상을 수여하였다.  
+먼저 프로젝트 
+
+
+사실 10일이면 일반적인 해커톤보다 훨씬 기간이 긴 편이라고 한다. 처음으로 10일 간의 짧은 기간동안 MVP를 개발해보는 경험을 통해 협업과 개발 관련하여 많은 경험을 얻어갈 수 있었다.
+
+추가로, 블레이버스 자체 툴을 사용하여 프로젝트 상황 및 일정관리를 진행하였다. 파이널데이 발표 때 이 툴로 팀별 총 기여시간 및 태스크 완료율 등의 통계를 내 팀워크를 평가하였는데, 우리 팀이 작업 완료율 및 완료율이 가장 높아 팀워크 상을 수여하였다.  <br>
   
   
-먼저 프로젝트 개요는 다음과 같다.<br>
+먼저 프로젝트 개요는는 다음과 같다.<br>
 
 ---
 
@@ -86,7 +93,7 @@ sidebar:
   <div class="info-title">프로젝트 개요</div>
   <div class="info-row">
     <span class="info-label">개발 기간</span>
-    <span class="info-value">2025.02.04 ~ 2025.02.22 (2주)</span>
+    <span class="info-value">2025.02.09 ~ 2025.02.20 (10일)</span>
   </div>
   <div class="info-row">
     <span class="info-label">플랫폼</span>
@@ -94,7 +101,7 @@ sidebar:
   </div>
   <div class="info-row">
     <span class="info-label">개발 인원</span>
-    <span class="info-value">7명 (백엔드4 / 프론트엔드3)</span>
+    <span class="info-value">9명 (PM1 / 디자인2 / 백엔드3 / 프론트엔드3)</span>
   </div>
   <div class="info-row">
     <span class="info-label">담당 역할 - 백엔드</span>
