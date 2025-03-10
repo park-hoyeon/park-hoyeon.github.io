@@ -131,10 +131,10 @@ sidebar:
 ### 프로젝트 발표 및 시연
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/IMG_7166.JPG"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/IMG_7166.JPG"> 
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/IMG_7187.JPG"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/IMG_7187.JPG"> 
 
 
 
@@ -391,10 +391,10 @@ sidebar:
 ---
 ## 수상
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/IMG_7176.jpg">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/IMG_7176.jpg">  
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/스크린샷 2025-03-10 152442.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/스크린샷 2025-03-10 152442.png"> 
 
 ---
 
