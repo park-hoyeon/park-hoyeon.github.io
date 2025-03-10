@@ -20,6 +20,7 @@ sidebar:
 
 
 
+. <br>  
 
 
 <img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/images/액티비티 포스터.png">  
