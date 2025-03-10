@@ -93,7 +93,7 @@ sidebar:
   </div>
   <div class="info-row">
     <span class="info-label">개발 인원</span>
-    <span class="info-value">7명 (백엔드4 / 프론트엔드3)</span>
+    <span class="info-value">7명 (백엔드4 / 프론트엔드2)</span>
   </div>
   <div class="info-row">
     <span class="info-label">담당 역할 - 백엔드</span>
