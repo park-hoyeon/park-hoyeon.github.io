@@ -501,7 +501,7 @@ sidebar:
 
 ### 수상
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/스크린샷 2025-03-10 152442.png">  
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/IMG_7499.jpg">  
 
 
 ---
