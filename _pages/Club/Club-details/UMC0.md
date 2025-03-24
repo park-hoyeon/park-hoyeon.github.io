@@ -1,3 +1,35 @@
+---
+layout: category
+title: "✨Chapter 0. 서버 처음 해보기 "
+permalink: /Club/Club-details/UMC0
+author_profile: true
+sidebar_main: true
+types: posts
+sidebar:
+  nav: "sidebar-category"
+  enabled: true
+categories:
+  - Blog
+tags:
+  - Codeit_Boost
+  - Coding
+  - Club
+    
+---
+
+
+
+{% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
+{% assign posts_with_flutter_and_solutions = posts_with_flutter | where: "categories", "solutions" %}
+
+{% for post in posts_with_flutter_and_solutions %}
+  {% include archive-single.html type=page.entries_layout %}
+{% endfor %}  
+
+
+
+---
+
 # Chapter 0. 서버 처음 해보기
 
 ### 저장소 다운로드 받기
