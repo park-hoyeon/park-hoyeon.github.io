@@ -33,7 +33,7 @@ taxonomy:
   <tbody>
     <tr>
       <td style="padding: 8px;"> 0 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/UMC0">📝 서버 처음 해보기</a><br>
+      <td style="padding: 8px;"><a href="/Club/Club-details/UMC0">📝 서버 처음 해보기</a><br>
 
       <span class="tag-box">인터넷 구성</span>
       <span class="tag-box">인터넷 통신</span>
@@ -53,7 +53,7 @@ taxonomy:
     <tr>
       <td style="padding: 8px;">2 Week</td>
       <td style="padding: 8px;">
-      <a href="/Study/codehive-details/2week">📝 실전 SQL - 어떤 Query를 작성해야 할까?</a><br>
+      <a href="/Club/Club-details/UMC1">📝 실전 SQL - 어떤 Query를 작성해야 할까?</a><br>
       <span class="tag-box">Paging</span>
       </td>
       <td style="padding: 8px;">2025.03.27</td>
