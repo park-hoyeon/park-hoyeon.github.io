@@ -43,7 +43,7 @@ taxonomy:
     </tr>
     <tr>
       <td style="padding: 8px;"> 1 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/UMC1">📝 Database 설계</a><br>
+      <td style="padding: 8px;"><a href="/Club/Club-details/UMC1">📝 Database 설계</a><br>
 
       <span class="tag-box">DATABASE 설계</span>
       <span class="tag-box">로컬 DB 세팅</span>
