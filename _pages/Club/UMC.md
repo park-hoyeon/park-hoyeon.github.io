@@ -33,7 +33,7 @@ taxonomy:
   <tbody>
     <tr>
       <td style="padding: 8px;"> 0 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/1week">📝 서버 처음 해보기</a><br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/UMC0">📝 서버 처음 해보기</a><br>
 
       <span class="tag-box">인터넷 구성</span>
       <span class="tag-box">인터넷 통신</span>
@@ -43,7 +43,7 @@ taxonomy:
     </tr>
     <tr>
       <td style="padding: 8px;"> 1 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/1week">📝 Database 설계</a><br>
+      <td style="padding: 8px;"><a href="/Study/codehive-details/UMC1">📝 Database 설계</a><br>
 
       <span class="tag-box">DATABASE 설계</span>
       <span class="tag-box">로컬 DB 세팅</span>
