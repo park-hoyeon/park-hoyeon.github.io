@@ -25,7 +25,7 @@ taxonomy:
 
 ### 주차별 내용
 
-⭐  **[What is Codeit UMC ?!](/Club/Club-details/UMC)**  
+⭐  **[What is UMC ?!](/Club/Club-details/UMC)**  
 
 
   **[Codeit Boost 중앙 & 교내 OT](/Club/Club-details/OT)**
