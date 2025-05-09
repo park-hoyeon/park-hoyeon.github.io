@@ -14,68 +14,131 @@ sidebar:
 {% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
 {% assign posts_with_flutter_and_solutions = posts_with_flutter | where: "categories", "solutions" %}
 
-{% for post in posts_with_flutter_and_solutions %}
-  {% include archive-single.html type=page.entries_layout %}
-{% endfor %}
-
-<div style="text-align: left; margin-top: 20px; font-size: 80%;">
-  <span>  카테고리별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
+<div style="text-align: left; margin-top: 20px; font-size: 80%; color: #cfcfcf;">
+  <span>카테고리별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
 </div>
 
-<br/>
+### 🗂 유형별 문제
 
+<div class="tabs">
+  <input type="radio" id="tab1" name="tab" checked>
+  <label for="tab1">BFS</label>
+  <input type="radio" id="tab2" name="tab">
+  <label for="tab2">DFS</label>
+  <input type="radio" id="tab3" name="tab">
+  <label for="tab3">Dijkstra</label>
 
-### 유형별 문제
+  <div class="tab-content" id="content1">
+    <table class="problem-table">
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="/Study/algorithm/silver/virus">📝 바이러스 문제</a>
+            <span class="tag-box">2606</span>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a href="/Study/algorithm/silver/connected-components">📝 연결 요소 문제</a>
+            <span class="tag-box">11724</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="tab-content" id="content2">
+    <table class="problem-table">
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="/Study/algorithm/silver/maze-exploration">📝 미로 탐색 문제</a>
+            <span class="tag-box">2178</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="tab-content" id="content3">
+    <table class="problem-table">
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="/Study/algorithm/silver/shortest-path">📝 최단 경로 문제</a>
+            <span class="tag-box">1753</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-<table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
-  <tbody>
-    <tr>
-      <td style="padding: 8px;">1</td>
-      <td style="padding: 8px;">
-        <a href="/Study/algorithm/silver">📝 BFS(너비우선탐색)</a>
-      </td>
-      <td style="padding: 8px;">
-        <span class="tag-box">2606 바이러스 외...</span>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">2 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codeit-details/2week">📝 Node.js를 이용한 웹 제작</a><br>
-      <span class="tag-box">템플릿 엔진</span>
-      <span class="tag-box">Express</span>
-      <span class="tag-box">GET vs POST</span>
-      </td>
-      <td style="padding: 8px;">2025.01.02</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">⭐ 3 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codeit-details/3week">📝 Node.js를 이용한 WebSocket Messages 구현 <br></a>
-      <span class="tag-box">SocketIO</span>
-      <span class="tag-box">WebSockets</span>
-      <span class="tag-box">socketIO Room</span>
-      </td>
-      <td style="padding: 8px;">2025.01.09</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">4 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codeit-details/4week">📝 Node.js 백엔드 구현 <br></a>
-      <span class="tag-box">Rooms</span>
-      <span class="tag-box">메시지 전송 기능</span>
-      <span class="tag-box">Room Messages</span>
-      <span class="tag-box">Adapter</span>
-      </td>
-      <td style="padding: 8px;">2025.01.16</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">5 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codeit-details/5week">📝 데이터베이스와 MYSQL</a><br>
-      <span class="tag-box">데이터관리 - SQL</span>
-      <span class="tag-box">schema</span>
-      <span class="tag-box">index</span>
-      </td>  
-      <td style="padding: 8px;">2025.01.23</td>
-    </tr>
-  </tbody>
-</table>
+<style>
+body {
+  background-color: #1e1e1e;
+  color: #cfcfcf;
+}
 
-<br/>
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tab-content {
+  display: none;
+}
+
+input[type="radio"]:checked + label + .tab-content {
+  display: block;
+  background: #2a2a2a;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.problem-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.problem-table td {
+  padding: 8px;
+  border: 1px solid #444;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.tag-box {
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  padding: 2px 4px;
+  margin-left: 5px;
+}
+
+label {
+  background: #333;
+  color: #cfcfcf;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+label:hover {
+  background: #444;
+}
+</style>
