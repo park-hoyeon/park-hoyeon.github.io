@@ -1,7 +1,7 @@
 ---
 title: "✨ Study / 백준 알고리즘 실버 문제해결"
 layout: category
-permalink: /ind/algorithm/silver
+permalink: /Study/silver
 author_profile: true
 sidebar_main: true
 types: posts
