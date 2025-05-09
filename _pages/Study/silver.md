@@ -33,7 +33,9 @@ sidebar:
   <td style="padding: 8px;">1</td>
   <td style="padding: 8px;">
     <a href="/Study/algorithm/silver">📝 BFS(너비우선탐색)</a>
-    <span class="tag-box" style="margin-left: 10px; display: inline-block; background-color: #f0f0f0; padding: 2px 8px; border-radius: 4px; font-size: 0.9em;">2606 바이러스 외...</span>
+  </td>
+  <td style="padding: 8px;">
+    <span class="tag-box">2606 바이러스 외...</span>
   </td>
 </tr>
       <td style="padding: 8px;">2 Week</td>
