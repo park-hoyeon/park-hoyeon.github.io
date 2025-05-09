@@ -19,25 +19,23 @@ sidebar:
 {% endfor %}
 
 <div style="text-align: center; margin-top: 20px; font-size: 80%;">
-  <span>✨ 각 주차별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
+  <span>✨ 카테고리별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
 </div>
 
 <br/>
 
 
-### 주차별 내용
+### 백준 알고리즘 유형별 문제 풀이
 
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
   <tbody>
     <tr>
-      <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codeit-details/1week">📝 서버 측 JS - 간단한 웹앱 만들기</a><br>
-      <span class="tag-box">NPM</span>
-      <span class="tag-box">Callback</span>
-      <span class="tag-box">동기식 / 비동기식</span>
-      </td>
-      <td style="padding: 8px;">2024.12.26</td>
+      <td style="padding: 8px;">1</td>
+      <td style="padding: 8px;"><a href="/Study/codeit-details/1week">📝 BFS(너비우선탐색)</a><br>
+      <span class="tag-box">2606 바이러스 외...</span>
     </tr>
+
+    
     <tr>
       <td style="padding: 8px;">2 Week</td>
       <td style="padding: 8px;"><a href="/Study/codeit-details/2week">📝 Node.js를 이용한 웹 제작</a><br>
