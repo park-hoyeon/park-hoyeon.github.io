@@ -25,7 +25,7 @@ sidebar:
 <br/>
 
 
-### 백준 알고리즘 유형별 문제 풀이
+### 유형별 문제
 
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
   <tbody>
