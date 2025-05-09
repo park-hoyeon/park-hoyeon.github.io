@@ -18,7 +18,7 @@ sidebar:
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
 
-<div style="text-align: center; margin-top: 20px; font-size: 80%;">
+<div style="text-align: left; margin-top: 20px; font-size: 80%;">
   <span>✨ 카테고리별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
 </div>
 
