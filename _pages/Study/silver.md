@@ -1,79 +1,44 @@
----
-title: "✨ Study / 백준 알고리즘 실버 문제해결"
-layout: category
-permalink: /Study/silver
-author_profile: true
-sidebar_main: true
-types: posts
-taxonomy:
-sidebar:
-  nav: "sidebar-category"
-  enabled: true
----
-
-{% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
-{% assign posts_with_flutter_and_solutions = posts_with_flutter | where: "categories", "solutions" %}
-
 <div style="text-align: left; margin-top: 20px; font-size: 80%; color: #cfcfcf;">
   <span>카테고리별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
 </div>
 
 ### 🗂 유형별 문제
 
-<div class="tabs">
-  <input type="radio" id="tab1" name="tab" checked>
-  <label for="tab1">BFS</label>
-  <input type="radio" id="tab2" name="tab">
-  <label for="tab2">DFS</label>
-  <input type="radio" id="tab3" name="tab">
-  <label for="tab3">Dijkstra</label>
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="openTab(event, 'BFS')">BFS</button>
+    <button class="tab-btn" onclick="openTab(event, 'DFS')">DFS</button>
+    <button class="tab-btn" onclick="openTab(event, 'Dijkstra')">Dijkstra</button>
+  </div>
 
-  <div class="tab-content" id="content1">
+  <div id="BFS" class="tab-content" style="display: block;">
     <table class="problem-table">
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>
-            <a href="/Study/algorithm/silver/virus">📝 바이러스 문제</a>
-            <span class="tag-box">2606</span>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>
-            <a href="/Study/algorithm/silver/connected-components">📝 연결 요소 문제</a>
-            <span class="tag-box">11724</span>
-          </td>
-        </tr>
-      </tbody>
+      <tr>
+        <td>1</td>
+        <td><a href="/Study/algorithm/silver/virus">📝 바이러스 문제</a> <span class="tag-box">2606</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><a href="/Study/algorithm/silver/connected-components">📝 연결 요소 문제</a> <span class="tag-box">11724</span></td>
+      </tr>
     </table>
   </div>
-  
-  <div class="tab-content" id="content2">
+
+  <div id="DFS" class="tab-content">
     <table class="problem-table">
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>
-            <a href="/Study/algorithm/silver/maze-exploration">📝 미로 탐색 문제</a>
-            <span class="tag-box">2178</span>
-          </td>
-        </tr>
-      </tbody>
+      <tr>
+        <td>1</td>
+        <td><a href="/Study/algorithm/silver/maze-exploration">📝 미로 탐색 문제</a> <span class="tag-box">2178</span></td>
+      </tr>
     </table>
   </div>
-  
-  <div class="tab-content" id="content3">
+
+  <div id="Dijkstra" class="tab-content">
     <table class="problem-table">
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>
-            <a href="/Study/algorithm/silver/shortest-path">📝 최단 경로 문제</a>
-            <span class="tag-box">1753</span>
-          </td>
-        </tr>
-      </tbody>
+      <tr>
+        <td>1</td>
+        <td><a href="/Study/algorithm/silver/shortest-path">📝 최단 경로 문제</a> <span class="tag-box">1753</span></td>
+      </tr>
     </table>
   </div>
 </div>
@@ -84,21 +49,37 @@ body {
   color: #cfcfcf;
 }
 
+.tab-container {
+  margin: 20px 0;
+}
+
 .tabs {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  justify-content: space-around;
+}
+
+.tab-btn {
+  background: #333;
+  color: #cfcfcf;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn:hover, .tab-btn.active {
+  background: #555;
+  color: #fff;
 }
 
 .tab-content {
   display: none;
+  margin-top: 10px;
 }
 
-input[type="radio"]:checked + label + .tab-content {
+.tab-content.active {
   display: block;
-  background: #2a2a2a;
-  padding: 10px;
-  border-radius: 8px;
 }
 
 .problem-table {
@@ -122,23 +103,25 @@ a:hover {
 }
 
 .tag-box {
-  background-color: #333;
+  background-color: #444;
   color: #fff;
   border-radius: 3px;
   padding: 2px 4px;
   margin-left: 5px;
 }
-
-label {
-  background: #333;
-  color: #cfcfcf;
-  padding: 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px 0;
-}
-
-label:hover {
-  background: #444;
-}
 </style>
+
+<script>
+function openTab(evt, tabName) {
+  const contents = document.getElementsByClassName("tab-content");
+  for (let i = 0; i < contents.length; i++) {
+    contents[i].style.display = "none";
+  }
+  const buttons = document.getElementsByClassName("tab-btn");
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+</script>
