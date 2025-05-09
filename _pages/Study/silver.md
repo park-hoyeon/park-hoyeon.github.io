@@ -11,21 +11,14 @@ sidebar:
   enabled: true
 ---
 
-# 📝 BFS 문제 모음
-
-카테고리별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.
-
-<br/>
-
-## 유형별 BFS 문제
 
 <div style="text-align: left; margin-top: 20px; font-size: 80%; color: #cfcfcf;">
-  BFS 유형의 문제들을 모아서 정리하였습니다. 문제 번호를 클릭하면 바로 문제 페이지로 이동합니다.
+  BFS 유형의 문제들을 모아서 정리하였습니다. 
 </div>
 
 <br/>
 
-### 🗂 문제 목록
+###  문제 목록
 
 | 번호  | 문제 이름                                 | 문제 번호 |
 |------|-------------------------------------------|-----------|
@@ -36,22 +29,11 @@ sidebar:
 
 <br/>
 
-### 💡 참고 사항
-- 각 문제 링크를 클릭하면 Baekjoon Online Judge 문제 페이지로 이동합니다.
-- 새로운 문제를 추가할 때 위와 같은 형식으로 목록에 추가하면 됩니다.
 
 ---
 
 <style>
-body {
-  background-color: #1e1e1e;
-  color: #cfcfcf;
-  font-family: Arial, sans-serif;
-}
 
-h1, h2, h3 {
-  color: #61dafb;
-}
 
 table {
   width: 100%;
