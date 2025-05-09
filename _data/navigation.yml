@@ -43,7 +43,7 @@ sidebar-category:
       - title: "✏️ Node.js"
         url: "/ind/nodejs/"
       - title: "✏️ Algorithm - Silver"
-        url: "/ind/algorithm/silver"
+        url: "/Study/silver"
 
     
   # - title: "About"
