@@ -30,14 +30,12 @@ sidebar:
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
   <tbody>
     <tr>
-        <td style="padding: 8px;">1</td>
-        <td style="padding: 8px;">
-          <a href="/Study/algorithm/silver">📝 BFS(너비우선탐색)</a><br>
-          
-        </td>
-      <span class="tag-box">2606 바이러스 외...</span>
-      </tr>
-    <tr>
+  <td style="padding: 8px;">1</td>
+  <td style="padding: 8px;">
+    <a href="/Study/algorithm/silver">📝 BFS(너비우선탐색)</a>
+    <span class="tag-box" style="margin-left: 10px; display: inline-block; background-color: #f0f0f0; padding: 2px 8px; border-radius: 4px; font-size: 0.9em;">2606 바이러스 외...</span>
+  </td>
+</tr>
       <td style="padding: 8px;">2 Week</td>
       <td style="padding: 8px;"><a href="/Study/codeit-details/2week">📝 Node.js를 이용한 웹 제작</a><br>
       <span class="tag-box">템플릿 엔진</span>
