@@ -23,7 +23,7 @@ sidebar:
 | 번호  | 문제 이름                                 | 문제 번호 |
 |------|-------------------------------------------|-----------|
 | 1    | <a href="/Study/algorithm/silver/1026">보물 <br></a> | 1026    |
-| 2    | <a href="/Study/algorithm/silver/1012">유기농 배추 <br></a> | 1012     |
+| 2    | <a href="/Study/algorithm/silver/1439">뒤집기 <br></a> | 1439     |
 | 3    | [DFS와 BFS 문제](https://www.acmicpc.net/problem/1260) | 1260      |
 | 4    | [숨바꼭질 문제](https://www.acmicpc.net/problem/1697) | 1697      |
 
