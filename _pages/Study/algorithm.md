@@ -16,8 +16,8 @@ sidebar:
 
 ###  문제 목록
 
-| 번호  | 문제 이름                                 | 문제 번호 |
-|------|-------------------------------------------|-----------|
+| 번호  | 문제 이름                                 |
+|------|-------------------------------------------|
 | 1    | <a href="/Study/algorithm/silver/greedy">그리디 / 구현 <br></a> |       
 | 2    | <a href="/Study/algorithm/silver/bfs">BFS (너비우선탐색) <br></a> | 
 | 3    | [DFS와 BFS 문제](https://www.acmicpc.net/problem/1260) | 
