@@ -24,8 +24,8 @@ sidebar:
 |------|-------------------------------------------|-----------|
 | 1    | <a href="/Study/algorithm/silver/1026">보물 <br></a> | 1026    |
 | 2    | <a href="/Study/algorithm/silver/1439">뒤집기 <br></a> | 1439     |
-| 3    | [DFS와 BFS 문제](https://www.acmicpc.net/problem/1260) | 1260      |
-| 4    | [숨바꼭질 문제](https://www.acmicpc.net/problem/1697) | 1697      |
+| 3    | <a href="/Study/algorithm/silver/1966">프린터 큐 <br></a> | 1966     |
+| 4    | <a href="/Study/algorithm/silver/1439">뒤집기 <br></a> | 1697      |
 
 <br/>
 
