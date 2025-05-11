@@ -1,7 +1,7 @@
 ---
 title: "✨ BFS 문제 모음" 
 layout: category
-permalink: /Study/algorithm/silver 
+permalink: /Study/silver 
 author_profile: true
 sidebar_main: true
 types: posts
