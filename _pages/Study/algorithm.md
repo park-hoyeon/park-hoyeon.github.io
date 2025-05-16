@@ -20,7 +20,7 @@ sidebar:
 |------|-------------------------------------------|
 | 1    | <a href="/Study/algorithm/silver/greedy">그리디 / 구현 <br></a> |       
 | 2    | <a href="/Study/algorithm/silver/bfs">BFS (너비우선탐색) <br></a> | 
-| 3    | [DFS와 BFS 문제](https://www.acmicpc.net/problem/1260) | 
+| 3    | <a href="/Study/algorithm/silver/datastructure">자료구조 <br></a> | 
 | 4    | [숨바꼭질 문제](https://www.acmicpc.net/problem/1697) |
 
 <br/>
