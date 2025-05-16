@@ -24,7 +24,7 @@ sidebar:
 |------|-------------------------------------------|-----------|
 | 1    | <a href="/Study/algorithm/silver/11279">최대 힙 <br></a> | 11279   |
 | 2    | <a href="/Study/algorithm/silver/2075">N 번째 큰 수 <br></a> | 2075    |
-| 3    | <a href="/Study/algorithm/silver/1966">프린터 큐 <br></a> | 1966     |
+| 3    | <a href="/Study/algorithm/silver/20291">파일 정리 <br></a> | 20291     |
 | 4    | <a href="/Study/algorithm/silver/1439">뒤집기 <br></a> | 1697      |
 
 <br/>
