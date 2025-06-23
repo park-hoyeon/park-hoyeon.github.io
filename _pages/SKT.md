@@ -68,7 +68,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">2 Week</td>
-      <td style="padding: 8px;"<a href="/SKT/5"> ML 프레임워크 with 파이썬<br></a>
+      <td style="padding: 8px;"><a href="/SKT/5">ML 프레임워크 with 파이썬<br></a>
       <span class="tag-box">.</span>
       <span class="tag-box">.</span>
       </td>
@@ -76,7 +76,7 @@ sidebar:
     </tr>
     
     <tr>
-      <td style="padding: 8px;">6 Week</td>
+      <td style="padding: 8px;">AI 융합프로그래밍</td>
       <td style="padding: 8px;"><a href="/Study/codehive-details/6week">📝 baekjoon 알고리즘 문제 풀이<br></a>      
       <span class="tag-box">11650 좌표 정렬하기 (실버Ⅴ)</span>
       <span class="tag-box">1978 소수 찾기 (브론즈II)</span>
