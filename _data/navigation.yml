@@ -6,8 +6,10 @@ main:
 
 sidebar-category:
 
-  - title: "✨ IT 동아리"
+  - title: "✨ IT 동아리 & 대외활동"
     children:
+      - title: "✅ SKT Fly ai 7기"
+        url: "/SKT/"
       - title: "✅ 코드잇부스트 (IT연합)"
         url: "/Club/Codeit_Boost/"
       - title: "✅ UMC (IT연합)"
