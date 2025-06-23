@@ -30,8 +30,7 @@ sidebar:
   <tbody>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="/SKT/1">빅데이터 with 파이썬
-</a><br>
+      <td style="padding: 8px;"><a href="/SKT/1">빅데이터 with 파이썬</a><br>
 
       <span class="tag-box">Numpy</span>
       <span class="tag-box">Matplotlib</span>
