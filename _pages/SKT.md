@@ -30,8 +30,10 @@ sidebar:
   <tbody>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/titanic.ipynb" target="_blank">타이타닉 실</a>
-      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_24_house_value.ipynb">집 가격 예측</a><br>
+      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/titanic.ipynb" target="_blank">타이타닉 실습/ </a>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_24_house_value.ipynb"> 집 가격 예측/ </a>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_24_소득_수준_예측_실습.ipynb"> 소득 수준 예측 실습</a><br>
+
 
       <span class="tag-box">Numpy</span>
       <span class="tag-box">Matplotlib</span>
