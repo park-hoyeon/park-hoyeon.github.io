@@ -19,7 +19,7 @@ sidebar:
 {% endfor %}
 
 <div style="text-align: center; margin-top: 20px; font-size: 80%;">
-  <span>✨ 각 주차별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.</span>
+  <span>✨ 각 키워드를 클릭하면 해당하는 세부 내용을 볼 수 있습니다.</span>
 </div>
 
 <br/>
@@ -30,7 +30,8 @@ sidebar:
   <tbody>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="/SKT/1">빅데이터 with 파이썬</a><br>
+      <td style="padding: 8px;"><a href="/SKT/titanic.ipynb">빅데이터 with 파이썬</a><
+      <td style="padding: 8px;"><a href="/SKT/">빅데이터 with 파이썬</a><br>
 
       <span class="tag-box">Numpy</span>
       <span class="tag-box">Matplotlib</span>
