@@ -44,9 +44,8 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/_pages/SKT
-/skt_6_25_model_development.ipynb" target="_blank">모델 성능 향상 / </a>
-      <a href="https://github.com/park-hoyeon/_pages/SKT/skt_6_25_project2.ipynb"> 인구 동향 출생 사망 혼인 이혼 분석</a><br>
+      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_25_model_development.ipynb" target="_blank">모델 성능 향상 / </a>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_25_project2.ipynb"> 인구 동향 출생 사망 혼인 이혼 분석</a><br>
       <a href="/SKT/2">AI 프로그래밍</a><br>
       <span class="tag-box">머신러닝 실습</span>
       </td>
