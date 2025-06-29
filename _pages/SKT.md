@@ -44,19 +44,18 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;">
+      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/_pages/SKT
+/skt_6_25_model_development.ipynb" target="_blank">모델 성능 향상 / </a>
+      <a href="https://github.com/park-hoyeon/_pages/SKT/skt_6_25_project2.ipynb"> 인구 동향 출생 사망 혼인 이혼 분석</a><br>
       <a href="/SKT/2">AI 프로그래밍</a><br>
-      <span class="tag-box">.</span>
-      <span class="tag-box">.</span>
+      <span class="tag-box">머신러닝 실습</span>
       </td>
       <td style="padding: 8px;">2025.06.25</td>
     </tr>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="/SKT/3">AI – Hackathon<br></a>      
-      <span class="tag-box">. </span>
-      <span class="tag-box">.</span>
-      <span class="tag-box">.</span>
+      <td style="padding: 8px;"><a href="/SKT/3">SKT 워크샵<br></a>      
+      <span class="tag-box">인재개발원 </span>
       </td>
       <td style="padding: 8px;">2025.06.26 ~ 2025.06.27</td>
     </tr>
