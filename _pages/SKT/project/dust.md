@@ -20,11 +20,18 @@ sidebar:
 
 
 
-<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/UMC0_images/image.png"> 
-
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (2).png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (3).png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (4).png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (5).png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (6).png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (7).png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (8).png">
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/SKT/image/미세먼지 예측 모델 (9).png">
 ---
 
-[돌아가기: SKT Fly Ai 활](https://park-hoyeon.github.io/_pages/Study/SKT/)  
+[돌아가기: SKT Fly Ai 활동](https://park-hoyeon.github.io/SKT/)  
 
 
 <div style="text-align: right; margin-top: 30px;">
