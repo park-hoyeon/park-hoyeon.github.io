@@ -50,7 +50,7 @@ sidebar:
 <div class="project-cards">
   <div class="project-card">
     <a href="/project/medicine-platform">
-      <img src="/_pages/SKT/image/미세먼지 예측 모델 (1).png" style="width: 100px; height: 60px; margin-bottom: 0.5rem;">
+      <img src="/_pages/SKT/image/미세먼지 예측 모델 (1).png" >
       <div>미세먼지 예측</div>
     </a>
   </div>
