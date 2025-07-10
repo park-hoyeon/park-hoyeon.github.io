@@ -1,7 +1,7 @@
 ---
-title: "✨ SKT Fly Ai - 미세먼지 예측 모"
+title: "✨ SKT Fly Ai - 미세먼지 예측 모델"
 layout: category
-permalink: /SKT/project/dust/
+permalink: _pages/SKT/project/dust/
 author_profile: true
 sidebar_main: true
 types: posts
