@@ -29,7 +29,7 @@ sidebar:
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
   <tbody>
     <tr>
-      <td style="padding: 8px;">D+1 / D+2</td>
+      <td style="padding: 8px;">Day1 / Day2</td>
       <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/titanic.ipynb" target="_blank">타이타닉 실습/ </a>
       <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_24_house_value.ipynb"> 집 가격 예측/ </a>
       <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_24_소득_수준_예측_실습.ipynb"> 소득 수준 예측 실습</a><br>
@@ -43,7 +43,7 @@ sidebar:
       <td style="padding: 8px;">2025.06.23 ~ 2025.06.24</td>
     </tr>
     <tr>
-      <td style="padding: 8px;">1 Week</td>
+      <td style="padding: 8px;">Day3</td>
       <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_25_model_development.ipynb" target="_blank">모델 성능 향상 / </a>
       <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_25_project2.ipynb"> 인구 동향 출생 사망 혼인 이혼 분석</a><br>
       <span class="tag-box">머신러닝 실습</span>
@@ -51,14 +51,14 @@ sidebar:
       <td style="padding: 8px;">2025.06.25</td>
     </tr>
     <tr>
-      <td style="padding: 8px;">1 Week</td>
+      <td style="padding: 8px;">Day4 / Day5</td>
       <td style="padding: 8px;">SKT 워크샵<br>     
       <span class="tag-box">인재개발원 </span>
       </td>
       <td style="padding: 8px;">2025.06.26 ~ 2025.06.27</td>
     </tr>
     <tr>
-      <td style="padding: 8px;">2 Week</td>
+      <td style="padding: 8px;">Day6</td>
       <td style="padding: 8px;"><a href="/SKT/4">AI 프로그래밍<br></a>
       <span class="tag-box">.</span>
       <span class="tag-box">.</span>
