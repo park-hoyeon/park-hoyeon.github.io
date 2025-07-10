@@ -49,9 +49,9 @@ sidebar:
 
 <div class="project-cards">
   <div class="project-card">
-    <a href="/project/medicine-platform">
+    <a href="/_pages/SKT/project/dust">
       <img src="/_pages/SKT/image/미세먼지 예측 모델 (1).png" >
-      <div>미세먼지 예측</div>
+      <div></div>
     </a>
   </div>
   <div class="project-card">
