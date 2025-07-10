@@ -52,7 +52,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;">SKT 워크샵<br></a>      
+      <td style="padding: 8px;">SKT 워크샵<br>     
       <span class="tag-box">인재개발원 </span>
       </td>
       <td style="padding: 8px;">2025.06.26 ~ 2025.06.27</td>
