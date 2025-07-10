@@ -47,19 +47,19 @@ sidebar:
 
 ## Projects
 
-</div>
+<div class="project-cards">
   <div class="project-card">
     <a href="/_pages/SKT/project/car">
       <img src="/_pages/SKT/image/car/슬라이드1.PNG" >
     </a>
   </div>
-<div class="project-cards">
+
   <div class="project-card">
     <a href="/_pages/SKT/project/dust">
       <img src="/_pages/SKT/image/미세먼지 예측 모델 (1).png" >
       <div></div>
     </a>
-  
+  </div>
   <div class="project-card">
     <a href="/project/food-log">🍱 d</a>
   </div>
