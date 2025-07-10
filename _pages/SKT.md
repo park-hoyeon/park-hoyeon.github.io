@@ -49,7 +49,10 @@ sidebar:
 
 <div class="project-cards">
   <div class="project-card">
-    <a href="/project/medicine-platform">👩‍⚕️ </a>
+    <a href="/project/medicine-platform">
+      <img src="_pages/SKT/image/미세먼지 예측 모델 (1).png" alt="미세먼지 예측" style="width: 60px; height: 60px; margin-bottom: 0.5rem;">
+      <div>미세먼지 예측</div>
+    </a>
   </div>
   <div class="project-card">
     <a href="/project/women-safety">🛡️ d</a>
