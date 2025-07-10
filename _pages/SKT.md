@@ -18,13 +18,53 @@ sidebar:
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
 
-<div style="text-align: center; margin-top: 20px; font-size: 80%;">
-  <span>✨ 각 키워드를 클릭하면 해당하는 세부 내용을 볼 수 있습니다.</span>
+<style>
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.project-card {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #3a3a3a;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: scale(1.03);
+  background-color: #2c2c2c;
+}
+.project-card a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+
+## Projects
+
+<div class="project-cards">
+  <div class="project-card">
+    <a href="/project/medicine-platform">👩‍⚕️ </a>
+  </div>
+  <div class="project-card">
+    <a href="/project/women-safety">🛡️ d</a>
+  </div>
+  <div class="project-card">
+    <a href="/project/food-log">🍱 d</a>
+  </div>
+  <div class="project-card">
+    <a href="/project/study-log">📚 d</a>
+  </div>
 </div>
 
-<br/>
-
 ### 주차별 내용
+
+아래는 날짜별로 진행한 SKT FLY Ai 7기 활동 내용입니다.<br>
 
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
   <tbody>
