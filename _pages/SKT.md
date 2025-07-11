@@ -117,9 +117,11 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">Day7 / Day8</td>
-      <td style="padding: 8px;"><a href="/SKT/5">.<br></a>
+      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_01_CNN.ipynb"> CNN - 이미지 분류, Transfer Learning / </a>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_Mutl_class_Classification.ipynb
+">  델</a><br>
       <span class="tag-box">ML 프레임워크 with 파이썬</span>
-      <span class="tag-box">.</span>
+      
       </td>
       <td style="padding: 8px;">2025.07.01 ~ 2025.07.02</td>
     </tr>
