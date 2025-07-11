@@ -121,56 +121,32 @@ sidebar:
       <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_02_RNN.ipynb
 "> RNN, 멀티레이어 LSTM /  </a><br>
 <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_02_텍스트_전처리.ipynb
-"> 텍스트 전처리 /  </a><br>
+"> 텍스트 전처리   </a><br>
       <span class="tag-box">ML 프레임워크 with 파이썬</span>
       <span class="tag-box">이미지 분리</span>
-      
       </td>
       <td style="padding: 8px;">2025.07.01 ~ 2025.07.02</td>
     </tr>
+
     
     <tr>
-      <td style="padding: 8px;">d</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/6week">📝 baekjoon 알고리즘 문제 풀이<br></a>      
-      <span class="tag-box">11650 좌표 정렬하기 (실버Ⅴ)</span>
-      <span class="tag-box">1978 소수 찾기 (브론즈II)</span>
-      <span class="tag-box">10773 제로 (실버Ⅳ)</span>
+      <td style="padding: 8px;">Day9 / Day10</td>
+      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_03.ipynb"> 합성곱 신경망 / </a>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/skt_7_03_pytorch_practice.ipynb
+"> pytorch /  </a><br>
+<a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_02_텍스트_전처리.ipynb
+"> ...   </a><br>
+      <span class="tag-box">AI 융합프로그래밍</span>
+      <span class="tag-box">.</span>
       </td>
-      <td style="padding: 8px;">2024.11.04</td>
+      <td style="padding: 8px;">2025.07.03 ~ 2025.07.04</td>
     </tr>
-    <tr>
-      <td style="padding: 8px;">⭐ 7 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/7week">📝 baekjoon 알고리즘 문제 풀이<br></a>
-      <span class="tag-box">2108 통계 (실버 III)</span>
-      <span class="tag-box">1764 듣보잡 (실버 IV)</span>
-      </td>
-      <td style="padding: 8px;">2024.11.11</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">8 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/8week">📝 baekjoon 알고리즘 문제 풀이<br></a>
-      <span class="tag-box">2920 음계 (브론즈 II)</span>
-      <span class="tag-box">1676 팩토리얼 0의 개수 (실버 V)</span>
-      <span class="tag-box">1920 수 찾기 (실버Ⅳ)</span>
-      </td>
-      <td style="padding: 8px;">2024.11.18</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">9 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/9week">⌨️ HTML 웹 프로그래밍 학습<br></a>
-      <span class="tag-box">웹 서버 제작</span>
-      <span class="tag-box">Django</span>
-      </td>
-      <td style="padding: 8px;">2024.11.25</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">10 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/10week">⌨️ HTML 웹 프로그래밍 학습<br></a>
-      <span class="tag-box">웹 서버 제작</span>
-      <span class="tag-box">Django</span>
-      </td>
-      <td style="padding: 8px;">2024.12.02</td>
-    </tr>
+
+
+
+
+
+    
   </tbody>
 </table>
 
