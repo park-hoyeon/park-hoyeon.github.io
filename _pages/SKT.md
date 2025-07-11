@@ -105,8 +105,7 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">Day6</td>
-      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_ANN.ipynb"> 심층 신경망</a><br>
-      
+         
       <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_ANN.ipynb"> 심층 신경망</a><br>
       
       <span class="tag-box">이진분류</span>
