@@ -133,7 +133,7 @@ sidebar:
       <td style="padding: 8px;">Day9</td>
       <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/7-3-PyTorch-2256560b6e4980c09bb6e12d3b97ca1b?source=copy_link"> PyTorch 노션 기록 /   </a>
       <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/skt_7_03_pytorch_practice.ipynb
-"> pytorch /  </a><br>
+"> pytorch /  </a>
 <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_03.ipynb"> 합성곱 신경망 </a><br>
 
       <span class="tag-box">AI 융합프로그래밍</span>
