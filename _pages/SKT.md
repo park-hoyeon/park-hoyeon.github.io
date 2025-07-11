@@ -105,15 +105,14 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">Day6</td>
-      <td style="padding: 8px;"><a href="/SKT/4">AI 프로그래밍<br></a>
-      <span class="tag-box">.</span>
-      <span class="tag-box">.</span>
-      <span class="tag-box">.</span>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_ANN.ipynb"> 심층 신경망</a><br>
+      <span class="tag-box">이진분류</span>
+      <span class="tag-box">다중분류</span>
       </td>
       <td style="padding: 8px;">2025.06.30</td>
     </tr>
     <tr>
-      <td style="padding: 8px;">2 Week</td>
+      <td style="padding: 8px;">Day7 / Day8</td>
       <td style="padding: 8px;"><a href="/SKT/5">ML 프레임워크 with 파이썬<br></a>
       <span class="tag-box">.</span>
       <span class="tag-box">.</span>
