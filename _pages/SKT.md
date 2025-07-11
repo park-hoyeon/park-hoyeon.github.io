@@ -119,9 +119,11 @@ sidebar:
       <td style="padding: 8px;">Day7 / Day8</td>
       <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_01_CNN.ipynb"> CNN - 이미지 분류, Transfer Learning / </a>
       <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_02_RNN.ipynb
-"> RNN, 멀티레이어 LSTM </a><br>
+"> RNN, 멀티레이어 LSTM /  </a><br>
+<a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_02_텍스트_전처리.ipynb
+"> 텍스트 전처리 /  </a><br>
       <span class="tag-box">ML 프레임워크 with 파이썬</span>
-      <span class="tag-box">이미지 분</span>
+      <span class="tag-box">이미지 분리</span>
       
       </td>
       <td style="padding: 8px;">2025.07.01 ~ 2025.07.02</td>
