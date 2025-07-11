@@ -118,16 +118,17 @@ sidebar:
     <tr>
       <td style="padding: 8px;">Day7 / Day8</td>
       <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_01_CNN.ipynb"> CNN - 이미지 분류, Transfer Learning / </a>
-      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_Mutl_class_Classification.ipynb
-">  델</a><br>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_02_RNN.ipynb
+"> RNN, 멀티레이어 LSTM </a><br>
       <span class="tag-box">ML 프레임워크 with 파이썬</span>
+      <span class="tag-box">이미지 분</span>
       
       </td>
       <td style="padding: 8px;">2025.07.01 ~ 2025.07.02</td>
     </tr>
     
     <tr>
-      <td style="padding: 8px;">AI 융합프로그래밍</td>
+      <td style="padding: 8px;">d</td>
       <td style="padding: 8px;"><a href="/Study/codehive-details/6week">📝 baekjoon 알고리즘 문제 풀이<br></a>      
       <span class="tag-box">11650 좌표 정렬하기 (실버Ⅴ)</span>
       <span class="tag-box">1978 소수 찾기 (브론즈II)</span>
