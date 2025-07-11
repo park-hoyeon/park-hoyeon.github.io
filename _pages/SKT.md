@@ -60,6 +60,18 @@ sidebar:
       <div></div>
     </a>
   </div>
+
+  <div class="project-card">
+    <a href="/_pages/SKT/project/sam">
+      <img src="/_pages/SKT/image/sam/슬라이드1.PNG" >
+      <div></div>
+    </a>
+  </div>
+
+
+
+
+  
   <div class="project-card">
     <a href="/project/food-log">🍱 d</a>
   </div>
