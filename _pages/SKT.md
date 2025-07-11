@@ -106,8 +106,10 @@ sidebar:
     <tr>
       <td style="padding: 8px;">Day6</td>
          
-      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_ANN.ipynb"> 심층 신경망</a><br>
-      
+      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_ANN.ipynb"> 심층 신경망 / </a>
+      <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_6_30_Mutl_class_Classification.ipynb
+">  다중퍼셉트론 모델</a><br>
+            
       <span class="tag-box">이진분류</span>
       <span class="tag-box">다중분류</span>
       </td>
@@ -115,8 +117,8 @@ sidebar:
     </tr>
     <tr>
       <td style="padding: 8px;">Day7 / Day8</td>
-      <td style="padding: 8px;"><a href="/SKT/5">ML 프레임워크 with 파이썬<br></a>
-      <span class="tag-box">.</span>
+      <td style="padding: 8px;"><a href="/SKT/5">.<br></a>
+      <span class="tag-box">ML 프레임워크 with 파이썬</span>
       <span class="tag-box">.</span>
       </td>
       <td style="padding: 8px;">2025.07.01 ~ 2025.07.02</td>
