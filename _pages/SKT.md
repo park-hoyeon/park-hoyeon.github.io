@@ -153,6 +153,19 @@ sidebar:
 </tr>
 
 
+<tr>
+  <td style="padding: 8px;">Day10</td>
+  <td style="padding: 8px;">
+    <a href="https://jumbled-ship-7f2.notion.site/7-4-CNN-YOLO-Seq2Seq-2266560b6e4980338addde87f4a644f2?source=copy_link"> CNN, YOLO, Seq2Seq, 자연어처리 노션 기록 / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_04_pytorch5.ipynb"> PyTorch5 실습 / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_03_딥러닝"> 합성곱 신경망 </a><br>
+    <span class="tag-box">AI 융합프로그래밍</span>
+  </td>
+  <td style="padding: 8px;">2025.07.04</td>
+</tr>
+
+
+
 
 
 
