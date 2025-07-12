@@ -174,6 +174,17 @@ sidebar:
   <td style="padding: 8px;">2025.07.05</td>
 </tr>
 
+<tr>
+  <td style="padding: 8px;">Day12</td>
+  <td style="padding: 8px;">
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_07_OpenCV.ipynb"> 특정 색상 추출하기, 이미지  연산 실 / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_07_OpenCV2.ipynb"> 보간법 /  </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_07_OpenCV(3).ipynb
+"> Contours 처리  </a><br>
+    <span class="tag-box">OpenCV 프로그래밍</span>
+  </td>
+  <td style="padding: 8px;">2025.07.07</td>
+</tr>
 
 
 
