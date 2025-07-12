@@ -191,7 +191,7 @@ sidebar:
   <td style="padding: 8px;">Day13</td>
   <td style="padding: 8px;">
     <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_08_OpenCV.ipynb"> 모폴로지 영상처리, Skeletionzation / </a>
-    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_08_OpenCV2.ipynb"> OpenCV와 KNN을 활용한 이미지 분류 /  </a><br>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_08_OpenCV2.ipynb"> OpenCV와 KNN을 활용한 이미지 분류 /  </a>
     <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_08_Haar_Cascade얼굴인식_연결요소분석.ipynb
 "> Connected Component Analysis  </a><br>
     <span class="tag-box">OpenCV 프로그래밍</span>
