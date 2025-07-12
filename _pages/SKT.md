@@ -201,6 +201,18 @@ sidebar:
 </tr>
 
 
+<tr>
+  <td style="padding: 8px;">Day14</td>
+  <td style="padding: 8px;">
+    <a href="https://jumbled-ship-7f2.notion.site/7-9-openCV-OCR-22b6560b6e498030b41ac05e6133aed9?source=copy_link"> 차량 번호판 검출 및 OCR 문자 인식 / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_09_.ipynb"> MOG, KCF, Hough Line Transform  </a><br>
+    <span class="tag-box">OpenCV 프로그래밍</span>
+  </td>
+  <td style="padding: 8px;">2025.07.09</td>
+</tr>
+
+
+
 
 
 
