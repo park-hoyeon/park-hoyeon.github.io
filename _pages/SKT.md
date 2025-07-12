@@ -177,13 +177,27 @@ sidebar:
 <tr>
   <td style="padding: 8px;">Day12</td>
   <td style="padding: 8px;">
-    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_07_OpenCV.ipynb"> 특정 색상 추출하기, 이미지  연산 실 / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_07_OpenCV.ipynb"> 특정 색상 추출하기, 이미지  연산 / </a>
     <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_07_OpenCV2.ipynb"> 보간법 /  </a>
     <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_07_OpenCV(3).ipynb
 "> Contours 처리  </a><br>
     <span class="tag-box">OpenCV 프로그래밍</span>
   </td>
   <td style="padding: 8px;">2025.07.07</td>
+</tr>
+
+
+<tr>
+  <td style="padding: 8px;">Day13</td>
+  <td style="padding: 8px;">
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_08_OpenCV.ipynb"> 모폴로지 영상처리, Skeletionzation / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_08_OpenCV2.ipynb"> OpenCV와 KNN을 활용한 이미지 분류 /  </a><br>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_08_Haar_Cascade얼굴인식_연결요소분석.ipynb
+"> Connected Component Analysis  </a><br>
+    <span class="tag-box">OpenCV 프로그래밍</span>
+    <span class="tag-box">Trp-hat & Black-hat</span>
+  </td>
+  <td style="padding: 8px;">2025.07.08</td>
 </tr>
 
 
