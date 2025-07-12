@@ -211,6 +211,16 @@ sidebar:
   <td style="padding: 8px;">2025.07.09</td>
 </tr>
 
+<tr>
+  <td style="padding: 8px;">Day15 / Day16</td>
+  <td style="padding: 8px;">
+    <a href="https://jumbled-ship-7f2.notion.site/7-10-22c6560b6e4980aca332e273cceecde3?source=copy_link"> ResNet-50, Activity Learning, Diffusion Model  / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_10_딥러닝.ipynb"> Bottleneck 블록 구현, UNet Model  </a><br>
+    <span class="tag-box">딥러닝 </span>
+  </td>
+  <td style="padding: 8px;">2025.07.10 ~ 2025.07.11</td>
+</tr>
+
 
 
 
