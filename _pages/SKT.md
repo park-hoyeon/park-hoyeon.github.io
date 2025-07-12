@@ -164,6 +164,16 @@ sidebar:
   <td style="padding: 8px;">2025.07.04</td>
 </tr>
 
+<tr>
+  <td style="padding: 8px;">Day11</td>
+  <td style="padding: 8px;">
+    <a href="https://jumbled-ship-7f2.notion.site/7-5-Transformer-2276560b6e4980e7a245c4c410b451a9?source=copy_link"> Transformer 기록 / </a>
+    <a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/SKT/skt_7_05_Transformer.ipynb"> Transformer 실습 / </a>
+    <span class="tag-box">AI 융합프로그래밍</span>
+  </td>
+  <td style="padding: 8px;">2025.07.05</td>
+</tr>
+
 
 
 
