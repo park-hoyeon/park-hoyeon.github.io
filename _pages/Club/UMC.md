@@ -43,7 +43,7 @@ taxonomy:
     </tr>
     <tr>
       <td style="padding: 8px;"> 1 Week</td>
-      <td style="padding: 8px;"><a href="/Club/Club-details/UMC1">📝 Database 설계</a><br>
+      <td style="padding: 8px;"><a href="/Club/Club-details/UMC1"> Database 설계</a><br>
 
       <span class="tag-box">DATABASE 설계</span>
       <span class="tag-box">로컬 DB 세팅</span>
@@ -53,20 +53,20 @@ taxonomy:
     <tr>
       <td style="padding: 8px;">2 Week</td>
       <td style="padding: 8px;">
-      <a href="/Club/Club-details/UMC1">📝 실전 SQL - 어떤 Query를 작성해야 할까?</a><br>
+      <a href="/Club/Club-details/UMC1"> 실전 SQL - 어떤 Query를 작성해야 할까?</a><br>
       <span class="tag-box">Paging</span>
       </td>
       <td style="padding: 8px;">2025.03.27</td>
     </tr>
     <tr>
       <td style="padding: 8px;">3 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/3week">📝 Chapter 2. 실전 SQL - 어떤 Query를 작성해야 할까?<br></a>      
-      <span class="tag-box">1138 한 줄로 서기 (실버Ⅱ)</span>
-      <span class="tag-box">2525 오븐 시계 (브론즈Ⅲ)</span>
-      <span class="tag-box">1037 약수 (브론즈 Ⅰ)</span>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-2-SQL-Query-1c06560b6e4980ef8f6ff27b04b1ecd4?source=copy_link"> Chapter 2. 실전 SQL - 어떤 Query를 작성해야 할까?<br></a>      
+      <span class="tag-box">SQL Injection</span>
+      <span class="tag-box">테이블 쿼리</span>
       </td>
-      <td style="padding: 8px;">2024.10.07</td>
+      <td style="padding: 8px;">2024.04.03</td>
     </tr>
+    
     <tr>
       <td style="padding: 8px;">4 Week</td>
       <td style="padding: 8px;"><a href="/Study/codehive-details/4week">📝 baekjoon 알고리즘 문제 풀이<br></a>
@@ -74,7 +74,7 @@ taxonomy:
       <span class="tag-box">1259 팰린드롬수 (브론즈I)</span>
       <span class="tag-box">10814 나이순 정렬 (실버V)</span>
       </td>
-      <td style="padding: 8px;">2024.10.14</td>
+      <td style="padding: 8px;">2024.04.10</td>
     </tr>
     <tr>
       <td style="padding: 8px;">5 Week</td>
