@@ -53,11 +53,13 @@ taxonomy:
     <tr>
       <td style="padding: 8px;">2 Week</td>
       <td style="padding: 8px;">
-      <a href="/Club/Club-details/UMC1"> 실전 SQL - 어떤 Query를 작성해야 할까?</a><br>
-      <span class="tag-box">Paging</span>
+      <a href="https://jumbled-ship-7f2.notion.site/Chapter-2-SQL-Query-1c06560b6e4980ef8f6ff27b04b1ecd4?source=copy_link"> 실전 SQL - 어떤 Query를 작성해야 할까?</a><br>
+      <span class="tag-box">SQL Injection</span>
+      <span class="tag-box">테이블 쿼리</span>
       </td>
       <td style="padding: 8px;">2025.03.27</td>
     </tr>
+    
     <tr>
       <td style="padding: 8px;">3 Week</td>
       <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-2-SQL-Query-1c06560b6e4980ef8f6ff27b04b1ecd4?source=copy_link"> Chapter 2. 실전 SQL - 어떤 Query를 작성해야 할까?<br></a>      
