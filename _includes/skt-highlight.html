@@ -1,6 +1,47 @@
 <!-- _includes/skt-highlight.html -->
-<div style="margin-bottom: 2rem; padding: 1.5rem; background-color: #1f2937; border: 2px solid #3b82f6; border-radius: 10px; color: white;">
-  <h2 style="margin-top: 0; font-size: 1.5rem;">🔥 SKT Fly AI 7기</h2>
-  <p style="margin: 0.5rem 0 1rem;"> SK Tech 기반 핵심 개발자 양성프로그램 활동 내용 보기</p>
-  <a href="/SKT" style="display: inline-block; background-color: #3b82f6; padding: 0.4rem 0.8rem; border-radius: 6px; text-decoration: none; color: white; font-weight: bold;">활동 보기 →</a>
+<div style="
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 2px solid #3b82f6;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: #1f2937;
+">
+  <!-- 💡 배경 이미지 -->
+  <div style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background-image: url('/assets/images/skt.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.08;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+  "></div>
+
+  <!-- 💬 실제 콘텐츠 -->
+  <div style="position: relative; z-index: 1;">
+    <h2 style="margin-top: 0; font-size: 1.5rem;">🔥 SKT Fly AI 7기 활동</h2>
+    <p style="margin: 0.5rem 0 1rem;">
+      SK Tech 기반 핵심 개발자 양성프로그램 활동 내용 보기
+    </p>
+    <a href="/SKT" style="
+      display: inline-block;
+      background-color: #3b82f6;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    ">활동 보기 →</a>
+  </div>
 </div>
+
+
