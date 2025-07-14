@@ -62,22 +62,23 @@ taxonomy:
     
     <tr>
       <td style="padding: 8px;">3 Week</td>
-      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-2-SQL-Query-1c06560b6e4980ef8f6ff27b04b1ecd4?source=copy_link"> Chapter 2. 실전 SQL - 어떤 Query를 작성해야 할까?<br></a>      
-      <span class="tag-box">SQL Injection</span>
-      <span class="tag-box">테이블 쿼리</span>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-3-API-URL-1c76560b6e49808c8190c62c166d2835?source=copy_link"> API URL의 설계 & 프로젝트 세팅<br></a>      
+      <span class="tag-box">API 정리</span>
       </td>
       <td style="padding: 8px;">2024.04.03</td>
     </tr>
     
     <tr>
       <td style="padding: 8px;">4 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/4week">📝 baekjoon 알고리즘 문제 풀이<br></a>
-      <span class="tag-box">2750 수 정렬하기 (브론즈 Ⅱ)</span>
-      <span class="tag-box">1259 팰린드롬수 (브론즈I)</span>
-      <span class="tag-box">10814 나이순 정렬 (실버V)</span>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-4-ES6-1cf6560b6e49802a8d93fd509235fdc3?source=copy_link">ES6와 프로젝트 파일 구조의 이해<br></a>
+      <span class="tag-box">ES Module</span>
+      <span class="tag-box">MVC 패턴</span>
+      <span class="tag-box">비즈니스 로직</span>
       </td>
       <td style="padding: 8px;">2024.04.10</td>
     </tr>
+
+    
     <tr>
       <td style="padding: 8px;">5 Week</td>
       <td style="padding: 8px;"><a href="/Study/codehive-details/5week">⌨️ HTML 웹 프로그래밍 학습<br></a>
