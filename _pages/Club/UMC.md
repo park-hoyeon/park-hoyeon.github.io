@@ -98,38 +98,34 @@ taxonomy:
 
     
     <tr>
-      <td style="padding: 8px;">⭐ 7 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/7week">📝 baekjoon 알고리즘 문제 풀이<br></a>
-      <span class="tag-box">2108 통계 (실버 III)</span>
-      <span class="tag-box">1764 듣보잡 (실버 IV)</span>
+      <td style="padding: 8px;">7 Week</td>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-7-Express-API-1ec6560b6e4980e883e0d81295c79e4d?source=copy_link">Express 미들웨어 & API 응답 통일 & 에러 핸들링<br></a>
+      <span class="tag-box">API의 응답 검토하기</span>
       </td>
-      <td style="padding: 8px;">2024.11.11</td>
+      <td style="padding: 8px;">2025.05.08</td>
     </tr>
+
+    
     <tr>
       <td style="padding: 8px;">8 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/8week">📝 baekjoon 알고리즘 문제 풀이<br></a>
-      <span class="tag-box">2920 음계 (브론즈 II)</span>
-      <span class="tag-box">1676 팩토리얼 0의 개수 (실버 V)</span>
-      <span class="tag-box">1920 수 찾기 (실버Ⅳ)</span>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-8-Swagger-1f06560b6e4980f0a5ffeb4bb9909710?source=copy_link">프론트엔드 연동과 Swagger<br></a>
+      <span class="tag-box">CORS</span>
+      <span class="tag-box">Swagger</span>
       </td>
-      <td style="padding: 8px;">2024.11.18</td>
+      <td style="padding: 8px;">2025.05.15</td>
     </tr>
+
+    
     <tr>
       <td style="padding: 8px;">9 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/9week">⌨️ HTML 웹 프로그래밍 학습<br></a>
-      <span class="tag-box">웹 서버 제작</span>
-      <span class="tag-box">Django</span>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-9-1f86560b6e498072be8ef353f4977439?source=copy_link">로그인 및 회원 가입 기능 구현<br></a>
+      <span class="tag-box">Google 로그인</span>
+      <span class="tag-box">Passport 사용하기 - 세션</span>
       </td>
-      <td style="padding: 8px;">2024.11.25</td>
+      <td style="padding: 8px;">2025.05.25</td>
     </tr>
-    <tr>
-      <td style="padding: 8px;">10 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/10week">⌨️ HTML 웹 프로그래밍 학습<br></a>
-      <span class="tag-box">웹 서버 제작</span>
-      <span class="tag-box">Django</span>
-      </td>
-      <td style="padding: 8px;">2024.12.02</td>
-    </tr>
+
+    
   </tbody>
 </table>
 
