@@ -65,7 +65,7 @@ taxonomy:
       <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-3-API-URL-1c76560b6e49808c8190c62c166d2835?source=copy_link"> API URL의 설계 & 프로젝트 세팅<br></a>      
       <span class="tag-box">API 정리</span>
       </td>
-      <td style="padding: 8px;">2024.04.03</td>
+      <td style="padding: 8px;">2025.04.03</td>
     </tr>
     
     <tr>
@@ -75,27 +75,28 @@ taxonomy:
       <span class="tag-box">MVC 패턴</span>
       <span class="tag-box">비즈니스 로직</span>
       </td>
-      <td style="padding: 8px;">2024.04.10</td>
+      <td style="padding: 8px;">2025.04.10</td>
     </tr>
 
     
     <tr>
       <td style="padding: 8px;">5 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/5week">⌨️ HTML 웹 프로그래밍 학습<br></a>
-      <span class="tag-box">API</span>
-      <span class="tag-box">HTML</span>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-5-API-1d26560b6e4980208f58f6d6cbb2f0f0?source=copy_link">API 및 프로젝트 설정 기초<br></a>
+      <span class="tag-box">GitHub 이슈</span>
+      <span class="tag-box">DB 연결</span>
       </td>
-      <td style="padding: 8px;">2024.10.28</td>
+      <td style="padding: 8px;">2025.04.17</td>
     </tr>
+    
     <tr>
       <td style="padding: 8px;">6 Week</td>
-      <td style="padding: 8px;"><a href="/Study/codehive-details/6week">📝 baekjoon 알고리즘 문제 풀이<br></a>      
-      <span class="tag-box">11650 좌표 정렬하기 (실버Ⅴ)</span>
-      <span class="tag-box">1978 소수 찾기 (브론즈II)</span>
-      <span class="tag-box">10773 제로 (실버Ⅳ)</span>
+      <td style="padding: 8px;"><a href="https://jumbled-ship-7f2.notion.site/Chapter-6-ORM-1e36560b6e4980fc8dd8ea836ba4d273?source=copy_link">ORM 사용해보기<br></a>      
+      <span class="tag-box">Prisma Schema에 Model 추가하기</span>
       </td>
-      <td style="padding: 8px;">2024.11.04</td>
+      <td style="padding: 8px;">2025.04.24</td>
     </tr>
+
+    
     <tr>
       <td style="padding: 8px;">⭐ 7 Week</td>
       <td style="padding: 8px;"><a href="/Study/codehive-details/7week">📝 baekjoon 알고리즘 문제 풀이<br></a>
