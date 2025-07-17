@@ -150,3 +150,16 @@ search: false
 .sidebar::-webkit-scrollbar {
   display: none;                 /* Chrome/Safari 스크롤바 숨기기 */
 }
+
+.sidebar,
+.sidebar.sticky {
+  overflow-y: auto;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge */
+}
+
+.sidebar::-webkit-scrollbar,
+.sidebar.sticky::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
+
