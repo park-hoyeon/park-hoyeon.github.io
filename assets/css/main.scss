@@ -105,14 +105,17 @@ search: false
 }
 
 .sidebar-section {
-  box-sizing: border-box;  /* ✅ padding 포함된 전체 너비로 계산 */
-  width: 100%;             /* ✅ 부모 컨테이너 안에 딱 맞게 */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-right: 0; /* 혹시 기본 마진이 있을 경우 제거 */
   padding: 16px;
   border-radius: 12px;
-  margin-bottom: 20px;
   background-color: #1f1f1f;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
 }
+
 
 
 .sidebar-title {
@@ -151,15 +154,32 @@ search: false
   display: none;                 /* Chrome/Safari 스크롤바 숨기기 */
 }
 
+/* ✅ 스크롤바 완전 숨기기 */
 .sidebar,
-.sidebar.sticky {
+.sidebar.sticky,
+.sidebar .sidebar__inner {
   overflow-y: auto;
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .sidebar::-webkit-scrollbar,
-.sidebar.sticky::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
+.sidebar.sticky::-webkit-scrollbar,
+.sidebar .sidebar__inner::-webkit-scrollbar {
+  display: none;
 }
+
+/* ✅ 사이드바 카테고리 박스 스타일 수정 */
+.sidebar-section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-right: 0;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #1f1f1f;
+  margin-bottom: 20px;
+}
+
 
