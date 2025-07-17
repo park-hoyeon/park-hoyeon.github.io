@@ -221,6 +221,17 @@ sidebar:
   <td style="padding: 8px;">2025.07.10 ~ 2025.07.11</td>
 </tr>
 
+<tr>
+  <td style="padding: 8px;">Day17 ~ Day21</td>
+  <td style="padding: 8px;">
+    <a href="https://jumbled-ship-7f2.notion.site/7-14-7-18-Cloud-Service-2306560b6e4980ab967cd1ef1b212d73?source=copy_link"> Cloud Service 개발 (애저) </a>
+    <br>
+    <span class="tag-box">가상 네트워크 </span>
+    <span class="tag-box">가상머신 </span>
+  </td>
+  <td style="padding: 8px;">2025.07.14 ~ 2025.07.18</td>
+</tr>
+
 
 
 
