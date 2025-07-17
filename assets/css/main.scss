@@ -105,12 +105,15 @@ search: false
 }
 
 .sidebar-section {
-  background-color: #1f1f1f;
+  box-sizing: border-box;  /* ✅ padding 포함된 전체 너비로 계산 */
+  width: 100%;             /* ✅ 부모 컨테이너 안에 딱 맞게 */
   padding: 16px;
   border-radius: 12px;
   margin-bottom: 20px;
+  background-color: #1f1f1f;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
 }
+
 
 .sidebar-title {
   font-size: 16px;
@@ -137,4 +140,13 @@ search: false
 
 .sidebar-links li a:hover {
   color: #fff;
+}
+.sidebar {
+  overflow-y: auto;              /* 스크롤은 되게 하되 */
+  scrollbar-width: none;         /* Firefox용 스크롤바 숨기기 */
+  -ms-overflow-style: none;      /* IE/Edge용 스크롤바 숨기기 */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;                 /* Chrome/Safari 스크롤바 숨기기 */
 }
