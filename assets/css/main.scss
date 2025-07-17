@@ -99,4 +99,42 @@ search: false
     width: 100%;
   }
 }
+/* ✅ 미디어 쿼리 바깥에서 선언 */
+.sidebar-wrapper {
+  margin-top: 20px;
+}
 
+.sidebar-section {
+  background-color: #1f1f1f;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-title {
+  font-size: 16px;
+  color: #ffa500;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-links li {
+  margin: 6px 0;
+}
+
+.sidebar-links li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar-links li a:hover {
+  color: #fff;
+}
