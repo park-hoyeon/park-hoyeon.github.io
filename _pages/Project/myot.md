@@ -1,8 +1,25 @@
 ---
-title: "🎭 Myot - 뮤지컬 커뮤니티 플랫폼"
-layout: single
-permalink: /Project/myot
+title: " [2025 하반기] 🎭 Myot - 뮤지컬 커뮤니티 플랫폼"
+layout: category
+permalink: /Project/myot/
+author_profile: true
+sidebar_main: true
+types: posts
+taxonomy:
+sidebar:
+  nav: "sidebar-category"
+  enabled: true
 ---
+
+{% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
+{% assign posts_with_flutter_and_solutions = posts_with_flutter | where: "categories", "solutions" %}
+
+{% for post in posts_with_flutter_and_solutions %}
+  {% include archive-single.html type=page.entries_layout %}
+{% endfor %}
+
+
+
 
 
 <img src="/_pages/Project/myot/image/MyOT.png" >
