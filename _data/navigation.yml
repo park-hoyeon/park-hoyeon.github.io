@@ -22,6 +22,8 @@ sidebar-category:
     children:
       - title: "🧓🏻 요양보호사 구인-구직 매칭 플랫폼"
         url: "/Project/blaybus/"
+      - title: "🎧 MyOT - 뮤지컬 커뮤니티 플랫폼 "
+        url: "/Project/myot/"
       - title: "💌 조각집 <추억 저장 웹사이트>"
         url: "/Project/조각집new/"
       - title: "🪴식집사들"
