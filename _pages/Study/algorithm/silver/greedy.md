@@ -16,9 +16,9 @@ sidebar:
 
 <br/>
 
-<table style="border: none; background-color: #fafafa; color: #111; width: 100%;">
-  <thead>
-    <tr style="background-color: #efefef;">
+<table style="background-color:#1e1f24; color: #f0f0f0; width: 100%; border-collapse: collapse;">
+  <thead style="background-color: #2c2f36;">
+    <tr>
       <th style="padding: 10px;">번호</th>
       <th style="padding: 10px;">문제 이름</th>
       <th style="padding: 10px;">문제 번호</th>
@@ -44,15 +44,8 @@ sidebar:
 </table>
 
 <style>
-table {
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-td, th {
-  border: 1px solid #ddd;
-}
 a {
-  color: #1a73e8;
+  color: #5bc0de;
   text-decoration: none;
 }
 a:hover {
