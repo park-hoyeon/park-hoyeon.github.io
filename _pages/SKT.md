@@ -72,12 +72,7 @@ sidebar:
 
 
   
-  <div class="project-card">
-    <a href="/project/food-log">🍱 d</a>
-  </div>
-  <div class="project-card">
-    <a href="/project/study-log">📚 d</a>
-  </div>
+  
 </div>
 
 ### 주차별 내용
