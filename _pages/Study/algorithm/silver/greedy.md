@@ -11,10 +11,7 @@ sidebar:
   enabled: true
 ---
 
-# ✨ 그리디 / 구현 문제 모음
-
-> 그리디 / 구현 유형의 문제들을 모아서 정리하였습니다.  
-> **문제 제목을 클릭하면 해당 문제 풀이 페이지로 이동합니다.**
+> **문제 이름을 클릭하면 상세 풀이 페이지로 이동합니다.**
 
 <br/>
 
@@ -56,14 +53,15 @@ table, th, td {
   border: 1px solid #444;
 }
 th {
-  background-color: #333;
-  color: #fff;
-  padding: 12px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  padding: 10px;
 }
 td {
-  background-color: #111;
-  color: #ddd;
-  padding: 12px;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
 a {
   color: #40cfff;
