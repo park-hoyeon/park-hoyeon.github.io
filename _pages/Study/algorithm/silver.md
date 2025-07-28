@@ -1,88 +1,76 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>BFS 문제 모음 | 백준 알고리즘</title>
-    <style>
-        body {
-            background-color: #1e1e1e;
-            color: #cfcfcf;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
+---
+title: "BFS 문제 모음"
+layout: category
+permalink: /Study/algorithm/silver/bfs
+author_profile: true
+sidebar_main: true
+types: posts
+taxonomy:
+sidebar:
+  nav: "sidebar-category"
+  enabled: true
+---
 
-        h1 {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #61dafb;
-        }
+<div style="text-align: left; margin-top: 20px; font-size: 80%; color: #cfcfcf;">
+  BFS 유형의 문제들을 모아서 정리하였습니다.
+</div>
 
-        .problem-card {
-            background-color: #333;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+<br/>
 
-        .problem-card a {
-            color: #61dafb;
-            text-decoration: none;
-        }
+### 문제 목록
 
-        .problem-card a:hover {
-            text-decoration: underline;
-        }
+| 번호 | 문제 이름           | 문제 번호 |
+|------|--------------------|-----------|
+| 1    | <a href="/Study/algorithm/silver/2606">바이러스</a>     | 2606    |
+| 2    | <a href="/Study/algorithm/silver/11286">바이러</a>   | 1012    |
+| 3    | <a href="/Study/algorithm/silver/2075">단지번호 붙이기</a>  | 2667     |
+| 4    | <a href="/Study/algorithm/silver/20291">.</a>   | .   |
 
-        .tag-box {
-            background-color: #444;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-size: 12px;
-            color: #fff;
-        }
+<br/>
 
-        .problem-list {
-            max-width: 600px;
-            margin: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>📝 BFS 문제 모음</h1>
-    <div class="problem-list" id="problemList"></div>
+<style>
+.problem-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.problem-table th {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  padding: 10px;
+}
+.problem-table td {
+  background-color: #1e1e1e;
+  color: #cceeff;
+  padding: 12px;
+  border-bottom: 1px solid #444444;
+}
+.problem-table tr:hover td {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.problem-table a {
+  color: #66ccff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.problem-table a:hover {
+  color: #00ffff;
+  text-decoration: underline;
+}
+</style>
 
-    <script>
-        // 문제 데이터
-        const problems = [
-            { number: "2606", title: "바이러스", link: "https://www.acmicpc.net/problem/2606" },
-            { number: "11724", title: "연결 요소의 개수", link: "https://www.acmicpc.net/problem/11724" },
-            { number: "1260", title: "DFS와 BFS", link: "https://www.acmicpc.net/problem/1260" },
-            { number: "1697", title: "숨바꼭질", link: "https://www.acmicpc.net/problem/1697" }
-        ];
 
-        // 문제 리스트 동적 생성
-        const problemList = document.getElementById("problemList");
-        problems.forEach(problem => {
-            const problemCard = document.createElement("div");
-            problemCard.className = "problem-card";
 
-            const problemLink = document.createElement("a");
-            problemLink.href = problem.link;
-            problemLink.textContent = `문제 ${problem.number}: ${problem.title}`;
 
-            const problemTag = document.createElement("span");
-            problemTag.className = "tag-box";
-            problemTag.textContent = `번호: ${problem.number}`;
 
-            problemCard.appendChild(problemLink);
-            problemCard.appendChild(problemTag);
-            problemList.appendChild(problemCard);
-        });
-    </script>
-</body>
-</html>
+
+
+
+
+
+
+
