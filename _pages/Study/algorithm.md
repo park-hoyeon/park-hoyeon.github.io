@@ -57,9 +57,18 @@ sidebar:
 <tr><th>번호</th><th>문제 유형</th></tr>
 </thead>
 <tbody>
-<tr><td>1</td><td><a href="/Study/algorithm/silver/greedy">그리디 / 구현 <br></a></td></tr>
-<tr><td>2</td><td><a href="./bfs.md"><a href="/Study/algorithm/silver/bfs">BFS (너비우선탐색) <br></a></td></tr>
-<tr><td>3</td><td><a href="./datastructure.md"><a href="/Study/algorithm/silver/datastructure">자료구조 <br></a></td></tr>
-
+  <tr>
+    <td>1</td>
+    <td><a href="/Study/algorithm/silver/greedy">그리디 / 구현</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><a href="/Study/algorithm/silver/bfs">BFS (너비우선탐색)</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><a href="/Study/algorithm/silver/datastructure">자료구조</a></td>
+  </tr>
 </tbody>
+
 </table>
