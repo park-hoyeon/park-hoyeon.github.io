@@ -11,16 +11,17 @@ sidebar:
   enabled: true
 ---
 
-> **문제 이름을 클릭하면 상세 풀이 페이지로 이동합니다.**
+
+> 문제 이름을 클릭하면 상세 풀이 페이지로 이동합니다.
 
 <br/>
 
-<table>
+<table style="border: none; background-color: #fafafa; color: #111; width: 100%;">
   <thead>
-    <tr>
-      <th style="text-align:center;">번호</th>
-      <th style="text-align:center;">문제 이름</th>
-      <th style="text-align:center;">문제 번호</th>
+    <tr style="background-color: #efefef;">
+      <th style="padding: 10px;">번호</th>
+      <th style="padding: 10px;">문제 이름</th>
+      <th style="padding: 10px;">문제 번호</th>
     </tr>
   </thead>
   <tbody>
@@ -44,27 +45,14 @@ sidebar:
 
 <style>
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 16px;
+  margin: 20px 0;
 }
-table, th, td {
-  border: 1px solid #444;
-}
-th {
-  background-color: #2a2a2a;
-  color: #ffffff;
-  padding: 10px;
-}
-td {
-  background-color: #1e1e1e;
-  color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
+td, th {
+  border: 1px solid #ddd;
 }
 a {
-  color: #40cfff;
+  color: #1a73e8;
   text-decoration: none;
 }
 a:hover {
