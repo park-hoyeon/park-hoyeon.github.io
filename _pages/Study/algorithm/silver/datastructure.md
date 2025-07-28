@@ -29,23 +29,36 @@ sidebar:
 <br/>
 
 <style>
-table {
+.problem-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  text-align: center;
 }
-table, th, td {
-  border: 1px solid #444;
-}
-th, td {
+.problem-table th {
+  background-color: #3d3d3d;
+  color: #ffffff;
   padding: 10px;
-  text-align: left;
 }
-a {
-  color: #61dafb;
+.problem-table td {
+  background-color: #1e1e1e;
+  color: #cceeff;
+  padding: 12px;
+  border-bottom: 1px solid #444444;
+}
+.problem-table tr:hover td {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.problem-table a {
+  color: #66ccff;
+  font-weight: 600;
   text-decoration: none;
 }
-a:hover {
+.problem-table a:hover {
+  color: #00ffff;
   text-decoration: underline;
 }
 </style>
