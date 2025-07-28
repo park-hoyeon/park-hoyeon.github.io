@@ -232,7 +232,28 @@ sidebar:
   <td style="padding: 8px;">2025.07.14 ~ 2025.07.18</td>
 </tr>
 
+<tr>
+  <td style="padding: 8px;">Day22 ~ Day26</td>
+  <td style="padding: 8px;">
+    <a href="https://jumbled-ship-7f2.notion.site/7-21-7-23-2376560b6e49803b8403ee7a115c7770?source=copy_link"> 컨테이너 인프라 환경 구축 / </a>
+    <a href="https://jumbled-ship-7f2.notion.site/7-24-Azure-23a6560b6e4980be9412c02ca303e78a?source=copy_link"> Azure 컨테이너 서비스</a>
+    <br>
+    <span class="tag-box">DevOps실습 </span>
+    
+  </td>
+  <td style="padding: 8px;">2025.07.21 ~ 2025.07.25</td>
+</tr>
 
+<tr>
+  <td style="padding: 8px;">Day27 ~ Day29</td>
+  <td style="padding: 8px;">
+    <a href="https://jumbled-ship-7f2.notion.site/7-21-7-23-2376560b6e49803b8403ee7a115c7770?source=copy_link"> 컨테이너 인프라 환경 구축 / </a>
+    <br>
+    <span class="tag-box">DevOps실습 </span>
+    
+  </td>
+  <td style="padding: 8px;">2025.07.28 ~ 2025.07.30</td>
+</tr>
 
 
 
