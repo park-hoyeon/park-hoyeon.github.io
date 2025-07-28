@@ -23,7 +23,7 @@ sidebar:
 |------|--------------------|-----------|
 | 1    | <a href="/Study/algorithm/silver/2606">바이러스</a>     | 2606    |
 | 2    | <a href="/Study/algorithm/silver/11286">유기농 배추</a>   | 1012    |
-| 3    | <a href="/Study/algorithm/silver/2075">단지번호 붙이기</a>  | 2667     |
+| 3    | <a href="/Study/algorithm/silver/2667">단지번호 붙이기</a>  | 2667     |
 | 4    | <a href="/Study/algorithm/silver/20291">.</a>   | .   |
 
 <br/>
