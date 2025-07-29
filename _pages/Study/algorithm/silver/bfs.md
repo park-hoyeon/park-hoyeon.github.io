@@ -25,6 +25,7 @@ sidebar:
 | 2    | <a href="/Study/algorithm/silver/11286">유기농 배추</a>   | 1012    |
 | 3    | <a href="/Study/algorithm/silver/2667">단지번호 붙이기</a>  | 2667     |
 | 4    | <a href="/Study/algorithm/silver/1303">전쟁 - 전투</a>   | 1303   |
+| 5    | <a href="/Study/algorithm/silver/2468">안전 영역</a>   | 2468   |
 
 <br/>
 
