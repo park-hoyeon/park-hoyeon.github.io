@@ -1,7 +1,7 @@
 ---
 title: "✨ dp (다이나믹 동적프로그래밍)"
 layout: category
-permalink: /Study/algorithm/silver/greedy
+permalink: /Study/algorithm/silver/dp
 author_profile: true
 sidebar_main: true
 types: posts
