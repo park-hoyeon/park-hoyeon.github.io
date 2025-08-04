@@ -92,7 +92,8 @@ sidebar:
 <div class="main-project-highlight">
   <img src="/_pages/SKT/image/main_project_thumbnail.png" alt="Main Project Thumbnail">
   <div class="main-project-highlight-text">
-    <h2>⭐ Main Project: 미세먼지 예측 기반 IoT 시스템 개발</h2>
+    <h2>⭐ Main Project: <br>
+      미세먼지 예측 기반 IoT 시스템 개발</h2>
     <p>24시간 후 예측 결과와 웹앱 구현을 결합한 메인 프로젝트</p>
     <a href="/SKT/main-project/">자세히 보기</a>
   </div>
