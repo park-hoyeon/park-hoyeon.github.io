@@ -45,6 +45,63 @@ sidebar:
 }
 </style>
 
+<style>
+.main-project-highlight {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-project-highlight img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 1.5rem;
+}
+
+.main-project-highlight-text h2 {
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.main-project-highlight-text p {
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+
+.main-project-highlight-text a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #f1f1f1;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #555;
+  font-weight: bold;
+}
+.main-project-highlight-text a:hover {
+  background-color: #444;
+}
+</style>
+
+<div class="main-project-highlight">
+  <img src="/_pages/SKT/image/main_project_thumbnail.png" alt="Main Project Thumbnail">
+  <div class="main-project-highlight-text">
+    <h2>⭐ Main Project: 미세먼지 예측 기반 IoT 시스템 개발</h2>
+    <p>24시간 후 예측 결과와 웹앱 구현을 결합한 메인 프로젝트</p>
+    <a href="/SKT/main-project/">자세히 보기</a>
+  </div>
+</div>
+
+
+
+
+
 ## Projects
 
 <div class="project-cards">
