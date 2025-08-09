@@ -1,7 +1,7 @@
 ---
 title: "주제 변경의 과정(미세먼지 예측 -> 음식 필터링)"
 layout: category
-permalink: _pages/SKT/main-project/difficulties
+permalink: _pages/SKT/main-project/difficulties/
 author_profile: true
 sidebar_main: true
 types: posts
