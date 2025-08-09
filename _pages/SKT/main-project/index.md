@@ -54,10 +54,10 @@ sidebar:
 </style>
 
 <div class="button-list">
-  <a href="_pages/SKT/main-project/difficulties/" class="button-item"><span>프로젝트 진행 중 겪은 어려움</span></a>
-  <a href="_pages/SKT/main-project/ai-modeling/" class="button-item"><span>AI 모델링</span></a>
-  <a href="_pages/SKT/main-project/iot-tech/" class="button-item"><span>IoT 센서 구성 및 코드</span></a>
-  <a href="_pages/SKT/main-project/reflection/" class="button-item"><span>회고 및 개선점</span></a>
+  <a href="_/SKT/main-project/difficulties/" class="button-item"><span>프로젝트 진행 중 겪은 어려움</span></a>
+  <a href="/SKT/main-project/ai-modeling/" class="button-item"><span>AI 모델링</span></a>
+  <a href="/SKT/main-project/iot-tech/" class="button-item"><span>IoT 센서 구성 및 코드</span></a>
+  <a href="/SKT/main-project/reflection/" class="button-item"><span>회고 및 개선점</span></a>
   
 
 </div>
