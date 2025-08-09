@@ -1,7 +1,7 @@
 ---
 title: "✨ SKT Fly Ai - 시각장애인 맞춤 음식 필터링 AI 시스템"
 layout: category
-permalink: /SKT/main-project/index
+permalink: _pages/SKT/main-project/index
 author_profile: true
 sidebar_main: true
 types: posts
