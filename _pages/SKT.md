@@ -93,8 +93,8 @@ sidebar:
   <img src="/_pages/SKT/image/main_project_thumbnail.png" alt="Main Project Thumbnail">
   <div class="main-project-highlight-text">
     <h2>⭐ Main Project: <br>
-      미세먼지 예측 기반 IoT 시스템 개발</h2>
-    <p>24시간 후 예측 결과와 웹앱 구현을 결합한 메인 프로젝트</p>
+      시각장애인 맞춤 음식 필터링 AI 시스템 개발</h2>
+    <p>YOLO와 TTS를 결합한 시각장애인 맞춤 음식 필터링·안내 시스템</p>
     <a href="/_pages/SKT/main-project/index">자세히 보기</a>
   </div>
 </div>
