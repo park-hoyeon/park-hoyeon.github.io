@@ -1,7 +1,7 @@
 ---
-title: "✨ SKT Fly Ai - 미세먼지 예측 기반 IoT 시스템"
+title: "✨ SKT Fly Ai - 시각장애인 맞춤 음식 필터링 AI 시스템"
 layout: category
-permalink: _pages/SKT/main-project/
+permalink: /SKT/main-project/
 author_profile: true
 sidebar_main: true
 types: posts
@@ -22,8 +22,43 @@ sidebar:
 
 ## 개발 과정 기록
 
-- [ 프로젝트 진행 중 겪은 어려움](/SKT/main-project/difficulties/)
-- [ AI 모델링 ](/SKT/main-project/difficulties/)  
-- [ IoT 센서 구성 및 코드](/SKT/main-project/iot-tech)
-- [ 웹앱 개발 과정](/SKT/main-project/webapp)
-- [ 회고 및 개선점](/SKT/main-project/reflection)
+<style>
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button-item {
+  display: block;
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-item:hover {
+  background-color: #3a3a3a;
+  transform: translateY(-2px);
+}
+
+.button-item span {
+  color: #00bcd4; /* 링크 색상 강조 */
+}
+</style>
+
+<div class="button-list">
+  <a href="/SKT/main-project/difficulties/" class="button-item"><span>프로젝트 진행 중 겪은 어려움</span></a>
+  /*
+  <a href="/SKT/main-project/ai-modeling/" class="button-item"><span>AI 모델링</span></a>
+  <a href="/SKT/main-project/iot-tech/" class="button-item"><span>IoT 센서 구성 및 코드</span></a>
+  <a href="/SKT/main-project/webapp/" class="button-item"><span>웹앱 개발 과정</span></a>
+  <a href="/SKT/main-project/reflection/" class="button-item"><span>회고 및 개선점</span></a>
+  */
+</div>
