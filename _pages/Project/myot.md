@@ -100,7 +100,22 @@ sidebar:
 <div class="info-container">
   <div class="info-title">🔒개발 환경</div>
   <div class="info-row">
-    <span class="info-label">🚀 Stacks</span트 세부 내용 보기
+    <span class="info-label">🚀 Stacks</span>
+    <span class="info-value">Node.js, Express, Prisma ORM, MySQL, Firebase, Android(Java)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">🛠 Tools</span>
+    <span class="info-value">Postman, GitHub, Firebase, Figma</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">👥 Collaboration</span>
+    <span class="info-value">Notion, GitHub, Google Meet, Slack</span>
+  </div>
+</div>
+
+---
+
+## 프로젝트 자세히 보기
 
 -  [백엔드 개발 세부 내용](/project-musical/backend-details/)
 -  [기획 및 설계](/project-musical/planning/)
