@@ -1,7 +1,7 @@
 ---
 title: " [2025 하반기] MyOT - 백엔드 개발 세부 내용"
 layout: category
-permalink: /Project/project-musical/backend-details
+permalink: _pages/Project/project-musical/backend-details
 author_profile: true
 sidebar_main: true
 types: posts
