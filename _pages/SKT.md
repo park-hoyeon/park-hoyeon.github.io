@@ -92,9 +92,8 @@ sidebar:
 <div class="main-project-highlight">
   <img src="/_pages/SKT/image/main_project_thumbnail.png" alt="Main Project Thumbnail">
   <div class="main-project-highlight-text">
-    <h2>⭐ Main Project: <br>
-      시각장애인 맞춤 음식 필터링 AI 시스템 개발</h2>
-    <p>YOLO와 TTS를 결합한 시각장애인 맞춤 음식 필터링·안내 시스템</p>
+    <h2>Main Project: Hover AI<br>
+      시각장애인을 위한 실시간 인터페이스 인식 및 안내 시스템</h2>
     <a href="/_pages/SKT/main-project/index">자세히 보기</a>
   </div>
 </div>
