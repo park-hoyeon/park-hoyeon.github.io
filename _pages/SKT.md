@@ -92,8 +92,8 @@ sidebar:
 <div class="main-project-highlight">
   <img src="/_pages/SKT/image/main_project_thumbnail.png" alt="Main Project Thumbnail">
   <div class="main-project-highlight-text">
-    <h2>Main Project: Hover AI<br>
-      시각장애인을 위한 실시간 인터페이스 인식 및 안내 시스템</h2>
+    <h5>Main Project: Hover AI<br>
+      시각장애인을 위한 실시간 인터페이스 인식 및 안내 시스템</h5>
     <a href="/_pages/SKT/main-project/index">자세히 보기</a>
   </div>
 </div>
