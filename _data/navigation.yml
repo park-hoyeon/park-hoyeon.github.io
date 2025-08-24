@@ -6,6 +6,25 @@ main:
 
 sidebar-category:
 
+
+
+
+
+  - title: "✨ Project"
+    children:
+      - title: "👆 Hover AI - 터치 스크린 도우미"
+        url: "/SKT/"
+      - title: "🎧 MyOT - 뮤지컬 커뮤니티 플랫폼 "
+        url: "/Project/myot/"
+      - title: "🧓🏻 요양보호사 구인-구직 매칭 플랫폼"
+        url: "/Project/blaybus/"
+      - title: "💌 조각집 <추억 저장 웹사이트>"
+        url: "/Project/조각집new/"
+      - title: "🪴식집사들"
+        url: "/Project/plant/"
+      - title: "👩‍💻스터디 활동자료 웹사이트 제작"
+        url: "/Project/coding/"
+
   - title: "✨ IT 동아리 & 대외활동"
     children:
       - title: " SKT Fly ai 7기"
@@ -14,22 +33,6 @@ sidebar-category:
         url: "/Club/Codeit_Boost/"
       - title: " UMC (IT연합)"
         url: "/Club/UMC/"
-
-
-  
-
-  - title: "✨ Project"
-    children:
-      - title: "🧓🏻 요양보호사 구인-구직 매칭 플랫폼"
-        url: "/Project/blaybus/"
-      - title: "🎧 MyOT - 뮤지컬 커뮤니티 플랫폼 "
-        url: "/Project/myot/"
-      - title: "💌 조각집 <추억 저장 웹사이트>"
-        url: "/Project/조각집new/"
-      - title: "🪴식집사들"
-        url: "/Project/plant/"
-      - title: "👩‍💻스터디 활동자료 웹사이트 제작"
-        url: "/Project/coding/"
 
 
   - title: "✨ 스터디 모임"
