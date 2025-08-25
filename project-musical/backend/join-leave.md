@@ -111,6 +111,110 @@ router.post("/type/join", authenticateJWT, async (req, res) => {
   </code></pre>
 </div>
 
+
+### community.service.js
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="javascript">
+export const handleJoinOrLeaveCommunity = async (
+  userId,
+  communityId,
+  action,
+  profileType,
+  multi
+) => {
+  const isJoined = await checkUserInCommunity(userId, communityId);
+
+  if (action === "join") {
+    if (isJoined) throw new Error("이미 가입된 커뮤니티입니다.");
+    // 트랜잭션: 가입 + (필요 시) 멀티 생성
+    await prisma.$transaction(async (tx) => {
+      await insertUserToCommunity(userId, communityId, tx);
+      if (profileType === "MULTI") {
+        const dup = await findMultiProfile(communityId, userId, tx);
+        if (dup) throw new Error("이미 해당 커뮤니티에 멀티프로필이 있습니다.");
+        const ok = await canCreateAnotherMulti(userId);
+        if (!ok)
+          throw new Error(
+            "무료 회원은 멀티프로필을 5개까지 생성할 수 있습니다."
+          );
+        await createCommunityProfileRepository(
+          {
+            userId,
+            communityId,
+            nickname: multi?.nickname ?? "",
+            image: multi?.image ?? null,
+            bio: multi?.bio ?? null,
+          },
+          tx
+        );
+      }
+    });
+    return "커뮤니티 가입 완료";
+  }
+
+  if (action === "leave") {
+    if (!isJoined) throw new Error("가입되지 않은 커뮤니티입니다.");
+    // 규칙: 멀티 사용 중이면 자동 삭제
+    await prisma.$transaction(async (tx) => {
+      const mp = await findMultiProfile(communityId, userId, tx);
+      if (mp) await deleteCommunityProfileRepository(mp.id, tx);
+      await deleteUserFromCommunity(userId, communityId, tx);
+    });
+    return "커뮤니티 탈퇴 완료";
+  }
+
+  throw new Error("유효하지 않은 요청입니다.");
+};
+
+// 커뮤니티별 프로필 타입 전환
+export const switchCommunityProfileType = async ({
+  userId,
+  communityId,
+  profileType, // "BASIC" | "MULTI"
+  multi, // MULTI 전환 시 {nickname, image, bio}
+}) => {
+  return await prisma.$transaction(async (tx) => {
+    const current = await findMultiProfile(communityId, userId, tx);
+    const isMulti = !!current;
+
+    if (profileType === "BASIC") {
+      // 멀티 → 기본 : 기존 멀티 자동삭제
+      if (isMulti) await deleteCommunityProfileRepository(current.id, tx);
+      return { changedTo: "BASIC" };
+    }
+
+    if (profileType === "MULTI") {
+      // 기본 → 멀티 : 한도 체크 + 생성 (이미 있으면 에러)
+      if (isMulti) throw new Error("이미 멀티프로필을 사용 중입니다.");
+      const ok = await canCreateAnotherMulti(userId);
+      if (!ok)
+        throw new Error("무료 회원은 멀티프로필을 5개까지 생성할 수 있습니다.");
+      const created = await createCommunityProfileRepository(
+        {
+          userId,
+          communityId,
+          nickname: multi?.nickname ?? "",
+          image: multi?.image ?? null,
+          bio: multi?.bio ?? null,
+        },
+        tx
+      );
+      return { changedTo: "MULTI", profile: created };
+    }
+
+    throw new Error("profileType은 BASIC 또는 MULTI여야 합니다.");
+  });
+};
+  </code></pre>
+</div>
+
+
+
   
 
 
