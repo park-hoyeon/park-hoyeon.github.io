@@ -131,7 +131,7 @@ export const handleJoinOrLeaveCommunity = async (
 
   if (action === "join") {
     if (isJoined) throw new Error("이미 가입된 커뮤니티입니다.");
-    // 트랜잭션: 가입 + (필요 시) 멀티 생성
+    
     await prisma.$transaction(async (tx) => {
       await insertUserToCommunity(userId, communityId, tx);
       if (profileType === "MULTI") {
@@ -159,7 +159,7 @@ export const handleJoinOrLeaveCommunity = async (
 
   if (action === "leave") {
     if (!isJoined) throw new Error("가입되지 않은 커뮤니티입니다.");
-    // 규칙: 멀티 사용 중이면 자동 삭제
+    
     await prisma.$transaction(async (tx) => {
       const mp = await findMultiProfile(communityId, userId, tx);
       if (mp) await deleteCommunityProfileRepository(mp.id, tx);
@@ -175,21 +175,19 @@ export const handleJoinOrLeaveCommunity = async (
 export const switchCommunityProfileType = async ({
   userId,
   communityId,
-  profileType, // "BASIC" | "MULTI"
-  multi, // MULTI 전환 시 {nickname, image, bio}
+  profileType, 
+  multi, 
 }) => {
   return await prisma.$transaction(async (tx) => {
     const current = await findMultiProfile(communityId, userId, tx);
     const isMulti = !!current;
 
     if (profileType === "BASIC") {
-      // 멀티 → 기본 : 기존 멀티 자동삭제
       if (isMulti) await deleteCommunityProfileRepository(current.id, tx);
       return { changedTo: "BASIC" };
     }
 
     if (profileType === "MULTI") {
-      // 기본 → 멀티 : 한도 체크 + 생성 (이미 있으면 에러)
       if (isMulti) throw new Error("이미 멀티프로필을 사용 중입니다.");
       const ok = await canCreateAnotherMulti(userId);
       if (!ok)
@@ -214,8 +212,30 @@ export const switchCommunityProfileType = async ({
 </div>
 
 
+### community.repository.js
 
-  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="javascript">
+export const checkUserInCommunity = async (
+  userId,
+  communityId,
+  db = prisma
+) => {
+  const record = await db.userCommunity.findFirst({
+    where: {
+      userId,
+      communityId,
+    },
+  });
+  return !!record;
+};
+  </code></pre>
+</div>
+ 
 
 
 ---  
