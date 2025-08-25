@@ -99,7 +99,7 @@ sidebar:
 <div id="backend-detail">
 
 <div class="feature-grid">
-  <a class="feature-card" href="/SKT/main-project/backend/join-leave/">
+  <a class="feature-card" href="/project-musical/backend/join-leave/">
     <div class="feature-kicker">POST</div>
     <div class="feature-title">커뮤니티 가입/탈퇴하기</div>
     <div class="feature-sub">/api/community/type/join</div>
