@@ -89,12 +89,12 @@ sidebar:
     &nbsp;&nbsp;- 사용자 기반 커뮤니티 탐색 및 조건부 피드 출력 로직 구현 (로그인 상태 기반 동적 응답)<br>
     &nbsp;&nbsp;- 커뮤니티 프로필 등록/수정/삭제 및 특정 커뮤니티 내 프로필 관리 기능 구현<br>
     &nbsp;&nbsp;- 피드 필터 기능 (미디어 포함 게시물, 인기순, 타 커뮤니티 인용글 등 복합 조건 분기 처리)<br>
+    &nbsp;&nbsp;- 커뮤니티 신청(등록 요청), 전체/내 커뮤니티 목록 조회, 특정 커뮤니티 정보 조회 API 설계 및 구현<br>
+    &nbsp;&nbsp;- 커뮤니티 내 프로필과 타 유저 프로필 조회, 내 프로필 개수 제한 기능 구현<br>
     • Prisma ORM 기반 스키마 정의 및 관계형 데이터베이스 모델링 (MySQL)<br>
     • RESTful API 구조 설계 및 컨트롤러/서비스/레포지토리 계층 분리<br>
-    • Swagger 문서 자동화 및 Postman 기반 시나리오 테스트 케이스 작성 및 검증
   </span>
 </div>
-
 </div>
 
 <div class="info-container">
@@ -112,6 +112,18 @@ sidebar:
     <span class="info-value">Notion, GitHub, Google Meet, Slack</span>
   </div>
 </div>
+
+---
+
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 172917.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 172932.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 172944.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 172954.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 173005.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 173014.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 173025.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 173034.png"> 
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Project/myot/image/스크린샷 2025-08-24 173043.png">  
 
 ---
 
