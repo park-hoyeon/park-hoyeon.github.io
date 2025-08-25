@@ -90,7 +90,7 @@ sidebar:
 </style>
 
 <div class="main-project-highlight">
-  <img src="/_pages/SKT/image/제목을-입력해주세요_-001 (2).png">
+  <img src="/_pages/SKT/main-project/images/슬라이드3.PNG">
   <div class="main-project-highlight-text">
     <h3>Hover AI<br>
       시각장애인을 위한 터치 스크린 사용 도우미</h3>
