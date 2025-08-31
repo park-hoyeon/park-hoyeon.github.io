@@ -10,9 +10,14 @@ sidebar:
 
 
 # 조작모드
-<video width="640" height="360" controls preload="metadata">
+<video
+  controls
+  preload="metadata"
+  playsinline
+  style="width:100%;max-width:100%;height:auto;aspect-ratio:16/9;">
   <source src="{{ '/assets/videos/control.mp4' | absolute_url }}" type="video/mp4">
 </video>
+
 
 <p>
   테스트 링크: <a href="{{ '/assets/videos/control.mp4' | absolute_url }}">control.mp4 열기</a>
@@ -65,8 +70,12 @@ OCR 정확도를 보완하기 위해서 사용한 방법은 유사도 점수를 
 
 # 보기모드
 
-<video width="640" height="360" controls preload="metadata">
-  <source src="{{ '/assets/videos/view.mp4' | relative_url }}" type="video/mp4">
+<video
+  controls
+  preload="metadata"
+  playsinline
+  style="width:100%;max-width:100%;height:auto;aspect-ratio:16/9;">
+  <source src="{{ '/assets/videos/view.mp4' | absolute_url }}" type="video/mp4">
 </video>
 
 
