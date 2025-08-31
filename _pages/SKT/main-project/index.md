@@ -62,6 +62,13 @@ sidebar:
 
 ---
 
+## 수상
+<img src="/_pages/SKT/main-project/images/수상5.jpg">
+<img src="/_pages/SKT/main-project/images/수상4.jpg">
+<img src="/_pages/SKT/main-project/images/수상6.jpg">
+
+---
+
 ## 프로젝트 내용 자세히 보기
 
 <img src="/_pages/SKT/main-project/images/슬라이드3.PNG">
