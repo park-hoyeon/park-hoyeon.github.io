@@ -40,53 +40,16 @@ sidebar:
       <p class="diff-desc">CCTV 데이터 접근 제한과 서비스 확장의 어려움</p>
     </a>
 
-    <a class="diff-item" href="/SKT/main-project/difficulties/topic-change-2/">
-      <span class="diff-kicker">주제 변경 #2</span>
-      <div class="diff-title">음식 필터링 → 가전 터치패널 실시간 인터페이스 안내</div>
-      <p class="diff-desc">사용자 인터뷰 결과: 실제 불편은 터치패드 사용. 목표·시나리오·변경 근거.</p>
-    </a>
+  
 
     <a class="diff-item" href="/SKT/main-project/difficulties/data-access/">
-      <span class="diff-kicker">데이터·정책</span>
-      <div class="diff-title">공공/민간 CCTV 접근 불가 & 개인정보 리스크</div>
-      <p class="diff-desc">비식별화·저장 금지 제안에도 불가. 대안 데이터 탐색과 정책 검토 기록.</p>
+      <span class="diff-kicker">데이터 수집</span>
+      <div class="diff-title">직접 패널 이미지를 촬영</div>
+      <p class="diff-desc">데이터를 증강(Augmentation) 기법으로 확대</p>
     </a>
 
-    <a class="diff-item" href="/SKT/main-project/difficulties/visual-ux/">
-      <span class="diff-kicker">시각화·UX</span>
-      <div class="diff-title">예측값/탐지결과 → 행동 안내로 번역하기</div>
-      <p class="diff-desc">불확실성 전달, 우선순위 규칙, 접근성(저시력/무시각) 고려.</p>
-    </a>
 
-    <a class="diff-item" href="/SKT/main-project/difficulties/modeling/">
-      <span class="diff-kicker">모델링</span>
-      <div class="diff-title">라벨/도메인 이슈와 성능 검증</div>
-      <p class="diff-desc">미세먼지 예측(CNN‑LSTM/TCN)과 UI 인식(YOLO+OCR)에서의 공통 과제.</p>
-    </a>
 
-    <a class="diff-item" href="/SKT/main-project/difficulties/ondevice/">
-      <span class="diff-kicker">온디바이스</span>
-      <div class="diff-title">모바일 추론 속도·발열·배터리</div>
-      <p class="diff-desc">경량화, 입력 리사이즈, 캐싱/스케줄링, Fallback 설계.</p>
-    </a>
-
-    <a class="diff-item" href="/SKT/main-project/difficulties/voice-ux/">
-      <span class="diff-kicker">음성 안내</span>
-      <div class="diff-title">TTS 빈도/타이밍/재청취 UX</div>
-      <p class="diff-desc">피로도 최소화, 멀티 이벤트 요약, 안전 경고 우선순위.</p>
-    </a>
-
-    <a class="diff-item" href="/SKT/main-project/difficulties/scope-time/">
-      <span class="diff-kicker">범위·일정</span>
-      <div class="diff-title">MVP 재정의와 마일스톤 리셋</div>
-      <p class="diff-desc">리스크 기반 WBS 수정 히스토리, 데모 스코프.</p>
-    </a>
-
-    <a class="diff-item" href="/SKT/main-project/difficulties/collab/">
-      <span class="diff-kicker">협업</span>
-      <div class="diff-title">브랜치 전략·PR 템플릿·릴리즈 노트</div>
-      <p class="diff-desc">데이터/모델/웹 3축 협업 규칙과 회고.</p>
-    </a>
 
   </div>
 </div>
