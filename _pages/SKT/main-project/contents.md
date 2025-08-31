@@ -57,7 +57,11 @@ OCR 정확도를 보완하기 위해서 사용한 방법은 유사도 점수를 
 ---
 
 # 보기모드
-https://github.com/user-attachments/assets/1c0f7d83-c94d-426d-aaec-94b28643edab
+
+<video width="640" height="360" controls>
+  <source src="/_pages/SKT/main-project/images/보기.mp4" type="video/mp4">
+</video>
+
 
 - 일정 간격으로 프레임을 받아서 LED 위치를 탐지하고 OCR 결과와 매칭해 현재 상태 묘사
 
