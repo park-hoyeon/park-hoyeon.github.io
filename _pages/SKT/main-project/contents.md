@@ -10,8 +10,9 @@ sidebar:
 
 
 # 조작모드
-https://github.com/user-attachments/assets/816693b3-ccc9-481f-a690-d8a1ff196863
-
+<video width="640" height="360" controls preload="metadata">
+  <source src="{{ '/assets/videos/조.mp4' | relative_url }}" type="video/mp4">
+</video>
 
 ## 1) 손가락 탐지
 
@@ -58,9 +59,10 @@ OCR 정확도를 보완하기 위해서 사용한 방법은 유사도 점수를 
 
 # 보기모드
 
-<video width="640" height="360" controls>
-  <source src="/_pages/SKT/main-project/images/보기.mp4" type="video/mp4">
+<video width="640" height="360" controls preload="metadata">
+  <source src="{{ '/assets/videos/보기.mp4' | relative_url }}" type="video/mp4">
 </video>
+
 
 
 - 일정 간격으로 프레임을 받아서 LED 위치를 탐지하고 OCR 결과와 매칭해 현재 상태 묘사
