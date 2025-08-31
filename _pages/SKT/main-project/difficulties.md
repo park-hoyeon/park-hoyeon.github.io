@@ -42,7 +42,7 @@ sidebar:
 
   
 
-    <a class="diff-item" href="/SKT/main-project/difficulties/data-access/">
+    <a class="diff-item" href="/SKT/main-project/difficulties/dataset-pipeline-1/">
       <span class="diff-kicker">데이터 수집</span>
       <div class="diff-title">직접 패널 이미지를 촬영</div>
       <p class="diff-desc">데이터를 증강(Augmentation) 기법으로 확대</p>
