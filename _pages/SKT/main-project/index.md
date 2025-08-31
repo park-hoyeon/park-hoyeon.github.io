@@ -54,6 +54,7 @@ sidebar:
 </style>
 
 <div class="button-list">
+  <a href="/SKT/main-project/contents" class="button-item"><span>프로젝트 내용</span></a>
   <a href="/SKT/main-project/difficulties" class="button-item"><span>프로젝트 진행 중 겪은 어려움</span></a>
   <a href="/SKT/main-project/ai-modeling" class="button-item"><span>개발 코드</span></a>
   <a href="/SKT/main-project/reflection" class="button-item"><span>회고 및 개선점</span></a>
