@@ -8,6 +8,12 @@ sidebar:
   enabled: true
 ---
 
+## 요약
+
+<img src="/_pages/SKT/main-project/images/수상2.PNG">
+
+
+---
 
 # 조작모드
 <video
