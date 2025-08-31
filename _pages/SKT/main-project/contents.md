@@ -14,6 +14,11 @@ sidebar:
   <source src="{{ '/assets/videos/control.mp4' | absolute_url }}" type="video/mp4">
 </video>
 
+<p>
+  테스트 링크: <a href="{{ '/assets/videos/control.mp4' | absolute_url }}">control.mp4 열기</a>
+</p>
+
+
 
 ## 1) 손가락 탐지
 
