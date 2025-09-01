@@ -1,0 +1,233 @@
+---
+layout: category
+title: "프로필 타입 전환(커뮤니티별)"
+permalink: /project-musical/backend/profile-switch/
+author_profile: true
+sidebar_main: true
+types: posts
+sidebar:
+  nav: "sidebar-category"
+  enabled: true
+
+    
+---
+
+
+
+{% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
+{% assign posts_with_flutter_and_solutions = posts_with_flutter | where: "categories", "solutions" %}
+
+{% for post in posts_with_flutter_and_solutions %}
+  {% include archive-single.html type=page.entries_layout %}
+{% endfor %}  
+
+
+### 파일 구조
+
+1. community.controller.js<br>
+2. community.service.js<br>
+3. community.repository.js<br>
+
+
+---
+### community.controller.js
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="javascript">
+/**
+ * @swagger
+ * /api/community/profile/type/{communityId}:
+ *   patch:
+ *     summary: 커뮤니티 내 프로필 타입 전환 (BASIC ⇄ MULTI)
+ *     description: BASIC → MULTI로 전환 시 한도 체크 후 멀티 생성, MULTI → BASIC 전환 시 기존 멀티 자동 삭제.
+ *     tags: [Community]
+ *     security: [{ bearerAuth: [] }]
+ *     parameters:
+ *       - in: path
+ *         name: communityId
+ *         required: true
+ *         schema: { type: integer }
+ *         description: 커뮤니티 ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [profileType]
+ *             properties:
+ *               profileType:
+ *                 type: string
+ *                 enum: [BASIC, MULTI]
+ *                 example: MULTI
+ *               multi:
+ *                 type: object
+ *                 nullable: true
+ *                 description: MULTI 전환 시 생성할 멀티 프로필 정보
+ *                 properties:
+ *                   nickname: { type: string, example: "전환_닉" }
+ *                   image: { type: string, nullable: true, example: null }
+ *                   bio: { type: string, nullable: true, example: "전환하며 생성" }
+ *     responses:
+ *       200:
+ *         description: 전환 성공
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success: { type: boolean, example: true }
+ *                 message: { type: string, example: "프로필 타입이 변경되었습니다." }
+ *                 changedTo:
+ *                   type: string
+ *                   enum: [BASIC, MULTI]
+ *                   example: MULTI
+ *                 profile:
+ *                   type: object
+ *                   nullable: true
+ *                   description: MULTI로 전환 시 생성된 멀티 프로필
+ *                   properties:
+ *                     id: { type: integer, example: 12 }
+ *                     userId: { type: integer, example: 7 }
+ *                     communityId: { type: integer, example: 3 }
+ *                     nickname: { type: string, example: "전환_닉" }
+ *                     image: { type: string, nullable: true, example: null }
+ *                     bio: { type: string, nullable: true, example: "전환하며 생성" }
+ *       400:
+ *         description: 잘못된 요청 또는 한도 초과 등
+ */
+
+// 커뮤니티 가입 후 타입 전환/자동삭제 (커뮤니티별 프로필 타입 전환)
+// 타입 전환: BASIC ⇄ MULTI
+router.patch(
+  "/profile/type/:communityId",
+  authenticateJWT,
+  async (req, res) => {
+    try {
+      const userId = req.user?.id;
+      const communityId = Number(req.params.communityId);
+
+      // 1) 바디 안전 분해
+      const { profileType, multi } = req.body ?? {};
+
+      // 2) 검증 (대소문자 무관)
+      const normalized =
+        typeof profileType === "string" ? profileType.toUpperCase() : undefined;
+
+      if (!["BASIC", "MULTI"].includes(normalized)) {
+        return res.status(400).json({
+          success: false,
+          message: "profileType must be BASIC or MULTI",
+        });
+      }
+      if (!userId || Number.isNaN(communityId)) {
+        return res
+          .status(400)
+          .json({ success: false, message: "유효하지 않은 요청입니다." });
+      }
+
+      // 3) 서비스 호출
+      const result = await switchCommunityProfileType({
+        userId,
+        communityId,
+        profileType: normalized,
+        multi, // { nickname, image, bio } | undefined
+      });
+
+      return res.status(200).json({
+        success: true,
+        message: "프로필 타입이 변경되었습니다.",
+        ...result,
+      });
+    } catch (err) {
+      console.error("switch type error:", err);
+      return res
+        .status(400)
+        .json({ success: false, message: err?.message ?? "변경 실패" });
+    }
+  }
+);
+  </code></pre>
+</div>
+
+
+### community.service.js
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; margin-left: 0; margin-right: 0; text-align: left; font-family: monospace;">
+  <pre><code class="javascript">
+export const switchCommunityProfileType = async ({
+  userId,
+  communityId,
+  profileType, // "BASIC" | "MULTI"
+  multi, // MULTI 전환 시 {nickname, image, bio}
+}) => {
+  return await prisma.$transaction(async (tx) => {
+    const current = await findMultiProfile(communityId, userId, tx);
+    const isMulti = !!current;
+
+    if (profileType === "BASIC") {
+      // 멀티 → 기본 : 기존 멀티 자동삭제
+      if (isMulti) await deleteCommunityProfileRepository(current.id, tx);
+      return { changedTo: "BASIC" };
+    }
+
+    if (profileType === "MULTI") {
+      // 기본 → 멀티 : 한도 체크 + 생성 (이미 있으면 에러)
+      if (isMulti) throw new Error("이미 멀티프로필을 사용 중입니다.");
+      const ok = await canCreateAnotherMulti(userId);
+      if (!ok)
+        throw new Error("무료 회원은 멀티프로필을 5개까지 생성할 수 있습니다.");
+      const created = await createCommunityProfileRepository(
+        {
+          userId,
+          communityId,
+          nickname: multi?.nickname ?? "",
+          image: multi?.image ?? null,
+          bio: multi?.bio ?? null,
+        },
+        tx
+      );
+      return { changedTo: "MULTI", profile: created };
+    }
+
+    throw new Error("profileType은 BASIC 또는 MULTI여야 합니다.");
+  });
+};
+  </code></pre>
+</div>
+
+
+
+---  
+
+
+[돌아가기: 기능별 API 구현 내용 보러가기](https://park-hoyeon.github.io/project-musical/backend-details)  
+
+
+<div style="text-align: right; margin-top: 30px;">
+  <button onclick="scrollToTop()" style="
+    padding: 10px 15x; 
+    background-color: #FFEB46; 
+    color: black; 
+    border: 2px solid #FFEB46; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 10px;">
+    맨 위로 이동
+  </button>
+</div>
+
+<script>
+  // 맨 위로 이동하는 함수
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
