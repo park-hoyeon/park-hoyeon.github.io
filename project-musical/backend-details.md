@@ -105,97 +105,97 @@ sidebar:
     <div class="feature-sub">/api/community/type/join</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/profile-switch/">
+  <a class="feature-card" href="/project-musical/backend/profile-switch/">
     <div class="feature-kicker alt">PATCH</div>
     <div class="feature-title">프로필 타입 전환 (커뮤니티별)</div>
     <div class="feature-sub">/api/profile/type/:communityId</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/request/">
+  <a class="feature-card" href="/project-musical/backend/request/">
     <div class="feature-kicker">POST</div>
     <div class="feature-title">커뮤니티 신청 (등록 요청)</div>
     <div class="feature-sub">/api/community/:type/request</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/discover/">
+  <a class="feature-card" href="/project-musical/backend/discover/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">가입 가능한 커뮤니티 탐색</div>
     <div class="feature-sub">/api/community/type/:type/:userId</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/all-list/">
+  <a class="feature-card" href="/project-musical/backend/all-list/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">모든 커뮤니티 목록 보기</div>
     <div class="feature-sub">/api/community</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/my-list/">
+  <a class="feature-card" href="/project-musical/backend/my-list/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">내가 가입한 커뮤니티 목록 조회</div>
     <div class="feature-sub">/api/community/mine</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/detail/">
+  <a class="feature-card" href="/project-musical/backend/detail/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">커뮤니티 정보 조회</div>
     <div class="feature-sub">/api/community/:type/:id</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/profile-create/">
+  <a class="feature-card" href="/project-musical/backend/profile-create/">
     <div class="feature-kicker">POST</div>
     <div class="feature-title">커뮤니티 프로필 추가</div>
     <div class="feature-sub">/api/community/profile</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/profile-update/">
+  <a class="feature-card" href="/project-musical/backend/profile-update/">
     <div class="feature-kicker alt">PATCH</div>
     <div class="feature-title">커뮤니티 프로필 수정</div>
     <div class="feature-sub">/api/community/profile/:id</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/profile-delete/">
+  <a class="feature-card" href="/project-musical/backend/profile-delete/">
     <div class="feature-kicker danger">DELETE</div>
     <div class="feature-title">커뮤니티 프로필 삭제</div>
     <div class="feature-sub">/api/community/profile/:id</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/profile-by-community/">
+  <a class="feature-card" href="/project-musical/backend/profile-by-community/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">해당 커뮤니티의 설정한 프로필 조회</div>
     <div class="feature-sub">/api/community/profile/my/:communityId</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/profile-by-user/">
+  <a class="feature-card" href="/project-musical/backend/profile-by-user/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">특정 유저의 해당 커뮤니티 프로필 조회</div>
     <div class="feature-sub">/api/community/user-profile/:communityId/:userId</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/profile-count/">
+  <a class="feature-card" href="/project-musical/backend/profile-count/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">현재 등록된 내 프로필 개수 확인</div>
     <div class="feature-sub">/api/community/profile/my/count</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/feed-reposts/">
+  <a class="feature-card" href="/project-musical/backend/feed-reposts/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">내 피드 중 다른 커뮤니티 글로 구성된 피드</div>
     <div class="feature-sub">/api/community/:id/feed/reposts</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/feed-media/">
+  <a class="feature-card" href="/project-musical/backend/feed-media/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">미디어가 있는 피드만 보기</div>
     <div class="feature-sub">/api/community/:id/feed/media</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/feed-popular/">
+  <a class="feature-card" href="/project-musical/backend/feed-popular/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">요즘 인기 글만 모은 피드</div>
     <div class="feature-sub">/api/community/:id/feed/popular</div>
   </a>
 
-  <a class="feature-card" href="/SKT/main-project/backend/feed-all/">
+  <a class="feature-card" href="/project-musical/backend/feed-all/">
     <div class="feature-kicker get">GET</div>
     <div class="feature-title">커뮤니티에서 작성한 글만 모아보기</div>
     <div class="feature-sub">/api/community/:id/feed</div>
