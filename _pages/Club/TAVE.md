@@ -25,7 +25,7 @@ taxonomy:
 
 ### 주차별 내용
 
-⭐  **[What is UMC ?!](/Club/Club-details/UMC)**  
+⭐  **[What is TAVE ?!](/Club/TAVE/OT)**  
 
 ---
 
