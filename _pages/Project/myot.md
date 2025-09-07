@@ -130,7 +130,5 @@ sidebar:
 ## 프로젝트 자세히 보기
 
 -  [백엔드 개발 세부 내용](/project-musical/backend-details)
--  [기획 및 설계](/project-musical/planning/)
 -  [고찰 및 회고](/project-musical/reflection/)
--  [시연 이미지 및 영상](/project-musical/demo/)
--  [GitHub & 배포 링크](/project-musical/github/)
+-  [GitHub & 배포 링크](https://github.com/MyOT25/Backend)
