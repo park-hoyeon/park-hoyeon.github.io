@@ -19,6 +19,9 @@ taxonomy:
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
 
+### 수료
+<img src="https://raw.githubusercontent.com/park-hoyeon/park-hoyeon.github.io/master/_pages/Club/images/너디너리.png"> 
+
 
 ✨ 각 주차별 내용은 링크를 통해 더 자세히 살펴보실 수 있습니다.<br>  
 
