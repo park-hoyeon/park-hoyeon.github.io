@@ -33,7 +33,7 @@ taxonomy:
   <tbody>
     <tr>
       <td style="padding: 8px;">1 Week</td>
-      <td style="padding: 8px;"><a href="https://github.com/park-hoyeon/park-hoyeon.github.io/blob/master/_pages/Club/TAVE/OT">오리엔테이션 </a><br>
+      <td style="padding: 8px;">**[오리엔테이션](/Club/TAVE/OT)**
       <span class="tag-box">TAVE 연합동아리란?</span>
       </td>
       <td style="padding: 8px;">2025.09.06</td>
