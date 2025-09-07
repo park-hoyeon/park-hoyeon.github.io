@@ -29,10 +29,13 @@ sidebar-category:
     children:
       - title: " SKT Fly ai 7기"
         url: "/SKT/"
-      - title: " 코드잇부스트 (IT연합)"
-        url: "/Club/Codeit_Boost/"
       - title: " UMC (IT연합)"
         url: "/Club/UMC/"
+      - title: " TAVE (IT연합)"
+        url: "/Club/TAVE/"
+      - title: " 코드잇부스트 (IT연합)"
+        url: "/Club/Codeit_Boost/"
+      
 
 
   - title: "✨ 스터디 모임"
