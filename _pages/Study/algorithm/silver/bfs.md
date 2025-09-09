@@ -27,6 +27,7 @@ sidebar:
 | 4    | <a href="/Study/algorithm/silver/1303">전쟁 - 전투</a>   | 1303   |
 | 5    | <a href="/Study/algorithm/silver/2468">안전 영역</a>   | 2468   |
 | 6    | <a href="/Study/algorithm/silver/1743">음식물 피하기</a>   | 1743   |
+| 7    | <a href="/Study/algorithm/silver/3184">양</a>   | 3184   |
 
 <br/>
 
