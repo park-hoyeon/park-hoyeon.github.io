@@ -4,7 +4,7 @@ title: "MVC + DI(스프링 빈) + JPA(Spring Data) + AOP로 구성한 회원 관
 permalink: /Club/TAVE/3week
 author_profile: true
 sidebar_main: true
-types: posts
+types: single
 sidebar:
   nav: "sidebar-category"
   enabled: true
