@@ -50,10 +50,13 @@ sidebar-category:
         
   - title: "✨ 개인 공부 기록"
     children:
-      - title: "✏️ Node.js"
-        url: "/ind/nodejs/"
+      - title: "✏️ Algorithm - basic"
+        url: "/Study/basic"
       - title: "✏️ Algorithm - Silver"
         url: "/Study/silver"
+      - title: "✏️ Node.js"
+        url: "/ind/nodejs/"
+     
 
     
   # - title: "About"
