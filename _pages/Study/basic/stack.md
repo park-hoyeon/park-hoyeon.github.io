@@ -170,8 +170,7 @@ ll.delete(3)           # 노드 3 삭제
 print(ll.head)         # None 출력
 </code></pre>
 </div>
-</code></pre>
-</div>
+
 ---
 
 # 마무리
@@ -181,7 +180,7 @@ print(ll.head)         # None 출력
 
 ---
 
-[돌아가기:  알고리즘 - 기초 내용 보기](https://park-hoyeon.github.io/Study/basic/)   
+[돌아가기:  알고리즘 - 기초 내용 보기](https://park-hoyeon.github.io/Study/basic)   
 
 <div style="text-align: right; margin-top: 30px;">
   <button onclick="scrollToTop()" style="
