@@ -35,9 +35,9 @@ tags:
 
 https://start.spring.io/
 
-![image.png](image.png)
+![image](/_pages/Club/images/TAVE/4week/image.png)
 
-![image.png](image%201.png)
+![image](/_pages/Club/images/TAVE/4week/image%201.png)
 
 ---
 
@@ -84,14 +84,14 @@ public class JpashopApplication {
 
 - 실행결과
     
-    ![image.png](image%202.png)
+    ![image](/_pages/Club/images/TAVE/4week/image%202.png)
     
 
 ---
 
 # 라이브러리 살펴보기
 
-![image.png](image%203.png)
+![image](/_pages/Club/images/TAVE/4week/image%203.png)
 
 ---
 
@@ -138,7 +138,7 @@ public class HelloController {
 
 - 실행결과
     
-    ![image.png](image%204.png)
+    ![image](/_pages/Club/images/TAVE/4week/image%204.png)
     
 
 ---
@@ -147,14 +147,14 @@ public class HelloController {
 
 다운로드 및 설치: https://www.h2database.com/html/main.html
 
-![image.png](image%205.png)
+![image](/_pages/Club/images/TAVE/4week/image%205.png)
 
-![image.png](image%206.png)
+![image](/_pages/Club/images/TAVE/4week/image%206.png)
 
 이렇게 해서 생성된 것을 확인했으면 아래와 같이 `jdbc:h2:tcp://localhost/~/jpashop`
 이렇게 접속한다.
 
-![image.png](image%207.png)
+![image](/_pages/Club/images/TAVE/4week/image%207.png)
 
 ---
 
@@ -353,7 +353,7 @@ class MemberRepositoryTest {
 
 테스트 실행 결과 다음과 같이 나타난다.
 
-![image.png](image%208.png)
+![image](/_pages/Club/images/TAVE/4week/image%208.png)
 
 ### 왜 데이터가 들어있지 않은가?!
 
@@ -372,7 +372,7 @@ class MemberRepositoryTest {
     @Rollback(false)
 ```
 
-![image.png](image%209.png)
+![image](/_pages/Club/images/TAVE/4week/image%209.png)
 
 실행 결과 데이터가 제대로 들어간 것을 확인할 수 있다.
 
@@ -381,7 +381,7 @@ class MemberRepositoryTest {
 - 외부 라이브러리 사용하기: https://github.com/gavlyukovskiy/spring-boot-data-source-decorator
     - 라이브러리 참고
         
-        ![image.png](image%2010.png)
+        ![image](/_pages/Club/images/TAVE/4week/image%210.png)
         
 
 ---
