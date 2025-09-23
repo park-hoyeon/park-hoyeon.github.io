@@ -1,6 +1,6 @@
 ---
-layout: category
-title: "4 week - 스프링 부트와 JPA활용1 - 웹 애플리케이션 개발: 프로젝트 환경설정"
+layout: single
+title: "스프링 부트와 JPA활용1 - 웹 애플리케이션 개발: 프로젝트 환경설정"
 permalink: /Club/TAVE/4week
 author_profile: true
 sidebar_main: true
