@@ -42,7 +42,7 @@ taxonomy:
     
     <tr>
       <td style="padding: 8px;">2 Week</td>
-      <td style="padding: 8px;"><a href="/Club/TAVE/2week"> 전반기 만남의 장</a><br>
+      <td style="padding: 8px;"> 전반기 만남의 장<br>
       <span class="tag-box">스터디 활동 기획</span>
       </td>
       <td style="padding: 8px;">2025.09.13</td>
@@ -55,6 +55,16 @@ taxonomy:
       <span class="tag-box">spring boot 입문</span>
       </td>
       <td style="padding: 8px;">2025.09.20</td>
+    </tr>
+
+    <tr>
+      <td style="padding: 8px;">4 Week</td>
+      <td style="padding: 8px;"><a href="/Club/TAVE/4week"> Spring Boot 입문 + Lombok + Thymeleaf(View) + H2 & JPA 기본 설정 + 트랜잭션/테스트 롤백 실습 </a><br>
+      <span class="tag-box">spring boot 입문</span>
+      <span class="tag-box">JPA</span>
+      <span class="tag-box">테스트 롤백</span>
+      </td>
+      <td style="padding: 8px;">2025.09.27</td>
     </tr>
 
     
