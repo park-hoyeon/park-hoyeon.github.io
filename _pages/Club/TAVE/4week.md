@@ -306,11 +306,11 @@ class MemberRepositoryTest {
 
 외부 라이브러리: https://github.com/gavlyukovskiy/spring-boot-data-source-decorator  
 
-![image](/_pages/Club/images/TAVE/4week/image%210.png)
+
 
 ---
 
-[돌아가기: 2025 하반기 TAVE 16기 활](https://park-hoyeon.github.io/Club/TAVE/)  
+[돌아가기: 2025 하반기 TAVE 16기 활동](https://park-hoyeon.github.io/Club/TAVE/)  
 
 <div style="text-align: right; margin-top: 30px;">
   <button onclick="scrollToTop()" style="
