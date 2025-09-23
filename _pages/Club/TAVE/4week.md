@@ -5,8 +5,6 @@ permalink: /Club/TAVE/4week
 author_profile: true
 sidebar_main: true
 types: posts
-include:
-  - _pages/Club/images 
 sidebar:
   nav: "sidebar-category"
   enabled: true
@@ -15,39 +13,32 @@ categories:
 tags:
   - Coding
   - Club
-    
+toc: true
+toc_sticky: true
 ---
 
-
-
-{% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
-{% assign posts_with_flutter_and_solutions = posts_with_flutter | where: "categories", "solutions" %}
-
-{% for post in posts_with_flutter_and_solutions %}
-  {% include archive-single.html type=page.entries_layout %}
-{% endfor %}  
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 ---
 
 # 프로젝트 환경설정
 
-# 프로젝트 생성
+## 프로젝트 생성
 
 https://start.spring.io/
 
-![image](/_pages/Club/images/TAVE/4week/image.png)
-
+![image](/_pages/Club/images/TAVE/4week/image.png)  
 ![image](/_pages/Club/images/TAVE/4week/image%201.png)
 
 ---
 
-### Lombok 테스트 해보기
+## Lombok 테스트 해보기
 
-<Hello.java>
-
-```java
+**Hello.java**
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 package jpabook.jpashop;
 
 import lombok.Getter;
@@ -57,11 +48,11 @@ import lombok.Setter;
 public class Hello {
     private String data;
 }
-```
+</code></pre></div>
 
-<JpashopAllication.java>
-
-```java
+**JpashopApplication.java**
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 package jpabook.jpashop;
 
 import org.springframework.boot.SpringApplication;
@@ -70,24 +61,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JpashopApplication {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        // Hello 객체 생성하기
+        Hello hello = new Hello();
+        hello.setData("hello");
+        String data = hello.getData();
+        System.out.println("data = " + data);
 
-		// Hello 객체 생성하기
-		Hello hello = new Hello();
-		hello.setData("hello");
-		String data = hello.getData();
-		System.out.println("data = "+data);
-
-		SpringApplication.run(JpashopApplication.class, args);
-	}
-
+        SpringApplication.run(JpashopApplication.class, args);
+    }
 }
-```
+</code></pre></div>
 
-- 실행결과
-    
-    ![image](/_pages/Club/images/TAVE/4week/image%202.png)
-    
+- 실행결과  
+![image](/_pages/Club/images/TAVE/4week/image%202.png)
 
 ---
 
@@ -99,13 +86,13 @@ public class JpashopApplication {
 
 # View 환경 설정
 
-- thymeleaf 템플릿 엔진: https://www.thymeleaf.org/
-- 스프링 공식 튜토리얼: https://spring.io/guides/gs/serving-web-content
-- 스프링부터 메뉴얼: https://docs.spring.io/spring-boot/reference/web/servlet.html#web.servlet.spring-mvc.template-engines
+- thymeleaf 템플릿 엔진: https://www.thymeleaf.org/  
+- 스프링 공식 튜토리얼: https://spring.io/guides/gs/serving-web-content  
+- 스프링 부트 매뉴얼: https://docs.spring.io/spring-boot/reference/web/servlet.html#web.servlet.spring-mvc.template-engines  
 
-<HelloController.java>
-
-```java
+**HelloController.java**
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 package jpabook.jpashop;
 
 import org.springframework.stereotype.Controller;
@@ -121,40 +108,37 @@ public class HelloController {
         return "hello";
     }
 }
-```
+</code></pre></div>
 
-<hello.html>
-
-```java
+**hello.html**
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 <!DOCTYPE HTML>
- <html xmlns:th="http://www.thymeleaf.org">
- <head>
-    <title>Hello</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
- </head>
- <body>
- <p th:text="'안녕하세요. ' + ${data}" >안녕하세요. 손님</p>
- </body>
- </html>
-```
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Hello</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <p th:text="'안녕하세요. ' + ${data}">안녕하세요. 손님</p>
+</body>
+</html>
+</code></pre></div>
 
-- 실행결과
-    
-    ![image](/_pages/Club/images/TAVE/4week/image%204.png)
-    
+- 실행결과  
+![image](/_pages/Club/images/TAVE/4week/image%204.png)
 
 ---
 
 # H2 데이터베이스 설치
 
-다운로드 및 설치: https://www.h2database.com/html/main.html
+다운로드 및 설치: https://www.h2database.com/html/main.html  
 
-![image](/_pages/Club/images/TAVE/4week/image%205.png)
+![image](/_pages/Club/images/TAVE/4week/image%205.png)  
+![image](/_pages/Club/images/TAVE/4week/image%206.png)  
 
-![image](/_pages/Club/images/TAVE/4week/image%206.png)
-
-이렇게 해서 생성된 것을 확인했으면 아래와 같이 `jdbc:h2:tcp://localhost/~/jpashop`
-이렇게 접속한다.
+생성된 것을 확인했으면 아래와 같이 접속한다:  
+`jdbc:h2:tcp://localhost/~/jpashop`  
 
 ![image](/_pages/Club/images/TAVE/4week/image%207.png)
 
@@ -162,19 +146,20 @@ public class HelloController {
 
 # JPA와 DB 설정, 동작확인
 
-[application.properties](http://application.properties) 파일 삭제하고application.yml 파일 생성한다.
+`application.properties` 삭제 후 `application.yml` 생성  
 
-```java
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpashop;MVCC=TRUE
+    url: jdbc:h2:tcp://localhost/~/jpashop
     username: sa
     password:
-      driver-class-name: org.h2.Driver
+    driver-class-name: org.h2.Driver
 
   jpa:
     hibernate:
-      ddl-auto: create  # 자동으로 탭을 만들어 주는 모드
+      ddl-auto: create
     properties:
       hibernate:
         show_sql: true
@@ -183,11 +168,11 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug
-```
+</code></pre></div>
 
-<Member> 엔티티
-
-```java
+**Member.java**
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 package jpabook.jpashop;
 
 import jakarta.persistence.Entity;
@@ -201,28 +186,16 @@ public class Member {
     private Long id;
     private String username;
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    public Long getId() { return id; }
+    public String getUsername() { return username; }
+    public void setId(Long id) { this.id = id; }
+    public void setUsername(String username) { this.username = username; }
 }
+</code></pre></div>
 
-```
-
-→ Lombok을 사용하니 아래와 같이 코드를 수정할 수 있다.
-
-```java
+**Member (Lombok 버전)**  
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 package jpabook.jpashop;
 
 import jakarta.persistence.Entity;
@@ -234,18 +207,15 @@ import lombok.Setter;
 @Entity
 @Getter @Setter
 public class Member {
-
     @Id @GeneratedValue
     private Long id;
     private String username;
-
 }
+</code></pre></div>
 
-```
-
-<MemberRepository>
-
-```java
+**MemberRepository.java**
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 package jpabook.jpashop;
 
 import jakarta.persistence.EntityManager;
@@ -267,64 +237,18 @@ public class MemberRepository {
         return em.find(Member.class, id);
     }
 }
-```
+</code></pre></div>
 
-엔티티 매니저를 `@Persistence context` 라고 함.
-
-→ Test! <MemberRepositoryTest.java>를 아래와 같이 만든다.
-
-<MemberRepositoryTest.java>
-
-```java
+**MemberRepositoryTest.java**
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
 package jpabook.jpashop;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-@ExtendWith(SpringExtension.class)
-@SpringBootTest
-class MemberRepositoryTest {
-
-    @Autowired MemberRepository memberRepository;
-
-    @Test
-    public void testMember() throws Exception{
-        //given
-        Member member = new Member();
-        member.setUsername("memberA");
-
-        //when
-        Long savedId = memberRepository.save(member);
-        Member findMember = memberRepository.find(savedId);
-
-        //then
-        assertEquals(member.getId(), findMember.getId());
-        assertEquals(member.getUsername(), findMember.getUsername());
-    }
-}
-```
-
-이렇게만 만들고 Test를 진행할 경우 오류가 난다.
-
-엔티티 매니저를 통한 모든 데이터의 변경은 항상 트랜잭션 안에서 이뤄져야 하기 때문이다.
-
-```java
-package jpabook.jpashop;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -337,7 +261,7 @@ class MemberRepositoryTest {
 
     @Test
     @Transactional
-    public void testMember() throws Exception{
+    public void testMember() throws Exception {
         //given
         Member member = new Member();
         member.setUsername("memberA");
@@ -351,49 +275,46 @@ class MemberRepositoryTest {
         assertEquals(member.getUsername(), findMember.getUsername());
     }
 }
-```
+</code></pre></div>
 
-테스트 실행 결과 다음과 같이 나타난다.
-
+- 실행결과  
 ![image](/_pages/Club/images/TAVE/4week/image%208.png)
 
-### 왜 데이터가 들어있지 않은가?!
+---
 
-- 스프링 테스트는 `@Transactional`인 테스트 메서드를 실행할 때
-    1. **테스트 시작 전에 트랜잭션 시작**
-    2. 테스트 본문에서 `save()`/`persist()`가 실행되어도 **커밋되지 않은 상태** (다른 커넥션(H2 콘솔)에서는 보이지 않음)
-    3. 메서드가 끝나면 **항상 롤백(기본값)**
-- 그래서 테스트 안에서는 `find()`가 잘 되고 assert도 통과하지만, **테스트가 끝난 뒤 DB에는 아무것도 남지 않음.**
-- 게다가 `ddl-auto: create`라서 **컨텍스트가 뜰 때마다 스키마를 드롭 후 생성한다**. 이전에 콘솔로 넣어둔 데이터도 매번 날아간다.
+## 왜 데이터가 안 남는가?
 
-따라서 다음과 같이 @Rollback(false)를 붙여준다.
+- `@Transactional` 테스트는 실행 시 항상 롤백이 기본값이다.  
+- 테스트 안에서는 조회가 되지만, DB에는 남지 않는다.  
+- `ddl-auto: create` 설정으로 컨텍스트 뜰 때마다 스키마가 재생성된다.  
 
-```java
-    @Test
-    @Transactional
-    @Rollback(false)
-```
+→ 따라서 `@Rollback(false)`를 추가해야 한다.
 
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="java">
+@Test
+@Transactional
+@Rollback(false)
+</code></pre></div>
+
+- 실행결과  
 ![image](/_pages/Club/images/TAVE/4week/image%209.png)
 
-실행 결과 데이터가 제대로 들어간 것을 확인할 수 있다.
+---
 
-### 쿼리 파라미터 로그 남기기
+## 쿼리 파라미터 로그 남기기
 
-- 외부 라이브러리 사용하기: https://github.com/gavlyukovskiy/spring-boot-data-source-decorator
-    - 라이브러리 참고
-        
-        ![image](/_pages/Club/images/TAVE/4week/image%210.png)
-        
+외부 라이브러리: https://github.com/gavlyukovskiy/spring-boot-data-source-decorator  
+
+![image](/_pages/Club/images/TAVE/4week/image%210.png)
 
 ---
 
 [돌아가기: 2025 하반기 TAVE 16기 활](https://park-hoyeon.github.io/Club/TAVE/)  
 
-
 <div style="text-align: right; margin-top: 30px;">
   <button onclick="scrollToTop()" style="
-    padding: 10px 15x; 
+    padding: 10px 15px; 
     background-color: #FFEB46; 
     color: black; 
     border: 2px solid #FFEB46; 
@@ -405,7 +326,6 @@ class MemberRepositoryTest {
 </div>
 
 <script>
-  // 맨 위로 이동하는 함수
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
