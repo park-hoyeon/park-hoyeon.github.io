@@ -26,17 +26,7 @@ toc_sticky: true
 
 ## 백준 관련 문제
 
-- [9012 - 괄호](https://www.acmicpc.net/problem/9012)
-- [10828 - 스택](https://www.acmicpc.net/problem/10828)
-- [10773 - 제로](https://www.acmicpc.net/problem/10773)
-- [1874 - 스택수열](https://www.acmicpc.net/problem/1874)
-
-## 내 풀이 보기
-
-- [백준 - 괄호](https://park-hoyeon.github.io/Study/algorithm/silver/9012)
-- [백준 - 스택](https://park-hoyeon.github.io/Study/algorithm/silver/10828)
-- [백준 - 제로](https://park-hoyeon.github.io/Study/algorithm/silver/10773)
-- [백준 - 스택수열](https://park-hoyeon.github.io/Study/algorithm/silver/1874)  
+- [실버 문제 모음](https://park-hoyeon.github.io/Study/algorithm/silver/stack) 
 
 ---
 
