@@ -73,6 +73,10 @@ sidebar:
     <td>4</td>
     <td><a href="/Study/algorithm/silver/dp">dp (다이나믹 프로그래밍)</a></td>
   </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="/Study/algorithm/silver/stack">스택 & 큐</a></td>
+  </tr>
 </tbody>
 
 </table>
