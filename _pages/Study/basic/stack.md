@@ -26,10 +26,10 @@ toc_sticky: true
 
 ## 백준 관련 문제
 
-- [괄호](https://www.acmicpc.net/problem/9012)
-- [스택](https://www.acmicpc.net/problem/10828)
-- [제로](https://www.acmicpc.net/problem/10773)
-- [스택수열](https://www.acmicpc.net/problem/1874)
+- [9012 - 괄호](https://www.acmicpc.net/problem/9012)
+- [10828 - 스택](https://www.acmicpc.net/problem/10828)
+- [10773 - 제로](https://www.acmicpc.net/problem/10773)
+- [1874 - 스택수열](https://www.acmicpc.net/problem/1874)
 
 ## 내 풀이 보기
 
@@ -80,8 +80,13 @@ toc_sticky: true
   - 삽입, 삭제: `O(1)`  
   - 탐색: `O(n)`  
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
 <div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
 <pre><code class="python">
+
 import queue
 
 # 기본 Queue()
@@ -94,6 +99,10 @@ print(data_queue.get())  # 2 출력
 </code></pre>
 </div>
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 <div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
 <pre><code class="python">
@@ -109,6 +118,10 @@ print(data_queue.get())  # 2 출력
 </code></pre>
 </div>
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 <div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
 <pre><code class="python">
@@ -134,6 +147,10 @@ print(data_queue.get())   # (10, 1) 출력
 - **장점**
   - 미리 데이터 공간을 할당할 필요가 없다.
   - 데이터 삭제 시 삭제할 노드와 그 이전 노드의 포인터만 수정하면 된다.
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 
 <div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
 <pre><code class="python">
