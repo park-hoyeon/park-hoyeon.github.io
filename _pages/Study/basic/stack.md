@@ -18,19 +18,25 @@ toc_sticky: true
 ---
 
 # 스택 & 큐
+참고 자료
 
-Codetree 코딩테스트 지도북 3차시, 스택(Stack) 과 큐(Queue)
-
-- [블로그 정리글](https://blog.naver.com/jodiness/232257378997)  
-- [유튜브 강의 1](https://www.youtube.com/watch?v=Z4R582Bn788)  
-- [유튜브 강의 2](https://www.youtube.com/watch?v=YIlPiNjn0Js)  
+- [배열, 연결리스트, 스택, ](https://blog.naver.com/iodiness/223257378997)  
 
 ---
 
-## 문제 풀이 번호 및 깃허브
+## 백준 관련 문제
 
-- (백준) **9012, 10828, 10773, 1874, 2493 (예시)**  
-- [깃허브 문제 풀이 저장소](https://github.com/leewatertrue/Algorithm.git) (예시, 꼭 퍼블릭으로)
+- [괄호](https://www.acmicpc.net/problem/9012)
+- [스택](https://www.acmicpc.net/problem/10828)
+- [제로](https://www.acmicpc.net/problem/10773)
+- [스택수열](https://www.acmicpc.net/problem/1874)
+
+## 내 풀이 보기
+
+- [백준 - 괄호](https://park-hoyeon.github.io/Study/algorithm/silver/9012/)
+- [백준 - 스택](https://park-hoyeon.github.io/Study/algorithm/silver/10828/)
+- [백준 - 제로](https://park-hoyeon.github.io/Study/algorithm/silver/10773/)
+- [백준 - 스택수열](https://park-hoyeon.github.io/Study/algorithm/silver/1874/)  
 
 ---
 
@@ -40,13 +46,15 @@ Codetree 코딩테스트 지도북 3차시, 스택(Stack) 과 큐(Queue)
 - **핵심 기능**
   - `push()` : 데이터 삽입  
   - `pop()` : 데이터 삭제  
-  - `peek()` : 맨 위(top) 원소 확인  
+  - `peek()` : 맨 위(top) 원소 반환, 데이터의 변화는 없음.
+  - `isEmpty` : 스택이 비어있는지 여부 확인, 데이터 변화 없음.
 - **장점**
   - 구현이 단순하고 빠름  
-  - 재귀/백트래킹/괄호검사/DFS 등에 활용  
+  - 데이터 저장 및 불러오는 속도가 빠름
 - **단점**
   - 중간 원소 접근 불가능  
-  - 크기 제한이 있으면 오버플로우 발생 가능  
+  - 크기 제한이 있으면 오버플로우 발생 가능
+  - 데이터 최대 개수를 사전에 정해줘야 함.  
 - **시간 복잡도**
   - 삽입, 삭제: `O(1)`  
   - 탐색: `O(n)`  
@@ -60,7 +68,8 @@ Codetree 코딩테스트 지도북 3차시, 스택(Stack) 과 큐(Queue)
   - `enqueue()` : 데이터 삽입  
   - `dequeue()` : 데이터 삭제  
   - `front()` : 맨 앞 원소 확인  
-  - `rear()` : 맨 뒤 원소 확인  
+  - `rear()` : 맨 뒤 원소 확인
+  - `peek` : 큐의 맨 앞 데이터 조회
 - **장점**
   - 순차적 데이터 처리에 적합 (버퍼, 프로세스 스케줄링)  
   - BFS 탐색, 캐시, 프린터 대기열 등 활용  
@@ -71,27 +80,87 @@ Codetree 코딩테스트 지도북 3차시, 스택(Stack) 과 큐(Queue)
   - 삽입, 삭제: `O(1)`  
   - 탐색: `O(n)`  
 
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="python">
+import queue
+
+# 기본 Queue()
+data_queue = queue.Queue()
+data_queue.put(1)   # 1
+data_queue.put(2)   # 1 → 2
+data_queue.put(3)   # 1 → 2 → 3
+print(data_queue.get())  # 1 출력
+print(data_queue.get())  # 2 출력
+</code></pre>
+</div>
+
+
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="python">
+import queue
+
+# LifoQueue() → 나중에 들어간 데이터가 먼저 출력됨 (Stack과 동일)
+data_queue = queue.LifoQueue()
+data_queue.put(1)   # 1
+data_queue.put(2)   # 2 → 1
+data_queue.put(3)   # 3 → 2 → 1
+print(data_queue.get())  # 3 출력
+print(data_queue.get())  # 2 출력
+</code></pre>
+</div>
+
+
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="python">
+import queue
+
+# PriorityQueue() → 우선순위가 높은 순으로 출력되는 자료구조
+data_queue = queue.PriorityQueue()
+data_queue.put((10, 1))   # (10, 1)
+data_queue.put((5, 2))    # (5, 2) → (10, 1)
+data_queue.put((15, 3))   # (5, 2) → (10, 1) → (15, 3)
+
+print(data_queue.get())   # (5, 2) 출력 (우선순위 5가 가장 높음)
+print(data_queue.get())   # (10, 1) 출력
+</code></pre>
+</div>
+
+
 ---
 
-## 스택과 큐, 어떤 것을 사용해야 할까?
+## 연결 리스트(Linked list)의 개념
 
-- **스택**
-  - 괄호 짝 검사, DFS, 재귀 함수 처리, 되돌리기(Undo) 기능 등에 적합  
-- **큐**
-  - BFS 탐색, CPU 작업 스케줄링, 대기열 관리 등에 적합  
-- **비교**
-  - 스택: LIFO 구조 → 가장 마지막 작업을 빠르게 처리  
-  - 큐: FIFO 구조 → 순서대로 공정하게 처리  
-- **나에게 더 편한 것?**
-  - 순서대로 처리해야 한다면 → 큐  
-  - 최근 데이터 우선 처리해야 한다면 → 스택  
+- **기본 개념**: 배열과 달리 연결되지 않고 떨어진 곳의 데이터를 경로로 지정해 관리하는 데이터 구조이다. 
+- **장점**
+  - 미리 데이터 공간을 할당할 필요가 없다.
+  - 데이터 삭제 시 삭제할 노드와 그 이전 노드의 포인터만 수정하면 된다.
 
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="python">
+ll = LinkedList()      # 링크드 리스트 선언
+ll.add(1)              # 노드 1 추가
+ll.add(2)              # 노드 2 추가
+ll.add(3)              # 노드 3 추가
+ll.print()             # 1 2 3 출력
+
+ll.delete(2)           # 노드 2 삭제
+ll.print()             # 1 3 출력
+
+ll.delete(1)           # 노드 1 삭제
+ll.print()             # 3 출력
+
+ll.delete(3)           # 노드 3 삭제
+print(ll.head)         # None 출력
+</code></pre>
+</div>
+</code></pre>
+</div>
 ---
 
 # 마무리
 
-스택과 큐는 **알고리즘 기본 자료구조** 중 가장 핵심이 되는 개념입니다.  
-문제를 풀 때 **"순서"를 어떻게 처리할 것인가?** 에 따라 스택/큐 중 어떤 자료구조를 선택할지 결정하면 됩니다.
+스택과 큐는 **알고리즘 기본 자료구조** 중 가장 핵심이 되는 개념이다. <br>
+문제를 풀 때 **"순서"를 어떻게 처리할 것인가?** 에 따라 스택/큐 중 어떤 자료구조를 선택할지 결정하면 된다.
 
 ---
 
