@@ -5,6 +5,8 @@ permalink: /Club/TAVE/4week
 author_profile: true
 sidebar_main: true
 types: posts
+include:
+  - _pages/Club/images 
 sidebar:
   nav: "sidebar-category"
   enabled: true
