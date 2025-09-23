@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "스택 & 큐 정리"
-permalink: /Study/stack
+permalink: /Study/basic/stack
 author_profile: true
 sidebar_main: true
 types: posts
