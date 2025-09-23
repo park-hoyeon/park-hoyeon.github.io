@@ -33,10 +33,10 @@ toc_sticky: true
 
 ## 내 풀이 보기
 
-- [백준 - 괄호](https://park-hoyeon.github.io/Study/algorithm/silver/9012/)
-- [백준 - 스택](https://park-hoyeon.github.io/Study/algorithm/silver/10828/)
-- [백준 - 제로](https://park-hoyeon.github.io/Study/algorithm/silver/10773/)
-- [백준 - 스택수열](https://park-hoyeon.github.io/Study/algorithm/silver/1874/)  
+- [백준 - 괄호](https://park-hoyeon.github.io/Study/algorithm/silver/9012)
+- [백준 - 스택](https://park-hoyeon.github.io/Study/algorithm/silver/10828)
+- [백준 - 제로](https://park-hoyeon.github.io/Study/algorithm/silver/10773)
+- [백준 - 스택수열](https://park-hoyeon.github.io/Study/algorithm/silver/1874)  
 
 ---
 
