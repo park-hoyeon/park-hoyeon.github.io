@@ -24,7 +24,7 @@ sidebar:
 | 1    | <a href="/Study/algorithm/silver/9012">괄호</a>     | 9012    |
 | 2    | <a href="/Study/algorithm/silver/10828">스택</a>   | 10828    |
 | 3    | <a href="/Study/algorithm/silver/10773">제로</a>  | 10773     |
-| 4    | <a href="/Study/algorithm/silver/1874">스택수</a>   | 1874   |
+| 4    | <a href="/Study/algorithm/silver/1874">스택수열</a>   | 1874   |
 
 
 <br/>
