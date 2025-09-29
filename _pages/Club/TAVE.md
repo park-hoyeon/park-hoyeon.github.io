@@ -72,7 +72,7 @@ taxonomy:
       <td style="padding: 8px;">
         <a href="/Club/TAVE/5-1week"> 도메인 분석 설계 </a><br>
         <a href="/Club/TAVE/5-2week"> 애플리케이션 구현 준비 </a><br>
-        <a href="/Club/TAVE/5-3week"> 회원 도메인 개발 </a>
+        <a href="/Club/TAVE/5-3week"> 회원 도메인 개발 </a><br>
       <span class="tag-box">엔티티 설계</span>
       <span class="tag-box">애플리케이션 아키텍처</span>
       <span class="tag-box">Member</span>
