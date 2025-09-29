@@ -59,7 +59,7 @@ toc_sticky: true
 
 ## 회원 엔티티 분석
 
-![image](/_pages/Club/images/TAVE/5week/image1.png)  
+![image](/_pages/Club/images/TAVE/5week/image 1.png)  
 
 ### 회원(Member)
 
@@ -101,7 +101,7 @@ toc_sticky: true
 
 ## 회원 테이블 분석
 
-![image](/_pages/Club/images/TAVE/5week/image2.png)  
+![image](/_pages/Club/images/TAVE/5week/image 2.png)  
 
 ## 연관관계 매핑 분석
 
@@ -140,7 +140,7 @@ toc_sticky: true
 
 ### 디렉토리 구조
 
-![image](/_pages/Club/images/TAVE/5week/image3.png)  
+![image](/_pages/Club/images/TAVE/5week/image 3.png)  
 
 ### /domain/Member.java
 
@@ -294,9 +294,9 @@ public class Delivery {
 
 ## 상속관계
 
-![image](/_pages/Club/images/TAVE/5week/image4.png)  
+![image](/_pages/Club/images/TAVE/5week/image 4.png)  
 
-![image](/_pages/Club/images/TAVE/5week/image5.png)  
+![image](/_pages/Club/images/TAVE/5week/image 5.png)  
 
 ### item/Item.java
 
@@ -394,7 +394,7 @@ public class Category {
 
 ### 실행 결과 테이블 확인하기 (MySQL)
 
-![image](/_pages/Club/images/TAVE/5week/image6.png)  
+![image](/_pages/Club/images/TAVE/5week/image 6.png)  
 
 ---
 
