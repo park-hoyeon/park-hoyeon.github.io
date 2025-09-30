@@ -77,6 +77,10 @@ sidebar:
     <td>5</td>
     <td><a href="/Study/basic/dp">dp (다이나믹 프로그래밍)</a></td>
   </tr>
+  <tr>
+    <td>6</td>
+    <td><a href="/Study/basic/hash">해시 테이블</a></td>
+  </tr>
 </tbody>
 
 </table>
