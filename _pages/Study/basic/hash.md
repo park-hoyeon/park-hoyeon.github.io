@@ -17,8 +17,7 @@ toc: true
 toc_sticky: true
 ---
 
-# 스택 & 큐
-참고 자료
+### 참고 자료
 
 - [[Python] 해시(Hash)란 무엇인가(feat. Dictionary 자료구조)](https://amazelimi.tistory.com/entry/Python-%ED%95%B4%EC%8B%9CHash%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80feat-Dictionary-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)  
 
@@ -86,7 +85,58 @@ print(scores)  # {'Alice': 95, 'Charlie': 92}
 - **핵심 기능**
   - `삽입(add)` : set에 원소를 추가한다. ex) 참석자.add("A) 
   - `삭제(del)` : set에 특정 원소를 뺀다.  ex) 참석자.remove("B)  
-  - `존재 확인(in)` : set에 특정 원소가 있는지 물어본다.  때
+  - `존재 확인(in)` : set에 특정 원소가 있는지 물어본다.
+  - `합집합(|)`
+  - `교집합(&)`
+  - `차집합()`
+    
+- **장점**
+  - 속도가 빠르다. 평균 시간 복잡도 O(1)
+
+- **단점**
+  - 순서가 없기 때문에, 리스트처럼 인덱스 번호로 특정 데이터에 접근할 수 없다.
+  - 해시 테이블처럼 '키-값'쌍으로 데이터를 저장하는 게 아니라, 데이터 값 자체만을 저장한다.
+
+- **코드 예시**
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="python">
+# 집합 생성
+class_a = set()
+
+# 추가 A반 학생들
+class_a.add("Alice")
+class_a.add("Bob")
+class_a.add("Alice")  # "Alice"는 이미 있으므로 중복 추가되지 않음
+print(class_a)  # {'Alice', 'Bob'} (순서는 다를 수 있음)
+
+# 존재 확인 "Bob"이 A반에 있나요?
+print("Bob" in class_a)  # True
+# "Charlie"가 A반에 있나요?
+print("Charlie" in class_a)  # False
+
+# 제거 "Bob"을 A반 명단에서 제외
+class_a.remove("Bob")
+print(class_a)  # {'Alice'}
+
+# 집합 연산 B반 학생 명단
+class_b = {"Bob", "Charlie", "Dave"}
+
+# 교집합 A반과 B반에 모두 속한 학생은?
+print(class_a & class_b)  # set() (현재 A반에는 Alice만 있으므로 공통 학생 없음)
+# Alice도 B반에 있다고 가정하고 다시 교집합
+class_a.add("Bob") # Bob을 다시 A반에 추가
+class_a.add("Charlie") # Charlie도 A반에 추가
+print(class_a & class_b) # {'Bob', 'Charlie'} (순서는 다를 수 있음)
+
+# 합집합 A반 또는 B반에 속한 모든 학생은?
+print(class_a | class_b)  # {'Alice', 'Bob', 'Charlie', 'Dave'} (순서는 다를 수 있음)
+</code></pre>
+</div>
+
 
 ---
 
