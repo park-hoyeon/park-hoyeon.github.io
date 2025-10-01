@@ -21,9 +21,9 @@ sidebar:
 
 | 번호 | 문제 이름           | 문제 번호 |
 |------|--------------------|-----------|
-| 1    | <a href="/Study/algorithm/silver/11478">서로 다른 부분 문자열의 개수</a>     | 11478  | | 2    | <a href="/Study/algorithm/silver/7785">회사에 있는 사람들</a>     | 7785  |
-
-
+| 1    | <a href="/Study/algorithm/silver/11478">서로 다른 부분 문자열의 개수</a>     | 11478    |
+| 2    | <a href="/Study/algorithm/silver/7785">회사에 있는 사람들</a>   | 7785    |
+| 3    | <a href="/Study/algorithm/silver/20920">영단어 암기는 괴로워</a>   | 20920    |
 
 <br/>
 
