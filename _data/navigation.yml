@@ -27,13 +27,13 @@ sidebar-category:
 
   - title: "✨ IT 동아리 & 대외활동"
     children:
-      - title: " SKT Fly ai 7기"
+      - title: " SKT Fly ai 7기 - 2025[상반기]"
         url: "/SKT/"
-      - title: " UMC (IT연합)"
-        url: "/Club/UMC/"
-      - title: " TAVE (IT연합)"
+      - title: " TAVE (IT연합) - 2025[하반기]"
         url: "/Club/TAVE/"
-      - title: " 코드잇부스트 (IT연합)"
+      - title: " UMC (IT연합) - 2025[상반기]"
+        url: "/Club/UMC/"
+      - title: " 코드잇부스트 (IT연합) - 2025[상반기]"
         url: "/Club/Codeit_Boost/"
       
 
