@@ -80,6 +80,16 @@ taxonomy:
       <td style="padding: 8px;">2025.10.04</td>
     </tr>
 
+    <tr>
+      <td style="padding: 8px;">6 Week</td>
+      <td style="padding: 8px;">
+        <a href="/Club/TAVE/6-1week"> 상품 도메인 개발 </a><br>
+        <a href="/Club/TAVE/6-2week"> 주문 도메인 개발 </a><br>
+      <span class="tag-box">엔티티 설계</span>
+      </td>
+      <td style="padding: 8px;">2025.10.12</td>
+    </tr>
+
     
          
      
