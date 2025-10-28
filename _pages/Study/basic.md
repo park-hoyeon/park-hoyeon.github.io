@@ -79,7 +79,11 @@ sidebar:
   </tr>
   <tr>
     <td>6</td>
-    <td><a href="/Study/basic/hash">해시 테이블과 집합</a></td>
+    <td><a href="/Study/basic/hash">해시 테이블 & 집합</a></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><a href="/Study/basic/sort">정렬 & 이진탐색</a></td>
   </tr>
 </tbody>
 
