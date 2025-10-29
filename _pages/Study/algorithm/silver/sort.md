@@ -22,6 +22,7 @@ sidebar:
 | 번호 | 문제 이름           | 문제 번호 |
 |------|--------------------|-----------|
 | 1    | <a href="/Study/algorithm/silver/1302">베스트셀러</a>     | 1302    |
+| 2    | <a href="/Study/algorithm/silver/7795">먹을 것인가 먹힐 것인가</a>     | 7795    |
 
 
 <br/>
