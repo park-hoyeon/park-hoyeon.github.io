@@ -90,6 +90,15 @@ taxonomy:
       <td style="padding: 8px;">2025.10.12</td>
     </tr>
 
+    <tr>
+      <td style="padding: 8px;">7 Week</td>
+      <td style="padding: 8px;">
+        <a href="https://jumbled-ship-7f2.notion.site/8-2966560b6e4980f1881dfd9c29656c62?source=copy_link"> 웹 계층 개발 </a><br>
+      <span class="tag-box">엔티티 설계</span>
+      </td>
+      <td style="padding: 8px;">2025.10.25</td>
+    </tr>
+
     
          
      
