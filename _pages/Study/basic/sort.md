@@ -163,6 +163,54 @@ def binary_search2(arr, target, start, end):
 </code></pre>
 </div>
 
+---
+## 다중 정렬과 익명함수 람다(lambda)
+### list.sort()와 listed()
+- list.sort()는 리스트에만 사용 가능하지만 sorted()는 리스트뿐만 아니라 딕셔너리, 튜플에서도 사용 가능하다.
+- 정렬하기 전의 값이 필요하지 않다면 list.sort()가 더 효율적이다.
+
+### 다중정렬
+만약, 첫번째 열 값은 오름차순, 두 번째 열 값은 내림차순으로 정렬하고 싶으면?
+다음과 같이 key 매개변수에 lambda 함수를 사용하면 된다.
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="python">
+c = [[1,2],[3,9],[2,7],[2,1],[2,4],[3,1]]
+
+c.sort(key=lambda x:(x [0],-x [1]))    #따라서 이 코드는 변수 c의 첫 번째 열 값으로 오름차순, 
+print(c)				#두 번째 열 값으로 내림차순 하는 코드가 된다.
+
+# sorted()의 이중 정렬도 방법이 동일하다.
+c = [[1,2],[3,9],[2,7],[2,1],[2,4],[3,1]]
+print(sorted(c, key=lambda x:(x [0],-x [1])))
+
+
+# [[1, 2], [3, 9], [2, 7], [2, 1], [2, 4], [3, 1]]
+# [[1, 2], [3, 9], [2, 7], [2, 1], [2, 4], [3, 1]]
+</code></pre>
+</div>
+
+
+### 리스트 내 요소의 인덱스를 원소의 크기 순으로 정렬하기
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<div style="padding:8px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius:5px; background-color: rgba(255, 255, 255, 0.05); color: #f1f1f1; width: 100%; font-family: monospace;">
+<pre><code class="python">
+b = [12, 14, 23, 24, 16]
+b_idx = sorted(range(len(b)), key = lambda k: b[k]) 
+
+# 여기서 b_idx는 [0, 1, 4, 2, 3]이 된다.
+</code></pre>
+</div>
+
+---
+
 
 
 
