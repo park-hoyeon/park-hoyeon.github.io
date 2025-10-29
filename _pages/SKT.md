@@ -99,9 +99,10 @@ sidebar:
 </div>
 
 
-## 프로젝트 수상 인터뷰 기사
+## 프로젝트 수상 인터뷰 
 
-<a href="https://www.trendw.kr/news/articleView.html?idxno=11081">
+[트렌드W - 프로젝트 수상 인터뷰 기사 보기](https://www.trendw.kr/news/articleView.html?idxno=11081)
+
 
 
 ## Projects
