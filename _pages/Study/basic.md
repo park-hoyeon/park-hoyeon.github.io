@@ -87,7 +87,7 @@ sidebar:
   </tr>
   <tr>
     <td>8</td>
-    <td><a href="/Study/basic/tow_pointers">투 포인터</a></td>
+    <td><a href="/Study/basic/two_pointers">투 포인터</a></td>
   </tr>
 </tbody>
 
