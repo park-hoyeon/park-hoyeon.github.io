@@ -89,6 +89,10 @@ sidebar:
     <td>8</td>
     <td><a href="/Study/basic/two_pointers">투 포인터</a></td>
   </tr>
+  <tr>
+    <td>9</td>
+    <td><a href="/Study/basic/backtrack">백트래킹</a></td>
+  </tr>
 </tbody>
 
 </table>
