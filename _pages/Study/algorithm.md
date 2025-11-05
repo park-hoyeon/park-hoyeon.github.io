@@ -85,6 +85,10 @@ sidebar:
     <td>7</td>
     <td><a href="/Study/algorithm/silver/sort">정렬 & 이진탐색</a></td>
   </tr>
+  <tr>
+    <td>8</td>
+    <td><a href="/Study/algorithm/silver/two_pointers">투 포인터</a></td>
+  </tr>
 </tbody>
 
 </table>
