@@ -103,6 +103,16 @@ sidebar:
 
 [트렌드W - 프로젝트 수상 인터뷰 기사 보기](https://www.trendw.kr/news/articleView.html?idxno=11081)
 
+## 프로젝트 영상 보기
+
+<video
+  controls
+  preload="metadata"
+  playsinline
+  style="width:100%;max-width:100%;height:auto;aspect-ratio:16/9;">
+  <source src="{{ '/assets/videos/요약영상.mp4' | absolute_url }}" type="video/mp4">
+</video>
+
 
 
 ## Projects
