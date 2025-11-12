@@ -77,6 +77,7 @@ print(d[n])
 </code></pre>
 </div>  
 
+---
 
 
 [돌아가기:  알고리즘 - 기초 내용 보기](https://park-hoyeon.github.io/Study/basic)   
