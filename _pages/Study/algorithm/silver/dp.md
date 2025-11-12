@@ -26,6 +26,7 @@ sidebar:
   </thead>
   <tbody>
     <tr><td style="text-align:center;">1</td><td><a href="/Study/algorithm/silver/14501"> 퇴사</a></td><td style="text-align:center;">14501</td></tr>
+    <tr><td style="text-align:center;">2</td><td><a href="/Study/algorithm/silver/11052"> 카드 구매하기</a></td><td style="text-align:center;">11052</td></tr>
     
   </tbody>
 </table>
