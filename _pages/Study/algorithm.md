@@ -93,6 +93,10 @@ sidebar:
     <td>9</td>
     <td><a href="/Study/algorithm/silver/backtrack">백트래킹</a></td>
   </tr>
+  <tr>
+    <td>10</td>
+    <td><a href="/Study/algorithm/silver/dp">DP</a></td>
+  </tr>
 </tbody>
 
 </table>
