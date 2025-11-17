@@ -1,7 +1,7 @@
 ---
-title: "BFS 문제 모음"
+title: "BFS & DFS 문제 모음"
 layout: category
-permalink: /Study/algorithm/silver/bfs
+permalink: /Study/algorithm/silver/graph
 author_profile: true
 sidebar_main: true
 types: posts
@@ -12,7 +12,7 @@ sidebar:
 ---
 
 <div style="text-align: left; margin-top: 20px; font-size: 80%; color: #cfcfcf;">
-  BFS 유형의 문제들을 모아서 정리하였습니다.
+  BFS & DFS 유형의 문제들을 모아서 정리하였습니다.
 </div>
 
 <br/>
