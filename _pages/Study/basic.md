@@ -95,7 +95,11 @@ sidebar:
   </tr>
   <tr>
     <td>10</td>
-    <td><a href="/Study/basic/dp">DP(</a></td>
+    <td><a href="/Study/basic/dp">DP</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><a href="/Study/basic/graph">DFS & BFS</a></td>
   </tr>
 </tbody>
 
