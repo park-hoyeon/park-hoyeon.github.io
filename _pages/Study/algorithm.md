@@ -63,7 +63,7 @@ sidebar:
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="/Study/algorithm/silver/bfs">BFS (너비우선탐색)</a></td>
+    <td><a href="/Study/algorithm/silver/graph">BFS & DFS</a></td>
   </tr>
   <tr>
     <td>3</td>
