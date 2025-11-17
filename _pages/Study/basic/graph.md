@@ -26,8 +26,8 @@ toc_sticky: true
 
 ## 백준 관련 문제
 
-- [BFS 실버 문제 모음](https://park-hoyeon.github.io/Study/algorithm/silver/bfs)
-- [DFS 실버 문제 모음](https://park-hoyeon.github.io/Study/algorithm/silver/dfs) 
+- [BFS & DFS 실버 문제 모음](https://park-hoyeon.github.io/Study/algorithm/silver/graph)
+
 
 ---
 ## '깊이 우선 탐색(DFS)'이란
