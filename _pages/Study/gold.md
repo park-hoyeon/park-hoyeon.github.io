@@ -59,43 +59,43 @@ sidebar:
 <tbody>
   <tr>
     <td>1</td>
-    <td><a href="/Study/algorithm/silver/greedy">그리디 / 구현</a></td>
+    <td><a href="/Study/algorithm/gold/greedy">그리디 / 구현</a></td>
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="/Study/algorithm/silver/graph">BFS & DFS</a></td>
+    <td><a href="/Study/algorithm/gold/graph">BFS & DFS</a></td>
   </tr>
   <tr>
     <td>3</td>
-    <td><a href="/Study/algorithm/silver/datastructure">자료구조</a></td>
+    <td><a href="/Study/algorithm/gold/datastructure">자료구조</a></td>
   </tr>
   <tr>
     <td>4</td>
-    <td><a href="/Study/algorithm/silver/dp">dp (다이나믹 프로그래밍)</a></td>
+    <td><a href="/Study/algorithm/gold/dp">dp (다이나믹 프로그래밍)</a></td>
   </tr>
   <tr>
     <td>5</td>
-    <td><a href="/Study/algorithm/silver/stack">스택 & 큐</a></td>
+    <td><a href="/Study/algorithm/gold/stack">스택 & 큐</a></td>
   </tr>
   <tr>
     <td>6</td>
-    <td><a href="/Study/algorithm/silver/hash">해시 테이블 & 집합</a></td>
+    <td><a href="/Study/algorithm/gold/hash">해시 테이블 & 집합</a></td>
   </tr>
   <tr>
     <td>7</td>
-    <td><a href="/Study/algorithm/silver/sort">정렬 & 이진탐색</a></td>
+    <td><a href="/Study/algorithm/gold/sort">정렬 & 이진탐색</a></td>
   </tr>
   <tr>
     <td>8</td>
-    <td><a href="/Study/algorithm/silver/two_pointers">투 포인터</a></td>
+    <td><a href="/Study/algorithm/gold/two_pointers">투 포인터</a></td>
   </tr>
   <tr>
     <td>9</td>
-    <td><a href="/Study/algorithm/silver/backtrack">백트래킹</a></td>
+    <td><a href="/Study/algorithm/gold/backtrack">백트래킹</a></td>
   </tr>
   <tr>
     <td>10</td>
-    <td><a href="/Study/algorithm/silver/dp">DP</a></td>
+    <td><a href="/Study/algorithm/gold/dp">DP</a></td>
   </tr>
 </tbody>
 
