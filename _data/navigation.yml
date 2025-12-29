@@ -54,6 +54,8 @@ sidebar-category:
         url: "/Study/basic"
       - title: "✏️ Algorithm - Silver"
         url: "/Study/silver"
+      - title: "✏️ Algorithm - Gold"
+        url: "/Study/gold"
       - title: "✏️ Node.js"
         url: "/ind/nodejs/"
      
