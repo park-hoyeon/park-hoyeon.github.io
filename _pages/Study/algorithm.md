@@ -97,6 +97,10 @@ sidebar:
     <td>10</td>
     <td><a href="/Study/algorithm/silver/dp">DP</a></td>
   </tr>
+  <tr>
+    <td>11</td>
+    <td><a href="/Study/algorithm/silver/str">문자열</a></td>
+  </tr>
 </tbody>
 
 </table>
