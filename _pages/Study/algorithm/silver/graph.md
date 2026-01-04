@@ -28,6 +28,7 @@ sidebar:
 | 5    | <a href="/Study/algorithm/silver/2468">안전 영역</a>   | 2468   |
 | 6    | <a href="/Study/algorithm/silver/1743">음식물 피하기</a>   | 1743   |
 | 7    | <a href="/Study/algorithm/silver/3184">양</a>   | 3184   |
+| 8    | <a href="/Study/algorithm/silver/1697">숨바꼭질</a>   | 1697   |
 
 <br/>
 
