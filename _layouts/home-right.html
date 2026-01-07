@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div id="main" class="layout--threecol" role="main">
+
+  <!-- 왼쪽 사이드바 (기존 그대로) -->
+  <aside class="sidebar-left">
+    {% include sidebar.html %}
+  </aside>
+
+  <!-- 가운데: 기존 home 레이아웃 내용 -->
+  <main class="page__content" role="main">
+    {% include skt-highlight.html %}
+
+    <h3 class="archive__subtitle">
+      {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
+    </h3>
+
+    {% if paginator %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    <div class="entries-{{ entries_layout }}">
+      {% include documents-collection.html entries=posts type=entries_layout %}
+    </div>
+
+    {% include paginator.html %}
+  </main>
+
+  <!-- 오른쪽 사이드바 -->
+  <aside class="sidebar-right">
+    {% include sidebar-right.html %}
+  </aside>
+
+</div>
