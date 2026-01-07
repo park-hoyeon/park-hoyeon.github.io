@@ -25,6 +25,7 @@ sidebar:
 | 2    | <a href="/Study/algorithm/gold/14503">로봇 청소기</a>     | 14503    |
 | 3    | <a href="/Study/algorithm/gold/7576">토마토</a>     | 7576    |
 | 4    | <a href="/Study/algorithm/gold/10026">적록색약</a>     | 10026    |
+| 5    | <a href="/Study/algorithm/gold/14502">연구소</a>     | 14502    |
 
 
 <br/>
