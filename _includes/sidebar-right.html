@@ -1,0 +1,32 @@
+<div class="right-card">
+  <h3> Categories</h3>
+  <ul>
+    {% for category in site.categories %}
+      <li>
+        <a href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}">
+          {{ category[0] }} ({{ category[1].size }})
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="right-card">
+  <h3> Tags</h3>
+  <div class="tag-cloud">
+    {% for tag in site.tags %}
+      <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
+        #{{ tag[0] }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="right-card">
+  <h3> Featured</h3>
+  <ul>
+    <li><a href="/project/hover-ai/">Hover AI 정리</a></li>
+    <li><a href="/project/myot/">MyOT 백엔드</a></li>
+    <li><a href="/study/algorithm/14502/">연구소(14502) 회고</a></li>
+  </ul>
+</div>
