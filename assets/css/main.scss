@@ -189,7 +189,7 @@ search: false
 /* single-right 레이아웃에서만 3열 구성 */
 .layout--threecol {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr) 260px;
+  grid-template-columns: 260px minmax(0, 1fr) 180px;
   gap: 24px;
   align-items: start;
 }
