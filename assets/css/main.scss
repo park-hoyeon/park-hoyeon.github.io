@@ -182,4 +182,43 @@ search: false
   margin-bottom: 20px;
 }
 
+/* =========================
+   ✅ Right Sidebar (3-column)
+   ========================= */
+
+/* single-right 레이아웃에서만 3열 구성 */
+.layout--threecol {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr) 260px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* 오른쪽 사이드바 sticky */
+.layout--threecol .sidebar-right {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+/* 오른쪽 카드 박스(지금 sidebar-right.html에서 right-card 쓰면 적용됨) */
+.right-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* 반응형: 화면 좁으면 오른쪽 숨김 */
+@media (max-width: 1200px) {
+  .layout--threecol {
+    grid-template-columns: 260px 1fr;
+  }
+  .layout--threecol .sidebar-right {
+    display: none;
+  }
+}
+
+
 
