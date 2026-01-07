@@ -189,8 +189,8 @@ search: false
 /* single-right 레이아웃에서만 3열 구성 */
 .layout--threecol {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr) 180px;
-  gap: 24px;
+  grid-template-columns: 260px minmax(0, 1fr) 160px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -206,7 +206,7 @@ search: false
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 14px;
-  padding: 16px;
+  padding: 12px;
   margin-bottom: 16px;
 }
 
