@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div id="main" class="layout--threecol" role="main">
+  <!-- 왼쪽(기존 사이드바 유지) -->
+  <aside class="sidebar-left">
+    {% include sidebar.html %}
+  </aside>
+
+  <!--  가운데(홈 포스트 목록) -->
+  <main class="page__content" role="main">
+    {{ content }}
+  </main>
+
+  <!--  오른쪽 -->
+  <aside class="sidebar-right">
+    {% include sidebar-right.html %}
+  </aside>
+</div>
