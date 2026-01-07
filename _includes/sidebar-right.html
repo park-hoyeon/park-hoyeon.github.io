@@ -1,32 +1,16 @@
 <div class="right-card">
-  <h3> Categories</h3>
-  <ul>
-    {% for category in site.categories %}
-      <li>
-        <a href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}">
-          {{ category[0] }} ({{ category[1].size }})
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+  <h3>백준 알고리즘</h3>
 
-<div class="right-card">
-  <h3> Tags</h3>
-  <div class="tag-cloud">
-    {% for tag in site.tags %}
-      <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
-        #{{ tag[0] }}
+  <ul class="sidebar-links">
+    <li>
+      <a href="/Study/algorithm/gold/">
+        🥇 Gold
       </a>
-    {% endfor %}
-  </div>
-</div>
-
-<div class="right-card">
-  <h3> Featured</h3>
-  <ul>
-    <li><a href="/project/hover-ai/">Hover AI 정리</a></li>
-    <li><a href="/project/myot/">MyOT 백엔드</a></li>
-    <li><a href="/study/algorithm/14502/">연구소(14502) 회고</a></li>
+    </li>
+    <li>
+      <a href="/Study/algorithm/silver/">
+        🥈 Silver
+      </a>
+    </li>
   </ul>
 </div>
