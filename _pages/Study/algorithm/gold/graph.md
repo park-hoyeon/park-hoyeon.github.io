@@ -26,6 +26,7 @@ sidebar:
 | 3    | <a href="/Study/algorithm/gold/7576">토마토</a>     | 7576    |
 | 4    | <a href="/Study/algorithm/gold/10026">적록색약</a>     | 10026    |
 | 5    | <a href="/Study/algorithm/gold/14502">연구소</a>     | 14502    |
+| 6    | <a href="/Study/algorithm/gold/18405">경쟁적 전염</a>     | 18405    |
 
 
 <br/>
