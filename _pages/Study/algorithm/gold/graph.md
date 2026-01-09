@@ -27,6 +27,7 @@ sidebar:
 | 4    | <a href="/Study/algorithm/gold/10026">적록색약</a>     | 10026    |
 | 5    | <a href="/Study/algorithm/gold/14502">연구소</a>     | 14502    |
 | 6    | <a href="/Study/algorithm/gold/18405">경쟁적 전염</a>     | 18405    |
+| 7    | <a href="/Study/algorithm/gold/18428">감시 피하기</a>     | 18428   |
 
 
 <br/>
