@@ -97,6 +97,10 @@ sidebar:
     <td>10</td>
     <td><a href="/Study/algorithm/gold/dp">DP</a></td>
   </tr>
+  <tr>
+    <td>11</td>
+    <td><a href="/Study/algorithm/gold/short">최단경로</a></td>
+  </tr>
 </tbody>
 
 </table>
