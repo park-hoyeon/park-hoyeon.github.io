@@ -30,6 +30,7 @@ sidebar:
     <tr><td style="text-align:center;">3</td><td><a href="/Study/algorithm/silver/14888"> 연산자 끼워넣기</a></td><td style="text-align:center;">14888</td></tr>
     <tr><td style="text-align:center;">4</td><td><a href="/Study/algorithm/silver/1932"> 정수 삼각형</a></td><td style="text-align:center;">1932</td></tr>
     <tr><td style="text-align:center;">5</td><td><a href="/Study/algorithm/silver/1149"> RGB거리</a></td><td style="text-align:center;">1149</td></tr>
+    <tr><td style="text-align:center;">6</td><td><a href="/Study/algorithm/silver/11057"> 오르막 수</a></td><td style="text-align:center;">11057</td></tr>
     
   </tbody>
 </table>
