@@ -32,7 +32,7 @@ sidebar:
     <tr><td style="text-align:center;">5</td><td><a href="/Study/algorithm/silver/1149"> RGB거리</a></td><td style="text-align:center;">1149</td></tr>
     <tr><td style="text-align:center;">6</td><td><a href="/Study/algorithm/silver/11057"> 오르막 수</a></td><td style="text-align:center;">11057</td></tr>
     <tr><td style="text-align:center;">7</td><td><a href="/Study/algorithm/silver/1890"> 점프</a></td><td style="text-align:center;">1890</td></tr>
-    <tr><td style="text-align:center;">8</td><td><a href="/Study/algorithm/silver/14916"> 거스름돈</a></td><td style="text-align:center;">14916</td></tr>
+    <tr><td style="text-align:center;">8</td><td><a href="/Study/algorithm/silver/14916"> 거스름 돈</a></td><td style="text-align:center;">14916</td></tr>
   
     
   </tbody>
