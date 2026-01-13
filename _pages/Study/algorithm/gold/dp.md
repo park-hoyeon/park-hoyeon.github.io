@@ -26,6 +26,7 @@ sidebar:
   </thead>
   <tbody>
     <tr><td style="text-align:center;">1</td><td><a href="/Study/algorithm/gold/12865"> 평범한 배낭</a></td><td style="text-align:center;">12865</td></tr>
+    <tr><td style="text-align:center;">2</td><td><a href="/Study/algorithm/gold/2565"> 전깃줄</a></td><td style="text-align:center;">2565</td></tr>
     
   </tbody>
 </table>
