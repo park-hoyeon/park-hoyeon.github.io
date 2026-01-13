@@ -1,15 +1,36 @@
+{% assign gold_pages = site.pages | where_exp: "p", "p.url contains '/Study/gold'" %}
+{% assign silver_pages = site.pages | where_exp: "p", "p.url contains '/Study/silver'" %}
+
+{%- comment -%}
+  혹시 /Study/gold 자체(목록 페이지)가 있으면 카운트에서 빼기
+  (폴더 메인 페이지까지 포함되면 숫자가 +1 될 수 있음)
+{%- endcomment -%}
+{% assign gold_count = 0 %}
+{% for p in gold_pages %}
+  {% if p.url != '/Study/gold' and p.url != '/Study/gold/' %}
+    {% assign gold_count = gold_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% assign silver_count = 0 %}
+{% for p in silver_pages %}
+  {% if p.url != '/Study/silver' and p.url != '/Study/silver/' %}
+    {% assign silver_count = silver_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
 <div class="right-card">
   <h3>백준 알고리즘</h3>
 
   <ul class="sidebar-links">
     <li>
       <a href="/Study/gold">
-        🥇 Gold
+        🥇 Gold <span class="badge">{{ gold_count }}</span>
       </a>
     </li>
     <li>
       <a href="/Study/silver">
-        🥈 Silver
+        🥈 Silver <span class="badge">{{ silver_count }}</span>
       </a>
     </li>
   </ul>
