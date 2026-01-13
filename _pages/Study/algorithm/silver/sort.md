@@ -24,6 +24,7 @@ sidebar:
 | 1    | <a href="/Study/algorithm/silver/1302">베스트셀러</a>     | 1302    |
 | 2    | <a href="/Study/algorithm/silver/7795">먹을 것인가 먹힐 것인가</a>     | 7795    |
 | 3    | <a href="/Study/algorithm/silver/1431">시리얼 번호</a>     | 1431    |
+| 4    | <a href="/Study/algorithm/silver/18870">좌표 압축</a>     | 18870    |
 
 
 <br/>
