@@ -23,6 +23,7 @@ sidebar:
 |------|--------------------|-----------|
 | 1    | <a href="/Study/algorithm/gold/11404">플로이드</a>     | 11404    |
 | 2    | <a href="/Study/algorithm/gold/11657">타임머신</a>     | 11657    |
+| 3    | <a href="/Study/algorithm/gold/1956">운동</a>     | 1956    |
 
 
 
