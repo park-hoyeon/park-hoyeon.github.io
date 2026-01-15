@@ -101,6 +101,10 @@ sidebar:
     <td>11</td>
     <td><a href="/Study/basic/graph">DFS & BFS</a></td>
   </tr>
+  <tr>
+    <td>12</td>
+    <td><a href="/Study/basic/short">최단 경로</a></td>
+  </tr>
 </tbody>
 
 </table>
