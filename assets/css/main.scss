@@ -264,4 +264,16 @@ search: false
   }
 }
 
+/* =========================
+   Mobile Sidebar (show sidebar toggle box in main)
+   ========================= */
+.mobile-sidebar {
+  display: none;
+  margin: 12px 0 18px;
+}
 
+@media (max-width: 1024px) {
+  .mobile-sidebar {
+    display: block;
+  }
+}
