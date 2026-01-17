@@ -263,3 +263,44 @@ search: false
   }
 }
 
+/* =========================
+   Mobile Category Toggle
+   ========================= */
+
+.mobile-cats {
+  margin: 12px 0 18px;
+}
+
+.category-toggle {
+  display: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-category {
+  display: none;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-category.is-open {
+  display: block;
+}
+
+/* 모바일/태블릿에서만 토글 버튼 보이기 */
+@media (max-width: 1024px) {
+  .category-toggle {
+    display: inline-block;
+  }
+}
+
+
