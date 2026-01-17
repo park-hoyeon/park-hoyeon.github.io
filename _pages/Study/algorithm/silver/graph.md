@@ -29,6 +29,7 @@ sidebar:
 | 6    | <a href="/Study/algorithm/silver/1743">음식물 피하기</a>   | 1743   |
 | 7    | <a href="/Study/algorithm/silver/3184">양</a>   | 3184   |
 | 8    | <a href="/Study/algorithm/silver/1697">숨바꼭질</a>   | 1697   |
+| 9    | <a href="/Study/algorithm/silver/2583">영역 구하기</a>   | 2583   |
 
 <br/>
 
