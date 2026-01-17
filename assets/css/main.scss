@@ -1,12 +1,14 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 search: false
-
 ---
 @charset "utf-8";
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
+/* =========================
+   Sidebar category font size
+   ========================= */
 .sidebar-category {
   .nav__items {
     a {
@@ -15,6 +17,9 @@ search: false
   }
 }
 
+/* =========================
+   Tag box
+   ========================= */
 .tag-box {
   display: inline-block;
   padding: 5px 10px;
@@ -26,6 +31,9 @@ search: false
   border: 1px solid rgba(85, 85, 85, 0.8);
 }
 
+/* =========================
+   Archive cards
+   ========================= */
 .archive__item {
   margin-bottom: 2rem;
   display: flex;
@@ -100,7 +108,9 @@ search: false
   }
 }
 
-/* ✅ 미디어 쿼리 바깥에서 선언 */
+/* =========================
+   Sidebar custom sections
+   ========================= */
 .sidebar-wrapper {
   margin-top: 20px;
 }
@@ -144,17 +154,15 @@ search: false
   color: #fff;
 }
 
+/* scroll bar hide */
 .sidebar {
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 .sidebar::-webkit-scrollbar {
   display: none;
 }
-
-/* ✅ 스크롤바 완전 숨기기 */
 .sidebar,
 .sidebar.sticky,
 .sidebar .sidebar__inner {
@@ -162,7 +170,6 @@ search: false
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 .sidebar::-webkit-scrollbar,
 .sidebar.sticky::-webkit-scrollbar,
 .sidebar .sidebar__inner::-webkit-scrollbar {
@@ -170,7 +177,7 @@ search: false
 }
 
 /* =========================
-   ✅ Right Sidebar (3-column)
+   3-column layout
    ========================= */
 .layout--threecol {
   display: grid;
@@ -213,14 +220,13 @@ search: false
 }
 
 /* =========================
-   ✅ Responsive Fix (핵심)
+   Responsive fix: tablet/mobile
    ========================= */
 @media (max-width: 1024px) {
   .layout--threecol {
     grid-template-columns: 1fr !important;
   }
 
-  /* ✅ 컬럼만 숨김 */
   .sidebar-left,
   .sidebar-right {
     display: none !important;
@@ -238,95 +244,113 @@ search: false
 }
 
 /* =========================
-   Mobile Sidebar Toggle (ONLY ONE TOGGLE)
-   - desktop: hide
-   - mobile: show
-   - hide nav_list inner toggle UI
-   - force category list open + visible
+   Mobile Sidebar (ONLY ONE TOGGLE)
+   - outer <details> only
+   - nav_list inner toggle hidden
+   - force items visible
    ========================= */
 
 /* desktop: hide */
 @media (min-width: 1025px) {
-  .mobile-sidebar { display: none !important; }
+  .mobile-sidebar {
+    display: none !important;
+  }
 }
 
-/* mobile */
+/* mobile: show + make nav visible */
 @media (max-width: 1024px) {
-  .mobile-sidebar { display: block !important; margin: 12px 0 18px; }
-
-  /* summary 버튼 보기 좋게 */
-  .mobile-sidebar__summary {
-    cursor: pointer;
-    font-weight: 700;
-    padding: 10px 12px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.18);
-    background: rgba(255,255,255,0.03);
+  .mobile-sidebar {
+    display: block;
+    margin: 12px 0 18px;
   }
 
-  /* ✅ nav_list 내부의 'Toggle menu +' 류 토글 UI 전부 숨김 (클래스 버전 차이 대응) */
+  /* summary(토글 버튼) 가독성 */
+  .mobile-sidebar__summary {
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    color: #e6edf3;
+    font-weight: 700;
+  }
+
+  /* ✅ nav_list 내부 토글 UI(checkbox/label) 숨김 */
   .mobile-sidebar__content--nav input[type="checkbox"],
-  .mobile-sidebar__content--nav button,
   .mobile-sidebar__content--nav .nav__toggle,
-  .mobile-sidebar__content--nav .nav__sub-title,
-  .mobile-sidebar__content--nav .nav__title,
-  .mobile-sidebar__content--nav .nav__toggle-wrapper,
-  .mobile-sidebar__content--nav summary {
+  .mobile-sidebar__content--nav .nav__sub-title {
     display: none !important;
   }
 
-  /* ✅ 접혀있는 nav 트리 강제 오픈 (클래스 버전 차이 대응) */
-  .mobile-sidebar__content--nav .nav__list,
+  /* ✅ nav_list가 접어둔 목록을 무조건 펼치기 */
   .mobile-sidebar__content--nav .nav__items,
-  .mobile-sidebar__content--nav ul {
+  .mobile-sidebar__content--nav .nav__items ul {
     display: block !important;
     max-height: none !important;
     height: auto !important;
     overflow: visible !important;
-    visibility: visible !important;
     opacity: 1 !important;
+    visibility: visible !important;
   }
 
-  /* ✅ 글자색 강제 (안 보이는 문제 해결) */
+  /* ✅ 글자 안 보이는 문제 해결: 색 강제 */
   .mobile-sidebar__content--nav,
-  .mobile-sidebar__content--nav * {
+  .mobile-sidebar__content--nav a,
+  .mobile-sidebar__content--nav a:visited,
+  .mobile-sidebar__content--nav label,
+  .mobile-sidebar__content--nav li,
+  .mobile-sidebar__content--nav span {
     color: #e6edf3 !important;
     opacity: 1 !important;
   }
 
-  /* ✅ 내용 카드 박스 */
+  /* 박스 스타일 */
   .mobile-sidebar__content--nav {
     margin-top: 10px;
     padding: 12px;
     border-radius: 14px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .mobile-sidebar__content--nav .nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   /* 1뎁스 카드 */
-  .mobile-sidebar__content--nav > ul > li,
   .mobile-sidebar__content--nav .nav__items > li {
-    list-style: none !important;
-    margin: 10px 0 !important;
-    padding: 12px !important;
-    border-radius: 14px !important;
-    background: #1f1f1f !important;
-    border: 1px solid rgba(255,255,255,0.06) !important;
+    list-style: none;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 14px;
+    background: #1f1f1f;
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
 
-  /* 링크 스타일 */
-  .mobile-sidebar__content--nav a {
+  .mobile-sidebar__content--nav .nav__items > li > a,
+  .mobile-sidebar__content--nav .nav__items > li > label {
     display: block;
-    text-decoration: none !important;
+    font-weight: 800;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+
+  /* 2뎁스 */
+  .mobile-sidebar__content--nav .nav__items > li ul {
+    margin: 8px 0 0;
+    padding-left: 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.10);
+    list-style: none;
+  }
+
+  .mobile-sidebar__content--nav .nav__items > li ul a {
+    display: block;
     padding: 6px 8px;
     border-radius: 10px;
+    text-decoration: none;
   }
-
-  .mobile-sidebar__content--nav a:hover {
-    background: rgba(255,255,255,0.06);
-  }
-}
-
 
   .mobile-sidebar__content--nav .nav__items > li ul a:hover {
     background: rgba(255, 255, 255, 0.06);
