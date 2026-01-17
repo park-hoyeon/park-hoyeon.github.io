@@ -304,3 +304,37 @@ search: false
 }
 
 
+/* mobile category list */
+.mobile-cat-list,
+.mobile-cat-children {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.mobile-cat-item {
+  margin: 8px 0;
+}
+
+.mobile-cat-item > a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.mobile-cat-children {
+  margin-top: 6px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(255,255,255,0.10);
+}
+
+.mobile-cat-children li a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  opacity: .9;
+}
+
+
