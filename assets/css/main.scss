@@ -237,22 +237,16 @@ search: false
    ========================= */
 
 @media (max-width: 1024px) {
-  /* 1) 그리드 3열/2열 구조 해제 → 1열로 */
   .layout--threecol {
     grid-template-columns: 1fr !important;
   }
 
-  /* 2) 왼쪽 사이드바 숨김 (Minimal Mistakes 클래스들) */
-  .sidebar,
+  /* ✅ 왼쪽/오른쪽 컬럼만 숨김 (sidebar 내용은 살려야 mobile-sidebar에서 보임) */
   .sidebar-left,
-  .sidebar.sticky,
-  .sidebar__inner,
-  .page__sidebar,
-  .author__sidebar {
+  .sidebar-right {
     display: none !important;
   }
 
-  /* 3) 본문이 꽉 차게 */
   .page,
   .page__inner-wrap,
   .archive,
@@ -263,6 +257,8 @@ search: false
     margin: 0 !important;
   }
 }
+
+
 
 /* =========================
    Mobile Sidebar (show sidebar toggle box in main)
