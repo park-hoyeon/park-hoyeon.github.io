@@ -237,11 +237,9 @@ search: false
    ========================= */
 
 @media (max-width: 1024px) {
-  .layout--threecol {
-    grid-template-columns: 1fr !important;
-  }
+  .layout--threecol { grid-template-columns: 1fr !important; }
 
-  /* ✅ 왼쪽/오른쪽 컬럼만 숨김 (sidebar 내용은 살려야 mobile-sidebar에서 보임) */
+  /* ✅ 컬럼만 숨김 */
   .sidebar-left,
   .sidebar-right {
     display: none !important;
@@ -257,6 +255,7 @@ search: false
     margin: 0 !important;
   }
 }
+
 
 
 
