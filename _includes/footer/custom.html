@@ -1,3 +1,13 @@
-<!-- start custom footer snippets -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("category-toggle");
+  const box = document.getElementById("mobile-category");
 
-<!-- end custom footer snippets -->
+  // 해당 버튼/박스가 없는 페이지에서는 아무 것도 안 함
+  if (!btn || !box) return;
+
+  btn.addEventListener("click", () => {
+    box.classList.toggle("is-open");
+  });
+});
+</script>
