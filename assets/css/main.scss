@@ -230,4 +230,36 @@ search: false
   border:1px solid rgba(255,255,255,.18);
 }
 
+/* =========================
+   ✅ Responsive Fix (핵심)
+   - 모바일/태블릿에서 왼쪽 사이드바가 공간을 먹지 않게
+   - 본문은 100% 사용
+   ========================= */
+
+@media (max-width: 1024px) {
+  /* 1) 그리드 3열/2열 구조 해제 → 1열로 */
+  .layout--threecol {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 2) 왼쪽 사이드바 숨김 (Minimal Mistakes 클래스들) */
+  .sidebar,
+  .sidebar.sticky,
+  .sidebar__inner,
+  .page__sidebar,
+  .author__sidebar {
+    display: none !important;
+  }
+
+  /* 3) 본문이 꽉 차게 */
+  .page,
+  .page__inner-wrap,
+  .archive,
+  .archive__wrapper,
+  .page__content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
 
