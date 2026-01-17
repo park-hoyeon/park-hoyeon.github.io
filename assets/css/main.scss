@@ -238,99 +238,94 @@ search: false
 
 /* =========================
    Mobile Sidebar Toggle (ONLY ONE TOGGLE)
-   - outer <details> only
-   - hide nav_list inner toggle
-   - force items open
+   - desktop: hide
+   - mobile: show
+   - hide nav_list inner toggle UI
+   - force category list open + visible
    ========================= */
 
 /* desktop: hide */
 @media (min-width: 1025px) {
-  .mobile-sidebar {
-    display: none !important;
-  }
+  .mobile-sidebar { display: none !important; }
 }
 
-/* mobile: show + style */
+/* mobile */
 @media (max-width: 1024px) {
-  .mobile-sidebar {
-    display: block;
-    margin: 12px 0 18px;
+  .mobile-sidebar { display: block !important; margin: 12px 0 18px; }
+
+  /* summary 버튼 보기 좋게 */
+  .mobile-sidebar__summary {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.03);
   }
 
-  /* ✅ nav_list 내부 토글(checkbox/label UI) 숨김 */
+  /* ✅ nav_list 내부의 'Toggle menu +' 류 토글 UI 전부 숨김 (클래스 버전 차이 대응) */
   .mobile-sidebar__content--nav input[type="checkbox"],
+  .mobile-sidebar__content--nav button,
   .mobile-sidebar__content--nav .nav__toggle,
-  .mobile-sidebar__content--nav .nav__sub-title {
+  .mobile-sidebar__content--nav .nav__sub-title,
+  .mobile-sidebar__content--nav .nav__title,
+  .mobile-sidebar__content--nav .nav__toggle-wrapper,
+  .mobile-sidebar__content--nav summary {
     display: none !important;
   }
 
-  /* ✅ nav_list가 접어둔 ul을 무조건 펼치기 */
+  /* ✅ 접혀있는 nav 트리 강제 오픈 (클래스 버전 차이 대응) */
+  .mobile-sidebar__content--nav .nav__list,
   .mobile-sidebar__content--nav .nav__items,
-  .mobile-sidebar__content--nav .nav__items ul {
+  .mobile-sidebar__content--nav ul {
     display: block !important;
     max-height: none !important;
     height: auto !important;
     overflow: visible !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
-  /* ✅ 글자 안 보이는 문제 해결(색 강제) */
+  /* ✅ 글자색 강제 (안 보이는 문제 해결) */
   .mobile-sidebar__content--nav,
-  .mobile-sidebar__content--nav a,
-  .mobile-sidebar__content--nav a:visited,
-  .mobile-sidebar__content--nav label,
-  .mobile-sidebar__content--nav li,
-  .mobile-sidebar__content--nav span {
+  .mobile-sidebar__content--nav * {
     color: #e6edf3 !important;
     opacity: 1 !important;
   }
 
-  /* ✅ 바깥 컨테이너 카드 */
+  /* ✅ 내용 카드 박스 */
   .mobile-sidebar__content--nav {
     margin-top: 10px;
     padding: 12px;
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
   }
 
-  .mobile-sidebar__content--nav .nav__items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* ✅ 1뎁스(섹션) 카드 */
+  /* 1뎁스 카드 */
+  .mobile-sidebar__content--nav > ul > li,
   .mobile-sidebar__content--nav .nav__items > li {
-    list-style: none;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 14px;
-    background: #1f1f1f;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    list-style: none !important;
+    margin: 10px 0 !important;
+    padding: 12px !important;
+    border-radius: 14px !important;
+    background: #1f1f1f !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
   }
 
-  .mobile-sidebar__content--nav .nav__items > li > a,
-  .mobile-sidebar__content--nav .nav__items > li > label {
+  /* 링크 스타일 */
+  .mobile-sidebar__content--nav a {
     display: block;
-    font-weight: 700;
-    text-decoration: none;
-    margin-bottom: 8px;
-  }
-
-  /* ✅ 2뎁스 */
-  .mobile-sidebar__content--nav .nav__items > li ul {
-    margin: 8px 0 0;
-    padding-left: 12px;
-    border-left: 1px solid rgba(255, 255, 255, 0.10);
-    list-style: none;
-  }
-
-  .mobile-sidebar__content--nav .nav__items > li ul a {
-    display: block;
+    text-decoration: none !important;
     padding: 6px 8px;
     border-radius: 10px;
-    text-decoration: none;
   }
+
+  .mobile-sidebar__content--nav a:hover {
+    background: rgba(255,255,255,0.06);
+  }
+}
+
 
   .mobile-sidebar__content--nav .nav__items > li ul a:hover {
     background: rgba(255, 255, 255, 0.06);
