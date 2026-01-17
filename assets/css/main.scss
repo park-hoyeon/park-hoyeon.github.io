@@ -7,19 +7,15 @@ search: false
 @import "minimal-mistakes";
 
 /* =========================
-   Sidebar category font size
+   Your existing styles
    ========================= */
+
 .sidebar-category {
   .nav__items {
-    a {
-      font-size: 11px !important;
-    }
+    a { font-size: 11px !important; }
   }
 }
 
-/* =========================
-   Tag box
-   ========================= */
 .tag-box {
   display: inline-block;
   padding: 5px 10px;
@@ -31,9 +27,6 @@ search: false
   border: 1px solid rgba(85, 85, 85, 0.8);
 }
 
-/* =========================
-   Archive cards
-   ========================= */
 .archive__item {
   margin-bottom: 2rem;
   display: flex;
@@ -62,24 +55,10 @@ search: false
   position: absolute;
 }
 
-.archive__item-content {
-  flex: 1;
-  padding: 1.5rem;
-}
-
-.archive__item-title {
-  margin-top: 0;
-}
-
-.archive__item-excerpt {
-  margin-top: 0.75rem;
-}
-
-.archive__item-meta {
-  margin-top: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-}
+.archive__item-content { flex: 1; padding: 1.5rem; }
+.archive__item-title { margin-top: 0; }
+.archive__item-excerpt { margin-top: 0.75rem; }
+.archive__item-meta { margin-top: 0.5rem; display: flex; flex-wrap: wrap; }
 
 .archive__item-tag {
   background: #1f6feb33;
@@ -98,22 +77,12 @@ search: false
 }
 
 @media (max-width: 768px) {
-  .archive__item {
-    flex-direction: column;
-  }
-
-  .archive__item-teaser {
-    flex: 0 0 180px;
-    width: 100%;
-  }
+  .archive__item { flex-direction: column; }
+  .archive__item-teaser { flex: 0 0 180px; width: 100%; }
 }
 
-/* =========================
-   Sidebar custom sections
-   ========================= */
-.sidebar-wrapper {
-  margin-top: 20px;
-}
+/* sidebar card blocks */
+.sidebar-wrapper { margin-top: 20px; }
 
 .sidebar-section {
   box-sizing: border-box;
@@ -135,34 +104,24 @@ search: false
   padding-bottom: 4px;
 }
 
-.sidebar-links {
-  list-style: none;
-  padding-left: 0;
-}
-
-.sidebar-links li {
-  margin: 6px 0;
-}
+.sidebar-links { list-style: none; padding-left: 0; }
+.sidebar-links li { margin: 6px 0; }
 
 .sidebar-links li a {
   color: #ddd;
   text-decoration: none;
   font-size: 14px;
 }
+.sidebar-links li a:hover { color: #fff; }
 
-.sidebar-links li a:hover {
-  color: #fff;
-}
-
-/* scroll bar hide */
+/* hide sidebar scrollbar */
 .sidebar {
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-.sidebar::-webkit-scrollbar {
-  display: none;
-}
+.sidebar::-webkit-scrollbar { display: none; }
+
 .sidebar,
 .sidebar.sticky,
 .sidebar .sidebar__inner {
@@ -201,36 +160,28 @@ search: false
 }
 
 @media (max-width: 1200px) {
-  .layout--threecol {
-    grid-template-columns: 260px 1fr;
-  }
-  .layout--threecol .sidebar-right {
-    display: none;
-  }
+  .layout--threecol { grid-template-columns: 260px 1fr; }
+  .layout--threecol .sidebar-right { display: none; }
 }
 
-.badge {
-  display: inline-block;
-  margin-left: 8px;
-  padding: 2px 8px;
-  border-radius: 999px;
-  font-size: 12px;
-  opacity: 0.85;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+.badge{
+  display:inline-block;
+  margin-left:8px;
+  padding:2px 8px;
+  border-radius:999px;
+  font-size:12px;
+  opacity:.85;
+  border:1px solid rgba(255,255,255,.18);
 }
 
 /* =========================
-   Responsive fix: tablet/mobile
+   Responsive: hide L/R sidebars on mobile/tablet
    ========================= */
 @media (max-width: 1024px) {
-  .layout--threecol {
-    grid-template-columns: 1fr !important;
-  }
+  .layout--threecol { grid-template-columns: 1fr !important; }
 
   .sidebar-left,
-  .sidebar-right {
-    display: none !important;
-  }
+  .sidebar-right { display: none !important; }
 
   .page,
   .page__inner-wrap,
@@ -244,57 +195,78 @@ search: false
 }
 
 /* =========================
-   Mobile Sidebar (ONLY ONE TOGGLE)
-   - outer <details> only
-   - nav_list inner toggle hidden
-   - force items visible
+   ✅ Mobile Sidebar (single toggle only)
    ========================= */
 
 /* desktop: hide */
 @media (min-width: 1025px) {
-  .mobile-sidebar {
-    display: none !important;
-  }
+  .mobile-sidebar { display: none !important; }
 }
 
-/* mobile: show + make nav visible */
+/* mobile */
 @media (max-width: 1024px) {
+  .mobile-sidebar,
+  .mobile-sidebar * {
+    box-sizing: border-box;
+  }
+
   .mobile-sidebar {
     display: block;
     margin: 12px 0 18px;
   }
 
-  /* summary(토글 버튼) 가독성 */
-  .mobile-sidebar__summary {
-    cursor: pointer;
-    padding: 10px 12px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    color: #e6edf3;
-    font-weight: 700;
+  .mobile-sidebar__details {
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
   }
 
-  /* ✅ nav_list 내부 토글 UI(checkbox/label) 숨김 */
+  .mobile-sidebar__summary {
+    cursor: pointer;
+    padding: 12px 14px;
+    font-weight: 700;
+    color: #e6edf3;
+    list-style: none;
+  }
+  .mobile-sidebar__summary::-webkit-details-marker { display: none; }
+
+  .mobile-sidebar__content {
+    padding: 12px 14px;
+  }
+
+  /* ✅ nav_list가 만들어내는 "Toggle menu +" 내부 토글 완전 제거 */
   .mobile-sidebar__content--nav input[type="checkbox"],
   .mobile-sidebar__content--nav .nav__toggle,
   .mobile-sidebar__content--nav .nav__sub-title {
     display: none !important;
   }
 
-  /* ✅ nav_list가 접어둔 목록을 무조건 펼치기 */
+  /* ✅ 숨겨진 ul 강제 표시 */
   .mobile-sidebar__content--nav .nav__items,
   .mobile-sidebar__content--nav .nav__items ul {
     display: block !important;
     max-height: none !important;
     height: auto !important;
     overflow: visible !important;
-    opacity: 1 !important;
-    visibility: visible !important;
   }
 
-  /* ✅ 글자 안 보이는 문제 해결: 색 강제 */
-  .mobile-sidebar__content--nav,
+  /* ✅ “한 칸씩 내려가 보이는” 기본 margin/padding 리셋 */
+  .mobile-sidebar__content--nav .nav__items {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .mobile-sidebar__content--nav .nav__items > li {
+    margin: 10px 0 !important;
+    padding: 12px !important;
+    border-radius: 14px;
+    background: #1f1f1f;
+    border: 1px solid rgba(255,255,255,0.06);
+    list-style: none !important;
+  }
+
   .mobile-sidebar__content--nav a,
   .mobile-sidebar__content--nav a:visited,
   .mobile-sidebar__content--nav label,
@@ -304,45 +276,19 @@ search: false
     opacity: 1 !important;
   }
 
-  /* 박스 스타일 */
-  .mobile-sidebar__content--nav {
-    margin-top: 10px;
-    padding: 12px;
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .mobile-sidebar__content--nav .nav__items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* 1뎁스 카드 */
-  .mobile-sidebar__content--nav .nav__items > li {
-    list-style: none;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 14px;
-    background: #1f1f1f;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-  }
-
   .mobile-sidebar__content--nav .nav__items > li > a,
   .mobile-sidebar__content--nav .nav__items > li > label {
     display: block;
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: none;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0 !important;
   }
 
-  /* 2뎁스 */
   .mobile-sidebar__content--nav .nav__items > li ul {
-    margin: 8px 0 0;
-    padding-left: 12px;
-    border-left: 1px solid rgba(255, 255, 255, 0.10);
-    list-style: none;
+    margin: 8px 0 0 0 !important;
+    padding-left: 12px !important;
+    border-left: 1px solid rgba(255,255,255,0.10);
+    list-style: none !important;
   }
 
   .mobile-sidebar__content--nav .nav__items > li ul a {
@@ -353,6 +299,15 @@ search: false
   }
 
   .mobile-sidebar__content--nav .nav__items > li ul a:hover {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255,255,255,0.06);
+  }
+
+  /* ✅ 삐져나오는 거 방지(특히 긴 글/긴 카테고리명) */
+  .mobile-sidebar__details,
+  .mobile-sidebar__content--nav {
+    overflow: hidden;
+  }
+  .mobile-sidebar__content--nav a {
+    word-break: break-word;
   }
 }
