@@ -273,3 +273,28 @@ search: false
     display: block;
   }
 }
+
+/* =========================
+   Mobile sidebar: Toggle menu 클릭 시에만 펼치기
+   ========================= */
+
+/* 1) 모바일에서만 적용 */
+@media (max-width: 1024px) {
+  /* ✅ mobile-sidebar 내부에서 nav 목록은 기본 숨김 */
+  .mobile-sidebar .nav__items {
+    display: none;
+  }
+
+  /* ✅ Toggle menu 버튼(라벨) 클릭 → 연결된 checkbox가 체크되면 nav가 보이게 */
+  .mobile-sidebar input[type="checkbox"]:checked ~ .nav__items {
+    display: block;
+  }
+
+  /* ✅ 혹시 overflow 때문에 펼쳐진 내용이 잘리는 경우 방지 */
+  .mobile-sidebar,
+  .mobile-sidebar .sidebar,
+  .mobile-sidebar .sidebar__inner {
+    overflow: visible !important;
+  }
+}
+
