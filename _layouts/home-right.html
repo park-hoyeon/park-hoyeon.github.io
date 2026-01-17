@@ -13,11 +13,25 @@ layout: default
   <main class="page__content" role="main">
     {% include skt-highlight.html %}
 
-    <!-- ✅ 모바일에서만 보이는 사이드바 토글 박스 -->
-<div class="mobile-sidebar">
-  {% include sidebar-mobile.html %}
+    <!-- ✅ 모바일 카테고리 토글 (토글 1개만) -->
+<div class="mobile-cats">
+  <details class="mobile-accordion">
+    <summary class="mobile-accordion__summary">
+      Toggle menu
+    </summary>
+
+    <div class="mobile-accordion__content">
+      <p class="mobile-total-count">
+        전체 글 수 ({{ site.posts | size }}개)
+      </p>
+
+      {% include nav_list nav="sidebar-category" %}
+    </div>
+  </details>
 </div>
 
+
+ 
 
 
 
