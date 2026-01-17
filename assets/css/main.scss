@@ -328,11 +328,11 @@ search: false
 @media (max-width: 1024px) {
   /* ✅ nav_list가 만드는 'Toggle menu +' 요소(checkbox/label) 숨김 */
   .mobile-sidebar__content--nav input[type="checkbox"],
-  .mobile-sidebar__content--nav label,
   .mobile-sidebar__content--nav .nav__sub-title,
   .mobile-sidebar__content--nav .nav__toggle {
-    display: none !important;
-  }
+  display: none !important;
+}
+
 
   /* ✅ 접혀있는 메뉴를 무조건 펼쳐서 보여주기 */
   .mobile-sidebar__content--nav .nav__items,
@@ -374,5 +374,39 @@ search: false
   }
 }
 
+@media (max-width: 1024px) {
+  /* label(부모 카테고리 제목)도 카드처럼 보이게 */
+  .mobile-sidebar__content--nav .nav__items > li > label,
+  .mobile-sidebar__content--nav .nav__items > li > a {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+
+  /* 부모 li 자체를 카드화 */
+  .mobile-sidebar__content--nav .nav__items > li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 14px;
+    background: #1f1f1f;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* 자식 목록 */
+  .mobile-sidebar__content--nav .nav__items > li ul {
+    margin: 8px 0 0;
+    padding-left: 12px;
+    border-left: 1px solid rgba(255,255,255,0.10);
+  }
+
+  .mobile-sidebar__content--nav .nav__items > li ul a {
+    display: block;
+    padding: 6px 8px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
 
 
