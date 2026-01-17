@@ -273,35 +273,7 @@ search: false
   }
 }
 
-/* =========================
-   Mobile sidebar: Toggle menu 클릭 시에만 펼치기
-   ========================= */
 
-/* 1) 모바일에서만 적용 */
-@media (max-width: 1024px) {
-  /* ✅ mobile-sidebar 내부에서 nav 목록은 기본 숨김 */
-  .mobile-sidebar .nav__items {
-    display: none;
-  }
-
-  /* ✅ Toggle menu 버튼(라벨) 클릭 → 연결된 checkbox가 체크되면 nav가 보이게 */
-  .mobile-sidebar input[type="checkbox"]:checked ~ .nav__items {
-    display: block;
-  }
-
-  /* ✅ 혹시 overflow 때문에 펼쳐진 내용이 잘리는 경우 방지 */
-  .mobile-sidebar,
-  .mobile-sidebar .sidebar,
-  .mobile-sidebar .sidebar__inner {
-    overflow: visible !important;
-  }
-}
-
-@media (max-width: 1024px) {
-  .mobile-sidebar input[type="checkbox"]:checked + label + .nav__items {
-    display: block;
-  }
-}
 
 
 /* mobile category list */
@@ -336,5 +308,71 @@ search: false
   text-decoration: none;
   opacity: .9;
 }
+
+
+/* =========================================
+   FIX: mobile-sidebar 안에서는 nav_list의 내부 토글(checkbox/label)을 제거
+   - 바깥 <details> 토글 1개만 사용
+   ========================================= */
+
+@media (max-width: 1024px) {
+  /* mobile-sidebar는 모바일에서만 보이게 */
+  .mobile-sidebar { display: block; margin: 12px 0 18px; }
+}
+
+/* 데스크탑에서는 mobile-sidebar 숨기기 */
+@media (min-width: 1025px) {
+  .mobile-sidebar { display: none !important; }
+}
+
+@media (max-width: 1024px) {
+  /* ✅ nav_list가 만드는 'Toggle menu +' 요소(checkbox/label) 숨김 */
+  .mobile-sidebar__content--nav input[type="checkbox"],
+  .mobile-sidebar__content--nav label,
+  .mobile-sidebar__content--nav .nav__sub-title,
+  .mobile-sidebar__content--nav .nav__toggle {
+    display: none !important;
+  }
+
+  /* ✅ 접혀있는 메뉴를 무조건 펼쳐서 보여주기 */
+  .mobile-sidebar__content--nav .nav__items,
+  .mobile-sidebar__content--nav .nav__items ul {
+    display: block !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* ✅ 보기 좋게 카드(블록) 처리 */
+  .mobile-sidebar__content--nav .nav__items > li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 14px;
+    background: #1f1f1f;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .mobile-sidebar__content--nav .nav__items > li > a {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+
+  .mobile-sidebar__content--nav .nav__items > li ul {
+    margin: 8px 0 0;
+    padding-left: 12px;
+    border-left: 1px solid rgba(255,255,255,0.10);
+  }
+
+  .mobile-sidebar__content--nav .nav__items > li ul a {
+    display: block;
+    padding: 6px 8px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
 
 
