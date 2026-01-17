@@ -17,14 +17,13 @@ search: false
 .tag-box {
   display: inline-block;
   padding: 5px 10px;
-  background-color: rgba(51, 51, 51, 0.8); /* 반투명 배경 */
-  color: #ffffff; /* 선명한 텍스트 색상 */
-  border-radius: 8px; /* 둥근 모서리 */
-  font-size: 9px; /* 텍스트 크기 */
-  margin: 2px; /* 태그 간 간격 */
-  border: 1px solid rgba(85, 85, 85, 0.8); /* 반투명 테두리 */
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 9px;
+  margin: 2px;
+  border: 1px solid rgba(85, 85, 85, 0.8);
 }
-
 
 .archive__item {
   margin-bottom: 2rem;
@@ -93,12 +92,13 @@ search: false
   .archive__item {
     flex-direction: column;
   }
-  
+
   .archive__item-teaser {
     flex: 0 0 180px;
     width: 100%;
   }
 }
+
 /* ✅ 미디어 쿼리 바깥에서 선언 */
 .sidebar-wrapper {
   margin-top: 20px;
@@ -109,14 +109,12 @@ search: false
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  margin-right: 0; /* 혹시 기본 마진이 있을 경우 제거 */
+  margin-right: 0;
   padding: 16px;
   border-radius: 12px;
   background-color: #1f1f1f;
   margin-bottom: 20px;
 }
-
-
 
 .sidebar-title {
   font-size: 16px;
@@ -144,14 +142,15 @@ search: false
 .sidebar-links li a:hover {
   color: #fff;
 }
+
 .sidebar {
-  overflow-y: auto;              /* 스크롤은 되게 하되 */
-  scrollbar-width: none;         /* Firefox용 스크롤바 숨기기 */
-  -ms-overflow-style: none;      /* IE/Edge용 스크롤바 숨기기 */
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .sidebar::-webkit-scrollbar {
-  display: none;                 /* Chrome/Safari 스크롤바 숨기기 */
+  display: none;
 }
 
 /* ✅ 스크롤바 완전 숨기기 */
@@ -169,24 +168,9 @@ search: false
   display: none;
 }
 
-/* ✅ 사이드바 카테고리 박스 스타일 수정 */
-.sidebar-section {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin-right: 0;
-  padding: 16px;
-  border-radius: 12px;
-  background-color: #1f1f1f;
-  margin-bottom: 20px;
-}
-
 /* =========================
    ✅ Right Sidebar (3-column)
    ========================= */
-
-/* single-right 레이아웃에서만 3열 구성 */
 .layout--threecol {
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr) 160px;
@@ -194,14 +178,12 @@ search: false
   align-items: start;
 }
 
-/* 오른쪽 사이드바 sticky */
 .layout--threecol .sidebar-right {
   position: sticky;
   top: 100px;
   height: fit-content;
 }
 
-/* 오른쪽 카드 박스(지금 sidebar-right.html에서 right-card 쓰면 적용됨) */
 .right-card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -210,7 +192,6 @@ search: false
   margin-bottom: 16px;
 }
 
-/* 반응형: 화면 좁으면 오른쪽 숨김 */
 @media (max-width: 1200px) {
   .layout--threecol {
     grid-template-columns: 260px 1fr;
@@ -220,24 +201,23 @@ search: false
   }
 }
 
-.badge{
-  display:inline-block;
-  margin-left:8px;
-  padding:2px 8px;
-  border-radius:999px;
-  font-size:12px;
-  opacity:.85;
-  border:1px solid rgba(255,255,255,.18);
+.badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  opacity: 0.85;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* =========================
    ✅ Responsive Fix (핵심)
-   - 모바일/태블릿에서 왼쪽 사이드바가 공간을 먹지 않게
-   - 본문은 100% 사용
    ========================= */
-
 @media (max-width: 1024px) {
-  .layout--threecol { grid-template-columns: 1fr !important; }
+  .layout--threecol {
+    grid-template-columns: 1fr !important;
+  }
 
   /* ✅ 컬럼만 숨김 */
   .sidebar-left,
@@ -256,85 +236,35 @@ search: false
   }
 }
 
-
-
-
 /* =========================
-   Mobile Sidebar (show sidebar toggle box in main)
+   Mobile Sidebar Toggle (ONLY ONE TOGGLE)
+   - outer <details> only
+   - hide nav_list inner toggle
+   - force items open
    ========================= */
-.mobile-sidebar {
-  display: none;
-  margin: 12px 0 18px;
-}
 
-@media (max-width: 1024px) {
+/* desktop: hide */
+@media (min-width: 1025px) {
   .mobile-sidebar {
-    display: block;
+    display: none !important;
   }
 }
 
-
-
-
-/* mobile category list */
-.mobile-cat-list,
-.mobile-cat-children {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.mobile-cat-item {
-  margin: 8px 0;
-}
-
-.mobile-cat-item > a {
-  display: block;
-  padding: 8px 10px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-.mobile-cat-children {
-  margin-top: 6px;
-  padding-left: 10px;
-  border-left: 1px solid rgba(255,255,255,0.10);
-}
-
-.mobile-cat-children li a {
-  display: block;
-  padding: 6px 10px;
-  border-radius: 10px;
-  text-decoration: none;
-  opacity: .9;
-}
-
-
-/* =========================================
-   FIX: mobile-sidebar 안에서는 nav_list의 내부 토글(checkbox/label)을 제거
-   - 바깥 <details> 토글 1개만 사용
-   ========================================= */
-
+/* mobile: show + style */
 @media (max-width: 1024px) {
-  /* mobile-sidebar는 모바일에서만 보이게 */
-  .mobile-sidebar { display: block; margin: 12px 0 18px; }
-}
+  .mobile-sidebar {
+    display: block;
+    margin: 12px 0 18px;
+  }
 
-/* 데스크탑에서는 mobile-sidebar 숨기기 */
-@media (min-width: 1025px) {
-  .mobile-sidebar { display: none !important; }
-}
-
-@media (max-width: 1024px) {
-  /* ✅ nav_list가 만드는 'Toggle menu +' 요소(checkbox/label) 숨김 */
+  /* ✅ nav_list 내부 토글(checkbox/label UI) 숨김 */
   .mobile-sidebar__content--nav input[type="checkbox"],
-  .mobile-sidebar__content--nav .nav__sub-title,
-  .mobile-sidebar__content--nav .nav__toggle {
-  display: none !important;
-}
+  .mobile-sidebar__content--nav .nav__toggle,
+  .mobile-sidebar__content--nav .nav__sub-title {
+    display: none !important;
+  }
 
-
-  /* ✅ 접혀있는 메뉴를 무조건 펼쳐서 보여주기 */
+  /* ✅ nav_list가 접어둔 ul을 무조건 펼치기 */
   .mobile-sidebar__content--nav .nav__items,
   .mobile-sidebar__content--nav .nav__items ul {
     display: block !important;
@@ -343,27 +273,56 @@ search: false
     overflow: visible !important;
   }
 
-  /* ✅ 보기 좋게 카드(블록) 처리 */
+  /* ✅ 글자 안 보이는 문제 해결(색 강제) */
+  .mobile-sidebar__content--nav,
+  .mobile-sidebar__content--nav a,
+  .mobile-sidebar__content--nav a:visited,
+  .mobile-sidebar__content--nav label,
+  .mobile-sidebar__content--nav li,
+  .mobile-sidebar__content--nav span {
+    color: #e6edf3 !important;
+    opacity: 1 !important;
+  }
+
+  /* ✅ 바깥 컨테이너 카드 */
+  .mobile-sidebar__content--nav {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .mobile-sidebar__content--nav .nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ✅ 1뎁스(섹션) 카드 */
   .mobile-sidebar__content--nav .nav__items > li {
     list-style: none;
     margin: 10px 0;
     padding: 12px;
     border-radius: 14px;
     background: #1f1f1f;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
 
-  .mobile-sidebar__content--nav .nav__items > li > a {
+  .mobile-sidebar__content--nav .nav__items > li > a,
+  .mobile-sidebar__content--nav .nav__items > li > label {
     display: block;
     font-weight: 700;
     text-decoration: none;
     margin-bottom: 8px;
   }
 
+  /* ✅ 2뎁스 */
   .mobile-sidebar__content--nav .nav__items > li ul {
     margin: 8px 0 0;
     padding-left: 12px;
-    border-left: 1px solid rgba(255,255,255,0.10);
+    border-left: 1px solid rgba(255, 255, 255, 0.10);
+    list-style: none;
   }
 
   .mobile-sidebar__content--nav .nav__items > li ul a {
@@ -372,41 +331,8 @@ search: false
     border-radius: 10px;
     text-decoration: none;
   }
-}
 
-@media (max-width: 1024px) {
-  /* label(부모 카테고리 제목)도 카드처럼 보이게 */
-  .mobile-sidebar__content--nav .nav__items > li > label,
-  .mobile-sidebar__content--nav .nav__items > li > a {
-    display: block;
-    font-weight: 700;
-    text-decoration: none;
-    margin-bottom: 8px;
-  }
-
-  /* 부모 li 자체를 카드화 */
-  .mobile-sidebar__content--nav .nav__items > li {
-    list-style: none;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 14px;
-    background: #1f1f1f;
-    border: 1px solid rgba(255,255,255,0.06);
-  }
-
-  /* 자식 목록 */
-  .mobile-sidebar__content--nav .nav__items > li ul {
-    margin: 8px 0 0;
-    padding-left: 12px;
-    border-left: 1px solid rgba(255,255,255,0.10);
-  }
-
-  .mobile-sidebar__content--nav .nav__items > li ul a {
-    display: block;
-    padding: 6px 8px;
-    border-radius: 10px;
-    text-decoration: none;
+  .mobile-sidebar__content--nav .nav__items > li ul a:hover {
+    background: rgba(255, 255, 255, 0.06);
   }
 }
-
-
