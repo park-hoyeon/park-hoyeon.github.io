@@ -13,20 +13,11 @@ layout: default
   <main class="page__content" role="main">
     {% include skt-highlight.html %}
 
-    <!-- ✅ 모바일 카테고리 아코디언 -->
-<details class="mobile-accordion">
-  <summary class="mobile-accordion__summary">
-    📁 카테고리 보기
-  </summary>
+    <!-- ✅ 모바일에서만 보이는 사이드바 토글 박스 -->
+<div class="mobile-sidebar">
+  {% include sidebar.html %}
+</div>
 
-  <div class="mobile-accordion__content">
-    <p class="mobile-total-count">
-      전체 글 수 ({{ site.posts | size }}개)
-    </p>
-
-    {% include nav_list nav="sidebar-category" %}
-  </div>
-</details>
 
 
    
