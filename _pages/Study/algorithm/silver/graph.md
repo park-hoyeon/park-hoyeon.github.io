@@ -30,6 +30,7 @@ sidebar:
 | 7    | <a href="/Study/algorithm/silver/3184">양</a>   | 3184   |
 | 8    | <a href="/Study/algorithm/silver/1697">숨바꼭질</a>   | 1697   |
 | 9    | <a href="/Study/algorithm/silver/2583">영역 구하기</a>   | 2583   |
+| 10    | <a href="/Study/algorithm/silver/21736">헌내기는 친구가 필요해</a>   | 21736   |
 
 <br/>
 
