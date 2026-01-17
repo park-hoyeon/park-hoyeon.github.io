@@ -13,6 +13,17 @@ layout: default
   <main class="page__content" role="main">
     {% include skt-highlight.html %}
 
+    <!--  모바일 카테고리 토글 -->
+  <div class="mobile-cats">
+    <button class="category-toggle" id="category-toggle" type="button">
+      📂 카테고리 보기
+    </button>
+
+    <div class="mobile-category" id="mobile-category">
+      {% include nav_list nav="sidebar-category" %}
+    </div>
+  </div>
+
     <h3 class="archive__subtitle">
       {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
     </h3>
