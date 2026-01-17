@@ -1,0 +1,22 @@
+{%- comment -%}
+모바일용 카테고리 리스트(토글 없이 링크만)
+site.data.navigation.sidebar-category 를 직접 순회해서 출력
+{%- endcomment -%}
+
+<ul class="mobile-cat-list">
+  {%- for item in site.data.navigation.sidebar-category -%}
+    <li class="mobile-cat-item">
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+
+      {%- if item.children -%}
+        <ul class="mobile-cat-children">
+          {%- for child in item.children -%}
+            <li>
+              <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>
