@@ -298,3 +298,10 @@ search: false
   }
 }
 
+@media (max-width: 1024px) {
+  .mobile-sidebar input[type="checkbox"]:checked + label + .nav__items {
+    display: block;
+  }
+}
+
+
