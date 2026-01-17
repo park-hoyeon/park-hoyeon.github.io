@@ -1,0 +1,15 @@
+<div class="sidebar sticky">
+  <nav class="nav__list">
+    <!-- ✅ id를 모바일 전용으로 (중복 방지) -->
+    <input id="ac-toc-mobile" name="accordion-toc-mobile" type="checkbox">
+    <label for="ac-toc-mobile">Toggle menu</label>
+
+    <ul class="nav__items">
+      {% include nav_list nav="sidebar-category" %}
+    </ul>
+  </nav>
+
+  <div class="mobile-post-count">
+    전체 글 수 ({{ site.posts | size }}개)
+  </div>
+</div>
