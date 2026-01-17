@@ -13,23 +13,20 @@ layout: default
   <main class="page__content" role="main">
     {% include skt-highlight.html %}
 
-    <!-- ✅ 모바일 카테고리 토글 (토글 1개만) -->
-<div class="mobile-cats">
-  <details class="mobile-accordion">
-    <summary class="mobile-accordion__summary">
+    <!-- ✅ Mobile-only Sidebar Menu (왼쪽 사이드바 메뉴를 모바일에서만 토글로) -->
+<div class="mobile-sidebar">
+  <details class="mobile-sidebar__details">
+    <summary class="mobile-sidebar__summary">
       Toggle menu
+      <span class="mobile-sidebar__count">전체 글 수 ({{ site.posts | size }}개)</span>
     </summary>
 
-    <div class="mobile-accordion__content">
-      <p class="mobile-total-count">
-        전체 글 수 ({{ site.posts | size }}개)
-      </p>
-
-      {% include mobile-category-list.html %}
-
+    <div class="mobile-sidebar__content">
+      {% include nav_list nav="sidebar-category" %}
     </div>
   </details>
 </div>
+
 
 
  
