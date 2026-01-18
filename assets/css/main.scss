@@ -235,23 +235,41 @@ search: false
     padding: 12px 14px;
   }
 
-  /* ✅ nav_list가 만들어내는 "Toggle menu +" 내부 토글 완전 제거 */
+  /* ============================================================
+     ✅ 핵심: nav_list가 만들어내는 "Toggle menu +" / 버튼만 제거
+     ============================================================ */
+
+  /* 1) 내부 토글 UI(버튼/라벨/체크박스) 싹 숨김 */
   .mobile-sidebar__content--nav input[type="checkbox"],
   .mobile-sidebar__content--nav .nav__toggle,
-  .mobile-sidebar__content--nav .nav__sub-title {
+  .mobile-sidebar__content--nav .nav__sub-title,
+  .mobile-sidebar__content--nav label[for^="nav-toggle"] {
     display: none !important;
   }
 
-  /* ✅ 숨겨진 ul 강제 표시 */
+  /* 2) 토글이 숨기던 실제 메뉴(ul)를 무조건 펼쳐서 보여주기 */
   .mobile-sidebar__content--nav .nav__items,
   .mobile-sidebar__content--nav .nav__items ul {
     display: block !important;
     max-height: none !important;
     height: auto !important;
     overflow: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 
-  /* ✅ “한 칸씩 내려가 보이는” 기본 margin/padding 리셋 */
+  /* 3) Minimal Mistakes에서 position/overflow로 가리는 경우까지 방어 */
+  .mobile-sidebar__content--nav nav,
+  .mobile-sidebar__content--nav .nav__list,
+  .mobile-sidebar__content--nav .nav__items {
+    position: static !important;
+  }
+
+  /* ============================================================
+     ✅ 스타일: 카드처럼 보기 좋게
+     ============================================================ */
+
+  /* 기본 margin/padding 리셋 */
   .mobile-sidebar__content--nav .nav__items {
     margin: 0 !important;
     padding: 0 !important;
@@ -269,21 +287,22 @@ search: false
 
   .mobile-sidebar__content--nav a,
   .mobile-sidebar__content--nav a:visited,
-  .mobile-sidebar__content--nav label,
   .mobile-sidebar__content--nav li,
   .mobile-sidebar__content--nav span {
     color: #e6edf3 !important;
     opacity: 1 !important;
   }
 
+  /* 1단 타이틀(카테고리 이름) */
   .mobile-sidebar__content--nav .nav__items > li > a,
-  .mobile-sidebar__content--nav .nav__items > li > label {
+  .mobile-sidebar__content--nav .nav__items > li > span {
     display: block;
     font-weight: 700;
     text-decoration: none;
     margin: 0 0 8px 0 !important;
   }
 
+  /* 하위 리스트 */
   .mobile-sidebar__content--nav .nav__items > li ul {
     margin: 8px 0 0 0 !important;
     padding-left: 12px !important;
@@ -302,7 +321,7 @@ search: false
     background: rgba(255,255,255,0.06);
   }
 
-  /* ✅ 삐져나오는 거 방지(특히 긴 글/긴 카테고리명) */
+  /* 삐져나오는 거 방지 */
   .mobile-sidebar__details,
   .mobile-sidebar__content--nav {
     overflow: hidden;
