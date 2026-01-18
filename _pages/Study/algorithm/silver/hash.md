@@ -43,7 +43,7 @@ sidebar:
     </tr>
     <tr>
       <td>3</td>
-      <td><a href="/Study/algorithm/silver/20920">영단어 암기는 괴로워</a></td>
+      <td><a href="/Study/algorithm/silver/20920">영단어 암기는 괴로워.</a></td>
       <td>20920</td>
       <td>실버 3</td>
     </tr>
