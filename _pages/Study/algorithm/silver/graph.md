@@ -89,6 +89,12 @@ sidebar:
       <td>21736</td>
       <td>실버 2</td>
     </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="/Study/algorithm/silver/11725">트리의 부모 찾기</a></td>
+      <td>11725</td>
+      <td>실버 2</td>
+    </tr>
   </tbody>
 </table>
 
@@ -130,6 +136,41 @@ sidebar:
   color: #00ffff;
   text-decoration: underline;
 }
+  .table-pagination {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.table-pagination .page-btn {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #cfcfcf;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.table-pagination .page-btn:hover {
+  background: #3a3a3a;
+  color: #ffffff;
+}
+
+.table-pagination .page-btn.active {
+  background: #66ccff;
+  color: #111;
+  border-color: #66ccff;
+  font-weight: 700;
+}
+
+.table-pagination .page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 </style>
 
 <script>
