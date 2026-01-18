@@ -19,17 +19,68 @@ sidebar:
 
 ### 문제 목록
 
-| 번호 | 문제 이름           | 문제 번호 |
-|------|--------------------|-----------|
-| 1    | <a href="/Study/algorithm/gold/16236">아기상어</a>     | 16236    |
-| 2    | <a href="/Study/algorithm/gold/14503">로봇 청소기</a>     | 14503    |
-| 3    | <a href="/Study/algorithm/gold/7576">토마토</a>     | 7576    |
-| 4    | <a href="/Study/algorithm/gold/10026">적록색약</a>     | 10026    |
-| 5    | <a href="/Study/algorithm/gold/14502">연구소</a>     | 14502    |
-| 6    | <a href="/Study/algorithm/gold/18405">경쟁적 전염</a>     | 18405    |
-| 7    | <a href="/Study/algorithm/gold/18428">감시 피하기</a>     | 18428   |
-| 8    | <a href="/Study/algorithm/gold/1937">욕심쟁이 판다</a>     | 1937   |
+<table class="problem-table" id="problemTable">
+  <thead>
+    <tr>
+      <th>번호</th>
+      <th>문제 이름</th>
+      <th>문제 번호</th>
+      <th>등급</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="/Study/algorithm/gold/16236">아기 상어</a></td>
+      <td>16236</td>
+      <td>골드 3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="/Study/algorithm/gold/14503">로봇 청소기</a></td>
+      <td>14503</td>
+      <td>골드 5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="/Study/algorithm/gold/7576">토마토</a></td>
+      <td>7576</td>
+      <td>골드 5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="/Study/algorithm/gold/10026">적록색약</a></td>
+      <td>10026</td>
+      <td>골드 5</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="/Study/algorithm/gold/14502">연구소</a></td>
+      <td>14502</td>
+      <td>골드 4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="/Study/algorithm/gold/18405">경쟁적 전염</a></td>
+      <td>18405</td>
+      <td>골드 5</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="/Study/algorithm/gold/18428">감시 피하기</a></td>
+      <td>18428</td>
+      <td>골드 5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="/Study/algorithm/gold/1937">욕심쟁이 판다</a></td>
+      <td>1937</td>
+      <td>골드 3</td>
+    </tr>
+  </tbody>
+</table>
 
+<div id="tablePagination" class="table-pagination"></div>
 
 <br/>
 
@@ -66,15 +117,95 @@ sidebar:
   color: #00ffff;
   text-decoration: underline;
 }
+
+/* pagination */
+.table-pagination {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.table-pagination .page-btn {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #cfcfcf;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.table-pagination .page-btn:hover {
+  background: #3a3a3a;
+  color: #ffffff;
+}
+
+.table-pagination .page-btn.active {
+  background: #66ccff;
+  color: #111;
+  border-color: #66ccff;
+  font-weight: 700;
+}
+
+.table-pagination .page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 </style>
 
+<script>
+(function () {
+  const rowsPerPage = 10;
 
+  const table = document.getElementById("problemTable");
+  if (!table) return;
 
+  const tbody = table.querySelector("tbody");
+  const rows = Array.from(tbody.querySelectorAll("tr"));
+  const pagination = document.getElementById("tablePagination");
 
+  if (!pagination) return;
 
+  const totalPages = Math.ceil(rows.length / rowsPerPage);
+  let currentPage = 1;
 
+  function renderPage(page) {
+    currentPage = page;
 
+    rows.forEach((row) => (row.style.display = "none"));
 
+    const start = (page - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+    rows.slice(start, end).forEach((row) => (row.style.display = ""));
 
+    renderButtons();
+  }
 
+  function renderButtons() {
+    pagination.innerHTML = "";
+    if (totalPages <= 1) return;
 
+    const makeBtn = (label, page, disabled = false, active = false) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = label;
+      btn.disabled = disabled;
+      btn.className = "page-btn" + (active ? " active" : "");
+      btn.addEventListener("click", () => renderPage(page));
+      return btn;
+    };
+
+    pagination.appendChild(makeBtn("이전", Math.max(1, currentPage - 1), currentPage === 1));
+
+    for (let p = 1; p <= totalPages; p++) {
+      pagination.appendChild(makeBtn(String(p), p, false, p === currentPage));
+    }
+
+    pagination.appendChild(makeBtn("다음", Math.min(totalPages, currentPage + 1), currentPage === totalPages));
+  }
+
+  renderPage(1);
+})();
+</script>
