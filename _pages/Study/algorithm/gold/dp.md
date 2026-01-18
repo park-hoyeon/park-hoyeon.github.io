@@ -11,25 +11,43 @@ sidebar:
   enabled: true
 ---
 
-> dp 유형의 문제들을 모아서 정리하였습니다.  
-> **문제 제목을 클릭하면 해당 문제 풀이 페이지로 이동합니다.**
+<div style="text-align: left; margin-top: 20px; font-size: 80%; color: #cfcfcf;">
+  dp 유형의 문제들을 모아서 정리하였습니다.<br/>
+  <b>문제 제목을 클릭하면 해당 문제 풀이 페이지로 이동합니다.</b>
+</div>
 
 <br/>
 
-<table>
+### 문제 목록
+
+<table class="problem-table" id="problemTable">
   <thead>
     <tr>
-      <th style="text-align:center;">번호</th>
-      <th style="text-align:center;">문제 이름</th>
-      <th style="text-align:center;">문제 번호</th>
+      <th>번호</th>
+      <th>문제 이름</th>
+      <th>문제 번호</th>
+      <th>등급</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td style="text-align:center;">1</td><td><a href="/Study/algorithm/gold/12865"> 평범한 배낭</a></td><td style="text-align:center;">12865</td></tr>
-    <tr><td style="text-align:center;">2</td><td><a href="/Study/algorithm/gold/2565"> 전깃줄</a></td><td style="text-align:center;">2565</td></tr>
-    
+    <tr>
+      <td>1</td>
+      <td><a href="/Study/algorithm/gold/12865">평범한 배낭</a></td>
+      <td>12865</td>
+      <td>골드 5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="/Study/algorithm/gold/2565">전깃줄</a></td>
+      <td>2565</td>
+      <td>골드 5</td>
+    </tr>
   </tbody>
 </table>
+
+<div id="tablePagination" class="table-pagination"></div>
+
+<br/>
 
 <style>
 .problem-table {
@@ -64,4 +82,95 @@ sidebar:
   color: #00ffff;
   text-decoration: underline;
 }
+
+/* pagination */
+.table-pagination {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.table-pagination .page-btn {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #cfcfcf;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.table-pagination .page-btn:hover {
+  background: #3a3a3a;
+  color: #ffffff;
+}
+
+.table-pagination .page-btn.active {
+  background: #66ccff;
+  color: #111;
+  border-color: #66ccff;
+  font-weight: 700;
+}
+
+.table-pagination .page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 </style>
+
+<script>
+(function () {
+  const rowsPerPage = 10;
+
+  const table = document.getElementById("problemTable");
+  if (!table) return;
+
+  const tbody = table.querySelector("tbody");
+  const rows = Array.from(tbody.querySelectorAll("tr"));
+  const pagination = document.getElementById("tablePagination");
+
+  if (!pagination) return;
+
+  const totalPages = Math.ceil(rows.length / rowsPerPage);
+  let currentPage = 1;
+
+  function renderPage(page) {
+    currentPage = page;
+
+    rows.forEach((row) => (row.style.display = "none"));
+
+    const start = (page - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+    rows.slice(start, end).forEach((row) => (row.style.display = ""));
+
+    renderButtons();
+  }
+
+  function renderButtons() {
+    pagination.innerHTML = "";
+    if (totalPages <= 1) return;
+
+    const makeBtn = (label, page, disabled = false, active = false) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = label;
+      btn.disabled = disabled;
+      btn.className = "page-btn" + (active ? " active" : "");
+      btn.addEventListener("click", () => renderPage(page));
+      return btn;
+    };
+
+    pagination.appendChild(makeBtn("이전", Math.max(1, currentPage - 1), currentPage === 1));
+
+    for (let p = 1; p <= totalPages; p++) {
+      pagination.appendChild(makeBtn(String(p), p, false, p === currentPage));
+    }
+
+    pagination.appendChild(makeBtn("다음", Math.min(totalPages, currentPage + 1), currentPage === totalPages));
+  }
+
+  renderPage(1);
+})();
+</script>
