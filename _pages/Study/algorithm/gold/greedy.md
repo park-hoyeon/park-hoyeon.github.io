@@ -39,7 +39,7 @@ sidebar:
       <td>2</td>
       <td><a href="/Study/algorithm/gold/1931">회의실 배정</a></td>
       <td>1931</td>
-      <td>실버 1</td>
+      <td>실버 5</td>
     </tr>
   </tbody>
 </table>
