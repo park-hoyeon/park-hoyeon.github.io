@@ -42,6 +42,12 @@ sidebar:
       <td>2565</td>
       <td>골드 5</td>
     </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="/Study/algorithm/gold/2631">줄세우기</a></td>
+      <td>2631</td>
+      <td>골드 4</td>
+    </tr>
   </tbody>
 </table>
 
