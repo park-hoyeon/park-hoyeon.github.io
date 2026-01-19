@@ -44,7 +44,7 @@ sidebar:
     <tr><td>12</td><td><a href="/Study/algorithm/silver/2231">분해합</a></td><td>2231</td><td>실버 5</td></tr>
     <tr><td>13</td><td><a href="/Study/algorithm/silver/1157">단어 공부</a></td><td>1157</td><td>실버 4</td></tr>
     <tr><td>14</td><td><a href="/Study/algorithm/silver/1978">소수 찾기</a></td><td>1978</td><td>실버 4</td></tr>
-    <tr><td>15</td><td><a href="/Study/algorithm/silver/10870">피보나치 수 5</a></td><td>10870</td><td>브론즈 2</td></tr>
+    <tr><td>15</td><td><a href="/Study/algorithm/silver/19941">햄버거 분배</a></td><td>19941</td><td>실버3</td></tr>
   </tbody>
 </table>
 
