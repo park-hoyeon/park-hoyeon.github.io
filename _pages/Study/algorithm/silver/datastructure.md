@@ -59,6 +59,12 @@ sidebar:
       <td>4358</td>
       <td>실버 2</td>
     </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="/Study/algorithm/silver/11286">절댓값 힙</a></td>
+      <td>11286</td>
+      <td>실버 1</td>
+    </tr>
   </tbody>
 </table>
 
