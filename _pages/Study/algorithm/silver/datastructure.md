@@ -65,6 +65,12 @@ sidebar:
       <td>11286</td>
       <td>실버 1</td>
     </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="/Study/algorithm/silver/1417">국회의원 선거</a></td>
+      <td>1417</td>
+      <td>실버 5</td>
+    </tr>
   </tbody>
 </table>
 
