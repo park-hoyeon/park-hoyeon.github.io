@@ -101,6 +101,10 @@ sidebar:
     <td>11</td>
     <td><a href="/Study/algorithm/silver/str">문자열</a></td>
   </tr>
+  <tr>
+    <td>12</td>
+    <td><a href="/Study/algorithm/silver/short">최단경로</a></td>
+  </tr>
 </tbody>
 
 </table>
