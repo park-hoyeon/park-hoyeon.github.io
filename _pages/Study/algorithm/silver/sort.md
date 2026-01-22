@@ -53,6 +53,12 @@ sidebar:
       <td>18870</td>
       <td>실버 2</td>
     </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="/Study/algorithm/silver/1654">랜선 자르기</a></td>
+      <td>1654</td>
+      <td>실버 2</td>
+    </tr>
   </tbody>
 </table>
 
