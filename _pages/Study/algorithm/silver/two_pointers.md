@@ -35,6 +35,12 @@ sidebar:
       <td>2018</td>
       <td>실버 5</td>
     </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="/Study/algorithm/silver/21921">블로그</a></td>
+      <td>21921</td>
+      <td>실버 3</td>
+    </tr>
   </tbody>
 </table>
 
