@@ -35,6 +35,12 @@ sidebar:
       <td>17413</td>
       <td>실버 3</td>
     </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="/Study/algorithm/silver/9996">한국이 그리울 땐 서버에 접속하지</a></td>
+      <td>9996</td>
+      <td>실버 3</td>
+    </tr>
   </tbody>
 </table>
 
