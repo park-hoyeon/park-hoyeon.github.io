@@ -53,6 +53,12 @@ sidebar:
       <td>14719</td>
       <td>골드 5</td>
     </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="/Study/algorithm/gold/1700">멀티탭 스케줄링</a></td>
+      <td>1700</td>
+      <td>골드 1</td>
+    </tr>
   </tbody>
 </table>
 
