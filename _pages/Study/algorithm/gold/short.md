@@ -47,6 +47,12 @@ sidebar:
       <td>1956</td>
       <td>골드 4</td>
     </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="/Study/algorithm/gold/1916">최소비용 구하기</a></td>
+      <td>1916</td>
+      <td>골드 4</td>
+    </tr>
   </tbody>
 </table>
 
