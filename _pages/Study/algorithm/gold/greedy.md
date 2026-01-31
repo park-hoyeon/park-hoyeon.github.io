@@ -42,9 +42,15 @@ sidebar:
       <td>골드 5</td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>3</td>
       <td><a href="/Study/algorithm/gold/12904">A와 B</a></td>
       <td>12904</td>
+      <td>골드 5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="/Study/algorithm/gold/14719">빗물</a></td>
+      <td>14719</td>
       <td>골드 5</td>
     </tr>
   </tbody>
