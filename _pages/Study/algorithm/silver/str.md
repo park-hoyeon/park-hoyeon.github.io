@@ -41,6 +41,14 @@ sidebar:
       <td>9996</td>
       <td>실버 3</td>
     </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="/Study/algorithm/silver/1235">학생 번호</a></td>
+      <td>1235</td>
+      <td>실버 4</td>
+    </tr>
+
+    
   </tbody>
 </table>
 
