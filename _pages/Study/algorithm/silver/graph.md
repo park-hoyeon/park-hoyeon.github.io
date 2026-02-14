@@ -95,6 +95,12 @@ sidebar:
       <td>11725</td>
       <td>실버 2</td>
     </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="/Study/algorithm/silver/5567">결혼식</a></td>
+      <td>5567</td>
+      <td>실버 2</td>
+    </tr>
   </tbody>
 </table>
 
