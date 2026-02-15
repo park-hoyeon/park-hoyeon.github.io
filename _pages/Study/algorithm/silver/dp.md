@@ -78,6 +78,12 @@ sidebar:
       <td>14916</td>
       <td>실버 3</td>
     </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="/Study/algorithm/silver/11053">가장 긴 증가하는 부분 수열</a></td>
+      <td>11053</td>
+      <td>실버 2</td>
+    </tr>
   </tbody>
 </table>
 
