@@ -41,6 +41,12 @@ sidebar:
       <td>18429</td>
       <td>실버 3</td>
     </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="/Study/algorithm/silver/10819">차이를 최대로</a></td>
+      <td>10819</td>
+      <td>실버 2</td>
+    </tr>
   </tbody>
 </table>
 
