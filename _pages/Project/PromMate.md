@@ -129,6 +129,98 @@ sidebar:
   <a href="Project/PromMate/difficulties" class="button-item"><span>중간과정 + 문제해결 + 회고</span></a>
   <a href="Project/PromMate/runner" class="button-item"><span>Runner란?</span></a>
 </div>
+---
+
+
+<style>
+.info-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #2d333b;
+  border-radius: 10px;
+  border: 1px solid #444c56;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-title {
+  font-size: 1.1em;
+  color: #58a6ff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #444c56;
+  padding-bottom: 8px;
+}
+
+.info-row {
+  display: flex;
+  margin: 8px 0;
+  align-items: flex-start;
+}
+
+.info-label {
+  min-width: 120px;
+  color: #8b949e;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #c9d1d9;
+  flex: 1;
+}
+
+.highlight {
+  color: #7ee787;
+  font-weight: 500;
+}
+</style>
+
+<div class="info-container">
+  <div class="info-title">프로젝트 개요</div>
+  <div class="info-row">
+    <span class="info-label">개발 기간</span>
+    <span class="info-value">2025.11 ~ 2026.01 (2개월)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">플랫폼</span>
+    <span class="info-value">Web Service (AI 기반 프롬프트 최적화 플랫폼)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">개발 인원</span>
+    <span class="info-value">9명 (AI 2 / 백엔드 3 / 프론트엔드 2 / 디자인 2)</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">담당 역할 - 백엔드 팀장</span>
+    <span class="info-value">
+      • 프롬프트 리라이팅·평가 핵심 도메인 설계 및 구현 <span class="highlight">(기여도 100%)</span><br>
+      &nbsp;&nbsp;- Rewrite / Judge AI 서버 연동 구조 설계 및 책임 분리 (Runner 패턴 적용)<br>
+      &nbsp;&nbsp;- WebClient 기반 비동기 통신 구조로 전환하여 응답 블로킹 문제 해결<br>
+      &nbsp;&nbsp;- AI 응답 latency 측정 및 예외 처리 로직 설계<br>
+      • Draft 기반 AI 결과 관리 모델 설계 <span class="highlight">(상태 모델링 구조 설계)</span><br>
+      &nbsp;&nbsp;- AI 리라이팅 결과를 Draft 상태로 우선 영속화 후, 사용자 확정 시 Final로 연결<br>
+      &nbsp;&nbsp;- status 컬럼 없이 연관관계 기반 상태 판단 구조 설계 (SSoT 관점 적용)<br>
+      &nbsp;&nbsp;- Draft 결과 재사용 구조를 통해 라이브러리 기능 확장성 확보<br>
+      • RESTful API 구조 설계 및 계층 분리<br>
+      &nbsp;&nbsp;- Controller / Service / Repository 구조 명확화<br>
+      &nbsp;&nbsp;- 요청/응답 스펙 정의 및 프론트엔드 협업 기준 수립<br>
+      • 사용자 인증 기반 AI 기능 접근 제어 및 보안 흐름 설계<br>
+    </span>
+  </div>
+</div>
+
+<div class="info-container">
+  <div class="info-title">🔒개발 환경</div>
+  <div class="info-row">
+    <span class="info-label">🚀 Stacks</span>
+    <span class="info-value">Java 17, Spring Boot, MySQL, AWS EC2, WebClient</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">🛠 Tools</span>
+    <span class="info-value">IntelliJ IDEA, DataGrip, GitHub, Postman</span>
+  </div>
+  <div class="info-row">
+    <span class="info-label">👥 Collaboration</span>
+    <span class="info-value">Notion, GitHub, Figma, Slack</span>
+  </div>
+</div>
 
 ---
 
