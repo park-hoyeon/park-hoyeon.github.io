@@ -35,6 +35,12 @@ sidebar:
       <td>1058</td>
       <td>실버 2</td>
     </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="/Study/algorithm/silver/6118">숨바꼭질</a></td>
+      <td>6118</td>
+      <td>실버 1</td>
+    </tr>
   </tbody>
 </table>
 
