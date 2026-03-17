@@ -53,6 +53,12 @@ sidebar:
       <td>1874</td>
       <td>실버 2</td>
     </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="/Study/algorithm/silver/1021">회전하는 큐</a></td>
+      <td>1021</td>
+      <td>실버 3</td>
+    </tr>
   </tbody>
 </table>
 
