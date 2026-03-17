@@ -53,6 +53,12 @@ sidebar:
       <td>1916</td>
       <td>골드 4</td>
     </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="/Study/algorithm/gold/1238">파티</a></td>
+      <td>1238</td>
+      <td>골드 3</td>
+    </tr>
   </tbody>
 </table>
 
