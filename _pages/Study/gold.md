@@ -105,6 +105,10 @@ sidebar:
     <td>12</td>
     <td><a href="/Study/algorithm/gold/heap">힙</a></td>
   </tr>
+  <tr>
+    <td>13</td>
+    <td><a href="/Study/algorithm/gold/graphs">그래프 이론</a></td>
+  </tr>
 </tbody>
 
 </table>
