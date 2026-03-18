@@ -31,7 +31,7 @@ sidebar:
   <tbody>
     <tr>
       <td>1</td>
-      <td><a href="/Study/algorithm/gold/1647"도시 분할 계획</a></td>
+      <td><a href="/Study/algorithm/gold/1647">도시 분할 계획</a></td>
       <td>1647</td>
       <td>골드 4</td>
     </tr>
