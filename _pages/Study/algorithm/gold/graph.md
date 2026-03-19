@@ -77,6 +77,12 @@ sidebar:
       <td>1937</td>
       <td>골드 3</td>
     </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="/Study/algorithm/gold/17836">공주님을 구해라!</a></td>
+      <td>17836</td>
+      <td>골드 5</td>
+    </tr>
   </tbody>
 </table>
 
