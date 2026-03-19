@@ -101,6 +101,12 @@ sidebar:
       <td>5567</td>
       <td>실버 2</td>
     </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="/Study/algorithm/silver/21937">작업</a></td>
+      <td>21937</td>
+      <td>실버 1</td>
+    </tr>
   </tbody>
 </table>
 
