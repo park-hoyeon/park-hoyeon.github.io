@@ -125,7 +125,6 @@ sidebar:
 </style>
 
 <div class="button-list">
-  <a href="Project/PromMate/contents" class="button-item"><span>구현한 시스템 아키텍쳐</span></a>
   <a href="Project/PromMate/difficulties" class="button-item"><span>중간과정 + 문제해결 + 회고</span></a>
   <a href="Project/PromMate/runner" class="button-item"><span>Runner란?</span></a>
 </div>
