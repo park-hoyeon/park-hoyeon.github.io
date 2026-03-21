@@ -65,6 +65,12 @@ sidebar:
       <td>2458</td>
       <td>골드 4</td>
     </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="/Study/algorithm/gold/21278">호석이 두 마리 치킨</a></td>
+      <td>21278</td>
+      <td>골드 4</td>
+    </tr>
   </tbody>
 </table>
 
