@@ -125,6 +125,7 @@ sidebar:
 </style>
 
 <div class="button-list">
+  <a href="Project/PromMate/rewriting" class="button-item"><span>리라이팅 기능 구현 정리</span></a>
   <a href="Project/PromMate/difficulties" class="button-item"><span>중간과정 + 문제해결 + 회고</span></a>
   <a href="Project/PromMate/runner" class="button-item"><span>Runner란?</span></a>
 </div>
