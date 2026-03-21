@@ -107,6 +107,12 @@ sidebar:
       <td>21937</td>
       <td>실버 1</td>
     </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="/Study/algorithm/silver/16174">점프왕 쩰리 (Large)</a></td>
+      <td>16174</td>
+      <td>실버 1</td>
+    </tr>
   </tbody>
 </table>
 
