@@ -1,3 +1,23 @@
+---
+title: "[2026 상반기] AI 프롬프트 리라이팅 웹서비스"
+layout: category
+permalink: /Project/PromMate/rewriting
+author_profile: true
+sidebar_main: true
+types: posts
+taxonomy:
+sidebar:
+  nav: "sidebar-category"
+  enabled: true
+---
+
+{% assign posts_with_flutter = site.posts | where: "categories", "flutter" %}
+{% assign posts_with_flutter_and_solutions = posts_with_flutter | where: "categories", "solutions" %}
+
+{% for post in posts_with_flutter_and_solutions %}
+  {% include archive-single.html type=page.entries_layout %}
+{% endfor %}
+
 # 리라이팅 기능 구현 정리
 
 # Flow
