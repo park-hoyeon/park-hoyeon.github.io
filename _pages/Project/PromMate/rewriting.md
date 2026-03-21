@@ -1,7 +1,7 @@
 ---
 title: "[2026 상반기] AI 프롬프트 리라이팅 웹서비스"
 layout: category
-permalink: /Project/PromMate/rewriting
+permalink: /Project/PromMate/rewriting/
 author_profile: true
 sidebar_main: true
 types: posts
