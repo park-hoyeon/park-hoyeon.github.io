@@ -35,6 +35,12 @@ sidebar:
       <td>23843</td>
       <td>골드 5</td>
     </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="/Study/algorithm/gold/1655">가운데를 말해요</a></td>
+      <td>1655</td>
+      <td>골드 2</td>
+    </tr>
     
   </tbody>
 </table>
