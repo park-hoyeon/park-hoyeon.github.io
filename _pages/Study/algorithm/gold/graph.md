@@ -83,6 +83,12 @@ sidebar:
       <td>17836</td>
       <td>골드 5</td>
     </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="/Study/algorithm/gold/17144">미세먼지 안녕! </a></td>
+      <td>17144</td>
+      <td>골드 4</td>
+    </tr>
   </tbody>
 </table>
 
