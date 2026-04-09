@@ -35,6 +35,13 @@ sidebar:
       <td>1647</td>
       <td>골드 4</td>
     </tr>
+
+    <tr>
+      <td>2</td>
+      <td><a href="/Study/algorithm/gold/4803">트리</a></td>
+      <td>4803</td>
+      <td>골드 4</td>
+    </tr>
     
   </tbody>
 </table>
