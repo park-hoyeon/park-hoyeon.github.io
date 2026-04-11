@@ -89,6 +89,12 @@ sidebar:
       <td>17144</td>
       <td>골드 4</td>
     </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="/Study/algorithm/gold/2206">벽 부수고 이동하기 </a></td>
+      <td>2206</td>
+      <td>골드 3</td>
+    </tr>
   </tbody>
 </table>
 
