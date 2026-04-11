@@ -95,6 +95,12 @@ sidebar:
       <td>2206</td>
       <td>골드 3</td>
     </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="/Study/algorithm/gold/1520">내리막 길 </a></td>
+      <td>1520</td>
+      <td>골드 3</td>
+    </tr>
   </tbody>
 </table>
 
