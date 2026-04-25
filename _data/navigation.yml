@@ -16,6 +16,8 @@ sidebar-category:
         url: "/SKT/"
       - title: "💻 PromMate - AI 프롬프트 리라이팅 웹서비스"
         url: "/Project/PromMate/"
+      - title: "🧠 EyeMind - 시선추적 기반 의료 AI"
+        url: "/Project/EyeMind/"
       - title: "🎧 MyOT - 뮤지컬 커뮤니티 플랫폼 "
         url: "/Project/myot/"
       - title: "🧓🏻 요양보호사 구인-구직 매칭 플랫폼"
@@ -27,12 +29,14 @@ sidebar-category:
 
   - title: "✨ IT 동아리 & 대외활동"
     children:
+      - title: " 잇타 9기(IT연합) - 2026[상반기]"
+        url: "/It's_time/"
       - title: " SKT Fly ai 7기 - 2025[상반기]"
         url: "/SKT/"
-      - title: " TAVE (IT연합) - 2025[하반기]"
-        url: "/Club/TAVE/"
       - title: " UMC (IT연합) - 2025[상반기]"
         url: "/Club/UMC/"
+      - title: " TAVE (IT연합) - 2025[하반기]"
+        url: "/Club/TAVE/"
       - title: " 코드잇부스트 (IT연합) - 2024[하반기]"
         url: "/Club/Codeit_Boost/"
       
