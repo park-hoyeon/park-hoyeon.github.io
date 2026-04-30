@@ -38,6 +38,11 @@ sidebar:
       <td><a href="/Study/algorithm/Programmers/piro">피로도</a></td>
       <td>2</td>
     </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="/Study/algorithm/Programmers/graph/43165">타겟 넘버</a></td>
+      <td>2</td>
+    </tr>
 
     
   </tbody>
