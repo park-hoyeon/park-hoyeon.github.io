@@ -43,6 +43,11 @@ sidebar:
       <td><a href="/Study/algorithm/Programmers/graph/43165">타겟 넘버</a></td>
       <td>2</td>
     </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="/Study/algorithm/Programmers/graph/43162">네트워크</a></td>
+      <td>3</td>
+    </tr>
 
     
   </tbody>
