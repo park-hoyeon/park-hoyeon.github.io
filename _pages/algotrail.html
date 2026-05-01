@@ -1,0 +1,162 @@
+---
+layout: single
+title: "AlgoTrail"
+permalink: /algotrail/
+author_profile: false
+---
+
+<link rel="stylesheet" href="/assets/css/algotrail.css">
+
+<div class="algotrail-app">
+  <aside class="algotrail-sidebar">
+    <div class="brand">
+      <div class="brand-logo">A</div>
+      <div>
+        <h2>AlgoTrail</h2>
+        <p>알고리즘 풀이 기록 & 복습 관리</p>
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <button class="active">홈</button>
+      <button>오늘의 계획</button>
+      <button>문제 목록</button>
+      <button>복습 일정</button>
+      <button>유형 분석</button>
+      <button>통계</button>
+    </nav>
+
+    <div class="profile-card">
+      <strong>park-hoyeon</strong>
+      <span>Programmers Tracker</span>
+      <div class="profile-stats">
+        <p>푼 문제 <b id="profile-total">0</b></p>
+        <p>복습 예정 <b id="profile-review">0</b></p>
+        <p>연속 풀이 <b id="profile-streak">0일</b></p>
+      </div>
+    </div>
+  </aside>
+
+  <main class="algotrail-main">
+    <header class="top-header">
+      <div>
+        <p id="today-date" class="today-date"></p>
+        <h1>오늘도 화이팅! 꾸준함이 실력을 만듭니다 💪</h1>
+      </div>
+
+      <div class="search-box">
+        <input id="search-input" type="text" placeholder="문제 검색">
+      </div>
+    </header>
+
+    <section class="summary-grid">
+      <article class="summary-card">
+        <span>오늘 완료율</span>
+        <strong id="today-rate">0%</strong>
+        <p id="today-count">0 / 0 문제</p>
+      </article>
+
+      <article class="summary-card">
+        <span>푼 문제</span>
+        <strong id="total-count">0</strong>
+        <p>전체 풀이 수</p>
+      </article>
+
+      <article class="summary-card">
+        <span>복습 예정</span>
+        <strong id="review-count">0</strong>
+        <p>오늘 복습할 문제</p>
+      </article>
+
+      <article class="summary-card">
+        <span>평균 레벨</span>
+        <strong id="avg-level">Lv.0</strong>
+        <p>프로그래머스 기준</p>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel today-plan">
+        <div class="panel-title">
+          <h2>오늘의 계획</h2>
+          <span>자동 추천</span>
+        </div>
+
+        <h3>신규 문제</h3>
+        <ul id="new-problem-list" class="task-list"></ul>
+
+        <h3>복습 문제</h3>
+        <ul id="review-problem-list" class="task-list"></ul>
+      </article>
+
+      <article class="panel timeline-panel">
+        <div class="panel-title">
+          <h2>복습 타임라인</h2>
+          <span>3일 · 7일 · 14일</span>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-point done">
+            <b>T0</b>
+            <span>풀이</span>
+          </div>
+          <div class="timeline-point review">
+            <b>T1</b>
+            <span>3일</span>
+          </div>
+          <div class="timeline-point review">
+            <b>T2</b>
+            <span>7일</span>
+          </div>
+          <div class="timeline-point danger">
+            <b>T3</b>
+            <span>14일</span>
+          </div>
+        </div>
+
+        <div class="review-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>문제</th>
+                <th>레벨</th>
+                <th>복습 단계</th>
+                <th>링크</th>
+              </tr>
+            </thead>
+            <tbody id="today-review-table"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel chart-panel">
+        <div class="panel-title">
+          <h2>레벨별 풀이 분포</h2>
+        </div>
+        <div id="level-chart" class="bar-chart"></div>
+      </article>
+
+      <article class="panel recent-panel">
+        <div class="panel-title">
+          <h2>최근 풀이 기록</h2>
+          <span>Programmers</span>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>문제</th>
+              <th>레벨</th>
+              <th>풀이 날짜</th>
+              <th>코드</th>
+            </tr>
+          </thead>
+          <tbody id="recent-table"></tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+</div>
+
+<script src="/assets/js/algotrail.js"></script>
