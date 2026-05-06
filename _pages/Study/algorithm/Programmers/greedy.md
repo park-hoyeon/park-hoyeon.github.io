@@ -30,7 +30,7 @@ sidebar:
   <tbody>
     <tr>
       <td>1</td>
-      <td><a href="/Study/algorithm/Programmers/disk">섬 연결하기</a></td>
+      <td><a href="/Study/algorithm/Programmers/greedy/42861">섬 연결하기</a></td>
       <td>3</td>
     </tr>
 
