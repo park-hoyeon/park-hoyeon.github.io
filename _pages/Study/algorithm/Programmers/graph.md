@@ -48,6 +48,12 @@ sidebar:
       <td><a href="/Study/algorithm/Programmers/graph/43162">네트워크</a></td>
       <td>3</td>
     </tr>
+    
+    <tr>
+      <td>5</td>
+      <td><a href="/Study/algorithm/Programmers/graph/49189">가장 먼 노드</a></td>
+      <td>3</td>
+    </tr>
 
     
   </tbody>
