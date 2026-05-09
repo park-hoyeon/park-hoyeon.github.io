@@ -30,7 +30,7 @@ sidebar:
   <tbody>
     <tr>
       <td>1</td>
-      <td><a href="/Study/algorithm/Programmers/greedy/84512">모음사전</a></td>
+      <td><a href="/Study/algorithm/Programmers/backtrack/84512">모음사전</a></td>
       <td>2</td>
     </tr>
 
