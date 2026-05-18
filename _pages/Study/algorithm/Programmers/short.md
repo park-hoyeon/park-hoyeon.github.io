@@ -38,6 +38,11 @@ sidebar:
       <td><a href="/Study/algorithm/Programmers/short/72413">합승 택시 요금</a></td>
       <td>3</td>
     </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="/Study/algorithm/Programmers/short/118669">등산코스 정하기</a></td>
+      <td>3</td>
+    </tr>
    
 
     
